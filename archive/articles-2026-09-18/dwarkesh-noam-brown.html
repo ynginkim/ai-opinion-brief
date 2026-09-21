@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>멀티에이전트·정렬·RSI를 한자리에 — AI 오피니언 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../index.html">← 피드로</a>
+
+    <div class="article-who">Dwarkesh Podcast × Noam Brown (OpenAI) · <span class="article-date">2026-09-18 Seoul</span></div>
+    <h1 class="article-title">멀티에이전트·정렬·RSI를 한자리에</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.dwarkesh.com/p/noam-brown" target="_blank" rel="noopener">dwarkesh.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>무슨 일</h2>
+      <p>
+        Dwarkesh Patel이 OpenAI 연구자 Noam Brown과 긴 인터뷰를 올렸습니다.
+        주제는 멀티에이전트 스케일링, Millennium Prize급 수학 진전(Navier–Stokes 언급)이 RSI에 주는 함의,
+        Hugging Face 이후 정렬·체인오브소트(CoT) 모니터, 그리고 “정렬이 됐는지 어떻게 알 것인가”까지 한 자리에 묶여 있습니다.
+      </p>
+
+      <h2>맥락</h2>
+      <p>
+        Brown은 추론 모델(o1 계열) 기여로 알려져 있고, 지금은 멀티에이전트 쪽을 보고 있습니다.
+        공개적으로 에이전트 군집이 긴 지평에서 수학 문제를 푸는 장면과, 같은 역량이 정렬 실패로 번질 수 있다는 우려가
+        동시에 이야기되는 시점입니다. 랩 밖에서는 “속도”와 “통제” 논쟁이 겹치고, 랩 안에서는 내부·외부 모델 격차와
+        긴 호라이즌 평가 주기가 맞물리고 있습니다.
+      </p>
+
+      <h2>핵심 주장</h2>
+      <p>
+        멀티에이전트는 테스트타임 컴퓨트를 직렬이 아니라 병렬로 키우는 방법입니다.
+        단일 에이전트가 모든 컨텍스트를 갖는 것보다는 비효율적이지만, 지연(latency)을 줄이는 현실적 스케일링이라는 쪽이 강조됩니다.
+        수학처럼 병렬화하기 쉬운 영역에서는 이득이 크고, 소설 집필처럼 직렬성이 강한 영역에서는 이득이 작을 수 있다고도 말합니다.
+      </p>
+      <p>
+        수학 진전이 RSI를 더 가깝게 보이게 한다는 외부 직관에 대해, Brown은 실험·직렬 병목·GPU 때문에
+        “하룻밤 지능 폭발”보다는 상당한 가속(예: 수 배) 쪽이 더 그럴듯하다고 봅니다. 동시에 연구자들조차 타임라인을
+        계속 앞당기고 있다는 점도 인정합니다.
+      </p>
+      <p>
+        정렬 파트에서는 Hugging Face 사건이 멀티에이전트 협력을 대중에게 처음 강하게 보여준 사례로 다뤄집니다.
+        CoT 모니터는 큰 선물이지만, CoT를 과도하게 처벌하면 숨기는 쪽으로 압력이 생기고, 모니터 가능성이 이미 약해지는
+        조짐이 있다는 점이 경고로 나옵니다. “다시는 AI를 과소평가하지 말자”는 문장이 안전 쪽 메시지로 반복됩니다.
+      </p>
+
+      <h2>프론티어 워처에게</h2>
+      <p>
+        코어 연구자가 공개 석상에서 에이전트 군집·정렬·RSI를 한꺼번에 다룬 최신 1차 소스입니다.
+        제품 데모가 아니라 “병렬 스케일링의 비효율 vs 지연”, “수학 진전 ≠ 즉시 폭발”, “CoT 모니터 열화”,
+        “긴 호라이즌 vs 짧은 릴리스 주기”처럼 페이싱·정렬 논쟁의 크럭스를 체크리스트로 쓸 수 있습니다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> 멀티에이전트는 비효율이어도 지연을 줄이는 스케일이고, 수학 진전은 RSI를 앞당기지만 실험 병목이 폭발 속도를 제한하며, CoT 모니터는 지금 지키지 않으면 사라질 수 있다.</div>
+
+    <footer>AI 오피니언 브리프 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
