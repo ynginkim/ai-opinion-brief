@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>MoE 추론의 연산·데이터 이동 — AI 오피니언 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis (Tanj Bennett) · <span class="article-date">2026-09-22 Seoul</span></div>
+    <h1 class="article-title">MoE 추론의 연산·데이터 이동</h1>
+    <div class="source-line">
+      원문 · <a href="https://newsletter.semianalysis.com/p/computation-and-data-movement-for" target="_blank" rel="noopener">newsletter.semianalysis.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>무슨 일</h2>
+      <p>
+        Tanj Bennett의 SemiAnalysis 에세이가 MoE 추론을 하드웨어 위의 “토큰 팩토리”로 풀어냅니다.
+        오케스트레이션 큐, prefill / midfill / decode-attention / decode-experts 구간,
+        불변 공유 상태로서의 KV blob, 데이터플로 폭에 따른 PP·TP·EP 선택이 한 지도에 놓입니다.
+      </p>
+
+      <h2>대역폭 vs 용량</h2>
+      <p>
+        핵심 주장은 파라미터 수보다 메모리 대역폭과 스케줄링이 더 중요하다는 것입니다.
+        레짐이 다른 단계는 분리(disaggregate)하고, 고빈도 전문가·어텐션 트래픽은 스케일업 안에 두며,
+        KV 메모리가 지배하기 시작하면 파이프라인을 더 깊게 파지 말라는 처방이 이어집니다.
+      </p>
+
+      <h2>Kimi K3 on Blackwell</h2>
+      <p>
+        작업 예제로 Kimi K3를 Blackwell에 올린 투영을 제시합니다.
+        상호작용성·에너지·HBM 상주·네트워크 피크를 B200 / B300 / GB200 축에서 비교하며
+        집약(aggregation)과 분리(disaggregation)가 어디서 이기는지 숫자로 보여 줍니다.
+      </p>
+
+      <h2>왜 지금</h2>
+      <p>
+        MoE 서빙 경제—레짐, KV 이동, 집약 vs 분리—를 시스템 수준에서 깊게 그린 맵입니다.
+        모델 카드 스펙만으로는 안 보이는 인프라 병목을 읽는 데 바로 쓸 수 있습니다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> SemiAnalysis가 MoE 추론을 토큰 팩토리·KV·PP/TP/EP·대역폭 관점으로 풀고, Kimi K3–Blackwell 투영으로 집약/분리 경계를 그렸다.</div>
+
+    <footer>AI 오피니언 브리프 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
