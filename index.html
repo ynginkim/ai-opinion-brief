@@ -10,64 +10,65 @@
   <div class="wrap">
     <header>
       <div class="brand">AI <span>오피니언</span> 브리프</div>
-      <div class="meta-top">2026.09.22 · 서울 06:00</div>
+      <div class="meta-top">2026.09.23 · 서울 06:00</div>
     </header>
 
     <div class="tldr">
       <strong>TODAY TLDR</strong>
-      OpenAI가 IAS에 수학 AI 자문그룹을 세웠고(내부 모델이 미해결 문제 100개+ 해결 주장), SemiAnalysis는 MoE 추론을 하드웨어 데이터플로로 풀었으며, Warp은 AI 팩토리로 월 2,000 PR을 돌리는 법을 공개했다.
+      Anthropic이 페이싱 이후 첫 Opus로 5.5를 냈고(Fable급·비용↓약 40%), OpenAI는 같은 날 GPT-6 Sol·Luna로 가격을 반값으로 맞추며 제3자 안전 평가 원칙도 공개했다.
     </div>
 
     <div class="nav-dates">
-      <span class="on">오늘 9/22</span>
+      <span class="on">오늘 9/23</span>
+      <a href="archive/2026-09-22.html">9/22</a>
       <a href="archive/2026-09-20.html">9/20</a>
       <a href="archive/2026-09-19.html">9/19</a>
       <a href="archive/2026-09-18.html">9/18</a>
     </div>
 
     <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles/anthropic-opus-5-5.html">Claude Opus 5.5</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/claude-opus-5-5" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Fable 5.1급 성능 · Opus 5 대비 비용↓약 40% ($4/$20, 캐시 $0.20)</li>
+        <li>페이싱 이후 첫 Opus · METR/Frontier Design 사전 평가 · 행동 감사 최고점 주장</li>
+        <li>사이버/바이오 Fable급 세이프가드 · Verification 프로그램</li>
+      </ul>
+      <div class="why"><em>왜</em> 페이싱 선언 뒤 효율·정렬·세이프가드를 묶은 Opus 기준점</div>
+    </article>
+
+    <article class="item">
       <div class="who">OpenAI</div>
       <h2 class="title">
-        <a href="articles/openai-math-advisory.html">수학·AI 자문그룹 (IAS)</a>
+        <a href="articles/openai-gpt6-sol-luna.html">GPT-6 Sol and Luna</a>
         <span class="domain">(openai.com)</span>
-        <a class="ext-link" href="https://openai.com/index/advisory-group-on-mathematics-and-ai" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://openai.com/index/introducing-gpt-6-sol-and-luna/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>IAS 호스트 독립 자문그룹(Gowers, Hairer, Witten, Melanie Matchett Wood 등)</li>
-        <li>8/28 학습 내부 모델이 Navier–Stokes 외에 미해결 100개+ 해결 주장</li>
-        <li>무보수·공개 코멘트 가능, 내부 수학 페이싱은 조언하지 않음</li>
+        <li>Astra급 방법을 Sol·Luna로 · API 가격 5.6 대비 50%↓</li>
+        <li>프롬프트 캐시 개선(캐시 입력 최대 90% 할인) · 정렬 개선</li>
+        <li>Work/Codex·API gpt-6-sol / gpt-6-luna · Opus 5.5와 같은 날</li>
       </ul>
-      <div class="why"><em>왜</em> AI 오픈 문제 해결 주장 뒤 프론티어 랩–수학 커뮤니티의 첫 공식 다리</div>
+      <div class="why"><em>왜</em> 같은 날 가격 전쟁—비용–지능 곡선의 중·하위 티어 공세</div>
     </article>
 
     <article class="item">
-      <div class="who">SemiAnalysis</div>
+      <div class="who">OpenAI Safety</div>
       <h2 class="title">
-        <a href="articles/semianalysis-moe-inference.html">MoE 추론의 연산·데이터 이동</a>
-        <span class="domain">(semianalysis.com)</span>
-        <a class="ext-link" href="https://newsletter.semianalysis.com/p/computation-and-data-movement-for" target="_blank" rel="noopener">원문</a>
+        <a href="articles/openai-third-party-assessments.html">제3자 평가 우선순위와 원칙</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/priorities-principles-third-party-assessments/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>토큰 팩토리: prefill/midfill/decode-attention/decode-experts · KV blob · PP/TP/EP</li>
-        <li>파라미터 수보다 메모리 대역폭·스케줄링</li>
-        <li>Kimi K3 on Blackwell 투영(B200/B300/GB200)</li>
+        <li>민간·비영리 독립 평가에 학습·평가·배포 접근을 깊게 열겠다는 원칙</li>
+        <li>안전 주장 vs 안전 케이스 · 현실 조건 세이프가드 검증</li>
+        <li>주~수개월, 출시와 무관한 장기 평가도 염두</li>
       </ul>
-      <div class="why"><em>왜</em> MoE 서빙 경제—레짐, KV 이동, 집약 vs 분리—의 시스템 지도</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Lenny’s / How I AI</div>
-      <h2 class="title">
-        <a href="articles/lenny-warp-ai-factory.html">Warp, AI 팩토리로 월 2,000 PR</a>
-        <span class="domain">(lennysnewsletter.com)</span>
-        <a class="ext-link" href="https://www.lennysnewsletter.com/p/how-warp-ships-2000-prs-a-month-with" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>Wilson: Slack→Linear→PR→computer-use QA→머지</li>
-        <li>PR당 인간 상호작용 · LLM-as-judge · 비용/품질 파레토</li>
-        <li>실패 클러스터로 팩토리 에이전트 정의 자기개선</li>
-      </ul>
-      <div class="why"><em>왜</em> 코딩 에이전트를 넘어 측정·자기개선하는 AI 소프트웨어 팩토리 플레이북</div>
+      <div class="why"><em>왜</em> 제품 발표와 같은 날, 독립 검증의 접근 규칙을 문서로 고정</div>
     </article>
 
     <footer>
