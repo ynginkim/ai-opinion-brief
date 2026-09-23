@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Private AI Compute에 안전한 서버 측 메모리를 도입 — AI 오피니언 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · <span class="article-date">2026-09-23 Seoul</span></div>
+    <h1 class="article-title">Private AI Compute에 안전한 서버 측 메모리를 도입</h1>
+    <div class="source-line">
+      원문 · <a href="https://deepmind.google/blog/advancing-private-ai-compute-with-secure-server-side-memory/" target="_blank" rel="noopener">deepmind.google</a>
+    </div>
+
+    <div class="article-body">
+      <h2>무슨 일</h2>
+      <p>
+        Google DeepMind가 Platforms &amp; Devices, Core, Cloud과 함께 Private AI Compute 기술 업데이트를 냈습니다. 핵심은 기기 수준의 프라이버시를 유지하면서, 기기 간 지속되는 서버 측 개인 메모리를 넣는 설계입니다.
+      </p>
+      <h2>암호화 볼트와 키 위치</h2>
+      <p>
+        개인 컨텍스트는 클라우드 암호화 저장소(볼트)에 두고, 복호화 키는 사용자 기기에만 둡니다. 요청이 들어올 때만 보안 엔클레이브에서 일시적으로 복호화해 응답에 쓰고, 클라우드 사업자가 평문 개인 맥락을 상시 보유하지 않는 구조를 강조합니다.
+      </p>
+      <h2>감사·증명</h2>
+      <p>
+        업데이트된 기술 브리프, 서버 소프트웨어의 변조 방지 공개 기록(기기 증명용), 독립 사이버보안 감사 결과도 함께 공개했다고 적혀 있습니다. 장기 개인 AI 메모리를 ‘온디바이스만’이 아닌 안전한 서버 측으로 확장하려는 설계 문서입니다.
+      </p>
+      <h2>왜 지금</h2>
+      <p>
+        개인 에이전트가 맥락을 오래 기억해야 한다는 제품 압력과, 클라우드에 평문을 맡기지 말라는 프라이버시 요구가 충돌하는 지점입니다. 주요 랩이 키 분리·엔클레이브·공개 증명까지 묶어 낸 구체 아키텍처라는 점이 중요합니다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> DeepMind 등이 키는 기기에, 데이터는 암호화 클라우드 볼트에 두는 Private AI Compute 서버 측 메모리를 공개했다.</div>
+
+    <footer>AI 오피니언 브리프 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
