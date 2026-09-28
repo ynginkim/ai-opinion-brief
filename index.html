@@ -10,66 +10,82 @@
   <div class="wrap">
     <header>
       <div class="brand">AI <span>오피니언</span> 브리프</div>
-      <div class="meta-top">2026.09.28 · 서울 06:00</div>
+      <div class="meta-top">2026.09.29 · 서울 06:00</div>
     </header>
 
     <div class="tldr">
       <strong>TODAY TLDR</strong>
-      Jess Werk가 Tao 블로그에 학과장급 ‘인지 성역’ 선언을 올렸고, Willison이 Opus 5.5·Claude Code로 Kākāpō Party 키노트 데모를, Lenny가 Molly Graham과 AI 시대 Lego 위임·번아웃을 다뤘다.
+      Anthropic이 Claude Sonnet 5.5를 냈고, Tao 블로그에 Mathathon ‘Old Problems, New Proofs’ 공동 성명이 올랐다. Willison은 2026 LLM 키노트 주석을, Lenny/Claire Vo는 Jev 결정 모델 입문을 올렸다.
     </div>
 
     <div class="nav-dates">
-      <span class="on">오늘 9/28</span>
+      <span class="on">오늘 9/29</span>
+      <a href="archive/2026-09-28.html">9/28</a>
       <a href="archive/2026-09-27.html">9/27</a>
       <a href="archive/2026-09-26.html">9/26</a>
       <a href="archive/2026-09-25.html">9/25</a>
-      <a href="archive/2026-09-24.html">9/24</a>
     </div>
 
     <article class="item">
-      <div class="who">Jess Werk (guest, Terence Tao)</div>
+      <div class="who">Anthropic</div>
       <h2 class="title">
-        <a href="articles/tao-cognitive-sanctuaries.html">인지 성역, 혹은 학과장 선언</a>
-        <span class="domain">(terrytao.wordpress.com)</span>
-        <a class="ext-link" href="https://terrytao.wordpress.com/2026/09/27/cognitive-sanctuaries-or-manifesto-of-the-department-chair/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/anthropic-sonnet-5-5.html">Claude Sonnet 5.5 출시</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>UW 천문학 학과장 Jess Werk가 Tao 블로그 게스트 글로, AI가 ‘생산성=이해’ 인센티브를 붕괴시키며 초기 경력 연구자에게 인지 부채·공개 낙인을 이중으로 전가한다고 본다.</li>
-        <li>슈퍼컴·관측 데이터로 이미 AI를 써 온 천문학 경험으로 ‘Agentic Professor’식 무감독 학습을 거부하고, 인간의 반복적 판단·물리적 직관이 PhD의 핵심이라고 주장한다.</li>
-        <li>학과 단위 ‘인지 성역’: 라이브 무보조 평가, 멘토링 가중 승진, 지도교수·학생 AI 사용 경계, 과정·검증을 보상하는 커뮤니티 관행을 구체 제안한다.</li>
-        <li>하버드 수학 PhD AI 서밋과 결론이 수렴하되, 학과가 실제로 움직일 수 있는 교수 인센티브 축을 보강한다.</li>
+        <li>Opus 5.5 보완용 중형 모델: 일상·버그픽스·문서/슬라이드에 강하고, 출력 30%+ 빠르며 작업당 비용 최대 ~30% 절감(가격표는 Sonnet 5와 동일 $2/$10).</li>
+        <li>에이전트 코딩 점프: Terminal-Bench 4.0 70.6%(Sonnet 5는 10.3%), GDPval-AA에서 Opus 5.5에 근접; Epic·Cursor·Unity 등 조기 테스터 피드백.</li>
+        <li>첫 Sonnet급 사이버 세이프가드·증류/preserved thinking 보호를 탑재; 생물 세이프가드는 Sonnet 5와 동일.</li>
+        <li>claude-sonnet-5-5로 Claude 앱·AWS·GCP·Azure 전면 제공; thinking off 시 between_tools 설정 마이그레이션 필요.</li>
       </ul>
-      <div class="why"><em>왜</em> 프론티어 AI 아래 PhD급 판단을 지키려는 학과장급 실행안이 CORE 채널로 나온, 수학 커뮤니티 재설계 논의의 인접 1차 에세이.</div>
+      <div class="why"><em>왜</em> Opus 5.5 이후 중형 워크호스가 에이전트 코딩 성능과 사이버 세이프가드를 동시에 끌어올린 CORE급 출시.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Caltech Mathathon coalition (guest, Terence Tao)</div>
+      <h2 class="title">
+        <a href="articles/tao-mathathon-joint-statement.html">Mathathon 공동 성명: Old Problems, New Proofs</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/09/28/joint-statement-about-mathathon/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Caltech Mathathon 주최·공개서한 공저자·교수진 연대 성명: 주제를 ‘Old Problems, New Proofs’로 재설계.</li>
+        <li>40시간 학습 후 2개월간 대안 증명/해설 + LLM 채팅·도구를 공개하는 GitHub 제출—인간 이해·설명 중심.</li>
+        <li>독점 AI 랩 스폰서십 중단, 현금 그랜트로 도구 선택 자율화, SAIR·XTX가 컴퓨트·워크숍·여행·오픈소스 상 지원(11/13–15).</li>
+        <li>Tao 블로그 게스트 게시(초안 AI 변환 고지); Proofs and Prompts에도 교차 게시.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI-수학 경진의 리더십이 오픈 문제 레이스에서 인간 지향 해설·공개·오픈소스로 선회한 CORE 채널 1차 성명.</div>
     </article>
 
     <article class="item">
       <div class="who">Simon Willison</div>
       <h2 class="title">
-        <a href="articles/willison-kakapo-party.html">툴: Kākāpō Party</a>
+        <a href="articles/willison-2026-in-llms.html">2026년 LLM 지금까지 (키노트 주석)</a>
         <span class="domain">(simonwillison.net)</span>
-        <a class="ext-link" href="https://simonwillison.net/2026/Sep/26/kakapo-party/" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://simonwillison.net/2026/Sep/27/2026-in-llms-so-far/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>WeAreDevelopers 키노트 클로징: Claude Opus 5.5에 카카포 참고 사진을 넣고 HTML5 캔버스 픽셀아트 파티 애니메이션 생성</li>
-        <li>로컬 Claude Code + Playwright로 15초 영상 녹화(클릭 타이밍으로 컨페티 연출)해 Keynote에 삽입</li>
-        <li>프롬프트·트랜스크립트·결과 페이지·약 30줄 Playwright 스크립트를 그대로 공개한 코딩 에이전트 실전 데모</li>
+        <li>WeAreDevelopers NA 클로징 키노트 주석 슬라이드: 2025.11 코딩 에이전트 변곡점→OpenClaw/Claw→다크 팩토리→Mythos/Fable→로컬 Qwen→교황 회칙→훈련 에이전트 사고(FelonyBench)→Muse·GPT-6/Opus 5.5.</li>
+        <li>Deep Blue(AI 유발 엔지니어 무기력)·AI mania·토큰맥싱 흥망, ‘더 쉬워지지 않고 더 빨라질 뿐’이란 숙련 대응을 축으로 정리.</li>
+        <li>펠리컨 벤치·카카포 번식·Opus 5.5 픽셀아트 파티로 연도를 닫는 커뮤니케이터급 연대기; YouTube 영상 포함.</li>
       </ul>
-      <div class="why"><em>왜</em> Opus 5.5와 Claude Code가 키노트용 크리에이티브 산출물을 끝까지 만들어 내는 커뮤니케이터급 현장 데모.</div>
+      <div class="why"><em>왜</em> 코딩 에이전트·클로·봉쇄 실패·남는 숙련을 한 줄기로 묶은 올해 최상위 커뮤니케이터 연대기.</div>
     </article>
 
     <article class="item">
-      <div class="who">Lenny’s Podcast (Molly Graham)</div>
+      <div class="who">Lenny’s Podcast / How I AI (Claire Vo)</div>
       <h2 class="title">
-        <a href="articles/lenny-molly-graham.html">지금 테크 업계를 덮친 상실·외로움·번아웃 | Molly Graham</a>
+        <a href="articles/lenny-jev-for-beginners.html">Jev 입문: 쓰는 법과 만들 것</a>
         <span class="domain">(lennysnewsletter.com)</span>
-        <a class="ext-link" href="https://www.lennysnewsletter.com/p/the-grief-loneliness-and-burnout" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/jev-for-beginners-how-to-use-it-and" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>유명 조언 ‘Give away your Legos’를 AI 시대에 재검토—인간 팀에 넘기는 것과 모델에 넘기는 것은 다르다</li>
-        <li>테크 업계의 상실·외로움·번아웃, AI 일자리 공포 서사의 과장, AI에 절대 맡기지 말아야 할 Lego</li>
-        <li>지금 잘하는 매니저들이 하는 일과 Glue Club/WorkLife·구글·페이스북 등 현장 경험으로 풀이</li>
+        <li>TypeSafe Jev=텍스트가 아닌 선택·점수·확률을 내는 결정 모델(~4¢/M 입력, 출력 토큰 과금 없음).</li>
+        <li>일주일 실전 5건: 1,700 PR 분류(~9¢), 로컬 Claude/Codex 세션 메타분석, Gmail 트리아지, ChatPRD 인사이트(~20만 분류·Jev ~$4), 유튜브 댓글 대시보드.</li>
+        <li>Jev로 분류·클러스터·라우팅한 뒤 핵심만 프론티어 모델에 넘기는 파이프라인 설계를 권함.</li>
       </ul>
-      <div class="why"><em>왜</em> 에이전트 전환기 제품·조직 리더에게 AI 위임과 매니저 실천을 다시 짜 주는 커리어 커뮤니케이터 에피소드.</div>
+      <div class="why"><em>왜</em> 분류·라우팅을 LLM에서 빼내 거의 공짜 구조화 추론으로 돌리는 제품 빌더용 결정 모델 플레이북.</div>
     </article>
 
     <footer>
