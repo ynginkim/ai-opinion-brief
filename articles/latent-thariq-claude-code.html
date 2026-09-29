@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude Code 다음 장 — Mods·Tag·안전 — AI 오피니언 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Latent Space · <span class="article-date">2026-09-29 Seoul</span></div>
+    <h1 class="article-title">Claude Code 다음 장 — Mods·Tag·안전</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.latent.space/p/thariq" target="_blank" rel="noopener">latent.space</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        swyx/Vibhu가 Anthropic의 Thariq Shihipar를 불러 Claude Code의 Opus/Sonnet 5.5 이후 스택을 풀었습니다. Ask User Question, artifacts, Projects, Claude Tag, effort 노브, 그리고 하네스 UI·에이전트 루프를 커스텀하는 Claude Mods.
+      </p>
+      <p>
+        후반부는 Pacing the Frontier — Exploit-Bench·Hugging Face식 사이드채널, 샌드박스, 프로브/폴백, Auto Mode — 를 개발자 시선으로 잇습니다.
+      </p>
+
+      <h2>배경</h2>
+      <p>
+        코딩 에이전트 경쟁이 모델 점수만의 싸움이 아니게 됐습니다. 하네스(루프·UI·프로젝트 메모리)가 체감의 절반입니다.
+      </p>
+      <p>
+        동시에 에이전트 탈옥·사이드채널 이슈로 랩들이 “페이스 조절”을 말하기 시작했습니다. 이 에피소드는 그 두 축을 한 번에 묶습니다.
+      </p>
+
+      <h2>무슨 일 / 핵심 내용</h2>
+      <p>
+        Thariq는 프롬프트와 멘탈모델이 여전히 지배적이라고 봅니다. Claude.md는 줄고, “클라우드 brain / 로컬 hands” 분리가 커진다는 그림입니다.
+      </p>
+      <p>
+        Mods는 하네스 UI와 에이전트 루프를 고치는 mutable-software 프리뷰입니다. Projects·Tag·artifacts·effort와 함께 실무 가이드로 소개됩니다.
+      </p>
+      <p>
+        안전 반쪽은 Exploit-Bench·Hugging Face 스타일 에이전트 옆길, 샌드박싱, 프로브와 폴백, Auto Mode까지. “빨리 더 넣기”만이 아니라 “언제 늦출지”를 제품 언어로 번역합니다.
+      </p>
+
+      <h2>숫자·스펙</h2>
+      <ul>
+        <li>스택 키워드: Ask User Question · artifacts · Projects · Claude Tag · effort · Claude Mods.</li>
+        <li>프레임: 클라우드 brain / 로컬 hands. Claude.md 비중 감소.</li>
+        <li>안전: Exploit-Bench · 사이드채널 · 샌드박스 · 프로브/폴백 · Auto Mode.</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+      <p>
+        Sonnet/Opus 5.5 주간에 “모델을 어떻게 감싸는지”를 Anthropic 쪽에서 직접 설명한 에피소드입니다. Mods가 열리면 팀마다 루프를 다르게 짤 수 있습니다.
+      </p>
+      <p>
+        Pacing 논의는 OpenAI의 출시 보류·safety-case 문서와도 같은 시대 공기입니다. 코딩 에이전트 사용자에게 왜 랩이 브레이크를 밟는지 번역해 줍니다.
+      </p>
+
+      
+      <p>
+        Ask User Question·artifacts·Projects·Tag는 “에이전트가 혼자 달리지 않게” 만드는 실무 장치입니다. effort 노브와 합쳐지면, 같은 모델이라도 팀마다 비용·깊이 프로필이 달라집니다.
+      </p>
+      <p>
+        Mods가 흥미로운 지점은 하네스를 제품 코드처럼 고치라는 초대입니다. UI와 루프가 고정된 블랙박스가 아니라, mutable software preview로 열리면, 사내 표준 코딩 에이전트를 포크해 운영할 여지가 생깁니다.
+      </p>
+      <p>
+        Pacing the Frontier 구간은 Hugging Face식 사이드채널·Exploit-Bench를 개발자 언어로 번역합니다. 샌드박스 옆에 난 구멍, 프로브와 폴백, Auto Mode. OpenAI가 출시를 미룬 주간에 Anthropic 쪽도 “언제 늦출지”를 제품 이야기로 꺼낸 셈입니다.
+      </p>
+      
+      <p>
+        실무 체크리스트로 옮기면 세 줄입니다. 하나, Projects/Tag로 컨텍스트를 나눈다. 둘, effort로 비용 프로필을 고른다. 셋, Mods가 열리면 팀 표준 루프를 포크한다. 모델 점수만 보고 하네스를 방치하지 말라는 에피소드입니다.
+      </p>
+      <h2>그래서 뭐</h2>
+      <p>
+        Claude Code 쓰는 팀은 Projects·Tag·effort부터 정리하고, Mods 프리뷰가 열리면 UI/루프 커스텀을 시험해 보면 됩니다.
+      </p>
+      <p>
+        보안·플랫폼 팀은 샌드박스 옆길과 Auto Mode 문서를 체크리스트에 넣으세요. 모델 업그레이드만으로 안심할 단계는 아닙니다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> 코딩 에이전트 하네스와 ‘페이스 조절’ 논의를 한 에피소드에 묶음.</div>
+
+    <footer>AI 오피니언 브리프 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPT-6.1 Sol — Astra급을 5분의 1 가격에 — AI 오피니언 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · <span class="article-date">2026-09-29 Seoul</span></div>
+    <h1 class="article-title">GPT-6.1 Sol — Astra급을 5분의 1 가격에</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/introducing-gpt-6-1-sol/" target="_blank" rel="noopener">openai.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        DevDay에서 GPT-6.1 Sol이 나왔습니다. GPT-6 Sol의 업그레이드고, 에이전트 코딩·컴퓨터 사용·업무용 작업에서 Astra에 거의 붙으면서 표준 API 입출력 단가는 Astra의 약 1/5입니다.
+      </p>
+      <p>
+        가격은 $2 / $10 per MTok. 캐시 입력은 $0.10. ChatGPT Work·Codex(Plus~Edu)와 API <code>gpt-6.1-sol</code>부터. Chat엔 아직 없습니다.
+      </p>
+
+      <h2>배경</h2>
+      <p>
+        Sol은 원래 일상·업무용 미드 자리였습니다. Astra는 플래그십. 문제는 Astra급이 필요할 때마다 단가가 따라온다는 점이었죠.
+      </p>
+      <p>
+        이번 6.1은 그 간격을 줄이려는 쪽입니다. “플래그십 안 써도 되는 코딩·업무”를 Astra 체감에 가깝게, Sol 단가로 돌리게 만드는 게 포지션입니다.
+      </p>
+
+      <h2>무슨 일 / 핵심 내용</h2>
+      <p>
+        DeepSWE v1.1에서 Astra와 비슷한 점수인데 비용은 대략 1/5. 기존 Sol 최고점 대비 +6.4pt를 더 낮은 effort·비용에서 냈다고 합니다.
+      </p>
+      <p>
+        업무 축도 올라갔습니다. GDP.pdf는 Opus 5.5(폴백 포함)보다 높고 작업당 비용은 절반 미만. Astra SOTA에도 약 1/5 비용으로 근접. AutomationBench는 medium effort에서 Opus 5.5보다 +2.2pt, 비용은 대략 1/3. Sol 대비 같은 설정에서 +4.8pt.
+      </p>
+      <p>
+        컴퓨터 사용은 OSWorld 2.0 offline에서 Sol 대비 +7pt(최대 effort), 비용은 절반 미만. Astra와는 최대 effort에서 2.1pt 차이, 작업당 비용은 대략 1/7.
+      </p>
+      <p>
+        과학 벤치(Terminal-Bench Science)는 여전히 Astra가 최고(68.1%). Sol 6.1은 Sol 대비 점수를 두 배 이상 올리면서 작업당 평균 $5.47 — Opus 5.5($23.21)·Astra($23.80)보다 75% 이상 싸다고 적혀 있습니다. 제일 어려운 과학 연구만 Astra를 쓰라는 톤입니다.
+      </p>
+      <p>
+        정렬 평가도 Astra에 가깝게 올라갔습니다. 한계를 더 밝히고, 제한을 더 잘 지킨다는 쪽. 시스템 카드 부록은 deploymentsafety.openai.com에 올라와 있습니다.
+      </p>
+
+      <h2>숫자·스펙</h2>
+      <ul>
+        <li>API 가격: 입력 $2 / 출력 $10 per MTok. 캐시 입력 $0.10(표준 입력 대비 95%↓, Sol 캐시 대비 50%↓).</li>
+        <li>DeepSWE v1.1: Astra와 동급 체감 · 비용 ~1/5. Sol 대비 +6.4pt(더 낮은 effort).</li>
+        <li>GDP.pdf: Opus 5.5(폴백)보다 높고 작업당 비용 절반 미만. Astra에도 ~1/5 비용으로 근접.</li>
+        <li>AutomationBench: medium에서 Opus 대비 +2.2pt · 비용 ~1/3. Sol 대비 +4.8pt.</li>
+        <li>OSWorld 2.0 offline: Sol 대비 +7pt. Astra와 2.1pt 차 · 비용 ~1/7.</li>
+        <li>Terminal-Bench Science: Astra 68.1%가 최고. Sol 6.1 작업당 ~$5.47 vs Opus $23.21 / Astra $23.80.</li>
+        <li>사실성: low effort에서 사실 오류 포함 응답 11.4% → 7.7%(약 32%↓). Astra와 1.9pt 이내.</li>
+        <li>가용: ChatGPT Work·Codex(Plus/Pro/Business/Enterprise/Edu). API <code>gpt-6.1-sol</code>. Chat 미포함.</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+      <p>
+        역할 분담이 또 한 번 바뀝니다. “애매하면 Astra”가 아니라, 코딩·문서·업무 자동화는 Sol 6.1로 내리고 제일 어려운 과학·열린 판단만 Astra에 남길 여지가 커집니다.
+      </p>
+      <p>
+        Astra급 체감을 Sol 단가에 붙이면, 에이전트를 길게 돌리는 팀의 기본 라우팅이 바뀝니다. 캐시 $0.10도 컨텍스트를 재사용하는 긴 세션에 체감이 큽니다.
+      </p>
+
+      
+      <p>
+        사실성 축도 같이 올랐습니다. low effort에서 사실 오류가 들어간 응답 비중이 11.4%에서 7.7%로 줄었고, 대략 32% 감소입니다. 테스트한 effort 구간에서 Astra와 오차율 차이는 1.9pt 안입니다. 비용은 작업당 1/5 미만.
+      </p>
+      <p>
+        정렬 쪽 한 줄도 있습니다. 문제를 숨기지 못하는 비율이 Sol 4.9%에서 6.1 Sol 2.1%로 내려갔고, Astra 1.5%에 가깝습니다. Luna는 28.7%. “한계를 더 말한다”가 제품 카피에만 있는 말이 아니라는 뜻입니다.
+      </p>
+      <p>
+        정리하면 역할 분담이 이렇게 갈립니다. 에이전트 코딩·PDF 업무·멀티스텝 자동화·일반 컴퓨터 사용은 Sol 6.1. 제일 어려운 과학 터미널 워크플로만 Astra. Chat 기본 라우팅은 아직 미개방이니, 소비자 체감과 API/Work 체감이 당분간 갈라질 수 있습니다.
+      </p>
+      
+      <p>
+        캐시 입력 $0.10은 긴 에이전트 세션에서 체감이 큽니다. 표준 입력 대비 95%↓, 기존 Sol 캐시 대비 50%↓라고 적혀 있습니다. 컨텍스트를 재사용하는 코딩·업무 봇일수록 Sol 6.1 경제성이 도드라집니다.
+      </p>
+      <h2>그래서 뭐</h2>
+      <p>
+        지금 Work·Codex·API에서 바로 고를 수 있습니다. 일상 코딩·PDF 업무·멀티스텝 워크플로는 Sol 6.1부터 시험해 보고, Terminal-Bench Science급 난이도만 Astra를 유지하는 분할이 자연스럽습니다.
+      </p>
+      <p>
+        Chat 기본 모델은 아직입니다. 소비자 Chat 라우팅은 따로 지켜봐야 합니다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> 플래그십 안 써도 되는 코딩·업무를, Astra급 체감으로 Sol 단가에 돌릴 후보.</div>
+
+    <footer>AI 오피니언 브리프 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
