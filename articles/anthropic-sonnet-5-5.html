@@ -19,40 +19,69 @@
     <div class="article-body">
       <h2>한눈에</h2>
       <p>
-        Opus 5.5 다음에 나온 미드. Claude 5.5 패밀리 두 번째입니다.
+        Anthropic이 Claude Sonnet 5.5를 공개했습니다. Claude 5.5 패밀리의 두 번째 모델이고, Opus 5.5 바로 아래 자리입니다.
       </p>
       <p>
-        Opus는 복잡한 판단용. Sonnet 5.5는 그 보완재 — 버그 고치고, 문서·슬라이드·스프레드시트 뽑는 일상 작업용.
+        Opus는 복잡한 판단·열린 작업용. Sonnet 5.5는 그 보완재 — 범위가 잡힌 일상 업무, 버그 수정, 문서·슬라이드·스프레드시트 같은 일꾼 자리입니다. 가격은 Sonnet 5와 같고, 속도·토큰 효율은 한 체급 올라갔습니다.
       </p>
 
-      <h2>가격·속도</h2>
+      <h2>배경</h2>
+      <p>
+        Opus 5.5가 먼저 나왔고, Sonnet이 뒤를 잇는 패턴입니다. Haiku 5.5는 고볼륨·비용 민감용으로 수주 내 합류 예정입니다.
+      </p>
+      <p>
+        제품 포지션이 분명합니다. 플래그십을 매번 꺼낼 필요는 없는 작업 — 코드베이스 빠르게 읽고, 다단계 터미널 작업을 돌리고, 슬라이드 템플릿을 따라 덱을 뽑는 일 — 을 미드 단가에 붙이려는 쪽입니다. Anthropic 쪽 표현도 “잘 범위가 잡힌 일상 작업”에 가장 강하다고 못 박습니다.
+      </p>
+
+      <h2>무슨 일 / 핵심 내용</h2>
+      <p>
+        Sonnet 5 대비 체감이 큰 축은 세 가지입니다. 에이전트 코딩 벤치 점프, 지식 업무·컴퓨터 사용에서의 Opus 근접, 그리고 출력 속도와 작업당 토큰 절감입니다.
+      </p>
+      <p>
+        코딩 쪽에서 조기 테스터(Epic, Cursor, Unity, Slack 등)는 속도·토큰 효율·판단을 함께 꼽습니다. 코드베이스를 빨리 파악하고, 도구 호출을 더 묶어서 단계 수를 줄이고, 긴 작업도 버틴다는 식의 피드백이 나왔습니다. Slackbot 오프라인 평가에서는 프롬프트를 안 바꿔도 Sonnet 5보다 나았고, 출력 토큰도 대략 14% 줄었다는 언급이 있습니다.
+      </p>
+      <p>
+        지식 업무·디자인 쪽도 강조됩니다. 분기 실적 자료와 콜 스크립트, 슬라이드 템플릿을 주고 10장 운영 리뷰를 뽑았을 때, 전문가 두 명이 “그대로 보내도 된다”고 본 내부 테스트가 소개됩니다. UI 폴리시·슬라이드 템플릿 준수 같은 “눈”도 Sonnet 5보다 낫다는 톤입니다.
+      </p>
+      <p>
+        정렬·안전은 능력 점프에 맞춰 보호장치를 올린 게 핵심입니다. 사이버 능력이 Opus 5급으로 올라가서, Sonnet 최초로 Opus급 사이버 보호장치와 증류·사고 보존(preserved thinking) 보호를 달고 나왔습니다. 바이오 쪽 보호장치는 Sonnet 5와 같습니다. 일상 소프트웨어 개발·대부분 생명과학 작업은 영향이 없고, 고위험 요청만 좁게 막는 구조입니다.
+      </p>
+
+      <h2>숫자·스펙</h2>
       <ul>
-        <li>가격은 Sonnet 5와 같은 $2/$10.</li>
-        <li>체감은 30% 이상 빠름.</li>
-        <li>토큰을 덜 써서, 작업당 비용은 대략 30% 깎임.</li>
+        <li>가격: 입력 $2 / 출력 $10 per MTok — Sonnet 5와 동일. 캐시 읽기 $0.20. (Opus 5.5는 입력 $4 / 출력 $20.)</li>
+        <li>속도: 출력 생성 30%+ 빠름. Anthropic이 “지금까지 가장 빠른 Sonnet”이라고 씀.</li>
+        <li>비용: 같은 일을 토큰을 덜 써서, 작업당 비용 최대 ~30% 절감.</li>
+        <li>Terminal-Bench 4.0: 70.6% (Sonnet 5는 10.3%, Opus 5.5는 66.4%·Xhigh).</li>
+        <li>CursorBench 4.0: 55.5% (Sonnet 5 34.1%, Opus 5.5 57.8%).</li>
+        <li>FrontierCode 1.1 Main: Max 46.2% / Xhigh 52.1% (Sonnet 5 42.4%, Opus 5.5 54.4%).</li>
+        <li>GDPval-AA v2.1: 1844 — Opus 5.5(1846)에 거의 붙음. Sonnet 5는 1449.</li>
+        <li>AA-Briefcase v1.1: 1811 (Opus 1822, Sonnet 5 1359).</li>
+        <li>Humanity’s Last Exam (도구 사용): 64.5% (Sonnet 5 54.9%, Opus 67.7%).</li>
+        <li>OSWorld 2.1 partial: 80.1% (Sonnet 5 57.0%, Opus 81.8%).</li>
+        <li>Chartography (도구 없음): 61.6% (Sonnet 5 15.6%, Opus 64.4%).</li>
+        <li>effort: 앱/Claude Code 기본 Medium, Platform 기본 High. Low·Medium에서도 Sonnet 5 최고점보다 싸게 이기는 구간이 많다고 함.</li>
+        <li>모델 ID: <code>claude-sonnet-5-5</code>. Claude 앱·AWS·GCP·Azure. Zero data retention 지원.</li>
+        <li>마이그레이션: thinking 끄고 쓰던 워크플로는 <code>between_tools</code>로 옮기면 됨.</li>
       </ul>
 
-      <h2>벤치</h2>
-      <ul>
-        <li>Terminal-Bench 4.0 70.6% — Sonnet 5는 10.3%. 터미널 코딩 체급이 확 올라감.</li>
-        <li>GDPval-AA는 Opus 5.5에 근접.</li>
-        <li>Epic, Cursor, Unity, Slack 등 조기 테스터가 속도·토큰 효율·판단을 꼽음.</li>
-      </ul>
-
-      <h2>보호장치</h2>
+      <h2>왜 중요한가</h2>
       <p>
-        사이버 능력이 Opus 5급으로 올라가서, Sonnet 최초로 Opus급 사이버 보호장치와 증류·사고 보존 보호를 달고 나옴.
+        미드 가격에 Opus급에 가까운 일상·코딩 체급이 붙으면, 기본 라우팅이 바뀝니다. “애매하면 Opus”가 아니라 “범위 잡힌 일은 Sonnet, 열린 판단만 Opus”로 나눌 여지가 커집니다.
       </p>
       <p>
-        바이오 쪽 보호장치는 Sonnet 5와 같음.
+        Terminal-Bench 점프(10.3 → 70.6)는 터미널 에이전트 코딩이 ‘가끔 됨’에서 ‘기본으로 씀’ 쪽으로 넘어간 신호로 읽힙니다. GDPval-AA·Briefcase가 Opus에 붙는 것도, 문서·운영 리뷰·지식 업무 파이프라인에서 플래그십을 아낄 수 있다는 뜻입니다.
+      </p>
+      <p>
+        보호장치 쪽도 제품 선택에 영향을 줍니다. 사이버 능력이 올라간 만큼 Sonnet에도 Opus급 폴백·검증 프로그램 경로가 열렸고, 증류·사고 보존 보호가 처음 Sonnet에 들어갔습니다. 계정을 옮기거나 세션 중 계정을 바꾸면 thinking이 끊길 수 있으니, 팀 공유 세션 운영은 문서를 한 번 봐야 합니다.
       </p>
 
       <h2>그래서 뭐</h2>
       <p>
-        모델 ID는 <code>claude-sonnet-5-5</code>. Claude 앱·AWS·GCP·Azure에서 바로 씀.
+        지금 바로 쓸 수 있습니다. Claude·AWS·GCP·Azure에서 <code>claude-sonnet-5-5</code>. thinking off 쓰던 파이프만 <code>between_tools</code>로 옮기면 됩니다.
       </p>
       <p>
-        thinking 끄고 돌리던 워크플로는 <code>between_tools</code>로 옮기면 됨. Haiku 5.5는 수주 내 합류 예정.
+        실무적으로는 버그픽스·리뷰·문서·슬라이드·중간 복잡도 코딩은 Sonnet 5.5로 내리고, 아키텍처·모호한 제품 판단·긴 열린 탐색만 Opus에 남기는 분할이 자연스럽습니다. Haiku 5.5가 오면 고볼륨 레이어가 또 하나 붙습니다.
       </p>
     </div>
 
