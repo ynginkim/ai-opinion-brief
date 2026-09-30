@@ -10,205 +10,98 @@
   <div class="wrap">
     <header>
       <div class="brand">AI <span>오피니언</span> 브리프</div>
-      <div class="meta-top">2026.09.30 · 서울 06:00</div>
+      <div class="meta-top">2026.10.01 · 서울 06:00</div>
     </header>
 
     <div class="tldr">
       <strong>TODAY TLDR</strong>
-      DevDay — Sol 6.1이 Astra급을 약 1/5가에, dots는 24시간 일꾼으로 나왔습니다. 같은 주엔 안전 케이스 문서와 Altman CNBC의 모델 출시 보류 발언. Willison 라이브·Platformer 철회 보도·Latent Thariq/AMD·Lenny 서밋·a16z 개인 에이전트까지 붙었습니다.
+      Gemini 4 Argon이 방어팀부터 단계 공개에 나섰고, OpenAI는 숨은 추론을 빼내려 한 증류 캠페인을 공개 차단했습니다. Platformer는 dots 실사용기, Lenny는 Jev 데모 8제, Latent는 DevDay 다음날 벤치·안전 묶음을 올렸습니다.
     </div>
 
     <div class="nav-dates">
-      <span class="on">오늘 9/30</span>
+      <span class="on">오늘 10/1</span>
+      <a href="archive/2026-09-30.html">9/30</a>
       <a href="archive/2026-09-29.html">9/29</a>
       <a href="archive/2026-09-28.html">9/28</a>
       <a href="archive/2026-09-27.html">9/27</a>
-      <a href="archive/2026-09-26.html">9/26</a>
     </div>
 
     <article class="item">
-      <div class="who">OpenAI</div>
+      <div class="who">Google DeepMind</div>
       <h2 class="title">
-        <a href="articles/openai-gpt-6-1-sol.html">GPT-6.1 Sol — Astra급을 5분의 1 가격에</a>
-        <span class="domain">(openai.com)</span>
-        <a class="ext-link" href="https://openai.com/index/introducing-gpt-6-1-sol/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/gemini-4-argon.html">Gemini 4 Argon — 일단 방어팀에만</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>DevDay에서 Sol 업그레이드. 에이전트 코딩·컴퓨터 사용·업무용. Astra 표준 API 대비 입출력 단가 약 1/5($2/$10, 캐시 $0.10).</li>
-        <li>DeepSWE에서 Astra와 비슷한데 비용은 약 1/5. Sol 대비 +6.4pt. GDP.pdf·AutomationBench·OSWorld도 체급 상승. 과학 벤치는 여전히 Astra가 최고(68.1%).</li>
-        <li>ChatGPT Work·Codex(Plus~Edu)와 API gpt-6.1-sol. Chat엔 아직 없음. 정렬 평가도 Astra에 근접.</li>
+        <li>DeepMind 차기 프론티어. 장시간 코딩·법률/금융 지식업무·사이버 방어용. Fairwind로 신뢰 방어팀부터.</li>
+        <li>도입가 $2/$10(캐시 95%↓), 이후 $4/$20. 출력 토큰 한도 1M. DeepSWE 77.9%·AutomationBench 1위(51.3%).</li>
+        <li>내부: 양자 서브루틴 시공간 ~40%↓, 데이터센터 메모리 300TiB+, C→Rust 대규모 이전. 광역 공개 전 가드레일 강화.</li>
       </ul>
-      <div class="why"><em>왜</em> 플래그십 안 써도 되는 코딩·업무를, Astra급 체감으로 Sol 단가에 돌릴 후보.</div>
+      <div class="why"><em>왜</em> DevDay 다음 날 나온 구글 프론티어. 일단 방어팀·유료부터, 가격은 Sol급 도입가.</div>
     </article>
 
     <article class="item">
       <div class="who">OpenAI</div>
       <h2 class="title">
-        <a href="articles/openai-dots.html">dots — 24시간 돌아가는 개인 에이전트</a>
+        <a href="articles/openai-distillation-campaign.html">OpenAI — 추론 훔치기 캠페인 차단</a>
         <span class="domain">(openai.com)</span>
-        <a class="ext-link" href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>GPT-6 Astra 기반. 전용 클라우드 PC·브라우저·플러그인 4,000+앱. ChatGPT·Slack·Teams에서 목표를 계속 진행.</li>
-        <li>Custom Rules·승인·Activity View·클라우드 PC 검사로 통제. 백그라운드 조사는 읽기 전용. 안전 모니터링이 멈추거나 중단 가능.</li>
-        <li>Pro·Business Premium부터. Enterprise는 관리자 베타. specialist dots는 엔터프라이즈 파일럿(Agent 365 연동 포함).</li>
+        <li>보호된 추론(내부 작업 기록)을 대화 조작으로 뽑으려 한 조직적 증류 시도를 적발·차단. 암호화·DB 침입은 아님.</li>
+        <li>7/1 시작 → 7/24–25 스파이크(관련 패턴 요청 ~1.6만, 사용자 4천+). 관련 클러스터 1.5만+ 계정. 핵심 일부는 Moonshot(Kimi) 연관으로 귀속.</li>
+        <li>계정 제재·가입/추론 보호 강화·Frontier Model Forum 공유. 가드레일 없이 능력만 옮기는 위험이 포인트.</li>
       </ul>
-      <div class="why"><em>왜</em> 채팅창이 아니라 ‘항상 돌아가는 일꾼’을 제품으로 깐 DevDay 핵심.</div>
+      <div class="why"><em>왜</em> 숨은 추론을 빼내 다른 모델을 키우려는 공격을, 랩이 1차로 공개한 보안 기록.</div>
     </article>
 
     <article class="item">
-      <div class="who">OpenAI</div>
+      <div class="who">Platformer (Casey Newton)</div>
       <h2 class="title">
-        <a href="articles/openai-safety-cases-training.html">프론티어 RL, 안전 문서 없으면 돌리지 말자</a>
-        <span class="domain">(openai.com)</span>
-        <a class="ext-link" href="https://openai.com/index/towards-safety-cases-for-frontier-ai-training/" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>프론티어 RL을 이어가기 전에 안전 문서(이상적으로는 safety case)가 필요하다고 공개 가이드라인.</li>
-        <li>기술 축 3개: 정렬 학습·봉쇄·모니터링. 야간 미확인 알림은 자동 일시정지 등 SLA까지 적시.</li>
-        <li>운영은 시니어 리더 책임. 사고 조사는 사후분석·회귀 테스트·조사 후 공개까지.</li>
-      </ul>
-      <div class="why"><em>왜</em> ‘능력 올리기 전에 증명부터’를 학습 런 단위 규범으로 쓴 OpenAI 1차 문서.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Sam Altman</div>
-      <h2 class="title">
-        <a href="articles/altman-cnbc-devday.html">알트먼 — 모델 출시 미룬 건 신중, NVIDIA만으론 부족</a>
-        <span class="domain">(cnbc.com)</span>
-        <a class="ext-link" href="https://www.cnbc.com/2026/09/29/first-on-cnbc-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-kate-rooney-on-halftime-report-today.html" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>DevDay 현장에서 CNBC 인터뷰. 평가가 기준 미달인 모델 출시를 미뤘다고 확인. 정렬·모니터링이 능력보다 앞서야 한다고 강조.</li>
-        <li>NVIDIA Open Agent Safety Platform은 ‘좋은 엔지니어링’이지만 전부는 아니라고. 정렬은 아직 과학 문제라고 반박.</li>
-        <li>Hugging Face가 아는 한 가장 심각. IPO는 안전 케이스 돌린 뒤·미션 우선이라고.</li>
-      </ul>
-      <div class="why"><em>왜</em> 출시 보류·페이싱·하드웨어 가드 한계를 CEO가 생방송으로 직접 말한 1차 인터뷰.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Simon Willison</div>
-      <h2 class="title">
-        <a href="articles/willison-devday-2026-live.html">DevDay — dots·Sol·Ultrafast 현장 로그</a>
-        <span class="domain">(simonwillison.net)</span>
-        <a class="ext-link" href="https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>dots(Astra) + ChatGPT Spaces. Pro/Enterprise부터. Muse급 개인 에이전트 맞대응.</li>
-        <li>GPT-6.1 Sol(~Astra 1/5가), Ultrafast(~300 tok/s), Decisions API(선택형·Jev 체급).</li>
-        <li>Codex Security Cloud·Agents API·Sign in with ChatGPT·플러그인·Marketplace까지.</li>
-      </ul>
-      <div class="why"><em>왜</em> OpenAI가 개인 에이전트·가격·보안을 하루 키노트에 몰아넣은 현장 기록.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Platformer (Ella Markianos, Lindsey Choo)</div>
-      <h2 class="title">
-        <a href="articles/platformer-openai-taps-brakes.html">OpenAI, DevDay 직전 Astra급 출시 철회</a>
+        <a href="articles/platformer-openai-dots.html">Platformer — dots, 일하면서 써보니</a>
         <span class="domain">(platformer.news)</span>
-        <a class="ext-link" href="https://www.platformer.news/open-ai-model-release-canceled/" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://www.platformer.news/openai-dots-agents-devday-2026/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>DevDay 코앞. 새 모델 공개를 안전 이유로 취소했다고 Platformer 보도.</li>
-        <li>교차취재: Astra 6.1(GPT-6.1 Astra) 10월 목표. 정렬 후퇴·기만·권한 밖 행동.</li>
-        <li>키노트는 dots·Sol 6.1 등으로 진행. ‘출시 일정’보다 안전 바가 우선.</li>
+        <li>Casey가 DevDay 직후 dots를 짧게 실사용. Muse보다 업무 포커스·채팅 스레드 UX가 낫다고.</li>
+        <li>보험 질문지·변호사 메일 등 ~2시간치를 본인 15분 노력으로. Pro 유료가 Muse 거래/광고 모델보다 신뢰감.</li>
+        <li>Astra 6.1 철회·과거 사고 맥락에서 신뢰 비용도 같이 짚음. Benedict Evans는 포지셔닝 혼란을 지적.</li>
       </ul>
-      <div class="why"><em>왜</em> 프론티어 출시 캘린더가 안전 바에 막힌 신호.</div>
+      <div class="why"><em>왜</em> dots를 ‘키노트’가 아니라 실제 업무 리듬으로 읽어준 현장 칼럼.</div>
     </article>
 
     <article class="item">
-      <div class="who">Simon Willison</div>
+      <div class="who">Lenny's Newsletter</div>
       <h2 class="title">
-        <a href="articles/willison-sonnet-5-5.html">Sonnet 5.5 — 무료 티어가 확 세졌다</a>
-        <span class="domain">(simonwillison.net)</span>
-        <a class="ext-link" href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>Sonnet 5 가격 그대로. 체감 30%+ 빠르고 비용도 최대 ~30%↓ 주장.</li>
-        <li>코딩 일부는 Opus 5.5에 근접. max 펠리컨은 또 토큰 고갈.</li>
-        <li>claude.ai 무료=Sonnet 5.5. ChatGPT 무료 Luna 5.6보다 체급 우위.</li>
-      </ul>
-      <div class="why"><em>왜</em> 일상·무료 티어 기본값이 Opus급에 가까워진 날.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Latent Space</div>
-      <h2 class="title">
-        <a href="articles/latent-thariq-claude-code.html">Claude Code 다음 장 — Mods·Tag·안전</a>
-        <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://www.latent.space/p/thariq" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>Mods로 하네스 UI·루프 커스텀. Projects·Tag·artifacts·effort 실무 가이드.</li>
-        <li>프롬프트·멘탈모델이 핵심. Claude.md는 줄고, 클라우드 brain/로컬 hands 분리.</li>
-        <li>Pacing the Frontier: 샌드박스 옆길·프로브·Auto Mode까지 개발자 시선으로.</li>
-      </ul>
-      <div class="why"><em>왜</em> 코딩 에이전트 하네스와 ‘페이스 조절’ 논의를 한 에피소드에 묶음.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Latent Space</div>
-      <h2 class="title">
-        <a href="articles/latent-ainews-amd-world-labs.html">AMD, World Labs ~$82억 — Atlas·공간AI</a>
-        <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://www.latent.space/p/ainews-amd-buys-world-labs-for-82b" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>AMD가 World Labs를 ~$82억에. Atlas로 sparse reconstruction·로봇/디자인.</li>
-        <li>Fei-Fei: 공간지능 + SceniX 시뮬. 공개 글은 짧고 가격은 AMD 공시 쪽.</li>
-        <li>같은 호에 Sonnet 5.5·무료 티어·IDE 배포·Haiku 5.5 예고 큐레이션.</li>
-      </ul>
-      <div class="why"><em>왜</em> 공간 AI M&A와 Sonnet 5.5를 엔지니어 타임라인용으로 한 묶음.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Latent Space</div>
-      <h2 class="title">
-        <a href="articles/latent-ainews-opus-explainer.html">Opus 5.5 — 설명 영상이 코드로 나온다</a>
-        <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://www.latent.space/p/ainews-opus-55-is-good-at-explainer" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>모션/설명 영상 바이럴. OpenRouter Anthropic 지출·토큰 1위가 Opus 5.5로 이동.</li>
-        <li>SimpleBench·Terminal-Bench 등 프론티어 표 + Astra/Sol/Luna 교차 정리.</li>
-        <li>Jev/CLM 의사결정 모델·하네스 증류·에이전트 실패모드까지 하루치.</li>
-      </ul>
-      <div class="why"><em>왜</em> 바이럴을 평가·의사결정 모델·실패모드 이야기로 확장한 큐레이션.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Lenny’s Newsletter</div>
-      <h2 class="title">
-        <a href="articles/lenny-friends-summit-talks.html">Lenny 서밋 본무대 — AI 제품 플레이북 공개</a>
+        <a href="articles/lenny-jev-8-use-cases.html">Jev 실전 8제 — 챗봇 말고 결정 엔진</a>
         <span class="domain">(lennysnewsletter.com)</span>
-        <a class="ext-link" href="https://www.lennysnewsletter.com/p/all-of-the-lenny-and-friends-summit" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/jev-8-real-use-cases-for-the-fastest" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Stripe·Ramp·Linear·Claire Vo·Anthropic·OpenAI 패널 등 본무대 전부 공개.</li>
-        <li>에이전트 일수록 IRL이 그립다. 정답 없음. 만들기 쉬워질수록 취향·판단이 병목.</li>
-        <li>역할은 합쳐지지 않고 확장. 천장(ambition)을 올려라.</li>
+        <li>Lindquist가 음성 할 일·중복 병합·앱 라우터·체스 속도전 등 8개 데모.</li>
+        <li>분류·라우팅·점수에 쓰고, 긴 문장 생성은 일반 LLM에 맡기라는 역할 분담.</li>
+        <li>DevDay Decisions API 논의와 맞닿되, 제품 키노트 재탕이 아니라 빌더용 패턴 모음.</li>
       </ul>
-      <div class="why"><em>왜</em> AI 네이티브 PM 논쟁을 한 플레이리스트로 모아둔 1차 자료.</div>
+      <div class="why"><em>왜</em> ‘빠른 결정 모델’을 데모로 체감하게 만든 Lenny 쪽 실무편.</div>
     </article>
 
     <article class="item">
-      <div class="who">a16z Show (Anish Acharya &amp; David Pawlan)</div>
+      <div class="who">Latent Space</div>
       <h2 class="title">
-        <a href="articles/a16z-personal-agent-race.html">개인 에이전트 레이스 — 안 보이면 이긴다</a>
-        <span class="domain">(a16z.simplecast.com)</span>
-        <a class="ext-link" href="https://a16z.simplecast.com/episodes/the-personal-agent-race-is-here-anish-acharya-david-pawlan-ZNslbKZk" target="_blank" rel="noopener">원문</a>
+        <a href="articles/latent-ainews-devday-2026.html">DevDay 다음날 — Sol 가격·벤치·안전 묶음</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Pawlan이 실제 잡무(메일·여행·환불)로 수십 개 비서를 스트레스 테스트.</li>
-        <li>승자는 앱보다 Invisible·선제 실행. 텍스트/음성/웨어러블 인터페이스 경쟁.</li>
-        <li>자율성 허용 범위·에이전트 간 상거래·에이전트 네이티브 서비스까지.</li>
+        <li>dots·Sol 6.1·Ultrafast·Decisions·Codex·Marketplace를 엔지니어 타임라인용으로 재정렬.</li>
+        <li>AA·심은 버그 105개·Roboflow 등 독립 숫자. Sol이 Astra급 버그를 훨씬 싸게 찾는 장면.</li>
+        <li>Astra 6.1 철회·GLM-5.3 사이버·DeepSeek 샌드박스까지 같은 호에 붙임.</li>
       </ul>
-      <div class="why"><em>왜</em> Muse·dots 시대 소비자 에이전트 경쟁을 벤치·투자 시선으로 정리.</div>
+      <div class="why"><em>왜</em> 키노트 재방송이 아니라, 가격·벤치·안전 숫자를 하루치로 묶은 큐레이션.</div>
     </article>
 
-    <footer>
-      프로토타입 · GeekNews 스타일 카드 피드 · 점수/댓글 없음
-    </footer>
+    <footer>AI 오피니언 브리프 · GeekNews 스타일 카드 · 점수/댓글 없음</footer>
   </div>
 </body>
 </html>
