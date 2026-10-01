@@ -8,8 +8,6 @@
   --accent: #ff6b35;
   --link: #8ab4ff;
   --chip: #243044;
-  --rail: #3a4558;
-  --l2-bg: rgba(36, 48, 68, 0.45);
 }
 * { box-sizing: border-box; }
 body {
@@ -242,273 +240,15 @@ footer {
 }
 
 /* Timeline */
+body.timeline-page .wrap { max-width: 860px; }
 .timeline-intro {
-  font-size: 13px;
   color: var(--muted);
-  margin: 0 0 28px;
+  font-size: 13px;
   line-height: 1.55;
+  margin: 0 0 18px;
+  max-width: 680px;
 }
 .timeline {
-  position: relative;
-  padding-left: 0;
-}
-.tl-day {
-  position: relative;
-  padding-left: 52px;
-  margin-bottom: 8px;
-}
-.tl-day::before {
-  content: "";
-  position: absolute;
-  left: 15px;
-  top: 8px;
-  bottom: 0;
-  width: 2px;
-  background: var(--rail);
-}
-.tl-day:last-child::before {
-  bottom: 24px;
-}
-.tl-date {
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 42px;
-  font-size: 12px;
-  font-weight: 700;
-  color: var(--accent);
-  letter-spacing: -0.02em;
-  line-height: 1.2;
-  background: var(--bg);
-  padding: 2px 0 8px;
-  z-index: 1;
-}
-.tl-event {
-  position: relative;
-  margin: 0 0 14px;
-}
-.tl-dot {
-  position: absolute;
-  left: -43px;
-  top: 14px;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  border: 2px solid var(--bg);
-  box-shadow: 0 0 0 2px var(--accent);
-  z-index: 2;
-}
-.tl-dot.secondary {
-  width: 8px;
-  height: 8px;
-  top: 16px;
-  left: -42px;
-  background: var(--dim);
-  box-shadow: 0 0 0 2px var(--rail);
-}
-.tl-card {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: 10px;
-  padding: 14px 16px;
-}
-.tl-event.l2 {
-  margin-left: 18px;
-  margin-bottom: 10px;
-}
-.tl-event.l2 .tl-card {
-  background: var(--l2-bg);
-  border-color: #2e384c;
-  padding: 12px 14px;
-}
-.tl-event.l2 .tl-dot {
-  left: -61px;
-}
-.tl-who {
-  font-size: 11px;
-  color: var(--dim);
-  margin-bottom: 4px;
-  letter-spacing: 0.02em;
-}
-.tl-title {
-  font-size: 16px;
-  font-weight: 650;
-  line-height: 1.35;
-  margin: 0 0 8px;
-  letter-spacing: -0.01em;
-}
-.tl-event.l2 .tl-title {
-  font-size: 14.5px;
-  font-weight: 600;
-}
-.tl-title a { color: var(--text); }
-.tl-title a:hover { color: var(--link); }
-.tl-blurb {
-  margin: 0;
-  font-size: 14px;
-  color: var(--muted);
-  line-height: 1.55;
-}
-.tl-event.l2 .tl-blurb {
-  font-size: 13px;
-}
-.tl-official {
-  display: inline-block;
-  margin-top: 10px;
-  font-size: 12px;
-  font-weight: 550;
-  color: var(--link);
-}
-
-@media (max-width: 520px) {
-  .wrap { padding: 16px 14px 48px; }
-  .brand { font-size: 18px; }
-  .tab { padding: 8px 10px 10px; font-size: 13px; }
-  .tl-day { padding-left: 44px; }
-  .tl-date { width: 36px; font-size: 11px; }
-  .tl-day::before { left: 12px; }
-  .tl-dot { left: -38px; }
-  .tl-event.l2 { margin-left: 10px; }
-  .tl-event.l2 .tl-dot { left: -48px; }
-  .article-title { font-size: 20px; }
-}
-
-/* Timeline mockups */
-.mock-page .wrap { max-width: 780px; }
-.mock-kicker {
-  margin: -8px 0 18px;
-  color: var(--accent);
-  font-size: 11px;
-  font-weight: 700;
-  letter-spacing: .08em;
-  text-transform: uppercase;
-}
-.mock-switcher {
-  display: flex;
-  gap: 6px;
-  flex-wrap: wrap;
-  margin: 0 0 18px;
-}
-.mock-switcher a {
-  border: 1px solid var(--border);
-  border-radius: 999px;
-  color: var(--muted);
-  font-size: 12px;
-  padding: 4px 10px;
-}
-.mock-switcher a:hover, .mock-switcher a.current {
-  background: var(--chip);
-  border-color: #3d4a63;
-  color: var(--text);
-  text-decoration: none;
-}
-.mock-intro {
-  color: var(--muted);
-  font-size: 13px;
-  margin: 0 0 18px;
-}
-.mock-thread { display: grid; gap: 14px; }
-.mock-day { color: var(--accent); font-size: 11px; font-weight: 700; letter-spacing: .05em; margin-top: 4px; }
-.mock-group { display: grid; gap: 3px; }
-.mock-comment {
-  display: grid;
-  grid-template-columns: 28px minmax(0, 1fr);
-  gap: 9px;
-  min-width: 0;
-}
-.mock-votes {
-  color: var(--dim);
-  font-size: 11px;
-  line-height: 1.2;
-  padding-top: 5px;
-  text-align: center;
-}
-.mock-votes strong { color: var(--muted); display: block; font-size: 13px; }
-.mock-votes span { display: block; font-size: 16px; line-height: .8; }
-.mock-body {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: 7px;
-  min-width: 0;
-  padding: 9px 12px 10px;
-}
-.mock-meta { color: var(--dim); font-size: 11px; line-height: 1.3; margin-bottom: 4px; }
-.mock-meta b { color: var(--muted); }
-.mock-meta .level { color: var(--accent); font-weight: 700; }
-.mock-title { font-size: 14px; font-weight: 650; line-height: 1.35; margin: 0 0 3px; }
-.mock-title a { color: var(--text); }
-.mock-title a:hover { color: var(--link); }
-.mock-summary { color: var(--muted); font-size: 13px; line-height: 1.45; margin: 0; }
-.mock-source { color: var(--link); font-size: 11px; }
-.mock-actions { color: var(--dim); font-size: 11px; margin-top: 6px; }
-.mock-collapse { color: var(--dim); font-size: 11px; margin-left: 37px; padding: 0 0 1px; }
-.mock-replies { border-left: 1px solid var(--rail); display: grid; gap: 4px; margin: 0 0 0 37px; padding-left: 10px; }
-.mock-replies .mock-comment { grid-template-columns: 28px minmax(0, 1fr); }
-.mock-replies .mock-body { background: var(--l2-bg); border-color: #2e384c; }
-
-/* B: one-line metadata and almost no chrome */
-.mock-b .mock-thread { gap: 11px; }
-.mock-b .mock-group { gap: 2px; }
-.mock-b .mock-day { margin: 3px 0 1px; }
-.mock-b .mock-comment { display: block; }
-.mock-b .mock-body { background: transparent; border: 0; border-bottom: 1px solid var(--border); border-radius: 0; padding: 5px 0 9px; }
-.mock-b .mock-replies { margin-left: 17px; padding-left: 13px; }
-.mock-b .mock-meta { font-size: 11px; margin-bottom: 2px; }
-.mock-b .mock-title { display: inline; font-size: 14px; margin: 0; }
-.mock-b .mock-summary { display: inline; font-size: 13px; margin-left: 5px; }
-.mock-b .mock-summary::before { content: "— "; color: var(--dim); }
-.mock-b .mock-source { margin-left: 5px; white-space: nowrap; }
-.mock-b .mock-actions, .mock-b .mock-collapse { display: none; }
-
-/* C: soft chat boxes and avatars */
-.mock-c .mock-group { gap: 5px; }
-.mock-c .mock-comment { grid-template-columns: 30px minmax(0, 1fr); gap: 8px; }
-.mock-avatar {
-  align-items: center;
-  background: #243044;
-  border: 1px solid #40506a;
-  border-radius: 50%;
-  color: var(--link);
-  display: flex;
-  font-size: 11px;
-  font-weight: 700;
-  height: 28px;
-  justify-content: center;
-  margin-top: 4px;
-  width: 28px;
-}
-.mock-c .mock-body { background: #141a24; border-color: #303b4e; border-radius: 8px; padding: 8px 11px 9px; }
-.mock-c .mock-meta { margin-bottom: 3px; }
-.mock-c .mock-meta b { color: var(--text); }
-.mock-c .mock-replies { border-left: 0; gap: 5px; margin-left: 38px; padding-left: 0; }
-.mock-c .mock-replies .mock-body { background: rgba(36, 48, 68, .34); }
-.mock-c .mock-actions { margin-top: 5px; }
-
-.mock-index { display: grid; gap: 10px; margin-top: 20px; }
-.mock-card {
-  background: var(--bg-elev);
-  border: 1px solid var(--border);
-  border-radius: 9px;
-  padding: 14px 15px;
-}
-.mock-card h2 { font-size: 16px; margin: 0 0 3px; }
-.mock-card p { color: var(--muted); font-size: 13px; margin: 0; }
-.mock-card a { color: var(--text); }
-.mock-card a:hover { color: var(--link); }
-
-@media (max-width: 520px) {
-  .mock-page .wrap { padding-left: 14px; padding-right: 14px; }
-  .mock-comment { grid-template-columns: 24px minmax(0, 1fr); gap: 6px; }
-  .mock-replies { margin-left: 27px; padding-left: 7px; }
-  .mock-collapse { margin-left: 30px; }
-  .mock-c .mock-replies { margin-left: 34px; }
-}
-
-/* D: Reddit comments with a left-side date rail; intentionally no level chips */
-.mock-d .wrap { max-width: 860px; }
-.mock-d .mock-intro { max-width: 680px; }
-.d-timeline {
   --date-rail: 74px;
   --thread-line: #34455e;
   display: grid;
@@ -517,7 +257,7 @@ footer {
   position: relative;
 }
 /* One spine connects the date markers across the day sections. */
-.d-timeline::before {
+.timeline::before {
   background: #2b3d56;
   bottom: 18px;
   content: "";
@@ -526,13 +266,13 @@ footer {
   top: 16px;
   width: 1px;
 }
-.d-day {
+.timeline-day {
   display: grid;
   grid-template-columns: var(--date-rail) minmax(0, 1fr);
   min-width: 0;
   position: relative;
 }
-.d-date {
+.timeline-date {
   color: var(--accent);
   font-size: 13px;
   font-weight: 750;
@@ -543,7 +283,7 @@ footer {
   text-align: left;
   z-index: 1;
 }
-.d-date::after {
+.timeline-date::after {
   background: var(--bg);
   border: 1px solid #49617f;
   border-radius: 50%;
@@ -554,12 +294,12 @@ footer {
   top: 12px;
   width: 7px;
 }
-.d-date span {
+.timeline-date span {
   background: var(--bg);
   display: inline-block;
   padding-right: 8px;
 }
-.d-date small {
+.timeline-date small {
   color: var(--dim);
   display: block;
   font-size: 10px;
@@ -567,8 +307,8 @@ footer {
   letter-spacing: .04em;
   margin-top: 3px;
 }
-.d-thread { min-width: 0; }
-.d-comment {
+.timeline-thread { min-width: 0; }
+.timeline-comment {
   display: grid;
   gap: 9px;
   grid-template-columns: 30px minmax(0, 1fr);
@@ -577,7 +317,7 @@ footer {
   position: relative;
 }
 /* The parent avatar is the origin of the comment rail. */
-.d-comment.d-parent::after {
+.timeline-comment.timeline-parent::after {
   background: var(--thread-line);
   bottom: 0;
   content: "";
@@ -587,8 +327,8 @@ footer {
   top: 23px;
   width: 1px;
 }
-.d-comment:not(.d-root) { padding-top: 5px; }
-.d-avatar {
+.timeline-comment:not(.timeline-root) { padding-top: 5px; }
+.timeline-avatar {
   align-items: center;
   border: 1px solid #465a78;
   border-radius: 50%;
@@ -609,8 +349,8 @@ footer {
 .avatar-latent { background: #594734; border-color: #aa8052; }
 .avatar-platformer { background: #3b4f5c; border-color: #6f9bad; }
 .avatar-anthropic { background: #5b4039; border-color: #a67868; }
-.d-content { min-width: 0; }
-.d-meta {
+.timeline-content { min-width: 0; }
+.timeline-meta {
   align-items: baseline;
   color: var(--dim);
   display: flex;
@@ -620,9 +360,9 @@ footer {
   line-height: 1.3;
   margin: 1px 0 3px;
 }
-.d-meta b { color: var(--text); font-weight: 700; }
-.d-meta time { color: #78879b; }
-.d-title {
+.timeline-meta b { color: var(--text); font-weight: 700; }
+.timeline-meta time { color: #78879b; }
+.timeline-title {
   color: #c6d2e0;
   display: block;
   font-size: 14px;
@@ -630,14 +370,14 @@ footer {
   line-height: 1.35;
   margin-bottom: 2px;
 }
-.d-title:hover { color: var(--link); text-decoration: none; }
-.d-summary {
+.timeline-title:hover { color: var(--link); text-decoration: none; }
+.timeline-summary {
   color: #aab8c9;
   font-size: 13px;
   line-height: 1.45;
   margin: 0;
 }
-.d-source {
+.timeline-source {
   color: #65758b;
   display: block;
   font-size: 11px;
@@ -648,8 +388,8 @@ footer {
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.d-source:hover { color: var(--link); }
-.d-replies {
+.timeline-source:hover { color: var(--link); }
+.timeline-replies {
   display: grid;
   gap: 1px;
   grid-column: 1 / -1;
@@ -658,7 +398,7 @@ footer {
   position: relative;
 }
 /* Each reply bends out of the parent's rail and into its avatar. */
-.d-replies .d-comment::before {
+.timeline-replies .timeline-comment::before {
   border-bottom: 1px solid var(--thread-line);
   border-left: 1px solid var(--thread-line);
   border-bottom-left-radius: 10px;
@@ -669,20 +409,19 @@ footer {
   top: 11px;
   width: 14px;
 }
-.mock-card-d { border-color: #3d5878; }
 
 @media (max-width: 620px) {
-  .mock-d .wrap { padding-left: 12px; padding-right: 12px; }
-  .d-timeline { --date-rail: 57px; }
-  .d-timeline::before { left: 42px; }
-  .d-date { font-size: 12px; }
-  .d-date::after { left: 38px; }
-  .d-date small { font-size: 9px; }
-  .d-comment { gap: 7px; grid-template-columns: 27px minmax(0, 1fr); }
-  .d-avatar { height: 27px; width: 27px; }
-  .d-title { font-size: 13.5px; }
-  .d-summary { font-size: 12.5px; }
-  .d-comment.d-parent::after { left: 13px; top: 21px; }
-  .d-replies { margin-left: 13px; padding-left: 10px; }
-  .d-replies .d-comment::before { left: -10px; top: 10px; width: 10px; }
+  body.timeline-page .wrap { padding-left: 12px; padding-right: 12px; }
+  .timeline { --date-rail: 57px; }
+  .timeline::before { left: 42px; }
+  .timeline-date { font-size: 12px; }
+  .timeline-date::after { left: 38px; }
+  .timeline-date small { font-size: 9px; }
+  .timeline-comment { gap: 7px; grid-template-columns: 27px minmax(0, 1fr); }
+  .timeline-avatar { height: 27px; width: 27px; }
+  .timeline-title { font-size: 13.5px; }
+  .timeline-summary { font-size: 12.5px; }
+  .timeline-comment.timeline-parent::after { left: 13px; top: 21px; }
+  .timeline-replies { margin-left: 13px; padding-left: 10px; }
+  .timeline-replies .timeline-comment::before { left: -10px; top: 10px; width: 10px; }
 }
