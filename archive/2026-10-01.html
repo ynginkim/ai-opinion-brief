@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.01</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.01 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Gemini 4 Argon이 Fairwind 방어팀부터 단계 공개에 들어갔고, OpenAI는 숨은 추론을 빼내려 한 증류 캠페인을 막아 공개했습니다. Platformer는 dots 실사용기, Lenny는 Jev 데모 8제, Latent는 DevDay 다음날 벤치·안전 숫자를 모았습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/1</span>
+      <a href="2026-09-30.html">9/30</a>
+      <a href="2026-09-29.html">9/29</a>
+      <a href="2026-09-28.html">9/28</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Google DeepMind</div>
+      <h2 class="title">
+        <a href="articles-2026-10-01/gemini-4-argon.html">Gemini 4 Argon, 방어팀부터 풀린다</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>장시간 코딩·법률/금융 지식업무·사이버 방어용 프론티어. Fairwind로 신뢰 방어팀부터 접근.</li>
+        <li>도입가 $2/$10(캐시 입력 95%↓), 이후 $4/$20. 출력 토큰 한도 1M. DeepSWE 77.9%·AutomationBench 1위(51.3%).</li>
+        <li>내부: 양자 서브루틴 시공간 ~40%↓, 데이터센터 메모리 300TiB+, C→Rust 대규모 이전. 광역 공개 전 보호장치 강화.</li>
+      </ul>
+      <div class="why"><em>왜</em> 지금은 방어팀·유료 예비. 도입가 $2/$10이면 Sol과 단가 비교부터.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-01/openai-distillation-campaign.html">OpenAI, 추론 증류 캠페인 차단</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>보호된 추론(내부 작업 기록)을 대화 조작으로 뽑으려 한 조직적 시도를 적발·차단. 암호화·DB 침입은 아님.</li>
+        <li>7/1 시작, 7/24–25 스파이크(관련 패턴 요청 ~1.6만, 사용자 4천+). 관련 클러스터 1.5만+ 계정. 핵심 일부는 Moonshot(Kimi) 연관으로 귀속.</li>
+        <li>계정 제재·가입/추론 보호 강화·Frontier Model Forum 공유. 보호장치 없이 능력만 옮기는 위험이 포인트.</li>
+      </ul>
+      <div class="why"><em>왜</em> 추론·CoT를 로그·재실행에 남기는 팀은 접근 통제를 다시 볼 때다.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Platformer (Casey Newton)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-01/platformer-openai-dots.html">dots 실사용, Muse보다 업무에 가깝다</a>
+        <span class="domain">(platformer.news)</span>
+        <a class="ext-link" href="https://www.platformer.news/openai-dots-agents-devday-2026/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Casey가 DevDay 직후 dots를 짧게 실사용. Muse보다 업무 포커스·채팅 스레드 UX가 낫다고.</li>
+        <li>보험 질문지·변호사 메일 등 ~2시간치를 본인 15분 노력으로. Pro 유료가 Muse 거래/광고 모델보다 마음이 놓인다고.</li>
+        <li>Astra 6.1 철회·과거 사고 맥락에서 신뢰 비용도 짚음. Benedict Evans는 포지셔닝 혼란을 지적.</li>
+      </ul>
+      <div class="why"><em>왜</em> 업무 에이전트를 유료로 붙일지, 권한을 어디까지 줄지 정할 때 참고.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Lenny's Newsletter</div>
+      <h2 class="title">
+        <a href="articles-2026-10-01/lenny-jev-8-use-cases.html">Jev 8제 — 챗봇 말고 결정 엔진</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/jev-8-real-use-cases-for-the-fastest" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Lindquist가 음성 할 일·중복 병합·앱 라우터·체스 속도전 등 8개 데모.</li>
+        <li>분류·라우팅·점수에 쓰고, 긴 문장 생성은 일반 LLM에 맡기라는 역할 분담.</li>
+        <li>DevDay Decisions API 논의와 맞닿는다. 빌더용 패턴 모음에 가깝다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트 루프에 싼 결정 레이어를 뺄지, 데모로 감 잡을 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-10-01/latent-ainews-devday-2026.html">DevDay 다음날, Sol 단가·벤치가 먼저</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>dots·Sol 6.1·Ultrafast·Decisions·Codex·Marketplace를 엔지니어 타임라인용으로 다시 배열.</li>
+        <li>AA·심은 버그 105개·Roboflow 등 독립 숫자. Sol이 Astra급 버그를 훨씬 싸게 찾는 장면.</li>
+        <li>Astra 6.1 철회·GLM-5.3 사이버·DeepSeek 샌드박스까지 같은 호에 붙임.</li>
+      </ul>
+      <div class="why"><em>왜</em> Sol을 기본으로 둘지, Decisions를 앞단에 끼울지 숫자로 보는 날.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

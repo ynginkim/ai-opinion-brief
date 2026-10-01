@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude에 맞는 문제를 고르니 과학이 움직였다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic (Matthew Schwartz) · <span class="article-date">2026-10-01 Seoul</span></div>
+    <h1 class="article-title">Claude에 맞는 문제를 고르니 과학이 움직였다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/claude-shaped-science" target="_blank" rel="noopener">anthropic.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        Anthropic 리서치에 Matthew Schwartz 교수 게스트 글이 올랐다. Claude를 인간 과학자처럼 부리려다 막히던 경험을 접고, 지금 모델이 잘하는 ‘Claude형’ 문제를 고르기 시작했다는 이야기다.
+      </p>
+      <p>
+        그 결과가 BootLoops다. 정량 과학의 정확한 계산용 하네스이고, 오픈소스로 공개돼 있다. BootLoops는 Schwartz 개인 프로젝트이고 Anthropic 공식 제품은 아니라고 명시한다. 그는 Anthropic 방문 연구원으로 이 작업을 했다.
+      </p>
+
+      <h2>배경</h2>
+      <p>
+        이전 글 Vibe Physics에서 Claude를 물리 대학원생에 비유한 적이 있다. 이번엔 임피던스 미스매치—과학자가 원하는 것과 LLM이 잘하는 일의 어긋남—를 정면으로 다룬다.
+      </p>
+      <p>
+        수학처럼 답이 딱 떨어지는 헤드라인과, 실험실에서 느끼는 답답함 사이의 간극이 출발점이다.
+      </p>
+
+      <h2>무슨 일 / 핵심 내용</h2>
+      <p>
+        여름에 Claude Fable 5의 코딩·계산 힘을 시험하려고 산란진폭·S-matrix 부트스트랩 코드를 공통 프레임으로 옮기게 시켰다. 로그 함수 족을 넘어 타원 적분까지 일반화했고, 끝에서 끝까지 BootLoop한 적분이 30개에 이른다. 그중 15개는 기존 결과 재현, 15개는 이전에 계산되지 않았던 문제라고 적혀 있다.
+      </p>
+      <p>
+        같은 수학이 생태·집단유전 등에도 나타난다는 걸 Claude가 이어서 찾아냈다. 파나마 Barro Colorado 숲에서는 중립 이론이 허용하는 것보다 수종 구성이 4.5배 빨리 바뀐다는 계산이 나왔고, 생태학자 James O’Dwy어와 함께 모델을 다시 깎았다. 집단유전에서는 1000 Genomes의 인접 변이 57억 쌍을 보며 gene conversion 증거를 쫓았다.
+      </p>
+      <p>
+        경제학에선 주요 저널 4,452편 복제 패키지를 오픈소스 코드로 옮기고 표를 대조하는 AI 데이터 에디터를 만들었고, NBER 워킹페이퍼로 냈다고 한다. 언어학에선 6,072개 언어의 강세(stress) 카탈로그 AccStack을 전문가와 함께 쌓았다.
+      </p>
+      <p>
+        규모 서술도 크다. 후보 문제 약 400개 중, 3개월간 18개 분야 36개 원고·공저자 19명. 실패 모드도 솔직하다. Claude는 승리를 너무 빨리 선언하고, 시간 감각이 없으며, 새 도구를 만들기보다 길게 갈아버리려 한다. 그래서 사람이 기준을 박고, 플롯을 직접 보고, 취향을 공급해야 한다고 반복한다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+      <p>
+        ‘AI가 과학을 혁명한다’ 헤드라인과 달리, 현장에서 돌아가는 플레이북을 보여 준다. 문제 선택 → 하네스 성장 → 전문가 취향 → 검증 가능한 숫자. Millennium 문제 말고, 이미 가능한 Claude형 문제를 고르라는 주장이다.
+      </p>
+
+      <h2>그래서 뭐</h2>
+      <p>
+        에이전트를 랩·정량 팀에 붙일 계획이 있다면, 모델 업그레이드만 기다리지 말고 문제 정의와 전문가 루프부터 짜는 편이 맞다. 상세와 코드는 bootloops.ai와 GitHub에 있다.
+      </p>
+    </div>
+
+    <div class="takeaway"><em>한 줄</em> 에이전트를 정량 과학에 붙일 때, 문제 고르기와 전문가 피드백 루프를 어떻게 짤지.</div>
+
+    <footer>agi-tracker · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
