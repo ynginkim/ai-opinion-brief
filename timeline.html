@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 타임라인</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="index.html">agi-<span>tracker</span></a></div>
+      <div class="meta-top">프론티어 랩 공지 · 스레드</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab" href="index.html">오늘의 브리프</a>
+      <a class="tab on" href="timeline.html">타임라인</a>
+    </nav>
+
+    <p class="timeline-intro">
+      Layer 1은 공식 발표(공식 URL만). Layer 2는 관련 팟캐스트·뉴스레터·실사용기를 그 아래 스레드로 붙입니다. 확인된 링크만 올립니다.
+    </p>
+
+    <div class="timeline">
+
+      <!-- 10/1 -->
+      <div class="tl-day">
+        <div class="tl-date" aria-label="2026년 10월 1일">10/1</div>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Google DeepMind · L1</div>
+            <h2 class="tl-title">
+              <a href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">Gemini 4 Argon, 방어팀부터 단계 공개</a>
+              <span class="domain">(blog.google)</span>
+            </h2>
+            <p class="tl-blurb">Google DeepMind가 Gemini 4 Argon을 공개했다. Fairwind 신뢰 방어팀부터 풀리고, 도입가는 $2/$10이다. 출력 한도는 1M 토큰.</p>
+            <a class="tl-official" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">OpenAI · L1</div>
+            <h2 class="tl-title">
+              <a href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">추론 증류 캠페인 차단</a>
+              <span class="domain">(openai.com)</span>
+            </h2>
+            <p class="tl-blurb">OpenAI가 보호된 추론을 대화 조작으로 뽑으려 한 조직적 시도를 적발·차단했다고 밝혔다. 관련 클러스터 계정 1.5만+.</p>
+            <a class="tl-official" href="https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+      </div>
+
+      <!-- 9/30 DevDay -->
+      <div class="tl-day">
+        <div class="tl-date" aria-label="2026년 9월 30일">9/30</div>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">OpenAI · L1 · DevDay</div>
+            <h2 class="tl-title">
+              <a href="https://openai.com/index/introducing-gpt-6-1-sol/" target="_blank" rel="noopener">GPT-6.1 Sol — Astra급을 약 1/5가에</a>
+              <span class="domain">(openai.com)</span>
+            </h2>
+            <p class="tl-blurb">OpenAI가 DevDay에서 GPT-6.1 Sol을 냈다. 에이전트 코딩·컴퓨터 사용용이고, Astra 표준 API 대비 입출력 단가가 약 1/5이다.</p>
+            <a class="tl-official" href="https://openai.com/index/introducing-gpt-6-1-sol/" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Simon Willison · L2</div>
+            <h2 class="tl-title">
+              <a href="https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/" target="_blank" rel="noopener">DevDay 현장 로그 — Sol·Ultrafast·Decisions</a>
+              <span class="domain">(simonwillison.net)</span>
+            </h2>
+            <p class="tl-blurb">키노트 라이브 블로그. Sol·Ultrafast·Decisions API·Codex Security를 시간순으로 적었다.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Latent Space · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.latent.space/p/ainews-openai-devday-2026-dots-61" target="_blank" rel="noopener">DevDay 다음날 — Sol 단가·벤치 정리</a>
+              <span class="domain">(latent.space)</span>
+            </h2>
+            <p class="tl-blurb">dots·Sol·Decisions를 엔지니어 타임라인으로 다시 배열하고, 독립 벤치 숫자를 붙였다.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Lenny's Newsletter · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.lennysnewsletter.com/p/jev-8-real-use-cases-for-the-fastest" target="_blank" rel="noopener">Jev 8제 — 결정 엔진 데모</a>
+              <span class="domain">(lennysnewsletter.com)</span>
+            </h2>
+            <p class="tl-blurb">분류·라우팅·점수용 빠른 결정 모델 데모 8개. DevDay Decisions API 논의와 맞닿는다.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">OpenAI · L1 · DevDay</div>
+            <h2 class="tl-title">
+              <a href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener">dots — 24시간 개인 에이전트</a>
+              <span class="domain">(openai.com)</span>
+            </h2>
+            <p class="tl-blurb">OpenAI가 GPT-6 Astra 기반 dots를 공개했다. 전용 클라우드 PC·브라우저·플러그인으로 목표를 백그라운드에서 이어 간다. Pro·Business Premium부터.</p>
+            <a class="tl-official" href="https://openai.com/index/introducing-dots/" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Platformer · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.platformer.news/openai-dots-agents-devday-2026/" target="_blank" rel="noopener">dots 실사용 — Muse보다 업무에 가깝다</a>
+              <span class="domain">(platformer.news)</span>
+            </h2>
+            <p class="tl-blurb">Casey Newton이 DevDay 직후 짧게 써 본 후기. 업무 포커스·유료 모델이 Muse보다 마음이 놓인다고.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Platformer · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.platformer.news/open-ai-model-release-canceled/" target="_blank" rel="noopener">DevDay 직전 Astra급 출시 철회 보도</a>
+              <span class="domain">(platformer.news)</span>
+            </h2>
+            <p class="tl-blurb">새 모델 공개를 안전 이유로 취소했다는 교차취재. 키노트는 dots·Sol로 진행됐다.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">a16z Show · L2</div>
+            <h2 class="tl-title">
+              <a href="https://a16z.simplecast.com/episodes/the-personal-agent-race-is-here-anish-acharya-david-pawlan-ZNslbKZk" target="_blank" rel="noopener">개인 에이전트 레이스 — 안 보이면 이긴다</a>
+              <span class="domain">(a16z.simplecast.com)</span>
+            </h2>
+            <p class="tl-blurb">실제 잡무로 비서 앱을 스트레스 테스트한 에피소드. Muse·dots 시대 소비자 에이전트 경쟁을 투자 시선으로 정리.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">OpenAI · L1</div>
+            <h2 class="tl-title">
+              <a href="https://openai.com/index/towards-safety-cases-for-frontier-ai-training/" target="_blank" rel="noopener">프론티어 RL, 안전 문서 없으면 돌리지 말자</a>
+              <span class="domain">(openai.com)</span>
+            </h2>
+            <p class="tl-blurb">OpenAI가 프론티어 RL을 이어가기 전에 안전 문서(이상적으로는 safety case)가 필요하다고 공개 가이드라인을 냈다.</p>
+            <a class="tl-official" href="https://openai.com/index/towards-safety-cases-for-frontier-ai-training/" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Sam Altman / CNBC · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.cnbc.com/2026/09/29/first-on-cnbc-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-kate-rooney-on-halftime-report-today.html" target="_blank" rel="noopener">알트먼 — 모델 출시 미룬 건 신중</a>
+              <span class="domain">(cnbc.com)</span>
+            </h2>
+            <p class="tl-blurb">DevDay 현장 CNBC 인터뷰. 평가가 기준 미달인 모델 출시를 미뤘다고 확인했다. 정렬·모니터링이 능력보다 앞서야 한다고.</p>
+          </div>
+        </article>
+      </div>
+
+      <!-- 9/29 -->
+      <div class="tl-day">
+        <div class="tl-date" aria-label="2026년 9월 29일">9/29</div>
+
+        <article class="tl-event l1">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Anthropic · L1</div>
+            <h2 class="tl-title">
+              <a href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">Claude Sonnet 5.5 — Opus 바로 아래 일상 일꾼</a>
+              <span class="domain">(anthropic.com)</span>
+            </h2>
+            <p class="tl-blurb">Anthropic이 Claude Sonnet 5.5를 공개했다. 가격은 Sonnet 5와 같은 $2/$10이고, 체감은 더 빠르며 작업당 비용은 대략 30% 깎인다.</p>
+            <a class="tl-official" href="https://www.anthropic.com/claude-sonnet-5-5" target="_blank" rel="noopener">공식 원문 →</a>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Simon Willison · L2</div>
+            <h2 class="tl-title">
+              <a href="https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/" target="_blank" rel="noopener">Sonnet 5.5 — 무료 티어가 확 세졌다</a>
+              <span class="domain">(simonwillison.net)</span>
+            </h2>
+            <p class="tl-blurb">가격 그대로인데 체감 30%+ 빠르다고. claude.ai 무료가 Sonnet 5.5로 바뀌며 ChatGPT 무료 Luna보다 체급 우위라는 평가.</p>
+          </div>
+        </article>
+
+        <article class="tl-event l2">
+          <div class="tl-dot secondary" aria-hidden="true"></div>
+          <div class="tl-card">
+            <div class="tl-who">Latent Space · L2</div>
+            <h2 class="tl-title">
+              <a href="https://www.latent.space/p/thariq" target="_blank" rel="noopener">Claude Code 다음 장 — Mods·Tag·안전</a>
+              <span class="domain">(latent.space)</span>
+            </h2>
+            <p class="tl-blurb">Claude Code 하네스·Mods·Tag 실무와 Pacing the Frontier 안전 이야기를 한 에피소드에 묶었다.</p>
+          </div>
+        </article>
+      </div>
+
+    </div>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
