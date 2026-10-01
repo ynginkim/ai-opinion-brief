@@ -514,6 +514,17 @@ footer {
   display: grid;
   gap: 22px;
   margin-top: 2px;
+  position: relative;
+}
+/* One spine connects the date markers across the day sections. */
+.d-timeline::before {
+  background: #2b3d56;
+  bottom: 18px;
+  content: "";
+  left: 54px;
+  position: absolute;
+  top: 16px;
+  width: 1px;
 }
 .d-day {
   display: grid;
@@ -521,16 +532,6 @@ footer {
   min-width: 0;
   position: relative;
 }
-.d-day::before {
-  background: #2b3d56;
-  content: "";
-  left: 54px;
-  position: absolute;
-  top: 16px;
-  bottom: 0;
-  width: 1px;
-}
-.d-day:last-child::before { bottom: 18px; }
 .d-date {
   color: var(--accent);
   font-size: 13px;
@@ -541,6 +542,17 @@ footer {
   position: relative;
   text-align: left;
   z-index: 1;
+}
+.d-date::after {
+  background: var(--bg);
+  border: 1px solid #49617f;
+  border-radius: 50%;
+  content: "";
+  height: 7px;
+  left: 50px;
+  position: absolute;
+  top: 12px;
+  width: 7px;
 }
 .d-date span {
   background: var(--bg);
@@ -660,8 +672,9 @@ footer {
 @media (max-width: 620px) {
   .mock-d .wrap { padding-left: 12px; padding-right: 12px; }
   .d-timeline { --date-rail: 57px; }
-  .d-day::before { left: 42px; }
+  .d-timeline::before { left: 42px; }
   .d-date { font-size: 12px; }
+  .d-date::after { left: 38px; }
   .d-date small { font-size: 9px; }
   .d-comment { gap: 7px; grid-template-columns: 27px minmax(0, 1fr); }
   .d-avatar { height: 27px; width: 27px; }
