@@ -504,3 +504,176 @@ footer {
   .mock-collapse { margin-left: 30px; }
   .mock-c .mock-replies { margin-left: 34px; }
 }
+
+/* D: Reddit comments with a left-side date rail; intentionally no level chips */
+.mock-d .wrap { max-width: 860px; }
+.mock-d .mock-intro { max-width: 680px; }
+.d-timeline {
+  --date-rail: 74px;
+  --thread-line: #34455e;
+  display: grid;
+  gap: 22px;
+  margin-top: 2px;
+}
+.d-day {
+  display: grid;
+  grid-template-columns: var(--date-rail) minmax(0, 1fr);
+  min-width: 0;
+  position: relative;
+}
+.d-day::before {
+  background: #2b3d56;
+  content: "";
+  left: 54px;
+  position: absolute;
+  top: 16px;
+  bottom: 0;
+  width: 1px;
+}
+.d-day:last-child::before { bottom: 18px; }
+.d-date {
+  color: var(--accent);
+  font-size: 13px;
+  font-weight: 750;
+  letter-spacing: -.02em;
+  line-height: 1.15;
+  padding-top: 7px;
+  position: relative;
+  text-align: left;
+  z-index: 1;
+}
+.d-date span {
+  background: var(--bg);
+  display: inline-block;
+  padding-right: 8px;
+}
+.d-date small {
+  color: var(--dim);
+  display: block;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: .04em;
+  margin-top: 3px;
+}
+.d-thread { min-width: 0; }
+.d-comment {
+  display: grid;
+  gap: 9px;
+  grid-template-columns: 30px minmax(0, 1fr);
+  min-width: 0;
+  padding: 7px 0 10px;
+  position: relative;
+}
+.d-comment:not(.d-root) { padding-top: 5px; }
+.d-avatar {
+  align-items: center;
+  border: 1px solid #465a78;
+  border-radius: 50%;
+  color: #d9e6fa;
+  display: flex;
+  font-size: 12px;
+  font-weight: 750;
+  height: 30px;
+  justify-content: center;
+  margin-top: 1px;
+  position: relative;
+  width: 30px;
+  z-index: 2;
+}
+.avatar-google { background: #315944; border-color: #5f9b67; }
+.avatar-openai { background: #344456; border-color: #687e9b; }
+.avatar-simon { background: #4b3c5b; border-color: #886ea2; }
+.avatar-latent { background: #594734; border-color: #aa8052; }
+.avatar-platformer { background: #3b4f5c; border-color: #6f9bad; }
+.avatar-anthropic { background: #5b4039; border-color: #a67868; }
+.d-content { min-width: 0; }
+.d-meta {
+  align-items: baseline;
+  color: var(--dim);
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 12px;
+  gap: 5px;
+  line-height: 1.3;
+  margin: 1px 0 3px;
+}
+.d-meta b { color: var(--text); font-weight: 700; }
+.d-meta time { color: #78879b; }
+.d-title {
+  color: #c6d2e0;
+  display: block;
+  font-size: 14px;
+  font-weight: 650;
+  line-height: 1.35;
+  margin-bottom: 2px;
+}
+.d-title:hover { color: var(--link); text-decoration: none; }
+.d-summary {
+  color: #aab8c9;
+  font-size: 13px;
+  line-height: 1.45;
+  margin: 0;
+}
+.d-source {
+  color: #65758b;
+  display: block;
+  font-size: 11px;
+  line-height: 1.35;
+  margin-top: 4px;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.d-source:hover { color: var(--link); }
+.d-replies {
+  border-left: 1px solid var(--thread-line);
+  display: grid;
+  gap: 1px;
+  margin: 0 0 2px 14px;
+  padding: 0 0 2px 14px;
+  position: relative;
+}
+.d-replies::before {
+  border-bottom: 1px solid var(--thread-line);
+  border-bottom-left-radius: 12px;
+  content: "";
+  height: 13px;
+  left: -1px;
+  position: absolute;
+  top: 0;
+  width: 12px;
+}
+.d-replies .d-comment + .d-comment { border-top: 1px solid rgba(52, 69, 94, .42); }
+.d-replies .d-comment::after {
+  background: var(--bg);
+  border: 1px solid #8294ad;
+  border-radius: 50%;
+  color: #b7c5d8;
+  content: "−";
+  font-size: 12px;
+  height: 17px;
+  left: -23px;
+  line-height: 14px;
+  position: absolute;
+  text-align: center;
+  top: 13px;
+  width: 17px;
+  z-index: 3;
+}
+.mock-card-d { border-color: #3d5878; }
+
+@media (max-width: 620px) {
+  .mock-d .wrap { padding-left: 12px; padding-right: 12px; }
+  .d-timeline { --date-rail: 57px; }
+  .d-day::before { left: 42px; }
+  .d-date { font-size: 12px; }
+  .d-date small { font-size: 9px; }
+  .d-comment { gap: 7px; grid-template-columns: 27px minmax(0, 1fr); }
+  .d-avatar { height: 27px; width: 27px; }
+  .d-title { font-size: 13.5px; }
+  .d-summary { font-size: 12.5px; }
+  .d-replies { margin-left: 9px; padding-left: 10px; }
+  .d-replies::before { width: 8px; }
+  .d-replies .d-comment::after { left: -18px; }
+}
