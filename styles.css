@@ -630,37 +630,23 @@ footer {
   border-left: 1px solid var(--thread-line);
   display: grid;
   gap: 1px;
-  margin: 0 0 2px 14px;
-  padding: 0 0 2px 14px;
+  margin: 0 0 3px 14px;
+  padding: 2px 0 4px 14px;
   position: relative;
 }
-.d-replies::before {
-  border-bottom: 1px solid var(--thread-line);
-  border-bottom-left-radius: 12px;
+/* Every child gets an elbow from the shared vertical rail to its avatar. */
+.d-replies .d-comment::before {
+  border-left: 1px solid var(--thread-line);
+  border-top: 1px solid var(--thread-line);
+  border-top-left-radius: 10px;
   content: "";
-  height: 13px;
-  left: -1px;
+  height: 10px;
+  left: -15px;
   position: absolute;
-  top: 0;
-  width: 12px;
+  top: 20px;
+  width: 14px;
 }
 .d-replies .d-comment + .d-comment { border-top: 1px solid rgba(52, 69, 94, .42); }
-.d-replies .d-comment::after {
-  background: var(--bg);
-  border: 1px solid #8294ad;
-  border-radius: 50%;
-  color: #b7c5d8;
-  content: "−";
-  font-size: 12px;
-  height: 17px;
-  left: -23px;
-  line-height: 14px;
-  position: absolute;
-  text-align: center;
-  top: 13px;
-  width: 17px;
-  z-index: 3;
-}
 .mock-card-d { border-color: #3d5878; }
 
 @media (max-width: 620px) {
@@ -674,6 +660,5 @@ footer {
   .d-title { font-size: 13.5px; }
   .d-summary { font-size: 12.5px; }
   .d-replies { margin-left: 9px; padding-left: 10px; }
-  .d-replies::before { width: 8px; }
-  .d-replies .d-comment::after { left: -18px; }
+  .d-replies .d-comment::before { left: -11px; top: 19px; width: 10px; }
 }
