@@ -576,6 +576,7 @@ footer {
   padding: 7px 0 10px;
   position: relative;
 }
+/* The parent avatar is the origin of the comment rail. */
 .d-comment.d-parent::after {
   background: var(--thread-line);
   bottom: 0;
@@ -583,7 +584,7 @@ footer {
   left: 14px;
   pointer-events: none;
   position: absolute;
-  top: 16px;
+  top: 23px;
   width: 1px;
 }
 .d-comment:not(.d-root) { padding-top: 5px; }
@@ -656,15 +657,16 @@ footer {
   padding: 2px 0 4px 14px;
   position: relative;
 }
-/* Every child gets an elbow from the shared vertical rail to its avatar. */
+/* Each reply bends out of the parent's rail and into its avatar. */
 .d-replies .d-comment::before {
-  border-top: 1px solid var(--thread-line);
-  border-top-left-radius: 10px;
+  border-bottom: 1px solid var(--thread-line);
+  border-left: 1px solid var(--thread-line);
+  border-bottom-left-radius: 10px;
   content: "";
   height: 10px;
   left: -14px;
   position: absolute;
-  top: 20px;
+  top: 11px;
   width: 14px;
 }
 .mock-card-d { border-color: #3d5878; }
@@ -680,7 +682,7 @@ footer {
   .d-avatar { height: 27px; width: 27px; }
   .d-title { font-size: 13.5px; }
   .d-summary { font-size: 12.5px; }
-  .d-comment.d-parent::after { left: 13px; }
+  .d-comment.d-parent::after { left: 13px; top: 21px; }
   .d-replies { margin-left: 13px; padding-left: 10px; }
-  .d-replies .d-comment::before { left: -10px; top: 19px; width: 10px; }
+  .d-replies .d-comment::before { left: -10px; top: 10px; width: 10px; }
 }
