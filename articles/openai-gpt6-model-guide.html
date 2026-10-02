@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Astra·Sol·Luna, 일감에 맞춰 골라라 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · <span class="article-date">2026-10-02 Seoul</span></div>
+    <h1 class="article-title">Astra·Sol·Luna, 일감에 맞춰 골라라</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">openai.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        OpenAI가 GPT-6 패밀리 실전 가이드를 올렸다. 제목은 A model guide for the GPT-6 family다. 모델 고르기, 지시문, 장시간 작업, 프로덕션 준비까지 한 장에 묶었다.
+      </p>
+      <p>
+        Astra는 가장 어려운 추론, GPT-6.1 Sol은 복잡한 코딩·리서치·컴퓨터 사용, Luna는 목표가 뚜렷한 반복·구조화 대량 작업용이라고 나눈다.
+      </p>
+
+      <h2>배경</h2>
+      <p>
+        Sol·Astra·Luna가 이미 나뉜 상태에서, ‘어느 모델을 언제 쓸지’를 공식 문서로 고정한 셈이다. Developer Experience의 Eric Provencher 인용으로 스킬·AGENTS.md·결정 경계를 같이 손보라고 한다.
+      </p>
+
+      <h2>무슨 일 / 핵심 내용</h2>
+      <p>
+        프로덕션 쪽에서는 불필요한 컨텍스트를 줄이고, 공유 지시는 캐싱하라고 한다. 캐시된 입력 토큰은 모델에 따라 최대 95%까지 싸질 수 있다고 적혀 있다. 긴 대화는 compaction으로 상태를 남기며 길이를 줄인다. 배포 전에는 성공률·지연·성공당 비용을 재라고 한다.
+      </p>
+      <p>
+        추론 노력은 Low·Medium·High·Extra high/Max로 고른다. 속도는 Fast mode, Astra에는 Ultrafast도 언급한다. Fast/Ultrafast는 토큰당 비용이 더 들 수 있다.
+      </p>
+      <p>
+        장시간 에이전트는 mid-turn steering, async tool calling, Sol의 멀티에이전트 워크플로(베타)로 관리한다. Codex에서는 작업 중 질문·스티어링을 쓰고, computer use로 API 없는 화면 작업도 붙일 수 있다고 한다. Playwright·PyAutoGUI 예시도 적혀 있다.
+      </p>
+      <p>
+        지시문 쪽은 네 가지다. 스킬 설명을 짧고 명시적으로, AGENTS.md에 안전한 루틴을 허가하고, 혼자 결정해도 되는 경계와 ‘완료’의 정의를 박아 두라는 내용이다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+      <p>
+        신모델 발표가 아니라, 패밀리를 프로덕션에 올리는 쪽의 공식 플레이북이다. 단가·지연·장시간 에이전트 운영을 한 기준으로 맞출 수 있다.
+      </p>
+
+      <h2>그래서 뭐</h2>
+      <p>
+        GPT-6를 이미 쓰는 팀은 Astra/Sol/Luna·추론 노력·캐싱 조합을 이 가이드 기준으로 한 번 다시 보면 된다. 상세와 API 링크는 OpenAI 원문에 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
