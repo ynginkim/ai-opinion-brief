@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.03</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.03 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Anthropic이 Claude FDE 1만 명 아카데미(약 1억 달러)를 열었고, OpenAI는 Astra·Sol·Luna 고르기 가이드를 올렸습니다. Latent는 Pi 1.0/Durable과 Airbnb CTO 인터뷰를 묶었습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/3</span>
+      <a href="2026-10-02.html">10/2</a>
+      <a href="2026-10-01.html">10/1</a>
+      <a href="2026-09-30.html">9/30</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-10-03/anthropic-frontier-academy.html">고객사 안에 Claude FDE 1만 명을 키운다</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/claude-frontier-academy" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 Claude Frontier Academy를 공개했다. 2027년 말까지 Frontier Deployed Engineer 1만 명이 목표이고, 약 1억 달러를 넣는다.</li>
+        <li>의료 레지던시처럼 수일 대면 실습 뒤 12주 현업 Claude 프로젝트를 돌리고, 통과하면 FDE 배지를 준다. 첫 배지는 2027년 초 예상.</li>
+        <li>1기는 Accenture·Bain·Capgemini·Deloitte·McKinsey·Morgan Stanley·Novo Nordisk 등. 지명제다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 대기업·컨설팅에 Claude를 붙일 때, 인증 개수보다 FDE 파이프라인을 볼지.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-03/openai-gpt6-model-guide.html">Astra·Sol·Luna, 일감에 맞춰 골라라</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/practical-guide-building-gpt-6" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 GPT-6 패밀리 실전 가이드를 올렸다. Astra는 최강 추론, Sol은 코딩·리서치·컴퓨터 사용, Luna는 반복·구조화 대량 작업용이다.</li>
+        <li>캐싱으로 입력 비용을 최대 95%까지 줄일 수 있다고 적었고, compaction·추론 노력·Fast/Ultrafast로 비용·지연을 맞춘다.</li>
+        <li>장시간 작업은 steering·async tools·Sol 멀티에이전트(베타)로 관리하라고. AGENTS.md와 ‘완료’ 정의도 같이 맞추라고 한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> GPT-6를 프로덕션에 올릴 때 모델·추론 노력·속도 조합을 다시 짤지.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-10-03/latent-ainews-pi-durable.html">Pi 1.0 안정판, Durable은 TypeScript로</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-pi-10-pi-durable-and-aie-nyc" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Earendil Pi 1.0이 안정판으로 올라왔다. Codemode(MCP·Jev·이미지), 지연 도구 로딩, Anthropic 캐시 워밍, 대화 중 시스템 메시지 변경이 들어갔다.</li>
+        <li>Pi Durable은 TypeScript 이식본이다. 단계마다 체크포인트해 크래시 후 재개하고, 병렬 분기 대화·핫스왑 확장·백그라운드 compaction을 지원한다.</li>
+        <li>같은 호에 Argon·Sol·FLUX 3 벤치·단가 정리와 AIE NYC 티켓 마감 안내가 붙었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트 하네스를 Pi로 볼지, 크래시 복구·TS Durable이 필요한지 확인할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-10-03/latent-airbnb-inside-out-ai.html">에어비앤비, 코드가 곧 산출물이 됐다</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/airbnb" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>전 Meta Llama 리드 Ahmad Al-Dahle CTO 인터뷰. 코드의 약 60%가 AI 작성, 기능·개선 YoY 약 80%↑, 엔지니어당 PR 처리량 약 1.6배.</li>
+        <li>고객지원 티켓의 약 절반을 AI가 처리한다(Q2 공개 ~45%와 같은 선). 내부 컨텍스트 그래프 Everest로 식료품 배송(8–9개월) 뒤 공항 픽업을 약 6주에 냈다.</li>
+        <li>맞춤 오픈 모델 10개 이상과 프론티어 코딩 모델을 섞고, 비동기 온콜 에이전트를 키운다. AI가 만든 PR도 설명해야 한다고.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI-native를 모델 교체가 아니라 조직·산출물·지원 범위로 짤지 볼 때.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
