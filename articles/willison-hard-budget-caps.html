@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>에이전트 시대엔 하드 예산 상한이 기본값이어야 한다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-10-04 Seoul</span></div>
+    <h1 class="article-title">에이전트 시대엔 하드 예산 상한이 기본값이어야 한다</h1>
+    <div class="source-line">
+      원문 · <a href="https://simonwillison.net/2026/Oct/3/default-hard-budget-caps/" target="_blank" rel="noopener">simonwillison.net</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        Simon Willison이 사용량 과금 서비스와 API에는 하드 예산 상한이 기본값이어야 한다는 글을 올렸다. 한 달 $X를 넘으면 서비스를 끊고 에러를 돌려주는 기능이다. 경고 메일만 보내는 소프트 상한으론 부족하다고 못 박았다.
+      </p>
+
+      <h2>배경</h2>
+      <p>
+        코딩 에이전트, 그리고 덜 위협적인 UI를 씌운 개인 에이전트 덕분에 쓸모 있는 코드를 띄우는 마찰이 크게 줄었다. 그런데 그 코드가 유료 API를 부르거나, 호스팅 앱을 띄우거나, 저장·연산을 추가로 과금하는 시스템을 쓰면 돈이 나간다.
+      </p>
+
+      <h2>무슨 일</h2>
+      <p>
+        Willison이 그리는 장면은 이렇다. 자정에 예산 경고 메일이 오고, 자는 사이 폭주한 서비스가 수백, 수천 달러를 더 쓴다. 기업은 예산 때문에 앱이 에러를 내는 걸 싫어한다는 반론도 있다. 그래도 대부분은 1만 달러가 넘는 깜짝 청구서보다 에러를 고를 거라고 봤다.
+      </p>
+      <p>
+        그래서 상한은 기본으로 켜 두고, 위험을 감수하고 싶은 사람만 끄게 하자고 했다. “상한을 끄면 초과 요금은 내 책임”이라는 체크박스를 눈에 잘 띄게 두면 된다는 것이다.
+      </p>
+      <p>
+        가장 바라는 곳은 AWS였다. 폭주한 서비스로 파산할까 봐 개인 프로젝트에 AWS를 안 쓴다는 얘기를 많이 들었다고 한다. 그런데 AWS는 9월 16일 새 경험을 발표하면서 프로젝트별 월 지출 한도를 넣었다. 한도에 닿으면 그달은 프로젝트가 멈춘다. 다만 설정 페이지에는 아직 일부 고객에게만 열고 있다고 적혀 있다. Google Cloud도 7월에 서비스별 월 상한을 거는 Spend Caps를 냈다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+      <p>
+        에이전트가 배포까지 해 주면 클라우드 요금을 잘 모르는 사람도 유료 서비스를 띄운다. 비용 폭주는 이제 숙련 개발자만의 걱정이 아니다. Willison은 에이전트가 하드 상한이 있는 업체를 먼저 추천하고, 상한 없는 서비스로 배포하려는 초보에게 경고해 주면 좋겠다고 했다.
+      </p>
+
+      <h2>그래서 뭐</h2>
+      <p>
+        에이전트로 API나 클라우드 자원을 띄우고 있다면, 지금 쓰는 서비스에 하드 상한이 있는지부터 확인하자. AWS는 새 경험 대상인지, Google Cloud는 Spend Caps를 켤 수 있는지 보면 된다. 에이전트 규칙 파일에 상한 있는 업체를 우선하라고 적어 두는 것도 방법이다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
