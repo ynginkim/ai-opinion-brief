@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude 구독, 같은 돈에 OpenAI보다 5배 넘게 준다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · <span class="article-date">2026-10-06 Seoul</span></div>
+    <h1 class="article-title">Claude 구독, 같은 돈에 OpenAI보다 5배 넘게 준다</h1>
+    <div class="source-line">
+      원문 · <a href="https://newsletter.semianalysis.com/p/anthropic-subscriptions-offer-5x" target="_blank" rel="noopener">newsletter.semianalysis.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 AI 구독 요금제의 실제 한도를 재서 API 가격으로 환산했다. 회사들이 매일 쓰라고 내세우는 중간 체급, 즉 Opus 5.5와 GPT 6.1 Sol을 비교하면 Anthropic 구독이 약 5배 많은 값을 준다. OpenAI가 지난주 $200 플랜 한도를 절반으로 줄인 영향이 크다.
+      </p>
+
+      <h2>배경</h2>
+
+      <p>
+        구독은 여전히 소비자와 작은 회사가 AI에 돈을 내는 주된 방식이다. 보조금이 크게 들어간 상품이라 매출 비중은 작아도 마진에 큰 영향을 준다.
+      </p>
+
+      <p>
+        SemiAnalysis 추산으로 Anthropic은 구독이 매출의 10%지만 추론 컴퓨트는 40% 넘게 쓴다. 그 탓에 MW당 매출이 약 3,600만 달러 낮아진다. OpenAI는 구독 비중이 더 크다.
+      </p>
+
+      <h2>어떻게 쟀나</h2>
+
+      <p>
+        요금제는 5시간·7일 단위로 0~100% 계기만 보여 준다. 그래서 입력, 캐시 쓰기, 캐시 읽기, 출력 토큰 중 하나만 크게 쓰는 요청을 반복하고 계기가 얼마나 움직이는지 봤다. 오차가 ±5% 안에 들어올 때까지 쟀다.
+      </p>
+
+      <p>
+        같은 구독 계정 셋 중 하나만 한도가 약 20% 낮게 나온 적이 있다. 업체에 물어보니 “아주 작은” A/B 테스트였다. 업체가 한도를 조용히 바꿀 수 있다는 뜻이다.
+      </p>
+
+      <h2>숫자</h2>
+
+      <ul>
+        <li>$200 플랜에서 GPT-6 Astra와 Fable 5.1 한도는 비슷하다. 다만 Fable은 전체 한도의 50%까지만 쓸 수 있다. Anthropic 플랜은 Fable 5.1을 $2,485어치 쓰고도 절반이 남고, OpenAI 플랜은 Astra $2,897어치에서 바닥난다.</li>
+        <li>Opus 5.5 대 GPT 6.1 Sol에선 Anthropic이 API 환산 약 5배다. 토큰 수로 비교해도 차이가 크다.</li>
+        <li>OpenAI $200 플랜은 모델 체급마다 토큰을 절반으로 줄였다. 6.1 Sol 캐시 입력 가격 인하까지 겹쳐 Sol 환산 가치는 50% 넘게 떨어졌다.</li>
+        <li>새 $500 플랜은 옛 $200 플랜보다 Astra를 21% 더 줄 뿐이다. 대표 기능은 초당 300토큰 Ultrafast인데, 그 한도는 아직 측정 중이다.</li>
+      </ul>
+
+      <h2>두 회사의 마진 전략</h2>
+
+      <p>
+        Anthropic은 비싼 모델일수록 환산 가치를 낮춘다. 사용률 100%를 가정하면 Opus 5.5를 꽉 채워 쓸 때 총마진은 -369%, Fable 5.1은 1%다. 평균 사용률 20%로 잡으면 각각 6%, 80%가 된다.
+      </p>
+
+      <p>
+        OpenAI는 전 체급을 한 번에 Fable 수준 한도로 깎았다. 반발이 크지 않았던 건 DevDay 홍보에 묻히고 기존 플랜에 한 달 유예를 준 덕으로 봤다.
+      </p>
+
+      <p>
+        OpenAI 편을 들 만한 점도 하나 있다. Pro 플랜엔 5시간 한도가 없어 월 한도를 더 채우기 쉽다. 그래도 Opus 5.5가 주는 약 4배 환산 가치를 메우진 못한다고 봤다. 중국 연구소 요금제는 여전히 보조금이 많고, Cursor·Devin 같은 제3자 요금제는 자사 요금제보다 못하다고 했다. 이 부분 세부는 유료 구독자용이다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        인디 개발자 사이에선 OpenAI 구독이 넉넉하다는 평이 많았다. SemiAnalysis는 이제 그렇지 않다고 결론 냈다. 같은 플랜도 어떤 모델로 어떤 일을 하느냐에 따라 값이 크게 달라진다.
+      </p>
+
+      <h2>그래서 뭐</h2>
+
+      <p>
+        코딩 에이전트 구독을 고르고 있다면 주로 쓰는 모델 체급부터 정하자. Opus·Sol급을 매일 쓴다면 지금은 Claude 쪽이 유리하다. OpenAI $200 플랜을 예전에 샀다면 10월 29일 전에 계속 쓸지 다시 계산해 보면 된다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

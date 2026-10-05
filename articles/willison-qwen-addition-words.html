@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>로컬 Qwen 27B, 추론 켜니 큰 수 덧셈을 거의 다 맞혔다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-10-05 Seoul</span></div>
+    <h1 class="article-title">로컬 Qwen 27B, 추론 켜니 큰 수 덧셈을 거의 다 맞혔다</h1>
+    <div class="source-line">
+      원문 · <a href="https://simonwillison.net/2026/Oct/4/qwen38-addition-in-words/" target="_blank" rel="noopener">simonwillison.net</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Simon Willison이 로컬 모델로 “두 수를 더하고 답은 영어 단어로 쓰기” 실험을 다시 돌렸다. DGX Spark에서 Qwen3.8-27B를 Q4_K_M 양자화로 돌렸다. 추론을 켜자 169번 중 167번을 맞혔다.
+      </p>
+
+      <h2>배경</h2>
+
+      <p>
+        Colin Frasier가 Bluesky에 2년 넘게 전 GPT-4o로 한 실험 결과를 올렸다. 자릿수가 커질수록 정답률이 어떻게 바뀌는지 본 차트다. Willison은 GPT-4o가 계산기를 쓰지 않았다고 봤다. 틀린 답이 많았던 게 그 근거다.
+      </p>
+
+      <h2>무슨 일</h2>
+
+      <p>
+        Willison은 그 차트 이미지를 Codex Remote 세션(GPT-6 Astra)에 붙여 넣고, 같은 실험을 Qwen으로 돌리게 했다. 추론을 끈 상태에선 조합마다 30번씩 돌렸다.
+      </p>
+
+      <p>
+        추론을 켠 상태는 한 번이 오래 걸려 칸마다 한 번만 돌렸다. 그래서 히트맵 칸이 100% 아니면 0%로만 나온다. 추론 기록을 보면 모델이 “다시 천천히 해 보자”며 자릿수를 맞추고 오른쪽부터 받아올림까지 적어 가며 더한다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        한 번씩만 돌린 결과라 다시 돌리면 달라질 수 있다고 Willison도 적었다. 그래도 DGX Spark 한 대에서 도는 27B 로컬 모델이 추론만으로 큰 수 덧셈을 거의 다 맞힌다는 건 참고할 만한 기준이다.
+      </p>
+
+      <h2>그래서 뭐</h2>
+
+      <p>
+        로컬 모델에 숫자 처리를 맡기려면 추론을 켰을 때와 껐을 때 결과를 먼저 비교하자. 추론을 켜면 느려지니 속도와 정확도를 같이 봐야 한다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
