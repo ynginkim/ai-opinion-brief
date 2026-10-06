@@ -304,6 +304,15 @@ def build_milestones(days):
             items.setdefault(it['url'], it)
     ms = doc['milestones']
     errors = []
+    moved = False
+    for m in ms:   # detail moved from articles/ to archive/articles-DATE/ when the day was archived
+        if not os.path.exists(os.path.join(ROOT, m['detail'])) and m['detail'].startswith('articles/'):
+            hits = sorted(glob.glob(os.path.join(ROOT, 'archive', 'articles-*', os.path.basename(m['detail']))))
+            if len(hits) == 1:
+                m['detail'] = os.path.relpath(hits[0], ROOT); moved = True
+    if moved:
+        with open(os.path.join(ROOT, 'tools', 'milestones.json'), 'w', encoding='utf-8') as fh:
+            json.dump(doc, fh, ensure_ascii=False, indent=2)
     for m in ms:
         for a in m['axes']:
             if a not in AXES: errors.append(f'{m["id"]}: unknown axis {a}')

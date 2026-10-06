@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hashimoto, 에이전트 상태를 터미널에 알리는 표준을 제안했다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Mitchell Hashimoto · <span class="article-date">2026-10-06 Seoul</span></div>
+    <h1 class="article-title">Hashimoto, 에이전트 상태를 터미널에 알리는 표준을 제안했다</h1>
+    <div class="source-line">
+      원문 · <a href="https://mitchellh.com/writing/program-status-osc7501" target="_blank" rel="noopener">mitchellh.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        터미널 Ghostty를 만든 Mitchell Hashimoto가 새 터미널 규격 OSC 7501을 공개했다. 이름은 Program Status Protocol이다.
+      </p>
+
+      <p>
+        프로그램이 지금 무슨 상태인지 터미널에 직접 알린다. 쉬는 중인지, 일하는 중인지, 사용자를 기다리는지, 끝났는지, 실패했는지를 이유와 함께 보낸다.
+      </p>
+
+      <h2>왜 필요한가</h2>
+
+      <p>
+        빌드, 배포, 데이터 처리처럼 오래 걸리는 작업은 원래 터미널에 많았다. 요즘은 여기에 코딩 에이전트가 더해졌다. 사용자는 다른 일을 하다가 작업이 끝나거나 자기를 부를 때 알고 싶어 한다.
+      </p>
+
+      <p>
+        에이전트를 여러 개 돌리는 사람이 늘면서 이를 한눈에 보여 주는 도구가 생겼다. Hashimoto는 이를 &#x27;에이전트 수신함&#x27;이라고 불렀다. Herdr, cmux, Agent Deck이 예다.
+      </p>
+
+      <h2>지금 방식의 한계</h2>
+
+      <p>
+        이 도구들은 대개 화면이나 창 제목을 읽고 상태를 짐작한다. Herdr는 Claude Code 창 제목이 특정 스피너 문자로 시작하면 &#x27;작업 중&#x27;으로 본다. 이 판별 규칙 파일은 Claude Code 하나 때문에 석 달 동안 열 번 바뀌었다.
+      </p>
+
+      <p>
+        다른 방법은 도구마다 따로 만든 API로 상태를 보내는 것이다. 그러면 프로그램마다 수신함 도구 하나하나와 연동해야 한다. SSH나 컨테이너 안에서는 따로 다리를 놓아야 한다.
+      </p>
+
+      <h2>어떻게 동작하나</h2>
+
+      <p>
+        프로그램이 이미 가진 터미널 연결로 짧은 문자열을 보낸다. 모르는 OSC는 무시하는 게 터미널의 기본 동작이라, 어디서 보내도 안전하다.
+      </p>
+
+      <p>
+        필수 값은 state 하나다. idle, working, done, blocked, error 중 하나를 고른다. blocked일 땐 권한·질문·인증 중 무엇 때문인지와 사람이 읽을 메시지를 붙인다. 배포 도구처럼 여러 일을 동시에 하면 작업별 상태를 계층으로 보낼 수 있다.
+      </p>
+
+      <p>
+        SDK도, 소켓도, JSON도 필요 없다. rsync를 감싸는 셸 스크립트 예제는 몇 줄이면 끝난다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Hashimoto는 libghostty와 Rex에 이미 구현했다. Terraform, Claude Code, Codex, Homebrew에는 플러그인이나 포크로 시험 구현을 붙였고, 어느 것도 열두 줄을 넘지 않았다.
+      </p>
+
+      <p>
+        여러 터미널 프로그램과 에뮬레이터 메인테이너가 규격 검토에 참여했다고 했다. 에이전트 도구들이 이 규격을 채택하면, 수신함 도구가 화면을 읽고 짐작하는 일은 줄어든다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

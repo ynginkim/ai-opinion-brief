@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic, 검증된 보안팀엔 사이버 차단을 단계별로 푼다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic (공식 발표) · <span class="article-date">2026-10-06 Seoul</span></div>
+    <h1 class="article-title">Anthropic, 검증된 보안팀엔 사이버 차단을 단계별로 푼다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">anthropic.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 10월 6일 사이버 검증 프로그램(CVP)을 새로 짰다. 심사를 통과한 보안팀에게 사이버 차단을 덜 건 Claude를 준다. 단계는 셋이다.
+      </p>
+
+      <p>
+        그동안 따로 돌던 Project Glasswing도 이 프로그램에 합쳤다. Glasswing은 핵심 소프트웨어를 지키는 조직에 Claude Mythos를 주던 프로그램이다.
+      </p>
+
+      <h2>배경</h2>
+
+      <p>
+        보안 능력은 양쪽으로 쓰인다. 취약점을 찾아 고치는 능력은 그대로 공격에도 쓸 수 있다. 그래서 일반 공개 모델인 Opus 5.5, Fable 5.1, Sonnet 5.5는 사이버 작업 대부분을 막는다.
+      </p>
+
+      <p>
+        문제는 방어하는 쪽도 같은 능력이 필요하다는 점이다. Anthropic은 지난 6개월 동안 Glasswing과 CVP 두 갈래로 이 문제를 풀어 왔다. 이번에 그 둘을 하나로 묶고 대상을 넓혔다.
+      </p>
+
+      <h2>세 단계</h2>
+
+      <ul>
+        <li>방어(Defense): 보안 관제, 사고 대응, 악성코드 역공학, 취약점 분석용이다. 기업·대학·정부 보안팀, 지역 병원이나 상수도 같은 기반시설 운영자, 오픈소스 메인테이너, 취약점 제보 이력이 있는 개인 연구자가 대상이다. 신청하면 며칠 안에 답한다.</li>
+        <li>레드팀(Red Team): 허가받은 침투 테스트까지 할 수 있다. 조직만 신청할 수 있고 심사에 몇 주가 걸린다. 기다리는 동안은 방어 단계로 쓴다. 랜섬웨어 배포나 물리 시스템 손상 같은 행동은 여기서도 실시간으로 막는다.</li>
+        <li>특수(Specialized): 차단이 가장 적다. 항공 운영체계, 전력망, 통신망, 은행 간 송금망처럼 사람 목숨이나 시장에 영향을 주는 시스템을 시험할 권한이 있는 조직만 받는다. 미국 정부와 함께 조직마다 깊이 심사한다. 기존 Glasswing 멤버는 이 단계로 옮긴다.</li>
+      </ul>
+
+      <h2>시험해 보니</h2>
+
+      <p>
+        Anthropic은 CyScenarioBench로 단계별 차단이 제대로 도는지 확인했다. 모델이 여러 단계짜리 사이버 작전을 계획하고 실행할 수 있는지 보는 평가다. 과제 10개를 단계마다 다섯 번씩, 모두 50번 돌렸다.
+      </p>
+
+      <ul>
+        <li>프로그램 밖 일반 모델: 모든 과제가 첫 질문에서 막혔다.</li>
+        <li>방어 단계: 50번 중 46번이 중간에 막혔고, 4번은 끝까지 갔다.</li>
+        <li>레드팀 단계: 한 번도 막히지 않았고 34번을 끝냈다. 보호장치를 모두 끈 상태의 성공률 67.6%와 사실상 같다.</li>
+      </ul>
+
+      <h2>조건</h2>
+
+      <p>
+        프로그램에 들어온 조직은 데이터 보관이 필수다. Anthropic이 악용 여부를 감시하기 위해서다. 올가을 Enterprise Frontier Safeguards가 나오면 조직이 직접 관리하는 클라우드에 데이터를 둘 수 있다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        모델이 강해질수록 막아야 할 일도 늘어난다. Anthropic은 모두에게 똑같이 막는 대신, 누가 쓰는지 확인하고 단계별로 푸는 쪽을 골랐다.
+      </p>
+
+      <p>
+        방어 단계 문턱은 꽤 낮다. 작은 병원이나 개인 연구자도 대상에 들어간다. 반대로 가장 위험한 작업은 정부와 함께 심사한다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        일반 모델로도 코드 리뷰, 알려진 문제 패치, 자기 코드의 취약점 찾기, 보안 경보 분류는 계속 할 수 있다. 그보다 깊은 작업에서 막혔다면 CVP 신청이 정식 경로다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

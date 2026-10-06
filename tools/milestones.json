@@ -290,6 +290,25 @@
           "summary": "출시 다음날 독립 벤치 숫자를 모았다. 지금은 Fairwind 참가자만 쓸 수 있다고 짚었다."
         }
       ]
+    },
+    {
+      "id": "cvp",
+      "date": "2026-10-06",
+      "lab": "anthropic",
+      "title": "Anthropic, 사이버 능력을 검증된 방어팀에 단계별로 푼다",
+      "summary": "일반 Claude는 사이버 작업 대부분을 막는다. 심사를 통과한 보안팀에는 방어·레드팀·특수 3단계로 차단을 덜 건 Opus 5.5·Mythos 5.1을 준다. 가장 위험한 단계는 미국 정부와 함께 심사한다.",
+      "axes": [
+        "safety"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "34/50",
+        "label": "레드팀 단계 CyScenarioBench 완료",
+        "source_url": "https://www.anthropic.com/news/cyber-verification-program"
+      },
+      "detail": "articles/anthropic-cyber-verification-tiers.html",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "takes": []
     }
   ]
 }
