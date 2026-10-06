@@ -1,0 +1,63 @@
+{
+  "_doc": "build_timeline.py 큐레이션. relations: 답글(자식) 원문 URL -> 부모(랩 공식 발표) 원문 URL. 관련이 분명할 때만 추가. overrides: 원문 URL -> 타임라인용 짧은 title/summary (없으면 카드 제목·첫 불릿 사용).",
+  "relations": {
+    "https://simonwillison.net/2026/Sep/16/one-claude/": "https://claude.com/blog/cowork-is-now-claude",
+    "https://simonwillison.net/2026/Sep/17/compaction-summaries/": "https://alignment.openai.com/misalignment-reports/self-generated-prompt-injections-in-compaction-summaries",
+    "https://www.latent.space/p/ainews-claude-opus-55-the-new-default": "https://www.anthropic.com/news/claude-opus-5-5",
+    "https://www.lennysnewsletter.com/p/i-left-claude-for-months-opus-55": "https://www.anthropic.com/news/claude-opus-5-5",
+    "https://www.lennysnewsletter.com/p/opus-55-vs-gpt-6-sol-which-model": "https://www.anthropic.com/news/claude-opus-5-5",
+    "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/": "https://www.anthropic.com/news/claude-opus-5-5",
+    "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer": "https://www.anthropic.com/news/claude-opus-5-5",
+    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/": "https://www.anthropic.com/claude-sonnet-5-5",
+    "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "https://www.latent.space/p/ainews-openai-devday-2026-dots-61": "https://openai.com/index/introducing-gpt-6-1-sol/",
+    "https://www.platformer.news/openai-dots-agents-devday-2026/": "https://openai.com/index/introducing-dots/",
+    "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+  },
+  "overrides": {
+    "https://www.anthropic.com/news/claude-frontier-academy": {
+      "title": "Claude Frontier Academy — FDE 1만 명",
+      "summary": "약 1억 달러, 2027년 말까지 Frontier Deployed Engineer 1만 명. 레지던시형 지명 프로그램."
+    },
+    "https://openai.com/index/practical-guide-building-gpt-6": {
+      "title": "GPT-6 패밀리 모델 가이드",
+      "summary": "Astra·Sol·Luna 고르기, 캐싱·compaction·장시간 steering 실전 정리."
+    },
+    "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/": {
+      "title": "Gemini 4 Argon, 방어팀부터 단계 공개",
+      "summary": "Fairwind 신뢰 방어팀부터 공개, 도입가 $2/$10, 출력 한도 1M 토큰."
+    },
+    "https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/": {
+      "title": "추론 증류 캠페인 차단",
+      "summary": "대화 조작으로 보호된 추론을 뽑으려 한 조직적 시도 차단, 관련 클러스터 계정 1.5만+."
+    },
+    "https://openai.com/index/introducing-gpt-6-1-sol/": {
+      "title": "GPT-6.1 Sol — Astra급을 약 1/5가에",
+      "summary": "에이전트 코딩·컴퓨터 사용용 모델. Astra 표준 API 대비 입출력 단가가 약 1/5이다."
+    },
+    "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/": {
+      "title": "DevDay 현장 로그 — Sol·Ultrafast·Decisions",
+      "summary": "키노트 제품과 API를 시간순으로 정리한 라이브 블로그."
+    },
+    "https://www.latent.space/p/ainews-openai-devday-2026-dots-61": {
+      "title": "DevDay 다음날 — Sol 단가·벤치 정리",
+      "summary": "dots·Sol·Decisions를 엔지니어 타임라인으로 다시 배열하고 독립 벤치 숫자를 붙였다."
+    },
+    "https://openai.com/index/introducing-dots/": {
+      "title": "dots — 24시간 개인 에이전트",
+      "summary": "전용 클라우드 PC·브라우저·플러그인으로 목표를 백그라운드에서 이어 간다."
+    },
+    "https://www.platformer.news/openai-dots-agents-devday-2026/": {
+      "title": "dots 실사용 — Muse보다 업무에 가깝다",
+      "summary": "DevDay 직후 써 본 후기. 업무 포커스와 유료 모델이 Muse보다 마음이 놓인다는 평가."
+    },
+    "https://www.anthropic.com/claude-sonnet-5-5": {
+      "title": "Claude Sonnet 5.5 — Opus 바로 아래 일상 일꾼",
+      "summary": "Sonnet 5와 같은 $2/$10. 더 빠르고 작업당 비용은 대략 30% 낮아졌다."
+    },
+    "https://simonwillison.net/2026/Sep/28/claude-sonnet-5-5/": {
+      "title": "Sonnet 5.5 — 무료 티어가 확 세졌다",
+      "summary": "가격은 그대로인데 체감 30%+ 빠르고 무료 티어도 Sonnet 5.5로 변경됐다는 관찰."
+    }
+  }
+}

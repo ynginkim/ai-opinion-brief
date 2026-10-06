@@ -103,6 +103,7 @@ header {
   color: var(--muted);
   background: transparent;
 }
+.nav-dates a.nav-all { color: var(--link); border-style: dashed; }
 .nav-dates .on {
   color: var(--text);
   border-color: #3d4a63;
@@ -349,6 +350,12 @@ body.timeline-page .wrap { max-width: 860px; }
 .avatar-latent { background: #594734; border-color: #aa8052; }
 .avatar-platformer { background: #3b4f5c; border-color: #6f9bad; }
 .avatar-anthropic { background: #5b4039; border-color: #a67868; }
+.avatar-lenny { background: #5a3b4a; border-color: #a76f8a; }
+.avatar-semi { background: #2f4f57; border-color: #5f97a3; }
+.avatar-a16z { background: #4e4a2f; border-color: #9a9256; }
+.avatar-dwarkesh { background: #3f3a5e; border-color: #7a72b0; }
+.avatar-tao { background: #3a5245; border-color: #6e9c82; }
+.avatar-person { background: #3a4150; border-color: #6b7690; }
 .timeline-content { min-width: 0; }
 .timeline-meta {
   align-items: baseline;
