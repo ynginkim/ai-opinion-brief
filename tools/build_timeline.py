@@ -1,12 +1,16 @@
 #!/usr/bin/env python3
-"""Rebuild timeline.html from every daily brief page (archive/*.html + index.html).
+"""Build timeline.html (AGI milestones) and archive.html (전체 브리프: every brief item).
+
+- timeline.html: milestones from tools/milestones.json (Layer 1), with Layer 2 takes
+  (speaker/podcast/newsletter items already in the briefs) nested by original URL.
+- archive.html: every brief page (archive/*.html + index.html), newest first.
 
 - Source of truth: the brief pages already on the site (cards: who, title, detail link,
   original URL, bullets). Publication time comes from /workspace/ai-brief-{core,comms}-DATE.json
   when available. Nothing is invented: items without a detail article just link the original.
-- Lab official announcements (openai/anthropic/claude/deepmind/blog.google domains) are parents.
-  Replies are attached only via tools/timeline-curation.json "relations" (child URL -> parent URL).
-- Also adds an idempotent "전체 타임라인" link to the date nav of index.html and archive pages.
+- archive.html: lab official announcements (openai/anthropic/claude/deepmind/blog.google) are parents;
+  replies are attached only via tools/timeline-curation.json "relations" (child URL -> parent URL).
+- Also adds an idempotent "전체 브리프 →" link (to archive.html) to the date nav of index.html and archive pages.
 
 Usage: python3 tools/build_timeline.py [--site /workspace/ai-brief-pages]
 """
@@ -169,15 +173,61 @@ def comment_html(it, ind, root, children=()):
     return out
 
 
-def build():
-    days = collect()
+
+PAGE_HEAD = """<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · {title}</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body class="timeline-page">
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="index.html">agi-<span>tracker</span></a></div>
+      <div class="meta-top">{meta}</div>
+    </header>
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab" href="index.html">오늘의 브리프</a>
+      <a class="tab{tl_on}" href="timeline.html">타임라인</a>
+    </nav>
+
+    <p class="timeline-intro">{intro}</p>
+
+    <main class="timeline">
+
+"""
+PAGE_FOOT = """    </main>
+    <footer>{footer}</footer>
+  </div>
+</body>
+</html>
+"""
+
+
+def write(name, body):
+    path = os.path.join(ROOT, name)
+    old = open(path, encoding='utf-8').read() if os.path.exists(path) else None
+    if old != body:
+        open(path, 'w', encoding='utf-8').write(body)
+
+
+def day_section(d, inner_lines):
+    y, mo, da = d.split('-')
+    return '\n'.join([f'      <section class="timeline-day" aria-labelledby="timeline-date-{d}">',
+                      f'        <div class="timeline-date" id="timeline-date-{d}"><span>{int(mo)}/{int(da)}</span><small>{y}</small></div>',
+                      '        <div class="timeline-thread">'] + inner_lines + ['        </div>', '      </section>'])
+
+
+# ---------- archive.html (전체 브리프) ----------
+def build_archive(days):
     rel = CUR['relations']
     by_url = {}
     for d in sorted(days):
         for it in days[d]:
             by_url.setdefault(it['url'], it)   # first (earliest) occurrence is the parent anchor
-    children = {}
-    attached = set()
+    children, attached = {}, set()
     for d in sorted(days):
         for it in days[d]:
             pu = rel.get(it['url'])
@@ -189,63 +239,115 @@ def build():
         roots = [it for it in days[d] if id(it) not in attached]
         if not roots:
             continue
-        y, mo, da = d.split('-')
-        did = f'{mo}{da}'
-        lines = [f'      <section class="timeline-day" aria-labelledby="timeline-date-{d}">',
-                 f'        <div class="timeline-date" id="timeline-date-{d}"><span>{int(mo)}/{int(da)}</span><small>{y}</small></div>',
-                 '        <div class="timeline-thread">']
+        lines = []
         for it in roots:
             kids = children.get(it['url'], []) if by_url.get(it['url']) is it else []
             n_items += 1 + len(kids)
             lines += comment_html(it, 10, True, kids)
-        lines += ['        </div>', '      </section>']
-        sections.append('\n'.join(lines))
-    page = f'''<!DOCTYPE html>
-<html lang="ko">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>agi-tracker · 타임라인</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body class="timeline-page">
-  <div class="wrap">
-    <header>
-      <div class="brand"><a href="index.html">agi-<span>tracker</span></a></div>
-      <div class="meta-top">프론티어 랩 공지 · 스레드</div>
-    </header>
-    <nav class="tabs" aria-label="주요 메뉴">
-      <a class="tab" href="index.html">오늘의 브리프</a>
-      <a class="tab on" href="timeline.html">타임라인</a>
-    </nav>
-
-    <p class="timeline-intro">공식 발표를 부모로 두고 팟캐스트·뉴스레터·리뷰를 답글로 붙입니다. 확인된 링크만 올립니다.</p>
-
-    <main class="timeline">
-
-{chr(10).join(s + chr(10) for s in sections)}    </main>
-    <footer>agi-tracker · 공식 발표와 관련 스레드를 날짜순으로 정리합니다</footer>
-  </div>
-</body>
-</html>
-'''
-    open(os.path.join(ROOT, 'timeline.html'), 'w', encoding='utf-8').write(page)
+        sections.append(day_section(d, lines))
+    page = PAGE_HEAD.format(title='전체 브리프', meta='전체 브리프 · 날짜별', tl_on='',
+                            intro='지금까지 브리프에 실린 항목을 모두 날짜순으로 모았습니다. 공식 발표 아래에 관련 팟캐스트·뉴스레터·리뷰를 답글로 붙였습니다.') \
+        + '\n'.join(s + '\n' for s in sections) \
+        + PAGE_FOOT.format(footer='agi-tracker · 전체 브리프 · 확인된 링크만')
+    write('archive.html', page)
     total = sum(len(v) for v in days.values())
     assert n_items == total, (n_items, total)
-    return len(sections), n_items, sorted(days)
+    return len(sections), n_items
+
+
+# ---------- timeline.html (AGI 마일스톤) ----------
+AXES = {'reason': '추론·코딩', 'agent': '에이전트', 'science': '과학 발견', 'compute': '컴퓨트·인프라', 'safety': '안전·정책'}
+LAB_AV = {'openai': ('avatar-openai', 'O'), 'anthropic': ('avatar-anthropic', 'A'),
+          'googledeepmind': ('avatar-google', 'G'), 'nvidia': ('avatar-person', 'N'),
+          'meta': ('avatar-person', 'M'), 'xai': ('avatar-person', 'X')}
+
+
+def milestone_html(m, takes, ind=10):
+    p = ' ' * ind
+    big = m['impact'] == 'big'
+    av, letter = LAB_AV.get(m['lab'], ('avatar-person', m['lab'][:1].upper()))
+    cls = 'timeline-comment timeline-root ' + ('ms-big' if big else 'ms-small') + (' timeline-parent' if takes else '')
+    imp = '<span class="ms-impact">GAME CHANGER</span><span>·</span>' if big else ''
+    y, mo, da = m['date'].split('-')
+    axes = ''.join(f'<span class="ms-axis ax-{a}">{AXES[a]}</span>' for a in m['axes'])
+    key = ''
+    if m.get('key'):
+        k = m['key']
+        key = (f'<div class="ms-key"><b>{E(k["value"])}</b><span>{E(k["label"])}</span>'
+               f'<a href="{E(k["source_url"])}" target="_blank" rel="noopener">{E(host(k["source_url"]))}</a></div>')
+    links = (f'<div class="ms-links"><a href="{E(m["detail"])}">상세 글</a>'
+             f'<a href="{E(m["url"])}" target="_blank" rel="noopener">원문 · {E(host(m["url"]))} ↗</a></div>')
+    out = [f'{p}<article class="{cls}">',
+           f'{p}  <div class="timeline-avatar {av}" aria-hidden="true">{letter}</div>',
+           f'{p}  <div class="timeline-content">',
+           f'{p}    <div class="timeline-meta">{imp}<b>{E(m["lab"])}</b><span>·</span><time>{int(mo)}/{int(da)}</time></div>',
+           f'{p}    <div class="ms-axes">{axes}</div>',
+           f'{p}    <a class="timeline-title" href="{E(m["detail"])}">{E(m["title"])}</a>',
+           f'{p}    <p class="ms-desc">{E(m["summary"])}</p>']
+    if key:
+        out.append(f'{p}    {key}')
+    out += [f'{p}    {links}', f'{p}  </div>']
+    if takes:
+        out.append(f'{p}  <div class="timeline-replies">')
+        for t in takes:
+            out += comment_html(t, ind + 4, False)
+        out.append(f'{p}  </div>')
+    out.append(f'{p}</article>')
+    return out
+
+
+def build_milestones(days):
+    doc = json.load(open(os.path.join(ROOT, 'tools', 'milestones.json'), encoding='utf-8'))
+    items = {}
+    for d in sorted(days):
+        for it in days[d]:
+            items.setdefault(it['url'], it)
+    ms = doc['milestones']
+    errors = []
+    for m in ms:
+        for a in m['axes']:
+            if a not in AXES: errors.append(f'{m["id"]}: unknown axis {a}')
+        if m['impact'] not in ('big', 'small'): errors.append(f'{m["id"]}: impact must be big|small')
+        if not os.path.exists(os.path.join(ROOT, m['detail'])): errors.append(f'{m["id"]}: missing detail {m["detail"]}')
+        for t in m.get('takes', []):
+            if t['url'] not in items: errors.append(f'{m["id"]}: take not in any brief {t["url"]}')
+    if errors:
+        sys.exit('milestones.json errors:\n  ' + '\n  '.join(errors))
+    sections, n_takes = [], 0
+    for d in sorted({m['date'] for m in ms}, reverse=True):
+        lines = []
+        group = [m for m in ms if m['date'] == d]
+        group.sort(key=lambda m: m['impact'] != 'big')   # stable: big first, then file order
+        for m in group:
+            takes = []
+            for t in m.get('takes', []):
+                it = dict(items[t['url']])
+                CUR['overrides'].pop(t['url'], None)   # milestone take text wins over archive overrides
+                it['title'] = t.get('title') or it['title']
+                it['summary'] = t.get('summary') or it['summary']
+                takes.append(it)
+            n_takes += len(takes)
+            lines += milestone_html(m, takes)
+        sections.append(day_section(d, lines))
+    page = PAGE_HEAD.format(title='타임라인', meta='AGI 마일스톤', tl_on=' on',
+                            intro='AGI로 가는 길에서 흐름을 바꾼 랩 발표만 골랐습니다. 큰 카드는 판을 바꾼 사건, 작은 카드는 한 단계 진전입니다. 팟캐스트·뉴스레터 해석은 그 아래 답글로 붙습니다.') \
+        + '\n'.join(s + '\n' for s in sections) \
+        + PAGE_FOOT.format(footer='agi-tracker · AGI 마일스톤 · 모든 항목은 <a href="archive.html">전체 브리프</a>')
+    write('timeline.html', page)
+    return len(ms), n_takes
 
 
 ALL_LINK_RE = re.compile(r'\s*<a class="nav-all"[^>]*>.*?</a>')
 
 
 def add_nav_links():
-    pages = [(os.path.join(ROOT, 'index.html'), 'timeline.html')] + \
-            [(f, '../timeline.html') for f in glob.glob(os.path.join(ROOT, 'archive', '????-??-??.html'))]
+    pages = [(os.path.join(ROOT, 'index.html'), 'archive.html')] + \
+            [(f, '../archive.html') for f in glob.glob(os.path.join(ROOT, 'archive', '????-??-??.html'))]
     for f, href in pages:
         s = open(f, encoding='utf-8').read()
         s2 = ALL_LINK_RE.sub('', s)
         s2 = re.sub(r'(<div class="nav-dates">.*?)(\n\s*</div>)',
-                    lambda m: m.group(1) + f'\n      <a class="nav-all" href="{href}">전체 타임라인 →</a>' + m.group(2),
+                    lambda m: m.group(1) + f'\n      <a class="nav-all" href="{href}">전체 브리프 →</a>' + m.group(2),
                     s2, count=1, flags=re.S)
         if s2 != s:
             open(f, 'w', encoding='utf-8').write(s2)
@@ -254,5 +356,9 @@ def add_nav_links():
 CUR = json.load(open(os.path.join(ROOT, 'tools', 'timeline-curation.json'), encoding='utf-8'))
 if __name__ == '__main__':
     add_nav_links()
-    n_days, n_items, dates = build()
-    print(f'timeline: {n_days} dates, {n_items} items ({dates[0]} .. {dates[-1]})')
+    days = collect()
+    n_days, n_items = build_archive(days)
+    n_ms, n_takes = build_milestones(days)
+    ds = sorted(days)
+    print(f'archive.html: {n_days} dates, {n_items} items ({ds[0]} .. {ds[-1]})')
+    print(f'timeline.html: {n_ms} milestones, {n_takes} takes')

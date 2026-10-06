@@ -1,0 +1,295 @@
+{
+  "_doc": "AGI 마일스톤 (timeline.html). build_timeline.py가 읽는다. axes: reason|agent|science|compute|safety. impact: big|small. key: 원문에서 확인된 숫자만 {value,label,source_url}, 없으면 null. takes: 관련 커뮤니케이터 항목의 원문 URL (브리프에 이미 실린 항목). title/summary는 선택(없으면 브리프 카드 제목·첫 불릿).",
+  "milestones": [
+    {
+      "id": "pace",
+      "date": "2026-09-17",
+      "lab": "anthropic",
+      "title": "Anthropic, AI가 AI를 만드는 비중을 공개",
+      "summary": "사내 AI 연구개발의 약 26%를 Claude가 주도한다고 밝혔다. 내부 플랫폼에서는 연구·엔지니어링 에이전트 약 3만 개가 동시에 돈다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "26%",
+        "label": "Claude가 주도하는 사내 AI R&D 비중",
+        "source_url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+      },
+      "detail": "archive/articles-2026-09-18/anthropic-pace.html",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "takes": [
+        {
+          "url": "https://www.dwarkesh.com/p/noam-brown",
+          "title": "Noam Brown — 멀티에이전트·정렬·RSI",
+          "summary": "수학 진전이 RSI를 앞당긴다는 시각에 대해, 하룻밤 지능 폭발보다 수 배 가속이 더 그럴듯하다고 봤다."
+        }
+      ]
+    },
+    {
+      "id": "nvidia",
+      "date": "2026-09-17",
+      "lab": "nvidia",
+      "title": "NVIDIA, 내년 칩 판매 약 2배 전망",
+      "summary": "Jensen Huang이 내년 칩 판매량이 올해의 약 두 배가 될 거라고 말했다. 수요 쪽 스케일 신호가 계속 위를 가리킨다.",
+      "axes": [
+        "compute"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "~2배",
+        "label": "내년 칩 판매량 (올해 대비)",
+        "source_url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html"
+      },
+      "detail": "archive/articles-2026-09-18/huang-cnbc.html",
+      "url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+      "takes": [
+        {
+          "url": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
+          "title": "데이터센터 모라토리엄, 숫자로 다시 보기",
+          "summary": "지방 규제로 실제 늦어진 건 전국 약 2.3GW라고 셌다. 2027년 미국 IT 용량 +38GW 전망은 그대로 뒀다."
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+          "title": "ClusterMAX 3.0 — GPU 클라우드 등급표",
+          "summary": "GPU 클라우드 77곳을 심층 평가했다. 최고 등급(메달리온)은 전 세계 19곳뿐이다."
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "date": "2026-09-21",
+      "lab": "openai",
+      "title": "OpenAI 내부 모델, 미해결 수학 문제 100개+ 풀었다고 밝혀",
+      "summary": "8월 28일 학습을 시작한 내부 모델이 오랜 미해결 문제를 100개 넘게 풀었다고 했다. 검증과 공개 방식은 IAS의 독립 자문그룹과 함께 정한다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "100+",
+        "label": "풀었다고 밝힌 미해결 문제 (OpenAI 주장)",
+        "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+      },
+      "detail": "archive/articles-2026-09-22/openai-math-advisory.html",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "takes": [
+        {
+          "url": "https://terrytao.wordpress.com/2026/09/25/recommendations-of-the-summit-on-phd-math-education-in-the-age-of-ai/",
+          "title": "Kra·Ward — AI 시대 수학 박사 교육 권고안",
+          "summary": "하버드 CMSA 서밋에서 시니어 수학자 24명이 박사 과정의 어디를 고칠지 초안을 냈다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/03/what-does-the-advent-of-powerful-ai-models-mean-for-mathematicians-like-me/",
+          "title": "Taback — AI를 공동연구자처럼 쓴다",
+          "summary": "오래 붙잡은 문제를 AI로 푼 적은 아직 없다고 했다. 대신 틀린 보조정리를 고치는 동료로 쓴다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
+          "title": "Avigad — 더 어려운 문제를 풀자",
+          "summary": "AI가 푼 미해결 문제는 대부분 있는 기법을 이어 붙인 종류라고 봤다. 그래서 수학자는 더 큰 질문을 골라야 한다고 했다."
+        }
+      ]
+    },
+    {
+      "id": "opus",
+      "date": "2026-09-22",
+      "lab": "anthropic",
+      "title": "Claude Opus 5.5, Fable 5.1급 성능을 더 싸게",
+      "summary": "대부분 작업에서 Fable 5.1 수준을 낸다. 운용 비용은 Opus 5보다 약 40% 낮다. METR 등 외부 평가자가 출시 전에 테스트했다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "−40%",
+        "label": "Opus 5 대비 운용 비용",
+        "source_url": "https://www.anthropic.com/news/claude-opus-5-5"
+      },
+      "detail": "archive/articles-2026-09-23/anthropic-opus-5-5.html",
+      "url": "https://www.anthropic.com/news/claude-opus-5-5",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/i-left-claude-for-months-opus-55",
+          "title": "Claire Vo — Claude를 떠났다가 돌아온다",
+          "summary": "잔소리와 설교형 거절 때문에 Codex로 옮겼는데, Opus 5.5를 보고 돌아온다고 했다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+          "title": "AINews — Opus 5.5가 새 기본 모델",
+          "summary": "AINews 기본 모델을 Opus 5.5로 바꿨다. 같은 날 Sol·Luna 가격 인하까지 묶어 40–50% 인하로 정리했다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+          "title": "AINews — OpenRouter 1위가 Opus 5.5로",
+          "summary": "OpenRouter에서 Anthropic 지출·토큰 1위가 Opus 5.5로 넘어갔다고 짚었다."
+        }
+      ]
+    },
+    {
+      "id": "solluna",
+      "date": "2026-09-22",
+      "lab": "openai",
+      "title": "GPT-6 Sol·Luna, Astra 학습법을 반값 티어로",
+      "summary": "Astra와 비슷한 방법으로 학습한 중·저가 티어다. API 가격은 GPT-5.6 프로모 대비 50% 내렸다. Opus 5.5 발표 약 90분 뒤에 나왔다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "−50%",
+        "label": "API 가격 (GPT-5.6 프로모 대비) · Sol $2/$10",
+        "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      },
+      "detail": "archive/articles-2026-09-23/openai-gpt6-sol-luna.html",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/opus-55-vs-gpt-6-sol-which-model",
+          "title": "Claire Vo — Opus 5.5 vs Sol 블라인드 채점",
+          "summary": "에이전트와 B2B 프론트엔드는 Opus 5.5가 앞섰다. 명확한 글쓰기와 가격은 Sol이 낫다고 봤다."
+        },
+        {
+          "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+          "title": "Opus 5.5, Sol·Luna, 그리고 가격 전쟁",
+          "summary": "Sol·Luna는 약 50%, Opus 5.5는 약 20% 싸졌다고 비교했다. 기본 모델을 뭘로 둘지가 실무 질문이 됐다."
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "date": "2026-09-23",
+      "lab": "anthropic",
+      "title": "Claude 에이전트가 새 효소 시스템을 찾았다",
+      "summary": "Claude 에이전트가 DNA 데이터베이스를 뒤져 CRISPR와 닮은 반복 배열을 가진 ART 시스템을 찾았다. 사람 연구자가 실험으로 확인했다. 기능은 아직 모른다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "950개 · 21시간",
+        "label": "투입된 Claude 에이전트 · 탐색 시간",
+        "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+      },
+      "detail": "archive/articles-2026-09-24/anthropic-claude-enzyme-art.html",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+          "title": "Eric Nguyen — 바이오시큐리티는 AI 군비경쟁",
+          "summary": "유전체 AI가 빨라지면서 바이오 방어도 사이버처럼 경쟁이 됐다고 봤다. 모델을 묶기보다 방어 역량을 키우자는 쪽이다."
+        }
+      ]
+    },
+    {
+      "id": "safetycase",
+      "date": "2026-09-29",
+      "lab": "openai",
+      "title": "OpenAI, 프론티어 RL 전에 안전 문서부터",
+      "summary": "프론티어 강화학습을 이어가려면 safety case 수준의 안전 문서가 필요하다는 초기 가이드라인이다. 정렬 학습·봉쇄·모니터링 세 축을 적었다.",
+      "axes": [
+        "safety"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "archive/articles-2026-09-30/openai-safety-cases-training.html",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/",
+      "takes": [
+        {
+          "url": "https://www.platformer.news/open-ai-model-release-canceled/",
+          "title": "DevDay 직전, Astra급 출시 철회",
+          "summary": "OpenAI가 DevDay 코앞에서 새 모델 공개를 안전 이유로 취소했다고 보도했다."
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/29/first-on-cnbc-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-kate-rooney-on-halftime-report-today.html",
+          "title": "Altman, CNBC — 출시 미룬 건 신중",
+          "summary": "평가가 기준에 못 미친 모델은 출시를 미뤘다고 직접 확인했다. 정렬은 아직 과학 문제라고 했다."
+        }
+      ]
+    },
+    {
+      "id": "dots",
+      "date": "2026-09-30",
+      "lab": "openai",
+      "title": "dots, 24시간 일하는 개인 에이전트",
+      "summary": "GPT-6 Astra 기반이다. 전용 클라우드 PC와 브라우저로 ChatGPT·Slack·Teams에서 목표를 계속 진행한다. 중요한 행동은 사용자 승인을 받는다.",
+      "axes": [
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "4,000+",
+        "label": "연결되는 앱 플러그인",
+        "source_url": "https://openai.com/index/introducing-dots/"
+      },
+      "detail": "archive/articles-2026-09-30/openai-dots.html",
+      "url": "https://openai.com/index/introducing-dots/",
+      "takes": [
+        {
+          "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+          "title": "DevDay 현장 로그",
+          "summary": "dots와 ChatGPT Spaces를 Muse급 개인 에이전트에 대한 맞대응으로 봤다."
+        },
+        {
+          "url": "https://www.platformer.news/openai-dots-agents-devday-2026/",
+          "title": "Casey Newton — dots 실사용",
+          "summary": "DevDay 직후 써 봤다. Muse보다 업무에 맞고 채팅 스레드 UX도 낫다고 평했다."
+        }
+      ]
+    },
+    {
+      "id": "sol61",
+      "date": "2026-09-30",
+      "lab": "openai",
+      "title": "GPT-6.1 Sol, Astra급 코딩을 1/5 가격에",
+      "summary": "DeepSWE v1.1에서 GPT-6 Astra와 비슷한 점수를 냈다. 비용은 약 5분의 1이다. 과학 벤치는 여전히 Astra가 앞선다.",
+      "axes": [
+        "reason",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "1/5",
+        "label": "GPT-6 Astra 대비 API 단가 ($2/$10)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+      },
+      "detail": "archive/articles-2026-09-30/openai-gpt-6-1-sol.html",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+          "title": "AINews — DevDay 다음날, Sol 단가·벤치부터",
+          "summary": "dots·Sol 6.1·Codex 발표를 엔지니어 기준으로 다시 정리하고 독립 벤치 숫자를 붙였다."
+        }
+      ]
+    },
+    {
+      "id": "argon",
+      "date": "2026-10-01",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 Argon, 사이버 방어팀부터 공개",
+      "summary": "장시간 코딩·지식 업무·사이버 방어용 프론티어 모델이다. 신뢰할 수 있는 방어팀(Fairwind)부터 먼저 쓰게 했다. 출력 한도는 1M 토큰이다.",
+      "axes": [
+        "reason",
+        "safety"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "77.9%",
+        "label": "DeepSWE v1.1",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      },
+      "detail": "archive/articles-2026-10-01/gemini-4-argon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+          "title": "AINews — Argon 벤치, AA·Vals가 먼저",
+          "summary": "출시 다음날 독립 벤치 숫자를 모았다. 지금은 Fairwind 참가자만 쓸 수 있다고 짚었다."
+        }
+      ]
+    }
+  ]
+}
