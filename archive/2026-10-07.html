@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.07</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.07 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Anthropic이 검증된 보안팀에 사이버 차단을 단계별로 풀어 주는 프로그램을 새로 냈고, OpenAI는 Ironclad와 함께 계약 업무를 GPT-6 Astra에 학습시켰습니다. Tao 블로그엔 Erdős 문제 사이트가 AI 증명 댓글을 멈춘다는 글이, Willison·Latent Space 쪽엔 Mistral Large 4와 미국산 오픈 모델 Reflection Beam 소식이 올라왔습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/7</span>
+      <a href="2026-10-06.html">10/6</a>
+      <a href="2026-10-05.html">10/5</a>
+      <a href="2026-10-04.html">10/4</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Anthropic (공식 발표)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/anthropic-cyber-verification-tiers.html">Anthropic, 검증된 보안팀엔 사이버 차단을 단계별로 푼다</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/cyber-verification-program" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 사이버 검증 프로그램(CVP)을 방어·레드팀·특수 접근 3단계로 다시 짰다. Mythos 모델을 주던 Project Glasswing도 여기에 합쳤다.</li>
+        <li>일반 Claude는 사이버 작업 대부분을 막는다. 심사를 통과한 보안팀은 Opus 5.5, Sonnet 5.5, Mythos 5.1을 차단이 덜한 상태로 쓴다.</li>
+        <li>Anthropic 시험에서 레드팀 단계의 Opus 5.5는 공격 시나리오 50번 중 34번을 끝냈다. 프로그램 밖에선 전부 첫 질문에서 막혔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 보안 업무에 Claude를 쓰다 차단에 걸린 적이 있다면, 며칠이면 답이 온다는 방어 단계부터 신청해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI (공식 발표 · Ironclad 협업)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/openai-ironclad-computer-use.html">OpenAI, 계약 소프트웨어 다루는 법을 Astra에 학습시켰다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/advancing-computer-use-with-ironclad" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 계약 관리 회사 Ironclad와 함께 업무용 소프트웨어 작업을 모델 학습에 넣었다. GPT-6 Astra가 이 과제로 학습한 첫 프론티어 모델이다.</li>
+        <li>계약서 설정과 승인 흐름 같은 과제 11개로 쟀다. Astra 평균 점수는 55.0%로 GPT-5.6 Sol의 41.6%보다 높았다.</li>
+        <li>과제 한 번에 걸린 시간은 37.0분에서 19.2분으로 줄었다. Astra 개발에 쓴 내부 모델은 63.7%까지 나왔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 사내 업무 도구에 에이전트를 붙일 계획이라면, 특정 소프트웨어로 따로 학습한 모델이 나오는 흐름을 지켜볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao (블로그 게스트 글 · Thomas Bloom)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/tao-bloom-erdos-site.html">Erdős 문제 사이트, AI 증명 올리는 댓글을 멈춘다</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/06/changes-to-the-erdos-problems-web-site/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>erdosproblems.com 운영자 Thomas Bloom이 Terence Tao 블로그에 운영 방침 변경을 알렸다. 문제별 댓글과 증명 주장 등록을 당분간 받지 않는다.</li>
+        <li>요즘 댓글 대부분이 설명 없는 AI 증명을 올려 선점권을 주장하는 글이라고 했다. 사람끼리 하던 수학 토론은 크게 줄었다.</li>
+        <li>문제마다 붙던 미해결·해결 표시와 해결 비율도 없앤다. 대신 잘 쓴 증명 해설을 더 싣는다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI로 Erdős 문제를 풀고 있다면, 결과만 올리기보다 Lean 형식화와 직접 쓴 해설을 같이 준비할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Mitchell Hashimoto</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/mitchellh-osc7501-program-status.html">Hashimoto, 에이전트 상태를 터미널에 알리는 표준을 제안했다</a>
+        <span class="domain">(mitchellh.com)</span>
+        <a class="ext-link" href="https://mitchellh.com/writing/program-status-osc7501" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Ghostty를 만든 Mitchell Hashimoto가 새 터미널 규격 OSC 7501을 공개했다. 프로그램이 작업 중인지, 사용자를 기다리는지, 끝났는지 터미널에 직접 알리는 방식이다.</li>
+        <li>지금 에이전트 관리 도구들은 화면이나 창 제목을 읽고 상태를 짐작한다. 한 도구의 Claude Code 판별 규칙은 석 달 사이 열 번 바뀌었다.</li>
+        <li>Claude Code, Codex, Terraform, Homebrew에 시험 삼아 붙여 봤는데 각각 열두 줄을 넘지 않았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 코딩 에이전트 여러 개를 터미널에 띄워 쓴다면, 쓰는 터미널과 도구가 이 규격을 지원하는지 확인해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/willison-mistral-large-4.html">Willison “Mistral Large 4, 프론티어 6개월 뒤까지 왔다”</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Oct/6/le-chonk/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Mistral이 Mistral Large 4 프리뷰를 API로 냈다. 파라미터 1조 개 중 490억 개만 켜는 구조이고, 자체 Grace Blackwell GPU 3,800개로 학습했다.</li>
+        <li>오픈 웨이트는 이달 말 공개할 예정이다. API의 추론 단계는 &#x27;none&#x27;과 &#x27;high&#x27; 두 가지뿐이다.</li>
+        <li>Simon Willison은 Artificial Analysis 점수 38로 DeepSeek 4.1 Flash 바로 아래라고 짚었다. 작년 12월 Large 3의 9점보다 크게 올랐다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 프랑스산 대형 오픈 웨이트 모델을 기다렸다면, 이달 말 가중치가 풀릴 때 직접 돌려 볼 후보로 적어 둘 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (AINews)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/latent-reflection-beam.html">Reflection, 미국에서 처음부터 학습한 오픈 모델 Beam을 냈다</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-reflection-beam-501b-a23b" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>1년 넘게 조용하던 Reflection이 코딩·에이전트용 오픈 모델 Beam을 발표했다. 전체 5,010억 파라미터 중 230억 개만 켜는 구조다.</li>
+        <li>미국에서 처음부터 학습했고, Apache 2.0 전체 가중치는 이달 안에 공개한다. Reflection은 SWE-bench Verified 80.9점을 내세웠다.</li>
+        <li>Latent Space는 최신 중국 오픈 모델들이 대체로 앞선다고 봤다. 그래도 미국산 선택지를 기다린 수요가 있다고 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 미국에서 학습한 오픈 모델이 꼭 필요하다면, 이달 가중치 공개와 기술 보고서를 보고 정할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Training Data (Sequoia · Sonya Huang)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/trainingdata-vahdat-goodput.html">Google 인프라 책임자 “FLOPS보다 실제로 해낸 일을 본다”</a>
+        <span class="domain">(sequoiacap.com)</span>
+        <a class="ext-link" href="https://sequoiacap.com/podcast/google-s-ai-infrastructure-chief-amin-vahdat-on-the-physics-economics-of-frontier-ai" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Sequoia 팟캐스트 Training Data에 Google AI 인프라 최고기술자 Amin Vahdat이 나왔다. 가속기 10만 개 규모에선 한 시간에도 여러 번 어딘가 고장 난다고 했다.</li>
+        <li>그래서 이론상 연산 성능(FLOPS) 대신, 고장 속에서도 실제로 끝낸 일의 양인 &#x27;goodput&#x27;을 기준으로 삼는다고 했다.</li>
+        <li>TPU를 처음으로 추론용 8i와 학습용 8t로 나눈 이유도 설명했다. 오래 일하는 에이전트가 CPU와 스토리지 수요까지 끌어올린다고 봤다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 인프라 비용을 따지고 있다면, 칩 성능표보다 실제 가동 기준을 어떻게 잡는지 들어볼 만하다.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z Podcast (David George · Kevin Mandia)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-07/a16z-mandia-agentic-defense.html">Mandiant 창업자 Mandia “방어도 자율로 가야 한다”</a>
+        <span class="domain">(a16z.simplecast.com)</span>
+        <a class="ext-link" href="https://a16z.simplecast.com/episodes/building-defense-for-the-agentic-era-kevin-mandia-4ylPD1X6" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Mandiant를 세운 Kevin Mandia가 a16z 팟캐스트에 나왔다. 지금은 새 보안 회사 Armadin의 CEO다.</li>
+        <li>AI 덕분에 공격자는 수천 가지 경로를 동시에 찔러 볼 수 있다고 했다. 그래서 탐지하고 대응하는 과정에 사람이 계속 끼어 있을 수 없다고 봤다.</li>
+        <li>Armadin은 AI로 고객 시스템을 계속 공격해 약점을 먼저 찾는다. 올해 실제 운영 환경에서 제로데이 90개 이상을 찾았다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 보안팀에 AI를 들일지 고민 중이라면, 같은 날 나온 Anthropic 사이버 검증 프로그램 소식과 함께 들어 보면 된다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

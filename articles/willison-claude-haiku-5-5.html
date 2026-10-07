@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Willison “Haiku 5.5, 10만 토큰 넘으면 Luna가 낫다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-10-08 Seoul</span></div>
+    <h1 class="article-title">Willison “Haiku 5.5, 10만 토큰 넘으면 Luna가 낫다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/" target="_blank" rel="noopener">simonwillison.net</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Simon Willison이 Anthropic의 새 작은 모델 Claude Haiku 5.5를 써 보고 가격부터 따졌다. 비교 대상은 지난달 나온 OpenAI GPT-6 Luna다.
+      </p>
+
+      <h2>가격 비교 (100만 토큰당)</h2>
+
+      <ul>
+        <li>Haiku 5.5, 10만 토큰 이하: 입력 0.10달러, 출력 0.50달러 (Luna와 같음)</li>
+        <li>Haiku 5.5, 10만 토큰 초과: 입력 0.50달러, 출력 2.50달러</li>
+        <li>Luna, 27만 2천 토큰 초과: 입력 0.20달러, 출력 0.75달러</li>
+      </ul>
+
+      <p>
+        Willison의 결론은 간단하다. 작업이 10만 토큰 안에 들어가면 Haiku가 값은 같고 점수는 높다. 그보다 길면 Luna가 훨씬 낫다.
+      </p>
+
+      <p>
+        새 토크나이저도 짚었다. 자신이 만든 토큰 계산기로 재 보니, 같은 긴 프롬프트가 Haiku 4.5보다 토큰을 약 1.25배 썼다. 단가표에 안 보이는 가격 인상이라는 얘기다.
+      </p>
+
+      <h2>펠리컨 그림 시험</h2>
+
+      <p>
+        늘 하던 대로 ‘자전거 타는 펠리컨’ SVG를 그려 보게 했다. Haiku 5.5는 추론을 끌 수 없고 기본값은 medium이다. low 단계는 7초 동안 0.0936센트가 들었다. max 단계는 5분 9초가 걸렸는데도 3.3826센트였다. low보다 높은 단계에선 자전거 뼈대가 제대로 나왔다고 했다.
+      </p>
+
+      <h2>구독자 API 크레딧</h2>
+
+      <p>
+        Max와 Team 구독자에게 매달 주는 API 크레딧은 구독료와 같은 금액이다. Willison은 “정말 후하다”고 평했다. 잔액이 떨어지면 요청을 멈추는 설정도 있어 요금 폭탄 걱정이 적다. 다만 남은 크레딧은 다음 달로 넘어가지 않는다.
+      </p>
+
+      <p>
+        OpenAI는 Codex 구독으로 개인 API를 쓰게 해 줘서 많이 쓰는 사람에겐 여전히 더 유리하다고 덧붙였다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

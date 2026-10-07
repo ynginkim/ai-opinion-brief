@@ -306,9 +306,35 @@
         "label": "레드팀 단계 CyScenarioBench 완료",
         "source_url": "https://www.anthropic.com/news/cyber-verification-program"
       },
-      "detail": "articles/anthropic-cyber-verification-tiers.html",
+      "detail": "archive/articles-2026-10-07/anthropic-cyber-verification-tiers.html",
       "url": "https://www.anthropic.com/news/cyber-verification-program",
       "takes": []
+    },
+    {
+      "id": "math722",
+      "date": "2026-10-07",
+      "lab": "openai",
+      "title": "OpenAI 미공개 모델, 수학 원고 722편을 한꺼번에 공개",
+      "summary": "OpenAI가 내부 모델로 얻은 수학 결과 722편을 GitHub에 올렸다. 준리만 가설, CM 아벨 다양체의 Hodge 추측 같은 큰 결과가 들어 있다. 결과당 평균 ChatGPT Pro 세 시간이 들었고, 162편은 주요 결과를 Lean으로 검증했다.",
+      "axes": [
+        "science",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "722",
+        "label": "공개한 수학 원고 (372개 결과 묶음)",
+        "source_url": "https://github.com/openai/math"
+      },
+      "detail": "articles/openai-math-722-manuscripts.html",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+          "title": "AINews — 결과당 ChatGPT Pro 세 시간",
+          "summary": "결과보다 방법이 더 놀랍다고 짚었다. 약 20%가 반증·반례라는 분석과 회의론도 함께 모았다."
+        }
+      ]
     }
   ]
 }

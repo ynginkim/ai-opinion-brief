@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI, 미공개 모델이 쓴 수학 원고 722편을 공개했다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI (공식 발표 · GitHub) · <span class="article-date">2026-10-07 Seoul</span></div>
+    <h1 class="article-title">OpenAI, 미공개 모델이 쓴 수학 원고 722편을 공개했다</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/sharing-ai-progress-in-mathematics/" target="_blank" rel="noopener">openai.com</a> · <a href="https://github.com/openai/math" target="_blank" rel="noopener">GitHub openai/math</a> · <a href="https://fortune.com/2026/10/07/openai-math-controversy-solutions-370-outstanding-challenges-published-criticisms-celebration/" target="_blank" rel="noopener">Fortune 반응</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 한국 시간 10월 7일 아침 수학 원고 722편을 GitHub에 공개했다. 모두 아직 공개하지 않은 내부 모델이 만든 결과다. 주 결과와 보조 정리, 다른 증명을 한 묶음으로 세면 372개다.
+      </p>
+
+      <p>
+        OpenAI는 기존 수학 평가 점수가 꽉 차서 미해결 연구 문제로 평가를 넓혔다고 설명했다. 모델에 던진 문제는 약 4,000개였다.
+      </p>
+
+      <h2>무엇이 들어 있나</h2>
+
+      <ul>
+        <li>준리만 가설: 리만 제타 함수와 모든 디리클레 L-함수가 실수부 7/8보다 큰 영역에선 0이 되지 않는다는 증명이다. 리만 가설은 이 경계가 1/2이라는 주장이다.</li>
+        <li>Hodge 추측의 한 경우: 복소 곱셈(CM)을 가진 아벨 다양체에서 Hodge 추측이 성립한다는 증명이다.</li>
+        <li>π의 무리수 지수가 정확히 2라는 증명이다. 덕분에 Flint–Hills 급수가 수렴한다는 사실도 따라 나온다.</li>
+        <li>이 밖에 Mahler 추측, 자유군 인자의 동형 문제 같은 결과도 목록에 있다.</li>
+      </ul>
+
+      <h2>어떻게 만들었나</h2>
+
+      <p>
+        대부분은 같은 절차로 얻었다. 결과 하나에 평균 ChatGPT Pro 세 시간 분량의 연산을 썼다. 제타 함수 쪽 결과와 CM 아벨 다양체 Hodge 추측은 이 절차의 예외라고 OpenAI는 밝혔다. 준리만 가설의 11/12 버전 원고는 사람이 읽기 쉽게 다듬었다.
+      </p>
+
+      <p>
+        원고마다 PDF와 소스 파일이 있다. 162편은 주요 결과를 Lean으로 형식화했다. Lean은 증명이 맞는지 컴퓨터가 한 줄씩 확인하는 증명 보조기다. 모델의 추론 과정을 줄인 요약 10편도 함께 올렸다.
+      </p>
+
+      <p>
+        OpenAI는 형식화하지 않은 결과 중 일부엔 문제가 있을 수 있다고 적었다. 결과를 만든 모델은 아직 공개하지 않았다.
+      </p>
+
+      <h2>반응</h2>
+
+      <p>
+        Fortune에 따르면 수학계 반응은 갈렸다. 토론토대 Daniel Litt는 “수학에 좋은 일”이라고 했다. 다만 AI가 수학을 다 풀었다는 인식이 퍼져 연구 지원이 줄고 젊은 연구자가 떠날까 걱정했다.
+      </p>
+
+      <p>
+        NYU의 Tristan Buckmaster는 New York Times에 다른 수학자의 작업을 이어받아 완성한 결과가 섞여 있을 수 있다고 말했다. 공개 방식을 조언한 IAS 자문 그룹은 자신들의 권고안을 다시 확인한다는 성명을 냈다. OpenAI는 권고 중 일부만 따랐고, 모델 이름도 밝히지 않았다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        지난달 OpenAI는 미해결 문제 100개 넘게 풀었다고 밝혔고, Navier-Stokes 결과도 따로 냈다. 이번엔 원고 수백 편과 증명 파일을 한꺼번에 내놨다. 결과 하나에 든 연산은 평균 몇 시간이다.
+      </p>
+
+      <p>
+        읽고 검증하는 일은 여전히 사람 몫이다. Litt는 OpenAI에도 이 증명을 다 이해할 만큼 여러 분야 수학자가 있지 않다고 봤다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        OpenAI는 수정본을 새 버전으로 남기고 이전 버전도 계속 볼 수 있게 하겠다고 했다. 커뮤니티가 운영하는 다른 저장소도 찾고 있다. 결과를 이해하도록 돕는 워크숍과 프로그램에도 돈을 대겠다고 밝혔다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
