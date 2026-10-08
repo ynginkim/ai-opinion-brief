@@ -326,13 +326,18 @@
         "label": "공개한 수학 원고 (372개 결과 묶음)",
         "source_url": "https://github.com/openai/math"
       },
-      "detail": "articles/openai-math-722-manuscripts.html",
+      "detail": "archive/articles-2026-10-08/openai-math-722-manuscripts.html",
       "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
       "takes": [
         {
           "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
           "title": "AINews — 결과당 ChatGPT Pro 세 시간",
           "summary": "결과보다 방법이 더 놀랍다고 짚었다. 약 20%가 반증·반례라는 분석과 회의론도 함께 모았다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+          "title": "인간수학협회 — 학문이 아니라 힘 과시",
+          "summary": "Tao 블로그에 실린 성명. 수학자들이 요청한 적 없는 작업이고 자문 그룹 권고도 무시했다며, OpenAI와 협업을 멈추라고 했다."
         }
       ]
     },
@@ -352,13 +357,18 @@
         "label": "OSWorld 2.1 컴퓨터 사용 (Haiku 4.5는 15.7%)",
         "source_url": "https://www.anthropic.com/claude-haiku-5-5"
       },
-      "detail": "articles/anthropic-claude-haiku-5-5.html",
+      "detail": "archive/articles-2026-10-08/anthropic-claude-haiku-5-5.html",
       "url": "https://www.anthropic.com/claude-haiku-5-5",
       "takes": [
         {
           "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
           "title": "Willison — 10만 토큰 넘으면 Luna가 낫다",
           "summary": "10만 토큰까지는 Luna와 값이 같고 점수는 Haiku가 높다고 봤다. 새 토크나이저 탓에 같은 프롬프트가 Haiku 4.5보다 토큰을 약 1.25배 쓴다는 점도 짚었다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+          "title": "AINews — 같은 값이면 Luna보다 낫다",
+          "summary": "Artificial Analysis 지능 지수 43점으로 이전 Haiku보다 26점 올랐고, GPT-6 Luna(38점)를 앞섰다고 정리했다."
         }
       ]
     }

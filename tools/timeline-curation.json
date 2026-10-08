@@ -14,7 +14,9 @@
     "https://www.platformer.news/openai-dots-agents-devday-2026/": "https://openai.com/index/introducing-dots/",
     "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
     "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/": "https://www.anthropic.com/claude-haiku-5-5",
-    "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
+    "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+    "https://www.latent.space/p/ainews-claude-haiku-55-better-than": "https://www.anthropic.com/claude-haiku-5-5",
+    "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/": "https://openai.com/index/sharing-ai-progress-in-mathematics/"
   },
   "overrides": {
     "https://www.anthropic.com/news/claude-frontier-academy": {
