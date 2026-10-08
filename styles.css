@@ -448,6 +448,8 @@ body.timeline-page .wrap { max-width: 860px; }
 .ms-key span { color: #9fb0c6; font-size: 11.5px; }
 .ms-key a { color: #5f6f85; font-size: 10.5px; white-space: nowrap; }
 .ms-key a:hover { color: var(--link); }
+.ms-brief { color: #5f6f85; font-size: 10.5px; margin-left: 2px; }
+.ms-brief:hover { color: var(--link); }
 .ms-links { color: #65758b; display: flex; flex-wrap: wrap; font-size: 11px; gap: 10px; margin-top: 4px; }
 .ms-links a { color: #65758b; }
 .ms-links a:hover { color: var(--link); }

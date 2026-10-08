@@ -262,7 +262,23 @@ LAB_AV = {'openai': ('avatar-openai', 'O'), 'anthropic': ('avatar-anthropic', 'A
           'meta': ('avatar-person', 'M'), 'xai': ('avatar-person', 'X')}
 
 
-def milestone_html(m, takes, ind=10):
+def brief_ref(m, items, index_date):
+    """(brief date, page href) of the brief that first carried this milestone, or None."""
+    it = items.get(m['url'])
+    d = it['date'] if it else None
+    if not d:
+        mm = re.search(r'articles-(\d{4}-\d{2}-\d{2})/', m['detail'])
+        d = mm.group(1) if mm else (index_date if m['detail'].startswith('articles/') else None)
+    if not d:
+        return None
+    if os.path.exists(os.path.join(ROOT, 'archive', f'{d}.html')):
+        return d, f'archive/{d}.html'
+    if d == index_date:
+        return d, 'index.html'
+    return None
+
+
+def milestone_html(m, takes, ind=10, brief=None):
     p = ' ' * ind
     big = m['impact'] == 'big'
     av, letter = LAB_AV.get(m['lab'], ('avatar-person', m['lab'][:1].upper()))
@@ -277,10 +293,15 @@ def milestone_html(m, takes, ind=10):
                f'<a href="{E(k["source_url"])}" target="_blank" rel="noopener">{E(host(k["source_url"]))}</a></div>')
     links = (f'<div class="ms-links"><a href="{E(m["detail"])}">상세 글</a>'
              f'<a href="{E(m["url"])}" target="_blank" rel="noopener">원문 · {E(host(m["url"]))} ↗</a></div>')
+    note = ''
+    if brief and brief[0] != m['date']:   # announced (KST) one day, carried by a later morning brief
+        _, bm, bd = brief[0].split('-')
+        note = (f'<a class="ms-brief" href="{E(brief[1])}" title="이 발표가 실린 브리프">'
+                f'{int(bm)}/{int(bd)} 브리프</a>')
     out = [f'{p}<article class="{cls}">',
            f'{p}  <div class="timeline-avatar {av}" aria-hidden="true">{letter}</div>',
            f'{p}  <div class="timeline-content">',
-           f'{p}    <div class="timeline-meta">{imp}<b>{E(m["lab"])}</b><span>·</span><time>{int(mo)}/{int(da)}</time></div>',
+           f'{p}    <div class="timeline-meta">{imp}<b>{E(m["lab"])}</b><span>·</span><time datetime="{E(m["date"])}">{int(mo)}/{int(da)}</time>{note}</div>',
            f'{p}    <div class="ms-axes">{axes}</div>',
            f'{p}    <a class="timeline-title" href="{E(m["detail"])}">{E(m["title"])}</a>',
            f'{p}    <p class="ms-desc">{E(m["summary"])}</p>']
@@ -336,7 +357,7 @@ def build_milestones(days):
                 it['summary'] = t.get('summary') or it['summary']
                 takes.append(it)
             n_takes += len(takes)
-            lines += milestone_html(m, takes)
+            lines += milestone_html(m, takes, brief=brief_ref(m, items, max(days)))
         sections.append(day_section(d, lines))
     page = PAGE_HEAD.format(title='타임라인', meta='AGI 마일스톤', tl_on=' on',
                             intro='AGI로 가는 길에서 흐름을 바꾼 랩 발표만 골랐습니다. 큰 카드는 판을 바꾼 사건, 작은 카드는 한 단계 진전입니다. 팟캐스트·뉴스레터 해석은 그 아래 답글로 붙습니다.') \
