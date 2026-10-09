@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Microsoft, 고르기만 하는 모델 Decision-1 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Satya Nadella · Microsoft · <span class="article-date">2026-10-10 Seoul</span></div>
+    <h1 class="article-title">Microsoft, 고르기만 하는 모델 Decision-1 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry/" target="_blank" rel="noopener">commandline.microsoft.com</a> · <a href="https://x.com/satyanadella/status/2108627923888754862" target="_blank" rel="noopener">Satya Nadella</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Microsoft가 판단 전용 모델 Microsoft-Decision-1을 공개했다. Satya Nadella가 X에서 직접 소개했다. 글을 길게 쓰는 대신, 정해진 보기 중 무엇을 고를지 확률로 답한다.
+      </p>
+
+      <p>
+        쓰임새는 라우팅, 분류, 우선순위 정하기, 검증, 에이전트 흐름 제어다. Microsoft Foundry에서 바로 쓸 수 있고 OpenRouter에도 곧 들어간다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <ul>
+        <li>36개 벤치마크, 약 15만 문항(학습에 쓰지 않은 것)에서 정확도 1위</li>
+        <li>2위 Quyet-1.0-Large보다 4.5배, GPT-6 Sol보다 35배 빠름 (P50 지연 기준)</li>
+        <li>같은 요청을 8가지로 바꿔 물었을 때 판단이 뒤집힌 비율 평균 1.3%</li>
+        <li>가격: 입력 100만 토큰당 0.042달러, 출력 무료</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트는 한 작업 안에서 작은 판단을 수십 번 한다. 판단 하나에 0.1초만 더 걸려도 20번이면 2초가 늘어난다는 게 Microsoft의 설명이다. 이런 판단을 큰 언어 모델 대신 작은 전용 모델에 맡기자는 제안이다.
+      </p>
+
+      <p>
+        사내 시험 결과도 공개했다. Xbox 리서치는 게임 피드백 1만 건 넘게 분류했는데, GPT-6 Sol과 품질이 비슷하면서 14배 넘게 빠르고 200배 쌌다고 한다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        지금은 Qwen3.5-9B를 추가 학습한 모델이다. Microsoft는 곧 자체 MAI 모델과 OpenAI 모델 위로 옮기겠다고 했다. 수치는 모두 Microsoft 자체 측정이다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
