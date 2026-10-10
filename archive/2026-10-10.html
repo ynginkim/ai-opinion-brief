@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.10</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.10 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      OpenAI가 안전 연구원 해고는 정책 위반 때문이라고 반박했고, Neel Nanda는 앞뒤가 안 맞는다고 다시 받아쳤습니다. OpenAI는 GPT-6.1 Sol을 최대 8배 빠르게 돌리는 Ultrafast를, Anthropic은 Claude Dashboards·Motion 베타를 냈고, Microsoft는 판단만 하는 작은 모델 Decision-1을 공개했습니다. 과학 쪽에선 Claude로 완성한 첫 자외선 전천 지도, 과학자의 AI 사용을 분석한 DeepMind 에세이, Lean을 무작정 믿지 말자는 Tao 블로그 글이 나왔습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/10</span>
+      <a href="2026-10-09.html">10/9</a>
+      <a href="2026-10-08.html">10/8</a>
+      <a href="2026-10-07.html">10/7</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">OpenAI (공식 입장) · Neel Nanda (X)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/openai-statement-safety-firings.html">OpenAI “안전 연구원 해고는 정책 위반 때문”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/OpenAINewsroom/status/2108441580806025712" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI 연구 책임자들이 안전 연구원 3명을 내보낸 건 민감 정보 취급 규정을 어겼기 때문이라고 밝혔다.</li>
+        <li>안전 문제를 제기해서 해고한 건 아니라고 했다. 외부 안전 평가 기관과의 계약도 몇 주 안에 발표하겠다고 했다.</li>
+        <li>Google DeepMind의 Neel Nanda는 앞뒤가 안 맞는다며, 세 사람이 각각 다른 해고 사유를 들었다는 점을 다시 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> OpenAI의 안전 약속을 지켜보고 있다면, 몇 주 안에 나온다는 외부 평가 기관 계약 내용을 확인할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI (개발자 발표)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/openai-gpt-6-1-sol-ultrafast.html">GPT-6.1 Sol, 6배 값에 최대 8배 빠른 Ultrafast</a>
+        <span class="domain">(community.openai.com)</span>
+        <a class="ext-link" href="https://community.openai.com/t/ultrafast-is-rolling-out-today-for-gpt-6-1-sol-in-the-api-codex-and-chatgpt-work/1404475/1" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 GPT-6.1 Sol의 초고속 모드 Ultrafast를 API, Codex, ChatGPT Work에 풀었다. 기본 Sol보다 최대 8배 빠르다고 했다.</li>
+        <li>API 가격은 입력 100만 토큰당 12달러, 출력 60달러다. 기본 요금의 6배이고, GPT-6 Astra의 약 1.2배다.</li>
+        <li>Codex와 ChatGPT Work에선 Pro 500 요금제와 일부 Enterprise·Edu 플랜에서만 쓸 수 있다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 장애 대응이나 실시간 에이전트처럼 몇 초가 아쉬운 작업이라면, 6배 요금을 낼 만한지 따져 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic (Claude 제품 발표)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/claude-dashboards-motion.html">Claude, 회사 데이터로 실시간 대시보드를 만든다</a>
+        <span class="domain">(claude.com)</span>
+        <a class="ext-link" href="https://claude.com/resources/articles/dashboards-and-motion" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 Claude Dashboards 베타를 유료 플랜에 냈다. BigQuery나 Snowflake, Salesforce를 연결하고 말로 물으면 실시간 대시보드를 만들어 준다.</li>
+        <li>Claude Motion은 보고서와 차트를 짧은 애니메이션으로 바꿔 MP4로 내보낸다. Team·Enterprise 플랜용 베타다.</li>
+        <li>Docs, Slides, Design은 베타를 끝내고 무료 플랜까지 열렸다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 간단한 지표를 볼 때마다 SQL이나 분석팀에 기대고 있다면, 유료 플랜에서 Dashboards부터 써 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Satya Nadella · Microsoft</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/microsoft-decision-1.html">Microsoft, 고르기만 하는 모델 Decision-1 공개</a>
+        <span class="domain">(commandline.microsoft.com)</span>
+        <a class="ext-link" href="https://commandline.microsoft.com/microsoft-decision-1-model-foundry/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Microsoft가 분류, 라우팅, 검증 같은 판단만 하는 모델 Microsoft-Decision-1을 Foundry에 냈다.</li>
+        <li>보기마다 확률을 매겨 답한다. 36개 벤치마크에서 정확도 1위였고, GPT-6 Sol보다 35배 빨랐다고 밝혔다.</li>
+        <li>입력 100만 토큰당 0.042달러이고 출력은 무료다. 바탕은 Qwen3.5-9B다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트 안에서 예/아니오 판단을 큰 모델에 맡기고 있다면, 비용과 속도를 줄일 대안으로 시험해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic (Science 블로그 · Brice Ménard)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/anthropic-uv-sky-map.html">Claude로 첫 ‘구멍 없는’ 자외선 하늘 지도 완성</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/research/the-missing-map-of-the-sky" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>천체물리학자 Brice Ménard가 Claude Science로 하늘 전체를 담은 첫 자외선 지도를 만들었다.</li>
+        <li>하늘의 약 3분의 1은 자외선으로 관측된 적이 없다. Claude는 다른 파장 데이터로 그 부분을 추정했고, 시험해 보니 실제 값과 약 10% 차이였다.</li>
+        <li>사람이 하면 몇 주 걸릴 일이 며칠 만에 끝났다. 그동안 Ménard는 다른 연구를 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 미뤄 둔 정리·보정 작업이 쌓인 연구자라면, 에이전트에 맡길 만한 일인지 가늠해 볼 사례.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Google DeepMind Institute (James Manyika · Alex Imas) · Shane Legg 공유</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/deepmind-institute-ai-science.html">DeepMind “과학자는 AI로 주 7시간 아낀다”</a>
+        <span class="domain">(institute.deepmind.com)</span>
+        <a class="ext-link" href="https://institute.deepmind.com/essays/bending-the-curve-of-discovery-ai-in-science-today-and-tomorrow/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind Institute가 Gemini 대화 1,500만 건과 과학자 600여 명 설문으로 과학 연구의 AI 사용을 분석했다.</li>
+        <li>과학자 절반 가까이가 매일 AI를 쓰고, 주당 7시간 가까이 아낀다고 답했다.</li>
+        <li>대신 병목은 실험과 검증으로 옮겨 갔다. 응답자 50% 가까이는 AI 탓에 무난한 질문에 몰린다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 연구실에 AI를 들이는 중이라면, 아낀 시간이 검증 작업으로 다시 빠져나가지 않는지 함께 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao (블로그 게스트 글 · Thomas Hales)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/tao-hales-lean-reliability.html">Hales “AI 시대에 Lean을 무작정 믿으면 안 된다”</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/09/what-mathematicians-should-know-about-the-lean-theorem-proverquestions-of-reliability-and-ai/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Terence Tao 블로그에 Thomas Hales가 증명 검증기 Lean의 신뢰성을 다룬 글을 실었다. AI 자동 형식화는 2026년에 현실이 됐다고 봤다.</li>
+        <li>올여름 AI가 Lean 핵심부의 버그를 여럿 찾아냈다. 모두 고쳐졌지만, Lean 이론의 일관성 증명은 아직 완전히 공개되지 않았다고 짚었다.</li>
+        <li>그는 수학의 기초 작업을 사람 검토 없이 AI에 맡기는 건 위험하다고 경고했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 낸 증명을 “Lean으로 검증됐다”는 말만 보고 믿고 있었다면, 어디까지 믿을지 다시 정할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">François Chollet (X)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/chollet-rsi-science.html">Chollet “AI 자기 개선은 이미 시작, 폭발은 없다”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/fchollet/status/2108617137241911723" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>François Chollet는 2023~2026년 AI 투자가 진척보다 빠르게 늘었다고 짚었다. 진척을 이어 가려면 투자만큼 이익도 늘어야 한다고 봤다.</li>
+        <li>그는 과학을 자기 개선 시스템의 본보기로 들었다. 사람, 돈, 컴퓨트는 기하급수로 늘었지만 성과는 직선에 가깝게 늘었다는 설명이다.</li>
+        <li>AI의 자기 개선은 이미 일어나고 있다고 인정했다. 다만 ‘지능 폭발’로 이어지지는 않는다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AGI 일정을 가늠하고 있다면, 투자와 성과의 비율로 보는 회의론의 근거도 같이 챙겨 둘 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (swyx · Brandon)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/latent-periodic-labs.html">Periodic Labs “AI 과학자는 실험실이 있어야 큰다”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/periodic" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 Periodic Labs 공동 창업자 Liam Fedus, Ekin Dogus Cubuk을 인터뷰했다. 신소재를 찾는 AI 과학자를 만드는 회사다.</li>
+        <li>두 사람은 똑똑함만으론 발견이 안 된다고 했다. 이 회사의 강화학습 환경은 실제 실험실에서 나온다.</li>
+        <li>실패한 실험도 귀한 학습 데이터라고 봤다. 미래의 최첨단 모델도 결국 직접 실험해야 한다는 주장이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI로 과학 발견이 얼마나 빨라질지 가늠하고 있다면, 실험이라는 속도 제한을 이해하는 데 들어 볼 만한 1시간 24분.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/willison-voice-codex.html">Willison, 저녁 하며 말로만 블로그 기능을 만들었다</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Oct/9/built-using-my-voice/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Simon Willison이 ChatGPT 데스크톱 앱의 Codex 음성 모드로 블로그에 뉴스레터 페이지를 만들었다.</li>
+        <li>요리하는 30분 동안 말로만 지시해 대부분을 완성했다. 마무리 검토에는 타이핑으로 30분이 더 들었다.</li>
+        <li>그는 일상 도구로 쓰진 않겠다고 했다. 대신 다른 일을 하면서 코딩할 수 있다는 점을 가장 큰 장점으로 꼽았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 코딩 에이전트를 음성으로 써 볼까 망설였다면, 큰 그림은 말로 하고 세부는 키보드로 하는 이 방식을 따라 해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Hard Fork · NYT (진행 Max Read)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/hardfork-anthropic-morals.html">Hard Fork, Anthropic이 Claude에 ‘도덕’을 가르치는 법</a>
+        <span class="domain">(nytimes.com)</span>
+        <a class="ext-link" href="https://www.nytimes.com/2026/10/09/podcasts/hardfork-anthropic-ai-morals.html" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>이번 주 Hard Fork는 Anthropic이 종교학자들과 비공개로 만나 AI 의식과 ‘착한 Claude’를 논의한 일을 다뤘다.</li>
+        <li>NYT 종교 담당 기자, 테크 기자, 칼럼니스트가 나와 Anthropic과 바티칸의 시각 차이를 짚었다.</li>
+        <li>실리콘밸리에서 새로운 믿음 체계가 생기고 있다는 이야기도 나눴다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Claude의 가치관을 누가 어떻게 정하는지 궁금했다면, 9월 NYT 기사와 함께 들어 볼 만한 에피소드.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z (Raghu Raghuram · Guido Appenzeller)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-10/a16z-gelsinger-chips.html">Gelsinger “AI 칩 병목은 설계 말고 메모리·전력”</a>
+        <span class="domain">(a16z.simplecast.com)</span>
+        <a class="ext-link" href="https://a16z.simplecast.com/episodes/chips-memory-and-power-pat-gelsinger-uwHe_vsU" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z 팟캐스트에 전 Intel CEO Pat Gelsinger가 나와 AI 인프라의 물리적 한계를 이야기했다.</li>
+        <li>AI가 칩 설계를 바꿀 수 있지만, 제조·메모리 대역폭·패키징·전력 병목은 그것만으로 안 풀린다고 봤다.</li>
+        <li>지금 쏟아지는 AI 전용 칩은 결국 몇 가지 구조로 정리될 수 있다고 내다봤다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 인프라 투자나 칩 경쟁을 지켜보고 있다면, 어디가 진짜 병목인지 짚어 보는 데 들어 볼 만한 에피소드.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

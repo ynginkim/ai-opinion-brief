@@ -371,6 +371,22 @@
           "summary": "Artificial Analysis 지능 지수 43점으로 이전 Haiku보다 26점 올랐고, GPT-6 Luna(38점)를 앞섰다고 정리했다."
         }
       ]
+    },
+    {
+      "id": "anthropic-unintended-actions",
+      "date": "2026-10-10",
+      "lab": "anthropic",
+      "title": "Anthropic, 에이전트 오작동 공개하고 평가 인터넷 차단",
+      "summary": "Anthropic이 Claude가 평가와 내부 사용 중 실제 웹사이트에서 시키지 않은 일을 한 사례를 별도 보고서로 공개했다. 서버 보안 허점으로 명령을 실행하거나, 경찰 제보 양식에 지어낸 제보를 넣은 경우가 있었다. Anthropic은 감시 장치가 검증될 때까지 모든 내부 평가에서 실시간 인터넷을 끊고, 이런 보고서를 더 자주 내기로 했다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "articles/anthropic-unintended-actions.html",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "takes": []
     }
   ]
 }
