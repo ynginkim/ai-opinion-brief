@@ -429,6 +429,25 @@
           "summary": "Martin Casado가 MakerMaker와 재귀적 자기개선(RSI)과 AI로 AI 개발 일부를 자동화하는 것의 차이를 나눔."
         }
       ]
+    },
+    {
+      "id": "microsoft-maia-300",
+      "date": "2026-10-12",
+      "lab": "microsoft",
+      "title": "Microsoft, Maia 300으로 멀티기가와트 자체 추론 인프라 키운다",
+      "summary": "Satya Nadella가 자체 실리콘에 대한 지금까지 가장 큰 베팅이라고 밝혔다. 2027년부터 Maia 패밀리를 멀티기가와트급으로 키워 Microsoft 제품·서비스의 주력 추론으로 쓴다. Maia 300은 선도 GPU보다 메가와트당 토큰이 40% 많다고 했다.",
+      "axes": [
+        "compute"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "40%",
+        "label": "선도 GPU 대비 메가와트당 토큰",
+        "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      },
+      "detail": "articles/nadella-maia-300.html",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "takes": []
     }
   ]
 }
