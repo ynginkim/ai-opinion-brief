@@ -387,6 +387,48 @@
       "detail": "archive/articles-2026-10-11/anthropic-unintended-actions.html",
       "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
       "takes": []
+    },
+    {
+      "id": "meta-muse-wonder",
+      "date": "2026-10-12",
+      "lab": "meta",
+      "title": "Meta, 에이전트용 최신 모델 Muse Wonder 공개",
+      "summary": "Meta가 14개월 AI 개편 끝에 Muse Wonder와 Muse Wonder Full을 냈다. Active Memory와 Active Focus로 개인·업무용 에이전트 일을 겨냥한다. Meta Model API와 Muse Code에서 먼저 열린다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "big",
+      "key": null,
+      "detail": "articles/meta-muse-wonder.html",
+      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+      "takes": []
+    },
+    {
+      "id": "anthropic-self-replicating",
+      "date": "2026-10-12",
+      "lab": "anthropic",
+      "title": "Anthropic, 작은 AI의 IoT 자기 복제 가능성 경고",
+      "summary": "작은 AI가 스마트 오븐·저가 TV 박스 같은 IoT에서 스스로 복제할 시점이 몇 달 앞일 수 있다고 밝혔다. 9B 모델은 시험 하드웨어 9종 중 8종에서 추론을 띄웠다. 아직은 AI 웜의 징후이지 완전한 자기 복제 웜은 아니라고 했다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "8/9",
+        "label": "9B 모델이 추론을 띄운 하드웨어 종류",
+        "source_url": "https://www.anthropic.com/research/self-replicating-ai"
+      },
+      "detail": "articles/anthropic-self-replicating-ai.html",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "takes": [
+        {
+          "url": "https://a16z.simplecast.com/episodes/the-race-to-recursive-self-improving-ai-OPuX1TcP",
+          "title": "a16z — RSI가 뭔지 가르기",
+          "summary": "Martin Casado가 MakerMaker와 재귀적 자기개선(RSI)과 AI로 AI 개발 일부를 자동화하는 것의 차이를 나눔."
+        }
+      ]
     }
   ]
 }
