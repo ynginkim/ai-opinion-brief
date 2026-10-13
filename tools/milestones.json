@@ -400,9 +400,15 @@
       ],
       "impact": "big",
       "key": null,
-      "detail": "articles/meta-muse-wonder.html",
+      "detail": "archive/articles-2026-10-13/meta-muse-wonder.html",
       "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+          "title": "Latent Space AINews, Muse Wonder 독립 벤치 정리",
+          "summary": "Latent Space가 Artificial Analysis Index 등 독립 점수와 출시·가격을 모아 Muse Wonder·Wonder Full 출시를 정리했다."
+        }
+      ]
     },
     {
       "id": "anthropic-self-replicating",
@@ -420,7 +426,7 @@
         "label": "9B 모델이 추론을 띄운 하드웨어 종류",
         "source_url": "https://www.anthropic.com/research/self-replicating-ai"
       },
-      "detail": "articles/anthropic-self-replicating-ai.html",
+      "detail": "archive/articles-2026-10-13/anthropic-self-replicating-ai.html",
       "url": "https://www.anthropic.com/research/self-replicating-ai",
       "takes": [
         {
@@ -445,8 +451,28 @@
         "label": "선도 GPU 대비 메가와트당 토큰",
         "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
       },
-      "detail": "articles/nadella-maia-300.html",
+      "detail": "archive/articles-2026-10-13/nadella-maia-300.html",
       "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "takes": []
+    },
+    {
+      "id": "gemini-4-argon",
+      "date": "2026-10-14",
+      "lab": "googledeepmind",
+      "title": "Google, Gemini 4 Argon 전 세계 공개",
+      "summary": "Fairwind 방어팀에만 먼저 줬던 Gemini 4 Argon을 개발자·기업·구독자에게 공개했다. 코딩·금융·법률·과학처럼 단계가 긴 일을 겨냥하고, API는 입출력 합쳐 100만 토큰까지 받는다. 도입가는 100만 토큰당 입력 2달러, 출력 10달러다.",
+      "axes": [
+        "reason",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "$2/$10",
+        "label": "도입가 입력·출력 (100만 토큰당)",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      },
+      "detail": "articles/gemini-4-argon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
       "takes": []
     }
   ]

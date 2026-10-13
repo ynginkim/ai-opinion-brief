@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic “증류로 빼가는 Claude 추론, 90~99% 줄였다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic · <span class="article-date">2026-10-12 Seoul</span></div>
+    <h1 class="article-title">Anthropic “증류로 빼가는 Claude 추론, 90~99% 줄였다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/distillation-defenses" target="_blank" rel="noopener">anthropic.com</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 10월 12일 증류 공격 방어를 크게 강화했다고 밝혔다. 증류는 큰 모델의 답을 대량으로 뽑아 작은 모델을 가르치는 방법이다. 허가 없이 가짜 계정 망을 동원해 하면 공격으로 본다.
+      </p>
+
+      <p>
+        초기 자료로는 증류 쪽이 거둔 데이터가 약 90~99% 줄었다. 자사 플랫폼에서 빠져나간 추론 토큰은 분류기 도입 전보다 10~100배 적었다.
+      </p>
+
+      <h2>왜 추론을 지키나</h2>
+
+      <p>
+        증류에 가장 값진 건 Claude가 답하기 전에 쓰는 추론 기록이다. 그래서 방어도 거의 다 추론에 맞췄다.
+      </p>
+
+      <p>
+        처음엔 추론을 요약해서 보여 줬다. 요약본으로 학습한 모델의 SWE-bench Verified 점수는 71.8%로, 전체 기록으로 학습한 80.4%보다 낮았다. 그러자 공격자들은 숨긴 추론을 그대로 내놓으라고 Claude를 속이는 쪽으로 바꿨다. 한 연구소는 서로 다른 속임수 요청 1만 2천 개를 시험했다.
+      </p>
+
+      <h2>새 방어 세 겹</h2>
+
+      <ul>
+        <li>추론이 갈 곳 막기: 2026년 8월 31일 이후 만든 API 계정은 Claude의 이전 맥락을 고칠 수 없다(보존된 사고). Sonnet 5.5부터는 요청한 조직만 그 추론을 볼 수 있다.</li>
+        <li>추출 시도 차단: 생물무기 요청을 막을 때와 같은 방식의 2단계 분류기를 붙였다. 오탐률은 0.1% 미만이다.</li>
+        <li>반복 시도 막기: 계속 시도하는 계정은 사용 한도를 조이고, 끈질기면 정지한다. 수만 개 계정을 막았다.</li>
+      </ul>
+
+      <h2>대가도 있다</h2>
+
+      <p>
+        일부 개발자는 보존된 사고 때문에 연동을 고쳐야 했다. 분류기는 0.1% 미만이지만 정상 요청을 막기도 한다. 9월 24일부터는 그렇게 막힌 요청에도 요금을 다시 매긴다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Anthropic은 증류된 모델이 보호장치 없이 최전선 능력을 퍼뜨린다고 봤다. 예로 Zhipu의 GLM-5.3을 들었고, 국가 안보 문제도 함께 짚었다.
+      </p>
+
+      <p>
+        연구소가 증류 방어 효과를 숫자로 낸 드문 글이다. 다만 Anthropic도 이 효과가 얼마나 갈지는 아직 모른다고 했다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Claude API를 쓰는 개발자라면 추론 블록을 대화 사이에서 옮기거나 고치는 코드가 있는지 보면 된다. 차단된 요청에도 요금이 붙으니, 숨긴 추론 원문을 요구하는 프롬프트는 빼는 편이 낫다. Anthropic은 다른 개발사와 클라우드 플랫폼도 함께 막아야 한다고 했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
