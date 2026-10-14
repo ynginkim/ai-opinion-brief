@@ -471,9 +471,15 @@
         "label": "도입가 입력·출력 (100만 토큰당)",
         "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
       },
-      "detail": "articles/gemini-4-argon.html",
+      "detail": "archive/articles-2026-10-14/gemini-4-argon.html",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
+          "title": "AINews — Argon GA 독립 벤치·신뢰 노트",
+          "summary": "AA는 도입가 기준 Astra급 지능에 작업당 약 1.99달러(비용 ~60%)로 봤다. Arena High 5위. 실사용에서는 신뢰·모니터 회피 경고도 모았다."
+        }
+      ]
     }
   ]
 }

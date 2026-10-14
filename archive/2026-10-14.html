@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.14</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.14 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Google이 Gemini 4 Argon을 전 세계에 공개했습니다. 도입가는 100만 토큰당 입력 2달러·출력 10달러이고, API는 입출력을 합쳐 100만 토큰까지 받습니다. Anthropic은 하루 머지가 3만 건을 넘자 git을 떠나 자체 버전 관리 시스템 Scion으로 옮겼고, Claude 추론을 빼가는 증류 수확량은 90~99% 줄였다고 밝혔습니다. Latent Space는 Muse Wonder의 독립 점수를 정리하고, 연 4.3만 달러 SaaS를 주말에 AI로 복제한 해커톤 결과를 냈습니다. SemiAnalysis는 AMD가 MegaKernel 디코드를 vLLM에 NVIDIA보다 먼저 넣었다고 짚었습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/14</span>
+      <a href="2026-10-13.html">10/13</a>
+      <a href="2026-10-12.html">10/12</a>
+      <a href="2026-10-11.html">10/11</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Google DeepMind (Koray Kavukcuoglu · Demis Hassabis)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/gemini-4-argon.html">Google, Gemini 4 Argon 전 세계 공개</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind가 Gemini 4 Argon을 전 세계에 공개했다. 유료 Gemini API와 Antigravity(Ultra), Gemini 앱·검색 AI Mode(Ultra·Pro)에서 쓸 수 있다.</li>
+        <li>코딩·금융·법률·사이버·과학처럼 단계가 긴 일을 겨냥한다. API는 입출력을 합쳐 100만 토큰까지 받는다.</li>
+        <li>도입가는 11월 30일까지 입력 100만 토큰당 2달러, 출력 10달러다. 그 뒤에는 4달러·20달러로 오른다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Gemini 최전선 모델을 지금 시험할지, API·Antigravity·앱 중 어디서 먼저 쓸지 정할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic (Nick G. · source control team)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/anthropic-scion-source-control.html">Anthropic, 하루 머지 3만 건에 git 대신 Scion으로</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/engineering/redesigning-source-control" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 사내 버전 관리 시스템 Scion을 만들어, 5개월 만에 모노레포를 git에서 옮겼다고 밝혔다.</li>
+        <li>하루 머지는 2026년 5월 약 2,500건에서 9월 3만 건 이상으로 늘었다. 사람 규모로 만든 git 미러가 병목이 됐다고 했다.</li>
+        <li>커밋은 서버에서 하고, 클라이언트는 필요한 파일만 받는다. 인프라는 예전 git 미러보다 CPU·메모리가 약 200분의 1이라고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트가 코드를 대량으로 올리는 팀이라면, CI·소스 관리가 아직 사람 규모로 남아 있는지 먼저 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/anthropic-distillation-defenses.html">Anthropic “증류로 빼가는 Claude 추론, 90~99% 줄였다”</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/research/distillation-defenses" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 Claude 추론을 빼가는 증류 공격을 더 단단히 막았다고 밝혔다. 증류 쪽이 거둔 데이터는 약 90~99% 줄었다고 봤다.</li>
+        <li>보존된 사고(preserved thinking), 조직 단위 추론 접근, 2단계 분류기(오탐 0.1% 미만)를 겹쳤다. 관련 계정 수만 개를 막았고, 2시간 안에 막은 경우가 많았다.</li>
+        <li>9월 24일부터는 응답 전에 차단된 증류 요청에도 다시 요금을 매긴다. 일부 정상 연동도 손봐야 했다고 인정했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Claude API로 긴 추론을 쓰고 있다면, 연동 방식과 차단 요청 요금이 바뀌었는지 확인할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (AI News)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/latent-muse-wonder-ainews.html">Latent Space “Muse Wonder, 독립 벤치에서 Spark보다 한 계단”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space AINews가 Meta Muse Wonder·Wonder Full 출시를 독립 벤치 숫자와 함께 정리했다.</li>
+        <li>Artificial Analysis Intelligence Index v4.3에서 Wonder Full(최대 추론)은 56, Wonder는 52다. Muse Spark 1.3의 48보다 올랐다.</li>
+        <li>가격은 100만 토큰당 입력 4달러, 출력 20달러로 정리했다. Wonder Full은 Muse Code 구독자만 쓸 수 있다는 점도 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Muse Wonder를 쓸지 볼 때, Meta 발표만 보지 말고 독립 점수와 가격표를 같이 대조할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (swyx)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/latent-kill-your-saas.html">Latent Space “연 4.3만 달러 SaaS, 주말에 AI로 죽일 수 있나”</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://www.youtube.com/watch?v=zlD-CkLVKtU" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 실제로 쓰는 연 4만 3천 달러짜리 SaaS를 주말 동안 AI 에이전트로 복제하는 해커톤을 했다.</li>
+        <li>제출은 72건이었다. AI 평가와 사람 평가를 함께 했고, 토큰은 약 1천억 개를 썼다.</li>
+        <li>중간 크기 SaaS를 없애기 어려운 지점과 상금 1만 달러 대회 수상자 인터뷰를 영상으로 공개했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> ‘AI가 SaaS를 대체한다’는 말을 들을 때, 데모 말고 실제 제품을 복제해 본 결과를 보고 싶을 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">SemiAnalysis (Dylan Patel)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-14/semianalysis-amd-megakernel.html">SemiAnalysis “AMD, MegaKernel 디코드를 vLLM에 NVIDIA보다 먼저”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2109841575547211955" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis가 AMD가 MegaKernel 디코드 지원을 upstream vLLM(ROCm)에 NVIDIA보다 먼저 넣었다고 알렸다.</li>
+        <li>MegaKernel은 커널 실행 횟수를 10분의 1로 줄이는 기법이다. 대화형 디코드에서 특히 중요하다고 봤다.</li>
+        <li>주요 vLLM 기능이 CUDA보다 ROCm에 먼저 들어간 드문 사례로 짚었다. CUDA 쪽은 아직 draft PR도 없다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 추론 스택·GPU 선택을 보는 중이라면, vLLM 최적화가 늘 CUDA부터 들어오는지 다시 볼 때.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
