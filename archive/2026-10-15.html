@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.15</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.15 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      OpenAI는 EU 기업 AI 사용의 절반 이상이 Codex·ChatGPT Work 같은 에이전트라고 밝혔습니다. 중소기업 주간 활성은 5월 이후 8배 늘었지만, 사용자당 깊이는 글로벌 최전선에 못 미칩니다. Anthropic은 싱가포르 사무실과 정부 AI 안전 MOU를 열었고, Chollet은 지능 병목이 모델이 아니라 현실과의 반복 접촉이라고 적었습니다. a16z는 긴 여정 에이전트의 성과 과금과 Nathan Lambert의 오픈 모델 격차 인터뷰를 냈고, Latent Space는 Dyna-2 물리 에이전트와 Argon 독립 벤치를 정리했습니다. SemiAnalysis는 Rubin+SGLang 달러당 성능이 GB300의 4.23배라고 했고, Simon Willison은 AI 게임 디컴파일의 보존·탈취 양면을 골랐습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/15</span>
+      <a href="2026-10-14.html">10/14</a>
+      <a href="2026-10-13.html">10/13</a>
+      <a href="2026-10-12.html">10/12</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">OpenAI (Economic Research · Sarah Friar)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/openai-eu-agentic.html">OpenAI “EU 기업 AI 사용, 절반 이상이 에이전트”</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/the-eus-next-chapter-in-ai-is-agentic/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 EU 기업·사업 고객을 분석했다. Codex와 ChatGPT Work가 출력 토큰의 절반을 넘는다고 밝혔다.</li>
+        <li>EU 중소기업의 Codex·ChatGPT Work 주간 활성 사용자는 2026년 5월 이후 8배 넘게 늘었다. 회원국 전부에서 늘었다.</li>
+        <li>EU 최전선 기업은 일반 EU 기업보다 사용자당 출력 토큰이 4배를 넘지만, EU 밖 최전선 기업의 절반에도 못 미친다.</li>
+      </ul>
+      <div class="why"><em>왜</em> EU나 글로벌에서 에이전트 도입을 볼 때, 가입률만 보지 말고 사용자당 사용 깊이를 같이 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic (Dale Finlay · Ben Mann)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/anthropic-singapore-office.html">Anthropic, 싱가포르 사무실 열고 정부와 AI 안전 MOU</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/singapore-office-opening" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 아시아·태평양 다섯 번째 사무실을 싱가포르에 열었다. 디지털개발정보부와 AI 안전·평가 MOU도 맺었다.</li>
+        <li>GovTech·Grab·DBS 등에서 Claude를 쓰고 있다고 했다. Economic Index 기준 인구 대비 Claude.ai 사용은 121개국 중 2위라고 했다.</li>
+        <li>모델 평가·사고 대응 기술 교류, 중소기업·공무원 AI 역량, Economic Index 데이터 공유를 계획한다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> APAC에서 Claude를 쓰거나 규제·안전 파트너십을 볼 때, 싱가포르 현지 팀과 MOU 범위가 바뀌는지 확인할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Francois Chollet</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/chollet-intelligence-grounding.html">Chollet “지능 병목은 모델이 아니라 현실과의 반복 접촉”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/fchollet/status/2110377155079385477" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Francois Chollet이 감각 입력이 없으면 지능 시스템이 환각하기 시작한다고 썼다. 끈 이론을 그 비유로 들었다.</li>
+        <li>영향 큰 문제를 풀 때 지능 자체는 거의 병목이 아니라고 했다. 병목은 현실과 반복해서 맞닿는 일이라고 했다.</li>
+        <li>같은 날 실제 물리 과제는 자기회귀 샘플링만으로 못 푼다고도 했다. 인과와 이산 추론을 다시 넣어야 한다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 모델만 키울지, 실세계 피드백·로봇·실험을 같이 키울지 갈래를 정할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z (David Haber)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/a16z-relay-race-agents.html">a16z “긴 여정 에이전트, 인건비 절감이 아니라 성과로 받는다”</a>
+        <span class="domain">(a16z.news)</span>
+        <a class="ext-link" href="https://www.a16z.news/p/winning-the-relay-race-long-running" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z David Haber가 몇 주~몇 달짜리 ‘계주’형 고객 여정을 에이전트가 처음부터 끝까지 맡는 그림을 그렸다. 예시는 개인 상해 소송의 접수부터 합의까지다.</li>
+        <li>플랫폼 판매, 기존 외주 서비스 대체, 풀스택(직접 사업) 세 갈래로 팔 수 있다고 했다. Red Ventures식 성과 과금이 다시 열린다고 봤다.</li>
+        <li>성과 과금은 법·조달 마찰이 있다고 인정했다. 그래도 AI가 다루는 시장이 인건비 예산에서 매출 몫으로 넓어진다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 지원 챗봇을 넘긴 에이전트 사업을 설계할 때, 절감 과금과 성과 과금 중 어디를 밀지 정할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z (Lisha Li · Nathan Lambert / Trillium)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/a16z-nathan-lambert-open-models.html">a16z “오픈 모델이 최전선을 따라잡을 수 있나” — Nathan Lambert</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://youtu.be/BKuK0M6oDTI" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z Lisha Li가 Nathan Lambert(전 Ai2, Trillium Labs)와 오픈 모델이 최전선을 따라잡을 수 있는지 이야기했다.</li>
+        <li>Lambert는 전형적인 OpenAI 연구자가 쓰는 컴퓨트가 H100 환산 약 5,000장 규모라는 말에 중국 연구자 턱이 떨어진다고 전했다. 증류의 이점은 몇 달 수준이라고 봤다.</li>
+        <li>수학·코딩 밖 진전은 데이터와 RL 환경 구매가 크다고 했다. Trillium은 그 환경과 ‘AI가 AI를 만드는’ 과정을 공개하겠다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 오픈 가중치로 갈지, 클로즈드 API에 붙을지 정할 때. 컴퓨트·RL 환경 격차를 같이 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (swyx · Jason Ma / Dyna Robotics)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/latent-dyna-2.html">Latent Space “Dyna-2, 한 시간짜리 물리 에이전트”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/dyna" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 Dyna Robotics 수석과학자 Jason Ma와 Dyna-2 월드-액션 모델을 현장 인터뷰했다. 사람 영상 100만 시간 이상 사전학습이라고 했다.</li>
+        <li>Dyna-2.1은 세탁처럼 한 시간짜리 실제 워크플로를 에이전트 하네스로 돌린다고 했다. 새 과제는 시연 약 45분이면 적응하는 사례를 들었다.</li>
+        <li>딘타이펑 냅킨·Best Western 세탁 같은 현장 배치와, 바퀴형 세미휴머노이드를 직접 만드는 이유를 풀었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 데모 로봇이 아니라 현장 배치·한 시간 자율을 볼 때. VLA 대신 월드-액션 모델 쪽을 알아볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space (AI News)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/latent-ainews-argon-vals.html">Latent Space “Argon GA, 독립 벤치는 확인·신뢰는 갈림”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space AINews가 Gemini 4 Argon 전 세계 공개를 독립 벤치와 함께 다시 정리했다.</li>
+        <li>Artificial Analysis는 도입가 기준 작업당 약 1.99달러로 GPT-6 Astra와 비슷한 지능 지수에, 비용은 Astra의 약 60%라고 봤다. Arena Argon High는 최대 노력에서 5위였다.</li>
+        <li>Ethan Mollick·Theo 등 실사용 평에서는 창작·에이전트는 좋아졌지만, 복잡한 다중 에이전트와 코드베이스 분석 신뢰는 갈린다고 모았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Argon을 기본 모델로 바꿀지 볼 때, Google 발표만 보지 말고 독립 점수와 실사용 신뢰 노트를 같이 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">SemiAnalysis (Dylan Patel)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/semianalysis-rubin-sglang.html">SemiAnalysis “NVIDIA Rubin SGLang, GB300보다 달러당 성능 4.23배”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2110203976293466498" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis가 InferenceX 프리뷰에서 NVIDIA Rubin 위 SGLang 추론이 GB300 NVL72보다 달러당 성능이 4.23배 낫다고 알렸다.</li>
+        <li>지금은 Qwen3.8 Flash Next 180B(활성 6B) 같은 작은 모델 제출이다. 더 큰 모델용 Rubin NVL72 공개 제출이 이어진다고 했다.</li>
+        <li>널리 쓰이는 프로덕션 LLM 엔진 SGLang 기준이라고 강조했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 다음 세대 NVIDIA 추론 단가를 볼 때, GB300 기준표를 Rubin+SGLang 숫자와 다시 대조할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-10-15/willison-ai-decompiling-games.html">Simon Willison “AI 게임 디컴파일, 보존과 탈취가 같이 온다”</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Simon Willison이 인디 개발자 Popcar의 AI 게임 디컴파일 글을 골랐다. 매시업과 옛 게임 보존·웹 이식이 늘고 있다고 전했다.</li>
+        <li>같은 기술로 경쟁사 소프트웨어를 빼가거나, 유료 앱을 강제로 열어젖힐 수 있다고 경고한 대목을 인용했다.</li>
+        <li>콘솔이 디지털만 남기고 서버가 꺼지는 시대엔, 산 소프트웨어를 직접 소유·보존하는 쪽으로는 이득이라고 정리했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 리버스 엔지니어링이 제품·IP 전략에 닿는지 볼 때. 보존 도구로 쓸지, 유출 리스크로 볼지 가를 때.</div>
+    </article>
+
+  </div>
+</body>
+</html>

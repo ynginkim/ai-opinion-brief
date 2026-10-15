@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind, Antigravity 에이전트로 새 항균 펩타이드 후보 찾았다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind (Lucy Colwell 외) · <span class="article-date">2026-10-16 Seoul</span></div>
+    <h1 class="article-title">DeepMind, Antigravity 에이전트로 새 항균 펩타이드 후보 찾았다</h1>
+    <div class="source-line">
+      원문 · <a href="https://deepmind.google/blog/accelerating-antimicrobial-discovery/" target="_blank" rel="noopener">deepmind.google</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google DeepMind가 10월 15일(미국 기준) 기술 해설 글을 냈다. 생물학자가 Antigravity의 에이전트와 함께 새 항균 펩타이드 후보를 찾은 과정이다. Antigravity는 Google의 에이전트 개발 플랫폼이다.
+      </p>
+
+      <p>
+        항균 펩타이드는 세균을 공격하는 짧은 단백질이다. 기존 항생제를 대신할 후보로 꼽힌다. DeepMind는 항생제 내성으로 2050년이면 해마다 1천만 명이 숨질 수 있다는 추정을 인용했다.
+      </p>
+
+      <h2>어떻게 찾았나</h2>
+
+      <p>
+        출발점은 공개 단백질 데이터베이스 UniProt다. 여기엔 기능을 모르는 서열이 수백만 개 있다. Google의 ProtNLM 모델이 아미노산 서열만 보고 기능을 예측해 이름을 붙였다.
+      </p>
+
+      <p>
+        연구자는 목표를 정했다. 호흡기 감염과 관련된 Streptococcus pseudopneumoniae에서 새 항균 펩타이드를 찾는 일이다. 에이전트는 후보를 몇 개로 좁혔고, 길이 97개 아미노산짜리 박테리오신을 골랐다.
+      </p>
+
+      <h2>에이전트가 맡은 일</h2>
+
+      <ul>
+        <li>새로운지 확인: 사람이 검토한 단백질 목록(Swiss-Prot)에 비슷한 서열이 없는지 BLAST로 대조했다.</li>
+        <li>구조 확인: AlphaFold 데이터베이스에서 3D 구조를 받아, 실험으로 확인된 박테리오신과 접힘이 비슷한지 봤다.</li>
+        <li>유전체 확인: 주변 유전자가 박테리오신 시스템과 맞는 배열인지 읽었다.</li>
+        <li>실험 계획: 논문을 바탕으로 작용 방식을 추정하고 실험 절차를 짰다.</li>
+      </ul>
+
+      <h2>지금 단계</h2>
+
+      <p>
+        이 후보와 같은 방식으로 찾은 후보 여럿이 실험실 검증을 받고 있다. DeepMind도 아직 실험으로 확인해야 하는 후보라고 적었다. Antigravity에는 연구자와 에이전트가 함께 보는 3D 구조 뷰어도 새로 들어갔다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        여러 데이터베이스와 도구를 오가며 며칠 걸리던 일을 한 세션으로 줄였다는 사례다. 방향은 사람이 정하고, 조회와 분석은 에이전트가 맡는 방식이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        생물 연구실이라면 후보 거르기 단계를 에이전트에 맡겨 볼 만하다. 실제 효과는 실험 결과가 나와야 알 수 있으니, 후속 발표를 지켜보는 편이 낫다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemiAnalysis “TPUv7 첫 vLLM 결과, GB300보다 달러당 성능 1.67배” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis (Dylan Patel) · <span class="article-date">2026-10-15 Seoul</span></div>
+    <h1 class="article-title">SemiAnalysis “TPUv7 첫 vLLM 결과, GB300보다 달러당 성능 1.67배”</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/SemiAnalysis_/status/2110560412907262343" target="_blank" rel="noopener">X @SemiAnalysis_</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 10월 15일(한국 시간) X에 속보를 올렸다. Google이 TPUv7 결과를 자사 에이전트 추론 벤치 AgentX에 처음 냈다는 내용이다.
+      </p>
+
+      <p>
+        TPUv7 FP8에 vLLM을 얹은 조합이 NVIDIA GB300 NVL72 FP4보다 달러당 성능이 1.67배 높았다고 했다.
+      </p>
+
+      <h2>AgentX가 재는 것</h2>
+
+      <p>
+        에이전트 작업의 네 가지 특징을 담았다. 한 세션에 수십~수백 번 주고받는다. 맥락이 빨리 길어진다. 앞 대화를 거의 그대로 다시 쓴다. 하위 에이전트가 짧게 몰려 뜬다.
+      </p>
+
+      <h2>결과</h2>
+
+      <p>
+        TorchTPU vLLM으로 TPUv7 칩 4개만 썼다. 그런데도 총소유비용 대비 성능에서 GB300 NVL72 FP4를 대부분의 구간에서 이겼다고 했다.
+      </p>
+
+      <p>
+        응답 속도가 덜 중요한 구간에선 GB300 FP4가 여전히 앞섰다. 같은 FP8끼리 비교하면 그 구간에서도 TPUv7이 이겼다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Google이 TPU를 자사 밖으로 적극 내놓고 있다는 신호다. 결과는 Google TPU, TorchTPU, Inferact, Red Hat, vLLM 팀이 함께 냈다. 에이전트 추론에서 NVIDIA 말고도 따져 볼 선택지가 생겼다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        SemiAnalysis는 더 많은 모델을 담은 전체 글을 곧 낸다고 했다. 지금은 모델 하나의 첫 결과다. 실제 도입을 검토한다면 전체 글과 자기 워크로드 수치를 함께 보는 편이 낫다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
