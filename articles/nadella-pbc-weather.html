@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Nadella “더 큰 모델보다, 틀리는 곳을 배우는 검증 시스템” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Satya Nadella · Microsoft Research · <span class="article-date">2026-10-17 Seoul</span></div>
+    <h1 class="article-title">Nadella “더 큰 모델보다, 틀리는 곳을 배우는 검증 시스템”</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/satyanadella/status/2111204941801128366" target="_blank" rel="noopener">X @satyanadella</a> · <a href="https://www.microsoft.com/en-us/research/story/new-ai-framework-bridges-a-critical-gap-in-mid-range-weather-forecasts/" target="_blank" rel="noopener">Microsoft Research</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Satya Nadella가 10월 17일(한국 시간) 아침 Microsoft Research의 Nature 논문을 소개했다. 2주에서 6주 뒤의 날씨를 머신러닝으로 더 잘 맞히는 연구다.
+      </p>
+
+      <p>
+        이 구간은 예보가 특히 약한 곳이다. 2주 안쪽 예보는 꽤 믿을 만하고, 계절 단위 기후 예측도 좋아졌다. 그 사이 몇 주가 비어 있다.
+      </p>
+
+      <h2>PBC가 하는 일</h2>
+
+      <p>
+        PBC(확률적 편향 보정)는 새 예보 모델을 또 만드는 대신, 기존 모델이 과거에 어떻게 틀렸는지를 배운다. 그리고 그 틀린 방향을 고쳐 더 나은 예보를 낸다. 어떤 모델이든 입력으로 받을 수 있다.
+      </p>
+
+      <h2>결과</h2>
+
+      <ul>
+        <li>ECMWF 대표 모델 개선: 강수 목표 98%, 기온 92%, 기압 91%</li>
+        <li>ECMWF의 AI 예보 시스템(AIFS) 정확도: 2배</li>
+        <li>AI Weather Quest 첫 3개월 시즌: 모든 변수·기간에서 1위, 운영 예보 기관 6곳과 34개 팀을 앞섬</li>
+        <li>2026년 초 미국 겨울 폭풍 두 건을 19~26일 앞서 예상</li>
+      </ul>
+
+      <h2>Nadella가 본 교훈</h2>
+
+      <p>
+        Nadella는 더 큰 교훈이 있다고 했다. 앞으로는 더 강한 모델을 계속 만드는 것만이 아닐 수 있다고 했다. 모델이 체계적으로 틀리는 곳을 배우고, 원인과 결과를 따지고, 현실과 계속 맞춰 보는 검증 시스템을 짓는 일이 중요해진다는 것이다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        몇 주 앞 날씨는 언제 심을지, 물과 전기를 어떻게 나눌지, 산불과 한파에 어떻게 대비할지를 정한다. 케냐에서는 기상청 예보관들이 PBC를 포함한 AI 모델을 우기 예보에 시범 적용하고 있다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        자기 분야에 이미 쓰는 예측 모델이 있다면, 모델을 갈아엎기 전에 과거 오차를 배우는 보정층부터 얹어 볼 수 있다. Nadella가 말한 “검증 시스템”의 작은 형태다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

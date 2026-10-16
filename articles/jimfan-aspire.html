@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jim Fan, 로봇이 스스로 기술을 쌓는 ASPIRE 1.0 오픈소스 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Jim Fan (NVIDIA) · <span class="article-date">2026-10-17 Seoul</span></div>
+    <h1 class="article-title">Jim Fan, 로봇이 스스로 기술을 쌓는 ASPIRE 1.0 오픈소스</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/DrJimFan/status/2111128797181567466" target="_blank" rel="noopener">X @DrJimFan</a> · <a href="https://research.nvidia.com/labs/gear/aspire/" target="_blank" rel="noopener">ASPIRE 사이트</a> · <a href="https://github.com/nvlabs/aspire" target="_blank" rel="noopener">GitHub</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        NVIDIA의 Jim Fan이 10월 17일(한국 시간) 새벽 로봇 에이전트 틀 ASPIRE 1.0을 오픈소스로 공개했다. 실제 로봇에서 스스로 기술을 찾고 나아지는 기능까지 담았다고 했다.
+      </p>
+
+      <p>
+        ASPIRE는 6월에 처음 소개됐다. Jim Fan은 그때는 큰 모델이 로봇 일을 안정적으로 하기 한참 전이었다고 적었다.
+      </p>
+
+      <h2>어떻게 움직이나</h2>
+
+      <p>
+        코딩 에이전트가 로봇을 움직이는 프로그램을 코드로 짠다. 실행하면 인식·계획·잡기·제어 단계마다 기록이 남는다. 에이전트는 이 기록을 보고 어디서 실패했는지 찾아 코드를 고친다.
+      </p>
+
+      <p>
+        고친 내용은 기술 목록에 쌓인다. 다음 과제에서 다시 꺼내 쓴다. 시뮬레이션에서 익힌 기술을 실제 로봇에 가져가면 더 적은 토큰으로 첫 성공에 닿았다고 했다.
+      </p>
+
+      <h2>모델별 결과</h2>
+
+      <p>
+        Jim Fan은 GPT-6 Astra가 나온 날 백엔드 모델만 바꿨더니 벤치마크가 하룻밤 새 약 99%까지 찼다고 했다. 많은 과제에서 Astra가 0에서 1로 가는 도약이었다고 적었다.
+      </p>
+
+      <p>
+        자체 로봇 시뮬레이션 벤치에서는 Claude Opus 5.5가 Astra를 살짝 앞섰다. Sonnet 5.5는 과제당 12달러로 비용 대비 성능의 최전선에 섰다고 했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        로봇 전용 모델 없이, 코딩을 잘하는 범용 모델이 로봇 제어 코드를 짜는 방식이 빠르게 좋아지고 있다. 모델이 좋아질수록 같은 틀의 성능이 같이 오른다는 점이 핵심 주장이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        로봇 팀이라면 GitHub 코드를 받아 자기 시뮬레이터에서 모델별로 비교해 볼 수 있다. 실제 로봇 성능은 과제와 하드웨어에 따라 다르니 직접 재 보는 편이 낫다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

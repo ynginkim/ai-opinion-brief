@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude Code 팀 “코드 90%는 Claude가 쓰고, 리뷰도 기계가 먼저 본다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Boris Cherny · Claude Code 팀 (Anthropic) · <span class="article-date">2026-10-16 Seoul</span></div>
+    <h1 class="article-title">Claude Code 팀 “코드 90%는 Claude가 쓰고, 리뷰도 기계가 먼저 본다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://claude.dev/blog/solving-code-review-at-anthropic/" target="_blank" rel="noopener">claude.dev</a> · <a href="https://x.com/ClaudeDevs/status/2110866210573386065" target="_blank" rel="noopener">X @ClaudeDevs</a> · <a href="https://x.com/bcherny/status/2111158313463525518" target="_blank" rel="noopener">X @bcherny</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 Claude Code 팀의 코드 리뷰 방식을 글로 정리했다. 출발점은 숫자다. Claude가 Claude Code 코드의 약 90%를 쓴다. 이 많은 코드를 누가, 어떻게 읽느냐는 질문에 답한 글이다.
+      </p>
+
+      <p>
+        같은 날 리뷰 기능 Code Review가 Claude Team·Enterprise 요금제에 정식 출시됐다. 관리자는 저장소마다 Quick, Standard, Deep 중 리뷰 수준을 고를 수 있다.
+      </p>
+
+      <h2>숫자</h2>
+
+      <ul>
+        <li>Claude Code 저장소: 6~9월 병합 PR 2배 이상, 되돌린 비율 40% 넘게 감소</li>
+        <li>Anthropic 모노레포: 하루 변경 약 2,500건(5월) → 30,000건 이상(9월)</li>
+        <li>내부 PR 중 실질적인 리뷰 의견이 달린 비율: 16% → 54% (연구 미리보기 출시 후)</li>
+      </ul>
+
+      <h2>리뷰를 여러 겹으로</h2>
+
+      <p>
+        리뷰는 끝에 한 번 거치는 관문이 아니라, 쓰는 동안 계속 도는 맞춤법 검사에 가깝게 바뀌었다. 먼저 Claude가 테스트나 빌드 결과를 직접 보여 주며 스스로 검증한다.
+      </p>
+
+      <p>
+        PR이 열리면 여러 에이전트가 동시에 버그를 찾는다. 다른 에이전트 무리가 발견마다 투표해, 충분히 동의한 것만 댓글로 남긴다. 보안 리뷰와 일반 CI 검사가 뒤를 잇는다. 사람의 승인은 변경의 위험도에 맞춰 붙인다.
+      </p>
+
+      <h2>Cherny가 한 말</h2>
+
+      <p>
+        Claude Code를 만든 Boris Cherny는 Code Review 없이는 생산적일 수 없다고 했다. 모든 PR에 돌리고, 배포 전에 버그를 거의 다 잡는다고 적었다. 팀이 빠르게 움직이면서도 품질 기준을 올리는 비결 중 하나라고 했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트가 코드를 쏟아내면 사람이 한 줄씩 읽는 리뷰는 버틸 수 없다. 이 글은 사람의 시간을 아끼면서 되돌림과 장애는 늘리지 않는 구체적인 운영 방식을 숫자와 함께 보여 준다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Team·Enterprise 요금제라면 Code Review를 바로 켤 수 있다. 로컬에서는 /code-review로 가벼운 버전을 돌린다. 버그 하나가 비싼 저장소에는 Deep을 붙이면 된다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

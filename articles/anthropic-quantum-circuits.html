@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude Mythos 5, 발표된 최고 양자 회로보다 나은 설계 찾았다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic (STEM Fellows Program) · <span class="article-date">2026-10-17 Seoul</span></div>
+    <h1 class="article-title">Claude Mythos 5, 발표된 최고 양자 회로보다 나은 설계 찾았다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/designing-efficient-quantum-circuits" target="_blank" rel="noopener">anthropic.com</a> · <a href="https://x.com/AnthropicAI/status/2111152183240511640" target="_blank" rel="noopener">X @AnthropicAI</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 10월 17일(한국 시간) 새벽 Claude로 양자 회로를 설계한 연구를 공개했다. Claude Mythos 5가 화학, 최적화, 물리 시뮬레이션, 정수론에 쓰는 회로 8개를 새로 짰다. 8개 모두 지금까지 발표된 최고 설계보다 큐비트와 게이트를 덜 썼다.
+      </p>
+
+      <p>
+        연구는 STEM Fellows 프로그램의 Andi Gu가 이끌었다. Harvard의 Susanne Yelin, Mikhail Lukin과 함께 했다.
+      </p>
+
+      <h2>왜 회로가 문제인가</h2>
+
+      <p>
+        지금 양자 컴퓨터는 큐비트가 수백에서 수천 개뿐이고 잡음에 약하다. 그래서 같은 계산을 더 적은 큐비트와 게이트로 하는 회로 설계가 중요하다.
+      </p>
+
+      <p>
+        Anthropic은 질소 고정 효소의 핵심 FeMoco를 예로 들었다. 2017년에는 게이트가 약 50조 개 필요하다고 봤다. 지금은 약 3억 4천만 개로 줄었다. 대부분 하드웨어가 아니라 회로를 다시 짠 덕이다.
+      </p>
+
+      <h2>어떻게 했나</h2>
+
+      <p>
+        Claude에게는 각 회로가 무엇을 계산해야 하는지 평범한 말로만 줬다. Claude가 Python으로 설계를 내면 채점기가 맞는지 확인하고, 큐비트 수와 게이트 수로 점수를 매긴다. Claude는 이 점수를 보고 다음 설계를 고친다. 라운드 사이에 사람은 끼지 않았다.
+      </p>
+
+      <h2>두 가지 발견</h2>
+
+      <p>
+        첫째는 타원곡선 점 덧셈이다. Claude는 53시간 동안 거의 혼자 일했다. 기존 방식은 계산 기록을 큐비트에 쌓아 둬야 했다. Claude는 그 기록을 저장하지 않고 숫자에서 다시 읽어 내는 방법을 찾았다. 새 대수 항등식을 증명하고, 큰 규모로 시뮬레이션하고, Lean으로 형식화해 확인했다. 한 설계는 큐비트를 12% 더 쓰지만 게이트는 17배 적다.
+      </p>
+
+      <p>
+        둘째는 양자 최적화 알고리즘 DQI의 해독 단계다. Claude는 계산 방법 자체를 바꿨다. 드문 예외에 대비해 665큐비트를 잡아 두는 대신, 4억 300만 번 시뮬레이션으로 예외가 얼마나 드문지 쟀다. 그리고 19큐비트만 남겼다. 게이트는 Google의 이전 설계보다 12배 줄었다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        단순히 기존 설계를 다듬은 게 아니다. Anthropic은 문제의 새 구조와 수학적 통찰을 찾아낸 결과라고 했다. 양자 알고리즘에 필요한 자원이 줄면, 화학·재료 분야의 쓸모 있는 양자 계산이 예상보다 빨리 올 수 있다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        정답을 일반 컴퓨터로 검사할 수 있는 설계 문제라면 같은 루프를 쓸 수 있다. 다만 이 설계들이 실제 대형 양자 컴퓨터에서 돌려면 하드웨어가 더 커져야 한다. 논문은 arXiv에서 볼 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
