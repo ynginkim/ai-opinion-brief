@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Leo Gao “신경망은 아직 깨끗하지 않다”… Neel Nanda도 힘 보태 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Neel Nanda · Leo Gao (Nick Cammarata 글 반박) · <span class="article-date">2026-10-17 Seoul</span></div>
+    <h1 class="article-title">Leo Gao “신경망은 아직 깨끗하지 않다”… Neel Nanda도 힘 보태</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.lesswrong.com/posts/Dkh7pXKjoNWkkxQDz/neural-networks-are-not-already-clean" target="_blank" rel="noopener">LessWrong</a> · <a href="https://x.com/nabla_theta/status/2111265544267784582" target="_blank" rel="noopener">X @nabla_theta</a> · <a href="https://x.com/NeelNanda5/status/2111543619941499088" target="_blank" rel="noopener">X @NeelNanda5</a> · <a href="https://already-clean.goodfire.com/" target="_blank" rel="noopener">Cammarata 원글</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        “신경망은 이미 깨끗하다”는 Nick Cammarata의 글에 또 반론이 나왔다. Leo Gao가 10월 17일(한국 시간) LessWrong에 “신경망은 아직 깨끗하지 않다”는 글을 올렸다.
+      </p>
+
+      <p>
+        Neel Nanda는 10월 18일 새벽 이 글을 공유했다. “아직 해석 가능성을 풀지 못했다”는 논쟁에 보탠 좋은 기여라고 했다.
+      </p>
+
+      <h2>Cammarata 말 중 맞는 부분</h2>
+
+      <p>
+        Gao는 Cammarata의 관찰 하나는 인정했다. 예전에는 뉴런을 너무 빨리 ‘여러 뜻이 섞였다(다의적)’고 단정했다. 더 들여다보면 단순한 패턴이 보이는 경우가 많았다.
+      </p>
+
+      <p>
+        하지만 그것만으로 뉴런 대부분을 이해했다고 말할 수는 없다고 했다.
+      </p>
+
+      <h2>예시만 보면 속는 이유</h2>
+
+      <p>
+        첫째, 뉴런을 켜는 예시가 모두 패턴에 맞아도, 패턴에 맞는 입력이 모두 뉴런을 켜는 건 아니다. “자전거 탄 개” 뉴런이 실은 화창한 날에만 켜질 수도 있다.
+      </p>
+
+      <p>
+        둘째, 활성화 크기에 중요한 정보가 담겼을 수 있다. 약한 활성화를 지우면 모델 성능이 꽤 떨어진다는 게 Gao의 판단이다.
+      </p>
+
+      <h2>그래서 제안한 검증법</h2>
+
+      <p>
+        설명을 채점표로 만들고, 그 점수로 실제 뉴런 값을 바꿔 넣어 보자고 했다. 모델이 크게 망가지면 설명이 틀린 것이다.
+      </p>
+
+      <p>
+        비교는 큰 데이터셋에서 출력 분포가 얼마나 달라지는지(KL)로 재자고 했다. 모델 동작에 상관없는 차이는 벌점을 받지 않는다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        논쟁이 “풀렸다, 안 풀렸다”에서 “무엇으로 확인할까”로 옮겨 갔다. Gao는 뉴런 사이의 회로를 찾는 일은 여전히 어렵고 지저분하다고 덧붙였다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        뉴런 설명을 안전 점검에 쓰려면, 예시 몇 개가 아니라 설명을 모델에 다시 넣어 본 결과가 필요하다. Cammarata 쪽 논문이 나오면 이 기준으로 다시 따져 볼 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

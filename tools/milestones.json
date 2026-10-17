@@ -338,6 +338,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
           "title": "인간수학협회 — 학문이 아니라 힘 과시",
           "summary": "Tao 블로그에 실린 성명. 수학자들이 요청한 적 없는 작업이고 자문 그룹 권고도 무시했다며, OpenAI와 협업을 멈추라고 했다."
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
+          "title": "Terence Tao — “전시 체제다”",
+          "summary": "NYT 인터뷰에서 OpenAI가 수학을 모델 평가에 썼을 뿐이라며, 지금은 건설적으로 함께할 길이 안 보인다고 했다."
         }
       ]
     },
@@ -501,7 +506,7 @@
         "label": "Artificial Analysis 지능 지수 (미국 오픈 모델 1위)",
         "source_url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
       },
-      "detail": "articles/meta-muse-spark-open.html",
+      "detail": "archive/articles-2026-10-17/meta-muse-spark-open.html",
       "url": "https://research.meta.ai/blog/muse-spark-open",
       "takes": [
         {
