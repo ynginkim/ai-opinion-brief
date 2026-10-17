@@ -485,6 +485,31 @@
           "summary": "ARC Prize 검증에서 Argon은 ARC-AGI-3 97.5%(맞춤 하네스, 표준 하네스는 49.8%)를 받았다. Francois Chollet은 성능 양상이 Astra와 비슷하다며 Google이 최전선에 돌아왔다고 적었다."
         }
       ]
+    },
+    {
+      "id": "meta-muse-spark-open",
+      "date": "2026-10-16",
+      "lab": "meta",
+      "title": "Meta, 미국 최강 오픈 가중치 Muse Spark Open 공개",
+      "summary": "Meta가 코딩·에이전트용 Muse Spark Open의 가중치를 풀었다. 전체 8,160억 파라미터 중 토큰마다 420억 개만 쓰고, 맥 스튜디오 두 대로도 돌릴 수 있다. Artificial Analysis 기준 미국 오픈 모델 1위지만 GLM-5.3(45점)·Kimi K3(44점)보다는 낮다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "39",
+        "label": "Artificial Analysis 지능 지수 (미국 오픈 모델 1위)",
+        "source_url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+      },
+      "detail": "articles/meta-muse-spark-open.html",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+          "title": "Latent Space AINews, Muse Spark Open 반응 정리",
+          "summary": "Artificial Analysis 39점과 출시 가격, 라이선스 비판을 모았다. 에이전트 평가 네 개에선 상위 오픈 모델 9개 중 꼴찌였고, Meta 자체 Spark 1.3보다 약하다는 평도 실었다."
+        }
+      ]
     }
   ]
 }
