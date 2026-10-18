@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>NVIDIA, Kimi K3 추론 1.68배 빠르게… 커널은 에이전트와 함께 썼다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · <span class="article-date">2026-10-18 Seoul</span></div>
+    <h1 class="article-title">NVIDIA, Kimi K3 추론 1.68배 빠르게… 커널은 에이전트와 함께 썼다</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/SemiAnalysis_/status/2111627094878790023" target="_blank" rel="noopener">X @SemiAnalysis_</a> · <a href="https://vllm.ai/blog/2026-10-16-kimi-k3-megakernel" target="_blank" rel="noopener">vLLM 블로그</a> · <a href="https://x.com/SemiAnalysis_/status/2111532833114054891" target="_blank" rel="noopener">X @SemiAnalysis_ (TCO)</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 10월 18일 오전(한국 시간) NVIDIA의 vLLM 최적화 결과를 전했다. 파라미터 2.8조 개짜리 Kimi K3에서 사용자당 초당 423토큰이 나왔다. 같은 장비에서 1.68배 빨라진 수치다.
+      </p>
+
+      <p>
+        작업은 NVIDIA의 Benjamin Chislett이 했다. SemiAnalysis는 1만 2천 줄짜리 메가커널이라며, AI의 도움을 받는 커널 생성이 앞으로의 방식이라고 평가했다.
+      </p>
+
+      <h2>무엇을 바꿨나</h2>
+
+      <p>
+        vLLM 블로그에 따르면 코딩 에이전트의 도움을 받아 NVIDIA GB300용 디코드 경로를 새로 짰다. 어텐션, MoE, GPU 사이 통신을 거의 다 CuTe DSL 커널로 바꾸고 하나로 묶었다.
+      </p>
+
+      <ul>
+        <li>레이어당: 커널 23개·130μs → 13개·69μs</li>
+        <li>배치 1: 초당 840토큰 이상 (GB300 16장, DSpark 추측 디코딩 사용)</li>
+        <li>디코드 처리량: 여러 설정에서 1.5~2배</li>
+        <li>AgentX 워크로드 P90 반응성: 최대 1.8배</li>
+      </ul>
+
+      <h2>리뷰가 못 따라간다</h2>
+
+      <p>
+        블로그는 에이전트가 최적화한 코드가 리뷰와 유지보수 속도를 앞지르고 있다고 적었다. 모든 커널을 한 줄씩 읽고 모든 설정을 시험하려면 너무 오래 걸린다. 그렇다고 건너뛰면 버그를 배포할 위험이 있다.
+      </p>
+
+      <p>
+        그래서 최적화를 해당 모델 코드 안에 가두고, 정해진 성능·정확도 벤치마크를 돌려 확인하게 했다. 기여자가 자기 GPU에서 평가를 먼저 돌려 결과를 공유하는 방식도 제안했다. Kimi K3가 이 방식의 첫 사례다.
+      </p>
+
+      <h2>같은 날 나온 비용 기록</h2>
+
+      <p>
+        SemiAnalysis는 같은 날 새벽에도 vLLM 기록을 전했다. vLLM과 Inferact가 AgentX에서 총소유비용(TCO) 1달러당 13억 토큰을 냈다는 내용이다. 프리필과 디코드를 나눠 돌리는 분리형 서빙 결과로, B300 통합 구성보다 4배 낫다고 했다. vLLM에 따르면 DeepSeek-V4.1-Flash 기준이다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        같은 GPU에서 소프트웨어만 바꿔 1.5배 넘게 빨라지면 추론 비용도 그만큼 내려간다. 그 커널을 코딩 에이전트가 함께 썼다는 점도 눈에 띈다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        커널을 빨리 쓸수록 병목은 리뷰와 검증으로 옮겨 간다. vLLM은 이를 위한 빠른 모델 최적화 RFC를 내놓았다. SemiAnalysis는 NVIDIA가 DeepSeek v4.1 등 다른 모델 작업도 하고 있다고 전했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
