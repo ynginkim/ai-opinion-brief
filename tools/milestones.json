@@ -348,6 +348,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
           "title": "Francesco Maggi — “황금기냐 암흑기냐”",
           "summary": "Tao 블로그 객원 글. OpenAI가 시도한 문제 4,000개 중 못 푼 문제가 더 궁금하다며, 학계가 함께 운영하는 LLM 인프라를 제안했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/",
+          "title": "Terence Tao — Siegel 영점 증명 해설",
+          "summary": "OpenAI 원고 중 9쪽 논문의 Siegel 영점 증명을 Ben Green의 정리본으로 풀어 썼다. 준리만 가설 논문 두 편은 아직 소화 중이라고 했다."
         }
       ]
     },
@@ -417,6 +422,11 @@
           "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
           "title": "Latent Space AINews, Muse Wonder 독립 벤치 정리",
           "summary": "Latent Space가 Artificial Analysis Index 등 독립 점수와 출시·가격을 모아 Muse Wonder·Wonder Full 출시를 정리했다."
+        },
+        {
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
+          "title": "How I AI — 에이전트는 최고, 디자인은 최악",
+          "summary": "Claire Vo가 실무 과제 20개 가까이를 맡겨 봤다. 결제 문의·메일함 정리·컴퓨터 사용에선 1위였지만 프런트엔드 디자인은 맡기지 말라고 했다."
         }
       ]
     },

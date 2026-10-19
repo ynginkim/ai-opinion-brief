@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemiAnalysis “NVIDIA 반격 뒤에도 TPUv7이 달러당 성능 1.64배” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · <span class="article-date">2026-10-20 Seoul</span></div>
+    <h1 class="article-title">SemiAnalysis “NVIDIA 반격 뒤에도 TPUv7이 달러당 성능 1.64배”</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/SemiAnalysis_/status/2112258243372146742" target="_blank" rel="noopener">X @SemiAnalysis_ (GB300)</a> · <a href="https://x.com/SemiAnalysis_/status/2111938013852762351" target="_blank" rel="noopener">X @SemiAnalysis_ (TPUv7)</a> · <a href="https://inferencex.semianalysis.com/inference/kimi-k3" target="_blank" rel="noopener">InferenceX Kimi K3</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 10월 20일 새벽(한국 시간) NVIDIA의 반격 결과를 전했다. 파라미터 2.8조 개짜리 Kimi K3 추론 벤치에 GB300의 첫 FP4 결과가 올라왔다. 그런데도 외부 고객 기준 달러당 성능은 Google TPUv7보다 1.64배 나빴다.
+      </p>
+
+      <p>
+        SemiAnalysis는 NVIDIA가 TPUv7의 FP8 결과를 보고 놀라 밤낮으로 매달렸다고 표현했다. 비교는 전체 응답 시간 곡선의 대부분 구간에서 TPUv7이 앞선다는 내용이다.
+      </p>
+
+      <h2>먼저 나온 TPUv7 결과</h2>
+
+      <p>
+        하루 전인 10월 19일 새벽에는 TPUv7 결과가 먼저 나왔다. vLLM을 만든 회사 Inferact가 Google과 함께 처음부터 끝까지 맡았다. TorchTPU 기반 vLLM 스택을 썼다.
+      </p>
+
+      <p>
+        이 결과는 응답이 아주 빨라야 하는 구간에서 GB200 NVL72, B300, AMD MI355보다 TCO 대비 성능이 좋았다. TCO는 장비 값과 전기료 등을 다 합친 총소유비용이다. SemiAnalysis는 여러 커널을 하나로 묶은 메가커널 방식 덕분이라고 봤다.
+      </p>
+
+      <ul>
+        <li>NVIDIA GB300 첫 FP4 결과: 달러당 성능이 TPUv7보다 1.64배 낮음 (외부 고객 기준)</li>
+        <li>TPUv7 예비 결과: Google 내부 비용 기준으로는 GB300 NVL72와도 겨룰 만함</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        큰 오픈 모델을 서빙하는 비용에서 NVIDIA 말고 다른 선택지가 숫자로 맞서고 있다. 그것도 GPU 생태계의 대표 도구인 vLLM 위에서다. TPU에서도 새 오픈 모델을 빨리 올릴 수 있게 됐다는 신호다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        두 결과 모두 예비 단계다. Inferact와 Google은 프리필과 디코드를 다른 비율로 나눈 구성을 곧 더 낸다. SemiAnalysis는 NVIDIA도 격차를 좁히려 결과를 계속 낼 것으로 봤다. 결과는 SemiAnalysis의 InferenceX 대시보드에서 볼 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Meta, PC 한 대로 도는 30B 에이전트 모델 Muse Glimmer 설계 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Meta · <span class="article-date">2026-10-20 Seoul</span></div>
+    <h1 class="article-title">Meta, PC 한 대로 도는 30B 에이전트 모델 Muse Glimmer 설계 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/" target="_blank" rel="noopener">Meta AI 보고서</a> · <a href="https://huggingface.co/meta-models/Muse-Glimmer-30B" target="_blank" rel="noopener">Hugging Face 모델 카드</a> · <a href="https://x.com/AIatMeta/status/2112265822274302066" target="_blank" rel="noopener">X @AIatMeta</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Meta가 10월 20일 새벽(한국 시간) Muse Glimmer의 기술 보고서를 공개했다. Muse Glimmer는 8월 10일에 나온 파라미터 300억 개짜리 오픈 가중치 모델이다. 소비자용 하드웨어에서 에이전트 일을 하도록 만들었다.
+      </p>
+
+      <p>
+        보고서는 모델 구조, 증류 방식, 양자화를 다룬다. 증류는 큰 모델의 실력을 작은 모델에 옮겨 담는 훈련법이다. 모델 카드에 따르면 Muse Spark에서 증류했다.
+      </p>
+
+      <h2>내 PC에서 돈다</h2>
+
+      <p>
+        가중치를 약 4비트로 줄여 소비자용 GPU 한 장에서 쓸 만한 속도로 돌게 했다. 텍스트와 이미지를 받고 텍스트로 답한다. 100개가 넘는 언어 데이터로 훈련했다.
+      </p>
+
+      <ul>
+        <li>4비트 K-Quant-17GB: 24GB VRAM 대상, 평균 성능 저하 1.0%</li>
+        <li>4비트 K-Quant-Dynamic: 32GB VRAM 대상, 평균 성능 저하 0.2%</li>
+        <li>라이선스: Apache 2.0</li>
+      </ul>
+
+      <h2>벤치마크</h2>
+
+      <p>
+        Meta는 비슷한 크기의 오픈 모델 가운데 도구 사용과 여러 단계 계획에서 앞선다고 했다. 모델 카드 숫자를 보면 강한 곳과 약한 곳이 갈린다.
+      </p>
+
+      <ul>
+        <li>MCP Atlas: Muse Glimmer 75.5 · Qwen3.6-27B 62.5 · Gemma4-31B 54.2</li>
+        <li>SWE-Bench Pro: Muse Glimmer 51.2 · Qwen3.6-27B 50.2 · Gemma4-31B 36.9</li>
+        <li>OSWorld-Verified: Qwen3.6-27B 75.6 · Muse Glimmer 65.9 · Gemma4-31B 58.5</li>
+        <li>TerminalBench 2.1: Qwen3.6-27B 60.7 · Muse Glimmer 51.7 · Gemma4-31B 43.4</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Meta는 큰 모델 Muse Wonder와 함께 작은 오픈 모델도 키우고 있다. 클라우드 없이 내 기기에서 늘 켜 두는 에이전트를 노린다. 이번 보고서로 그 모델을 어떻게 만들었는지 다른 개발자도 따라 볼 수 있게 됐다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        가중치는 Hugging Face에서 바로 받을 수 있다. llama.cpp용 GGUF와 ExecuTorch용 버전도 함께 올라와 있다. 컴퓨터 사용 작업이 많다면 같은 체급의 Qwen3.6-27B와 직접 비교해 보는 편이 좋다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
