@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Jim Fan, 로봇 영상 라벨링 모델 Flora를 오픈 가중치로 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Jim Fan · NVIDIA · <span class="article-date">2026-10-21 Seoul</span></div>
+    <h1 class="article-title">Jim Fan, 로봇 영상 라벨링 모델 Flora를 오픈 가중치로 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/DrJimFan/status/2112597587987689912" target="_blank" rel="noopener">X @DrJimFan</a> · <a href="https://research.nvidia.com/labs/gear/flora/" target="_blank" rel="noopener">NVIDIA GEAR Flora</a> · <a href="https://huggingface.co/collections/nvidia/flora" target="_blank" rel="noopener">Hugging Face</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        NVIDIA GEAR 연구실을 이끄는 Jim Fan이 오픈 모델 묶음 Flora를 공개했다. 로봇과 사람이 찍은 영상을 보고, 무슨 일이 있었고 얼마나 잘됐는지를 자동으로 적어 준다. 가중치도 모두 풀었다.
+      </p>
+
+      <p>
+        Jim Fan은 Flora가 Astra급 성능을 125분의 1 비용으로 낸다고 했다. NVIDIA 안에서는 이미 GPU 500장으로 하루 20만 시간 분량의 영상에 라벨을 붙이고 있다. 함께 만든 Yunze Man은 이 데이터로 로봇 모델 GR00T를 훈련한다고 밝혔다.
+      </p>
+
+      <h2>무엇을 해 주나</h2>
+
+      <ul>
+        <li>시간대별 설명: 영상 속 동작을 시간과 함께 적어 데이터를 거르고 고른다</li>
+        <li>진행 보상: 작업이 얼마나 진행됐는지 점수로 매겨 품질 관리와 강화학습에 쓴다</li>
+        <li>채점표 평가: 실제 환경 벤치마크용 점수를 낸다</li>
+      </ul>
+
+      <p>
+        Hugging Face에는 Flora-Captioner(27B), Flora-TempSeg, Flora-Rewarder(28B)가 올라왔다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        로봇 학습은 데이터가 늘 모자라다. 영상은 많아도 거기에 라벨을 다는 일이 비싸고 느리다. NVIDIA는 자기 데이터 공장에서 쓰는 도구를 그대로 내놨다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        로봇 스타트업이나 연구실도 같은 방식으로 영상 데이터를 대량 가공할 수 있다. 사람 1인칭 영상을 로봇 학습에 쓰는 흐름도 더 빨라질 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

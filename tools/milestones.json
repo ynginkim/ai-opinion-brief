@@ -353,6 +353,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/",
           "title": "Terence Tao — Siegel 영점 증명 해설",
           "summary": "OpenAI 원고 중 9쪽 논문의 Siegel 영점 증명을 Ben Green의 정리본으로 풀어 썼다. 준리만 가설 논문 두 편은 아직 소화 중이라고 했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/",
+          "title": "Terence Tao — AI로 ‘열 번째 판별식’ 상한 구하기 도전",
+          "summary": "OpenAI 원고 등에서 나온 Siegel 영점 증명마다 AI로 열 번째 판별식 상한을 구해 비교하자는 공개 협업을 열었다. AI 사용은 밝히면 되고, 하루 만에 Codex·Claude로 구한 상한이 댓글로 올라왔다."
         }
       ]
     },
@@ -530,6 +535,26 @@
           "summary": "Artificial Analysis 39점과 출시 가격, 라이선스 비판을 모았다. 에이전트 평가 네 개에선 상위 오픈 모델 9개 중 꼴찌였고, Meta 자체 Spark 1.3보다 약하다는 평도 실었다."
         }
       ]
+    },
+    {
+      "id": "anthropic-scorpion-binders",
+      "date": "2026-10-21",
+      "lab": "anthropic",
+      "title": "Claude가 설계한 단백질 17개, 전갈 독소에 붙었다",
+      "summary": "Anthropic 내부 연구 모델이 Claude Science에서 64시간 동안 거의 혼자 전갈 신경독소 결합 단백질을 설계했다. 외부 실험실 두 곳이 211개를 검사해 17개가 기준을 넘었다. 독 무력화는 아직 시험 전이고, 설계와 데이터는 모두 공개했다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "17",
+        "label": "실험으로 확인된 결합 단백질 (설계 211개 중)",
+        "source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+      },
+      "detail": "articles/anthropic-scorpion-binders.html",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "takes": []
     }
   ]
 }

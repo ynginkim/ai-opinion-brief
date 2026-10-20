@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.20</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.20 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Meta가 Muse Wonder를 훈련한 기가와트 클러스터 Prometheus의 숫자를 공개했고, PC 한 대로 도는 30B 모델 Muse Glimmer의 보고서도 냈습니다. Terence Tao는 OpenAI 원고에서 나온 Siegel 영점 증명을 직접 풀어 썼습니다. Satya Nadella는 에이전트를 내부자로 보고 감시하는 기능을 Microsoft 보안 제품에 넣었고, SemiAnalysis는 NVIDIA GB300이 반격한 뒤에도 TPUv7이 달러당 성능 1.64배로 앞선다고 전했습니다. Elon Musk는 미국 모든 아이에게 SpaceX 주식을 한 주씩 주겠다고 했고, Jensen Huang은 베를린에서 독일 총리와 물리 AI 협력을 다졌습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/20</span>
+      <a href="2026-10-19.html">10/19</a>
+      <a href="2026-10-18.html">10/18</a>
+      <a href="2026-10-17.html">10/17</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Meta</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/meta-prometheus.html">Meta, Muse 훈련한 기가와트 클러스터 Prometheus 속을 공개</a>
+        <span class="domain">(engineering.fb.com)</span>
+        <a class="ext-link" href="https://engineering.fb.com/2026/10/19/data-center-engineering/inside-prometheus-meta-gigawatt-scale-supercluster/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Meta가 Muse Wonder를 훈련한 오하이오주의 기가와트급 클러스터 Prometheus를 자세히 공개했다. 지금은 GPU 수십만 장이고, 다 지으면 약 100만 장이 된다.</li>
+        <li>Muse Wonder 훈련에서 굿풋은 사전학습 85% 이상, 강화학습 90% 이상이었다. 굿풋은 전체 시간 중 실제로 학습에 쓴 시간의 비율이다.</li>
+        <li>훈련은 평균 약 4만 7천 GPU시간마다 한 번 끊겼다. 그 뒤 펌웨어를 고쳐 이 간격을 5만 4천 GPU시간 이상으로 늘렸다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 큰 훈련 클러스터를 짓거나 빌린다면, GPU 수보다 굿풋과 중단 간격을 먼저 물어볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/tao-siegel-zeros.html">Tao, OpenAI 원고에서 나온 Siegel 영점 증명을 풀어 쓰다</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Terence Tao가 Siegel 영점이 없다는 증명의 개요를 블로그에 올렸다. 이 증명은 OpenAI가 최근 공개한 수학 원고 가운데 9쪽짜리 논문에서 나왔다.</li>
+        <li>Siegel 영점은 소수 분포의 오차를 정확히 계산하지 못하게 막아 온 오랜 난제다. 이 논문은 해석적 정수론 대신 대수적 정수론과 수의 기하로 풀었다.</li>
+        <li>Tao는 Ben Green이 다듬은 버전을 특히 우아하다고 소개했다. 원고를 이해할 때 SAIR 공개 수학 모델과의 대화도 도움을 받았다고 밝혔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 낸 증명을 수학자들이 어떻게 소화하는지 보고 싶다면, 이 해설과 Green의 정리본을 함께 읽어 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Satya Nadella · Microsoft</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/nadella-agentic-insider.html">Nadella “모델은 내부자 위험”… 에이전트 감시를 제품에 넣었다</a>
+        <span class="domain">(blogs.microsoft.com)</span>
+        <a class="ext-link" href="https://blogs.microsoft.com/blog/2026/10/19/securing-the-agentic-insider/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Satya Nadella가 모델을 내부자 위험으로 다루자던 자기 주장을 제품에 옮긴다고 밝혔다. Microsoft는 보안 시스템 Project Perception에 에이전트 감시 기능을 더했다.</li>
+        <li>Microsoft 보안 총괄 Hayete Gallot은 어디서 만들었든 프론티어 모델은 믿을 수 없다고 썼다. 결과를 내도록 훈련돼 보상 해킹에 빠지기 쉽다는 이유다.</li>
+        <li>가디언 에이전트가 모든 에이전트의 행동을 실행 전에 24시간 살핀다. 위험이 커지면 권한을 줄이거나 막는다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 회사 안에서 에이전트를 여럿 돌린다면, 에이전트마다 신원과 권한을 따로 주고 행동 기록을 남기는지 점검할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">SemiAnalysis</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/semianalysis-tpuv7-gb300.html">SemiAnalysis “NVIDIA 반격 뒤에도 TPUv7이 달러당 성능 1.64배”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2112258243372146742" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis가 Kimi K3 추론 벤치에 올라온 NVIDIA GB300의 첫 FP4 결과를 전했다. 외부 고객 기준 달러당 성능이 Google TPUv7보다 1.64배 나쁘다고 했다.</li>
+        <li>하루 전에는 vLLM을 만든 Inferact와 Google이 TPUv7 첫 결과를 냈다. 응답이 아주 빨라야 하는 구간에서 GB200 NVL72, B300, MI355보다 비용 대비 성능이 좋았다.</li>
+        <li>둘 다 예비 결과라 순위는 바뀔 수 있다. SemiAnalysis는 NVIDIA가 격차를 줄이려 결과를 더 낼 것으로 봤다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 큰 오픈 모델을 서빙할 칩을 고른다면, InferenceX 대시보드에서 내가 원하는 응답 속도 구간의 달러당 성능을 직접 비교해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Elon Musk</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/musk-spacex-share-kids.html">Musk “내년 미국 모든 아이에게 SpaceX 주식 한 주씩”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/elonmusk/status/2112089556615123114" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Elon Musk가 내년에 자기 SpaceX 주식을 미국의 모든 아이에게 한 주씩 주겠다고 X에 썼다. 이번이 여러 번 중 첫 번째라고 했지만, 대상과 방식은 밝히지 않았다.</li>
+        <li>이 글은 Anthropic이 지분 5%로 공익 기금을 만든다고 밝힌 지 약 14시간 뒤에 올라왔다. NYT의 Kevin Roose는 Anthropic 기금이 역대 최대 기부 약속일 수 있다고 했다.</li>
+        <li>같은 날 Musk는 SpaceX가 AWS와 GCP에서 추론 컴퓨트를 빌리기 어려웠다고 했다. 훈련 클러스터의 부담을 덜려던 시도였다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 회사의 지분이 어떻게 나뉘는지 지켜본다면, Musk가 지급 대상과 방식을 밝히는지 기다려 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Jensen Huang · NVIDIA</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/huang-merz-berlin.html">Jensen Huang “그 지식은 여러분 것”… 독일과 물리 AI 손잡다</a>
+        <span class="domain">(blogs.nvidia.com)</span>
+        <a class="ext-link" href="https://blogs.nvidia.com/blog/germany-wants-to-lead-the-world-in-industrial-ai-how-nvidia-will-help/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Jensen Huang이 베를린에서 Friedrich Merz 독일 총리와 산업 AI를 놓고 대담했다. 같은 날 독일 정부와 NVIDIA는 물리 AI 모델을 함께 키우는 공동 의향서에 서명했다.</li>
+        <li>Huang은 독일 제조업이 쌓은 지식은 대체할 수 없다고 했다. AI는 그 능력을 키우는 새 도구라며 적극적으로 쓰라고 했다.</li>
+        <li>NVIDIA는 Agile Robots 등 독일 스타트업 네 곳에 새로 투자할 계획이다. 유럽에 약 100억 달러를 쓰겠다는 약속의 일부다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 유럽에서 로봇이나 제조 AI를 만든다면, 독일 정부와 NVIDIA의 물리 AI 공동 사업이 어떤 지원을 내놓는지 챙겨 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Meta</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/meta-muse-glimmer-report.html">Meta, PC 한 대로 도는 30B 에이전트 모델 Muse Glimmer 설계 공개</a>
+        <span class="domain">(ai.meta.com)</span>
+        <a class="ext-link" href="https://ai.meta.com/research/publications/muse-glimmer-30b-an-on-device-agentic-model/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Meta가 8월에 낸 오픈 가중치 모델 Muse Glimmer의 기술 보고서를 냈다. 파라미터 300억 개로, 소비자용 GPU 한 장짜리 Mac이나 PC에서 돈다.</li>
+        <li>모델 카드를 보면 도구 사용 벤치 MCP Atlas에서 75.5점으로 같은 체급인 Gemma4-31B와 Qwen3.6-27B를 앞섰다. 컴퓨터 사용 벤치 OSWorld-Verified에서는 Qwen3.6-27B가 더 높았다.</li>
+        <li>4비트로 줄인 버전은 24GB나 32GB 메모리에 들어간다. 라이선스는 Apache 2.0이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 클라우드 없이 내 PC에서 에이전트를 돌리고 싶다면, 24GB GPU용 4비트 버전부터 받아 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">SemiAnalysis</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/semianalysis-datacenters-2027.html">SemiAnalysis “2027년, 데이터센터가 한 해에 50GW 늘어난다”</a>
+        <span class="domain">(newsletter.semianalysis.com)</span>
+        <a class="ext-link" href="https://newsletter.semianalysis.com/p/datacenters-2027-the-year-of-acceleration" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis가 2027년 한 해에만 데이터센터 용량이 약 50GW 늘 것으로 내다봤다. 2024년까지 전 세계에 쌓인 데이터센터 규모와 맞먹는 양이다.</li>
+        <li>근거로 대부분 공사가 절반 넘게 진행된 24GW 이상의 현장을 들었다. 올해 들어 서명된 데이터센터 임대 계약도 1조 달러가 넘는다고 했다.</li>
+        <li>다음 병목은 전력보다 메모리와 로직 칩이 될 수 있다고 봤다. 컴퓨트가 늘면 AI가 더 싸지고 모델 발전도 빨라진다는 전망이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> GPU 조달이나 AI 인프라 일정을 짠다면, 2027~28년엔 칩이 병목이 될 수 있다는 전망을 계획에 넣어 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Lenny's Podcast · How I AI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/howiai-muse-wonder.html">How I AI “Muse Wonder, 에이전트 일은 최고·디자인은 최악”</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>How I AI 진행자 Claire Vo가 Meta Muse Wonder에 실무 과제 20개 가까이를 맡겨 봤다. Lenny's 뉴스레터가 10월 20일 이 에피소드를 다시 정리했다.</li>
+        <li>결제 문의 처리, 메일함 정리, 컴퓨터 사용, 이메일 쓰기에서 1위였다. 결제 티켓 과제에서는 몰래 심어 둔 프롬프트 인젝션도 걸러 냈다.</li>
+        <li>프런트엔드 디자인은 맡기면 안 된다고 했다. 브랜드 가이드를 무시하고 이모지를 넣었으며 이미지도 깨졌다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Muse Wonder를 써 볼지 고민한다면, 개인 비서나 업무 에이전트부터 시험하고 화면 디자인은 다른 모델에 맡길 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z Podcast · Jean-Denis Greze</div>
+      <h2 class="title">
+        <a href="articles-2026-10-20/a16z-town-agents.html">Plaid 전 CTO “매출 100만 달러 회사를 접었다, AI 시대엔 못 커서”</a>
+        <span class="domain">(a16z.simplecast.com)</span>
+        <a class="ext-link" href="https://a16z.simplecast.com/episodes/what-happens-when-al-agents-can-spend-your-money-PREiwaJH" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z 팟캐스트에 Plaid CTO 출신 Jean-Denis Greze가 나왔다. 그는 첫해 매출이 100만 달러에 가까웠던 AI 세무 스타트업을 스스로 접었다.</li>
+        <li>기존 세무 회사가 같은 AI로 자기 고객 업무를 더 빨리 자동화할 거라고 봤다. 그래서 이메일과 캘린더에서 일하는 AI 비서 Town으로 방향을 틀었다.</li>
+        <li>AI가 코딩만큼 일상 업무를 못 바꾼 건 직접 자동화를 만들 사람이 적어서라고 했다. 제품이 할 일을 먼저 찾아 대신 해 줘야 한다는 것이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 앱을 만든다면, 기존 강자가 같은 기술로 더 빨리 따라올 수 있는 시장인지부터 따져 볼 때.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
