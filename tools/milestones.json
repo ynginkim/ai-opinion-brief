@@ -358,6 +358,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/",
           "title": "Terence Tao — AI로 ‘열 번째 판별식’ 상한 구하기 도전",
           "summary": "OpenAI 원고 등에서 나온 Siegel 영점 증명마다 AI로 열 번째 판별식 상한을 구해 비교하자는 공개 협업을 열었다. AI 사용은 밝히면 되고, 하루 만에 Codex·Claude로 구한 상한이 댓글로 올라왔다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/",
+          "title": "Tristan Buckmaster — 수학은 젊은 세대가 바꾼다 (Tao 블로그 기고)",
+          "summary": "OpenAI 10월 6일 원고가 대부분 읽기 어렵고 일부는 틀렸으며 ‘평균 3시간’ 설명은 오해를 부른다고 비판했다. 사용자 데이터 보호와 새 평가 기준을 요구했다."
         }
       ]
     },
@@ -458,6 +463,11 @@
           "url": "https://a16z.simplecast.com/episodes/the-race-to-recursive-self-improving-ai-OPuX1TcP",
           "title": "a16z — RSI가 뭔지 가르기",
           "summary": "Martin Casado가 MakerMaker와 재귀적 자기개선(RSI)과 AI로 AI 개발 일부를 자동화하는 것의 차이를 나눔."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OKDai2_aZe4",
+          "title": "Machine Gods 첫 화 — AI가 스마트TV에서 복제될까",
+          "summary": "Kevin Roose와 Casey Newton이 새 NPR 쇼 첫 화에서 이 보고서를 말썽 에이전트 사례들과 함께 다뤘다."
         }
       ]
     },
@@ -552,9 +562,34 @@
         "label": "실험으로 확인된 결합 단백질 (설계 211개 중)",
         "source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
       },
-      "detail": "articles/anthropic-scorpion-binders.html",
+      "detail": "archive/articles-2026-10-21/anthropic-scorpion-binders.html",
       "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
       "takes": []
+    },
+    {
+      "id": "claude-duet",
+      "date": "2026-10-22",
+      "lab": "anthropic",
+      "title": "Claude Duet, 먼저 일을 챙기는 개인 에이전트",
+      "summary": "Opus 5.5 기반 앱이다. 아침마다 챙길 일을 알려 주고, 클라우드 컴퓨터에서 맡긴 일을 계속한다. 메시지 발송이나 결제 같은 민감한 일은 먼저 승인을 받고, 지금은 미국 Pro·Max 대기 명단으로만 받는다.",
+      "axes": [
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "6,000+",
+        "label": "연결되는 커넥터·플러그인",
+        "source_url": "https://claude.com/product/claude-duet"
+      },
+      "detail": "articles/anthropic-claude-duet.html",
+      "url": "https://claude.com/product/claude-duet",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
+          "title": "Claire Vo — Claude Duet 실사용",
+          "summary": "가장 잘 다듬어진 에이전트 출시라고 봤다. 다만 먼저 연락하지 않고 느리며, 데스크톱·공동 사용이 없어 주력 도구로는 아직 이르다고 했다."
+        }
+      ]
     }
   ]
 }

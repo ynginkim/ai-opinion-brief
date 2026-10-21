@@ -10,7 +10,7 @@
   <div class="wrap">
     <header>
       <div class="brand"><a href="index.html">agi-<span>tracker</span></a></div>
-      <div class="meta-top">2026.10.21 · 서울 06:00</div>
+      <div class="meta-top">2026.10.22 · 서울 06:00</div>
     </header>
 
     <nav class="tabs" aria-label="주요 메뉴">
@@ -20,196 +20,241 @@
 
     <div class="tldr">
       <strong>TODAY TLDR</strong>
-      Anthropic은 Claude가 64시간 동안 거의 혼자 설계한 단백질 가운데 17개가 전갈 독소에 붙는다고 실험으로 확인했습니다. Jim Fan은 로봇 학습 데이터를 자동으로 다는 NVIDIA 오픈 모델 Flora를 내놨고, Sam Altman은 안전 연구자 Aleksander Madry가 OpenAI로 돌아왔다고 반겼습니다. OpenAI는 신약 개발 플랫폼 Orchestra Bio를 샀고, Terence Tao는 AI로 '열 번째 판별식' 상한을 구하는 공개 도전을 열었습니다. SemiAnalysis는 AI 덕분에 CUDA 최적화 속도가 한 달에 2배가 됐다는 NVIDIA 발표를 전했습니다.
+      Anthropic이 먼저 말을 거는 개인 에이전트 Claude Duet을 미국 Pro·Max 대기자 대상으로 내놨습니다. OpenAI는 GPT-5.6 Sol이 찾은 PHP 치명적 취약점의 공동 대응을 공개했고, GPT-Rosalind 에이전트 수천 개로 32분 만에 뇌세포 데이터에서 신약 단서를 찾았습니다. Dario Amodei는 Anthropic이 안전보다 경쟁을 앞세운다는 비판에 장문으로 반박했고, Tao 블로그에는 OpenAI 수학 원고 공개를 비판하는 Buckmaster의 글이 올라왔습니다. Jensen Huang은 GTC Berlin에서 공장형 AI 데이터센터와 에이전트 보안 설계를 발표했습니다.
     </div>
 
     <div class="nav-dates">
-      <span class="on">오늘 10/21</span>
+      <span class="on">오늘 10/22</span>
+      <a href="archive/2026-10-21.html">10/21</a>
       <a href="archive/2026-10-20.html">10/20</a>
       <a href="archive/2026-10-19.html">10/19</a>
       <a href="archive/2026-10-18.html">10/18</a>
-      <a href="archive/2026-10-17.html">10/17</a>
       <a class="nav-all" href="archive.html">전체 브리프 →</a>
     </div>
 
     <article class="item">
-      <div class="who">Anthropic</div>
+      <div class="who">Anthropic · Cat Wu</div>
       <h2 class="title">
-        <a href="articles/anthropic-scorpion-binders.html">Claude가 설계한 단백질 17개, 전갈 독소에 붙었다</a>
-        <span class="domain">(anthropic.com)</span>
-        <a class="ext-link" href="https://www.anthropic.com/research/claude-scorpion-toxin-binder-design" target="_blank" rel="noopener">원문</a>
+        <a href="articles/anthropic-claude-duet.html">Anthropic, 먼저 일을 챙기는 에이전트 Claude Duet 공개</a>
+        <span class="domain">(claude.com)</span>
+        <a class="ext-link" href="https://claude.com/product/claude-duet" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Anthropic 내부 연구 모델이 Claude Science 안에서 64시간 동안 전갈 신경독소 5종에 붙을 단백질을 설계했다. 사람은 후속 지시를 네 번만 넣었다.</li>
-        <li>Claude는 설계안 31만 8,484개를 만들고 180개를 골랐다. 연구팀이 31개를 보태 외부 실험실 두 곳이 211개를 검사했고, 17개가 기준을 넘었다.</li>
-        <li>독을 실제로 무력화하는지는 아직 시험하지 않았다. 설계 211개와 실험 데이터는 모두 공개했다.</li>
+        <li>Anthropic이 개인 에이전트 앱 Claude Duet을 연구 미리보기로 공개했다. 아침마다 챙길 일을 알려 주고, 사용자가 자리를 비워도 일을 계속한다.</li>
+        <li>메시지를 보내거나 돈을 내는 일은 먼저 허락을 받는다. Opus 5.5로 돌아가고 커넥터·플러그인 6,000개 넘게 붙는다.</li>
+        <li>지금은 미국 Pro·Max 구독자 대기 명단으로만 받는다. Cat Wu는 시키기 전에 할 일을 알아채고 처리하는 쪽으로 크게 나아갔다고 했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 신약·바이오 연구를 한다면, AI에게 설계를 맡기고 사람은 실험 검증에 집중하는 방식을 따져 볼 때.</div>
+      <div class="why"><em>왜</em> dots나 Muse 같은 개인 에이전트를 고르는 중이라면, 미국 Pro·Max 사용자는 대기 명단부터 걸어 둘 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Jim Fan · NVIDIA</div>
+      <div class="who">OpenAI · Peter Steinberger</div>
       <h2 class="title">
-        <a href="articles/jimfan-flora.html">Jim Fan, 로봇 영상 라벨링 모델 Flora를 오픈 가중치로 공개</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/DrJimFan/status/2112597587987689912" target="_blank" rel="noopener">원문</a>
+        <a href="articles/openai-php-patch-the-planet.html">GPT-5.6 Sol이 찾은 PHP 구멍, OpenAI가 공동 대응 공개</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/coordinated-disclosure-of-critical-vulnerabilities" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>NVIDIA의 Jim Fan이 로봇·사람 영상을 학습 데이터로 바꿔 주는 오픈 모델 묶음 Flora를 공개했다. Astra급 성능을 125분의 1 비용으로 낸다고 했다.</li>
-        <li>NVIDIA는 이미 Flora로 GPU 500장에서 하루 영상 20만 시간에 라벨을 붙인다. 이 데이터로 로봇 모델 GR00T를 훈련한다.</li>
-        <li>시간별 설명, 작업이 얼마나 진행됐는지 보는 보상 점수, 채점표 평가를 낸다. Hugging Face에 27B·28B 모델이 올라왔다.</li>
+        <li>OpenAI가 PHP의 치명적 취약점을 두 달 동안 관리자·보안 업체와 함께 고쳐 왔다고 밝혔다. PHP는 웹사이트 약 70%를 돌리는 언어다.</li>
+        <li>보안 업체 Calif가 GPT-5.6 Sol로 찾았고, Wiz도 따로 찾아 신고했다. Peter Steinberger는 “이번 주 난리 날 그 PHP 취약점을 GPT-5.6 Sol이 찾았다”고 썼다.</li>
+        <li>공개 일정이 하루 앞서 새어 나가 공격 코드가 돌고 있다. OpenAI는 PHP 버전을 확인하는 Codex 스킬을 내놨다.</li>
       </ul>
-      <div class="why"><em>왜</em> 로봇 데이터를 모으고 있다면, 사람 손으로 라벨을 다는 대신 Flora를 먼저 돌려 볼 때.</div>
-    </article>
-
-    <article class="item">
-      <div class="who">Sam Altman · OpenAI</div>
-      <h2 class="title">
-        <a href="articles/altman-madry-return.html">Altman “초지능 앞 안전 과제가 크다”, Madry가 OpenAI로 복귀</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/sama/status/2112652656602923366" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>OpenAI 대비(preparedness)팀을 이끌다 몇 달 전 떠난 Aleksander Madry가 돌아온다. AI 발전이 다른 국면에 들어서 안전과 보안이 가장 중요해졌다고 했다.</li>
-        <li>수석 과학자 Jakub Pachocki가 직접 복귀를 부탁했다. 둘은 AI 발전 속도와 그 영향을 OpenAI 전략에 어떻게 반영할지 다룬다.</li>
-        <li>Sam Altman은 “초지능을 마주한 지금 안전·보안 과제가 엄청나다”며 Madry를 반겼다.</li>
-      </ul>
-      <div class="why"><em>왜</em> OpenAI 안전 정책을 지켜보고 있다면, Pachocki·Madry 팀이 내놓을 첫 결과물을 기다려 볼 때.</div>
+      <div class="why"><em>왜</em> PHP로 돌아가는 사이트가 있다면 오늘 바로 업그레이드할 때. 보안팀이라면 OpenAI의 5단계 대응안에 의견을 낼 수 있다.</div>
     </article>
 
     <article class="item">
       <div class="who">OpenAI</div>
       <h2 class="title">
-        <a href="articles/openai-orchestra-bio.html">OpenAI, 신약 개발 관리 플랫폼 Orchestra Bio 인수</a>
+        <a href="articles/openai-rosalind-agents.html">GPT-Rosalind 에이전트 수천 개, 뇌세포 데이터 32분 만에 훑었다</a>
         <span class="domain">(openai.com)</span>
-        <a class="ext-link" href="https://openai.com/index/openai-to-acquire-orchestra-bio" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://openai.com/index/scaling-ai-research-for-complex-biological-data" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>OpenAI가 신약 개발 과정을 관리하는 플랫폼 Orchestra Bio를 인수했다. 생명과학용 모델·도구 묶음인 Rosalind에 합친다.</li>
-        <li>Orchestra에서는 에이전트가 연구 일정과 실험을 지켜본다. 제조 배치 하나가 실패하면 어떤 임상 일정이 밀리는지 찾고 대응안을 비교한다.</li>
-        <li>OpenAI는 신약 하나가 미국 승인까지 평균 10~15년 걸린다며, 이 기간을 줄이는 것이 목표라고 했다.</li>
+        <li>OpenAI가 PerturbAI, Scripps Research와 함께 GPT-Rosalind 에이전트 수천 개를 동시에 돌렸다. 쥐 뇌세포 수백만 개 데이터를 32분 만에 분석했다.</li>
+        <li>사람이 하면 몇 달에서 1년 걸릴 일로 봤다. 에이전트 하나는 논문 11편을 인용했지만, 나눠 맡긴 쪽은 700편 넘게 인용했다.</li>
+        <li>콜레스테롤 수송 문제가 신경 퇴화와 이어질 수 있다는 새 가설이 나왔다. 아직 실험으로 확인해야 하는 단서다.</li>
       </ul>
-      <div class="why"><em>왜</em> 제약·바이오 팀이라면, Rosalind가 연구 질문 답변을 넘어 프로그램 관리까지 맡게 되는지 지켜볼 때.</div>
+      <div class="why"><em>왜</em> 대규모 실험 데이터를 묵혀 두고 있다면, 에이전트를 하나 크게 쓰기보다 여럿에게 나눠 맡기는 방식을 시험해 볼 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Terence Tao</div>
+      <div class="who">Dario Amodei · Anthropic</div>
       <h2 class="title">
-        <a href="articles/tao-tenth-discriminant.html">Tao, AI로 ‘열 번째 판별식’ 상한 구하는 공개 도전</a>
+        <a href="articles/dario-calvin-reply.html">Dario Amodei, “안전보다 경쟁” 비판에 9가지로 반박</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/DarioAmodei/status/2112732230124818891" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>AI 안전 활동가 Nathan Calvin이 Anthropic은 결국 초지능 경쟁을 가장 앞세운다고 비판했다. Dario Amodei가 X에 장문으로 답했다.</li>
+        <li>그는 돈을 잃으면서 한 안전 결정 9가지를 꼽았다. Mythos급 모델을 2월에 갖고도 6월까지 일반 공개를 미룬 일도 들어 있다.</li>
+        <li>일부 지적은 실수였다고 인정했다. 회사 가치를 어떻게 지킬지 곧 더 말하겠다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Anthropic을 쓰거나 규제를 지켜본다면, 회사가 스스로 내세우는 안전 비용 목록과 비판 목록을 나란히 놓고 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles/anthropic-public-benefit-report.html">Anthropic, 첫 공익 보고서 내고 신탁에 물리학자 영입</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/public-benefit-charter" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 첫 연례 공익 보고서를 냈다. 다섯 가지 목표를 세우고, 어디까지 왔고 어디가 모자란지 적었다.</li>
+        <li>목표에는 AI 안전 기술 문제 해결과 법으로 받치는 안전 관행이 들어간다. 민주주의 강화와 혜택 나누기도 있다.</li>
+        <li>이사회 과반을 뽑을 수 있는 장기공익신탁에 하버드 물리학자 Christopher Stubbs가 합류했다. 우주 가속 팽창 발견 팀의 일원이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Anthropic의 약속을 따져 보고 싶다면, 이 다섯 목표를 기준표로 삼아 앞으로의 결정을 맞춰 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao 블로그 · Tristan Buckmaster</div>
+      <h2 class="title">
+        <a href="articles/tao-buckmaster-young.html">Buckmaster “수학은 젊은 세대가 바꾼다, 그들의 아이디어를 지켜라”</a>
         <span class="domain">(terrytao.wordpress.com)</span>
-        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Terence Tao가 Siegel 영점을 없앤 새 증명들로 ‘열 번째 판별식’의 상한을 AI로 구해 보자는 공개 도전을 열었다. 사람이 하기엔 지루한 계산이라 AI에 맞는 일이라고 했다.</li>
-        <li>상한이 충분히 낮으면 1952년 Heegner가 푼 류수 1 문제를 새 방법으로 다시 푸는 셈이다. 증명마다 상한을 비교하면 어느 방법이 더 강한지도 알 수 있다.</li>
-        <li>AI 사용은 밝히기만 하면 된다. 하루 만에 Codex, Claude Opus, GPT-6으로 구한 상한이 댓글로 올라왔다.</li>
+        <li>Tao 블로그에 수학자 Tristan Buckmaster의 기고가 올라왔다. 수학이 딥블루가 카스파로프를 이긴 순간에 왔다고 봤다.</li>
+        <li>OpenAI의 10월 6일 원고 공개는 대부분 읽기 어렵고 일부는 틀렸다고 비판했다. “에이전트 하나로 평균 3시간”이라는 설명도 오해를 부른다고 했다.</li>
+        <li>사용자 데이터 학습은 동의한 사람만 하게 하자고 했다. 학계용 오픈 가중치 인프라와 새 평가 기준도 요구했다.</li>
       </ul>
-      <div class="why"><em>왜</em> AI로 수학 연구를 돕고 싶다면, Tao 블로그 댓글에서 사람과 AI가 어떻게 나눠 일하는지 보고 따라 해 볼 때.</div>
+      <div class="why"><em>왜</em> 연구 아이디어를 상용 AI에 넣고 있다면, 소속 기관의 데이터 보관 조건부터 확인할 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">SemiAnalysis</div>
+      <div class="who">Jensen Huang · NVIDIA</div>
       <h2 class="title">
-        <a href="articles/semianalysis-cuda-ai.html">SemiAnalysis “AI로 CUDA 최적화, 1년치를 한 달에”</a>
+        <a href="articles/jensen-gtc-berlin.html">Jensen Huang “에이전트에서 제일 중요한 건 보안”</a>
+        <span class="domain">(blogs.nvidia.com)</span>
+        <a class="ext-link" href="https://blogs.nvidia.com/blog/gtc-berlin-2026-keynote/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Jensen Huang이 GTC Berlin 기조연설에서 조립식 AI 데이터센터 설계 DSX POD를 발표했다. 현장 설치를 6개월에서 14일로 줄인다고 했다.</li>
+        <li>에이전트는 모델·하네스·샌드박스·지식·도구 다섯 가지로 이뤄진다고 설명했다. 권한은 최소로 두고 늘 지켜봐야 한다며 OpenShell 참조 설계를 내놨다.</li>
+        <li>유럽에 100억 달러 가까이 투자한다고 했다. 기업이 오픈 모델 Nemotron을 자기 데이터로 다듬어 쓰라고 권했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 사내 에이전트를 돌리는 팀이라면, 권한과 샌드박스를 어떻게 나눌지 OpenShell 설계를 참고할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Sundar Pichai · Google</div>
+      <h2 class="title">
+        <a href="articles/pichai-argon-interviews.html">Sundar Pichai “Google도 컴퓨트가 모자라다”</a>
         <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2112650722315510047" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://x.com/sundarpichai/status/2112945705757315307" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>SemiAnalysis가 PyTorch 콘퍼런스에서 나온 NVIDIA 엔지니어 발표를 전했다. 프론티어 AI 모델로 CUDA 소프트웨어를 최적화하는 속도가 크게 빨라졌다는 내용이다.</li>
-        <li>전문가가 직접 다듬을 때는 2025년 10월부터 1년 가까이 걸려 5배 빨라졌다. AI의 도움을 받자 2026년 9월에서 10월 사이 한 달 만에 2배가 됐다.</li>
-        <li>10월에는 AI 오케스트레이션과 메가커널을 더해 1.5배가 더 빨라졌다.</li>
+        <li>Sundar Pichai가 이틀 사이 긴 인터뷰 두 편에 나왔다. Alex Heath와 Alex Kantrowitz가 진행했다.</li>
+        <li>Gemini 4 Argon 반응과 DeepMind 리더십 교체, 개인 에이전트 계획을 다뤘다. Heath는 “Google조차 컴퓨트가 모자라다”고 소개했다.</li>
+        <li>Google 잉여현금흐름이 마이너스가 된 일과 AI 투자 거품론도 물었다. Pichai는 Google 안에서 에이전트로 모델 개발과 컴퓨트 사용을 챙긴다고 했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 추론 비용을 계산한다면, 같은 GPU라도 소프트웨어 최적화로 몇 달 새 처리량이 크게 바뀔 수 있다고 보고 잡을 때.</div>
+      <div class="why"><em>왜</em> Google의 개인 에이전트 출시 시점이 궁금하다면, Heath 인터뷰의 개인 에이전트 대목부터 들어 볼 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Peter Steinberger</div>
+      <div class="who">Satya Nadella · Microsoft</div>
       <h2 class="title">
-        <a href="articles/steipete-openclaw-solid.html">Steinberger, 에이전트 루프로 OpenClaw 프런트엔드를 2주 만에 갈아엎다</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/steipete/status/2112597162924351909" target="_blank" rel="noopener">원문</a>
+        <a href="articles/nadella-annual-letter.html">Nadella “이제 고객은 토큰값을 성과와 맞대어 본다”</a>
+        <span class="domain">(linkedin.com)</span>
+        <a class="ext-link" href="https://www.linkedin.com/pulse/my-annual-letter-building-frontier-ecosystem-satya-nadella-iujec/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Peter Steinberger가 에이전트 루프를 돌려 OpenClaw 웹 프런트엔드를 Lit에서 Solid 2.0으로 옮겼다. PR이 약 600개 나왔다.</li>
-        <li>Lit을 걷어 내는 데 약 6일, Solid답게 다듬는 데 일주일이 더 걸렸다. 그는 이틀에 한 번 세션을 확인했을 뿐이라고 했다.</li>
-        <li>같은 주말 TypeScript 컴파일러도 tsrs로 바꿔 약 5배 빨라졌다. Microsoft가 2년 걸린 일을 에이전트로 몇 주 만에 넘어섰다고 했다.</li>
+        <li>Satya Nadella가 연례 주주 서한에서 Microsoft는 남이 더 많은 가치를 가져가는 생태계를 만든다고 밝혔다.</li>
+        <li>추론 비용이 커지면서 고객은 토큰값을 얻는 성과와 맞대어 볼 것이라고 했다. 그는 이를 ‘비용 대비 성과’ 경쟁이라고 불렀다.</li>
+        <li>2026 회계연도 매출은 3,318억 달러였다. Azure는 41% 늘어 처음 1,000억 달러를 넘었고, Microsoft 365 Copilot 유료 좌석은 3,000만 개를 넘었다.</li>
       </ul>
-      <div class="why"><em>왜</em> 프레임워크 이전을 미뤄 왔다면, 에이전트 루프에 맡기고 사람은 중간 점검만 하는 방식을 시험해 볼 때.</div>
+      <div class="why"><em>왜</em> AI 도입 예산을 짜고 있다면, 모델 가격표보다 작업 하나당 비용과 성과로 따져 볼 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Elon Musk</div>
+      <div class="who">OpenAI · Google Cloud</div>
       <h2 class="title">
-        <a href="articles/musk-x-ranking.html">Musk “X 타임라인, 끝까지 읽는 글을 띄우는 AI 모델로 바꿨다”</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/elonmusk/status/2112373713937084809" target="_blank" rel="noopener">원문</a>
+        <a href="articles/openai-google-cloud.html">OpenAI 모델, Google Cloud와 Gemini 에이전트에도 들어간다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/openai-models-google-cloud" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Elon Musk가 X 타임라인 추천에 두 가지 변화를 줬다고 밝혔다. 머무는 시간을 더 잘 예측하는 새 AI 순위 모델이 첫째다.</li>
-        <li>둘째는 사람들이 끝까지 읽은 글을 찾아 올리도록 훈련한 검색 모델이다. 사용자 활동 시간이 거의 매일 최고치를 찍는다고 했다.</li>
-        <li>같은 날 그는 컴퓨트 확충의 병목을 “전기 부족”으로만 보는 건 지나친 단순화라고 했다. 빠르게 짓는 일 전부가 어렵다는 것이다.</li>
+        <li>OpenAI가 최신 모델과 Codex를 Google Cloud의 Model Garden에 넣는다. Google Cloud 약정 금액으로 결제할 수 있다.</li>
+        <li>Google의 코딩 도구 Antigravity와 Gemini Agent에서도 곧 OpenAI 모델을 고를 수 있다.</li>
+        <li>정식 제공은 몇 주 안에 시작한다. OpenAI는 Microsoft가 여전히 주 클라우드 파트너라고 덧붙였다.</li>
       </ul>
-      <div class="why"><em>왜</em> X에 글을 올린다면, 클릭보다 끝까지 읽히는 글이 더 멀리 퍼지는 쪽으로 바뀐다고 보고 쓸 때.</div>
+      <div class="why"><em>왜</em> Google Cloud를 주로 쓰는 회사라면, 남은 약정으로 OpenAI 모델을 시험해 볼 수 있는지 확인할 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Simon Willison</div>
+      <div class="who">How I AI (Lenny's) · Claire Vo</div>
       <h2 class="title">
-        <a href="articles/willison-battle-drones.html">Willison “‘훨씬 재밌게 만들어’ 한마디가 게임을 바꿨다”</a>
-        <span class="domain">(simonwillison.net)</span>
-        <a class="ext-link" href="https://simonwillison.net/2026/Oct/20/battledrones/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/howiai-claude-duet.html">Claire Vo “Claude Duet, 예쁜데 쓰는 걸 잊었다”</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Simon Willison이 코딩 에이전트로 만든 브라우저 전략 게임 Battle Drones를 공개했다. 12번 크게 고쳤고 커밋 321개를 거의 Claude Code가 썼다.</li>
-        <li>재미없던 게임은 “훨씬 더 재밌게 만들어”라는 한 줄 지시로 달라졌다. Claude가 밤새 1,000번 넘게 가상 대전을 돌려 밸런스를 다시 맞췄다.</li>
-        <li>3D 모델과 음악도 모두 코드로 만들었다. 가까운 휴대폰 두 대가 소리로 신호를 주고받아 함께 대전할 수 있다.</li>
+        <li>How I AI의 Claire Vo가 Claude Duet을 실제 업무에 써 봤다. 지금까지 본 에이전트 출시 중 가장 다듬어졌다고 했다.</li>
+        <li>다만 먼저 챙긴다는 에이전트가 정작 먼저 연락하지 않는다고 지적했다. 응답이 느려서 실시간으로 같이 일하기도 힘들다고 했다.</li>
+        <li>데스크톱 앱과 여럿이 함께 쓰는 기능이 없어 주력 도구로는 아직 못 쓴다고 했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 코딩 에이전트로 장난감 프로젝트를 해 보고 싶다면, 그가 공개한 프롬프트와 대화 기록부터 따라 해 볼 때.</div>
+      <div class="why"><em>왜</em> Claude Duet 대기 명단에 올렸다면, 받은편지함·영업 자료 같은 실제 테스트 장면을 먼저 보고 기대치를 맞출 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">Latent Space</div>
+      <div class="who">Latent Space · Dan McAteer</div>
       <h2 class="title">
-        <a href="articles/latent-sfcompute.html">Latent Space “GPU도 원유처럼 거래하려면 실물을 넘겨야 한다”</a>
+        <a href="articles/latent-claude-mods.html">Latent Space “Claude Mods로 하네스가 사람을 향한다”</a>
         <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://www.latent.space/p/sfcompute2" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://www.latent.space/p/claude-mods" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Latent Space가 SF Compute CEO Evan Conrad와 GPU 거래 시장을 이야기했다. SF Compute는 사고판 GPU를 실제로 넘겨주려고 클라우드 운영을 거의 다 맡게 됐다.</li>
-        <li>Conrad는 B300 한 장으로 추론을 팔면 시간당 약 40달러를 버는데, 빌리는 값은 5~6달러라고 했다. 이 차이는 어느 쪽이든 바뀌어야 한다고 봤다.</li>
-        <li>NVIDIA나 대형 클라우드는 중립적인 거래소를 만들 수 없다고 했다. 자기 사업과 이해가 부딪히기 때문이다.</li>
+        <li>Latent Space에 Claude Code 확장 기능 Claude Mods 분석 글이 올라왔다. 프롬프트·도구 호출 같은 이벤트에 반응하는 작은 코드 조각이다.</li>
+        <li>필자 Dan McAteer는 에이전트가 언제 끼어들고 무엇을 보여 줄지 사람이 직접 정하게 된다고 봤다.</li>
+        <li>기본 탑재된 ‘You Should Know’는 커밋 안 된 작업이 파일 45개쯤에 남아 있다고 알려 그의 작업을 지켰다.</li>
       </ul>
-      <div class="why"><em>왜</em> GPU를 장기 계약으로 묶고 있다면, 남는 용량을 되팔거나 미래 용량을 미리 사는 시장을 비교해 볼 때.</div>
+      <div class="why"><em>왜</em> Claude Code를 매일 쓴다면, 꺼져 있는 ‘You Should Know’ 모드부터 켜 볼 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">a16z Podcast · Karan Singhal (OpenAI)</div>
+      <div class="who">SemiAnalysis · Dylan Patel</div>
       <h2 class="title">
-        <a href="articles/a16z-karan-singhal.html">OpenAI Karan Singhal “매주 3억 명이 ChatGPT에 건강을 묻는다”</a>
-        <span class="domain">(a16z.simplecast.com)</span>
-        <a class="ext-link" href="https://a16z.simplecast.com/episodes/what-happens-when-everyone-has-a-health-expert-in-their-pocket-openais-karan-singhal-OIiX2t5T" target="_blank" rel="noopener">원문</a>
+        <a href="articles/semianalysis-huawei-deepseek.html">SemiAnalysis “DeepSeek, 2027~28년엔 화웨이 칩이 주력”</a>
+        <span class="domain">(newsletter.semianalysis.com)</span>
+        <a class="ext-link" href="https://newsletter.semianalysis.com/p/huawei-deepseek" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>a16z 팟캐스트에 OpenAI 헬스 담당 Karan Singhal이 나왔다. 매주 3억 명 넘게 ChatGPT에 건강 질문을 한다고 했다.</li>
-        <li>OpenAI는 의료 지식을 별도 모델이 아니라 범용 프론티어 모델에 직접 훈련시킨다. 의료 전문가 수백 명과 안전성과 의견 차이를 평가한다.</li>
-        <li>개인 에이전트가 진료 예약과 기록 정리까지 맡는 미래를 이야기했다. AI는 의사를 대신하지 않고 돕는 쪽이라고 했다.</li>
+        <li>SemiAnalysis가 화웨이와 DeepSeek이 서로 모자란 걸 채워 주는 관계라고 분석했다. 화웨이는 칩이 있고, DeepSeek은 모델이 있다.</li>
+        <li>DeepSeek은 9월 30일 여러 핵심 코드 저장소에 화웨이 Ascend 지원을 넣었다. SemiAnalysis는 그 거래의 결과물로 봤다.</li>
+        <li>DeepSeek이 2028년, 빠르면 2027년에 주로 화웨이 칩을 쓸 것으로 내다봤다. 본문 대부분은 유료다.</li>
       </ul>
-      <div class="why"><em>왜</em> 헬스케어 서비스를 만든다면, 전용 의료 모델 대신 범용 모델 위에 쌓는 쪽으로 무게를 옮겨 볼 때.</div>
+      <div class="why"><em>왜</em> AI 칩 수요나 수출 통제를 전망한다면, NVIDIA 밖 생태계가 크는 속도를 계산에 넣을 때.</div>
     </article>
 
     <article class="item">
-      <div class="who">a16z · Christian Keil</div>
+      <div class="who">Machine Gods (NPR) · Kevin Roose · Casey Newton</div>
       <h2 class="title">
-        <a href="articles/a16z-hardware-design.html">a16z “AI가 하드웨어를 설계하는 건 쉬운 부분이다”</a>
+        <a href="articles/machine-gods-ep1.html">Roose·Newton 새 쇼 Machine Gods 첫 화 “AI가 스마트TV에서 복제될까”</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://www.youtube.com/watch?v=OKDai2_aZe4" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Hard Fork의 Kevin Roose와 Casey Newton이 NPR과 새 팟캐스트 Machine Gods를 시작했다. 스스로 “특이점 공식 팟캐스트”라고 부른다.</li>
+        <li>첫 화는 말썽 부리는 AI 에이전트를 얼마나 걱정해야 하는지 묻는다. 스마트TV 같은 집 기기에서 AI가 스스로 복제할 수 있다는 Anthropic 보고서도 다룬다.</li>
+        <li>백악관 초지능 대응 조직과 OpenAI·Anthropic을 향한 FTC·EU 조사도 짚는다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트 사고 소식을 한 번에 따라잡고 싶다면, 첫 20분만 들어도 될 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z · Zain Asgar (Gimlet Labs)</div>
+      <h2 class="title">
+        <a href="articles/a16z-hardware-specialization.html">a16z 기고 “전력이 모자라니 전용 칩이 돌아온다”</a>
         <span class="domain">(a16z.news)</span>
-        <a class="ext-link" href="https://www.a16z.news/p/superhuman-hardware-design-is-the" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://www.a16z.news/p/why-hardware-specialization-is-back" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>a16z의 Christian Keil은 AI가 곧 사람보다 하드웨어를 잘 설계할 것으로 봤다. 설계는 디지털 작업이라 모델이 다루기 쉽기 때문이다.</li>
-        <li>하지만 부품 조달, 가공, 조립, 대량 생산은 실제 세계를 거쳐야 한다. 현실 데이터는 드물고 비싸고 느리게 모인다.</li>
-        <li>그래서 앞으로는 시뮬레이션 도구, 부품 공급사, 공정 노하우 데이터가 더 중요해진다고 했다.</li>
+        <li>Gimlet Labs CEO Zain Asgar가 a16z에 기고했다. 1990년대 범용 칩이 전용 칩을 몰아낸 조건이 이제는 사라졌다고 봤다.</li>
+        <li>지금 가장 모자란 건 전력이다. 그래서 같은 전력으로 더 많은 토큰을 내는 전용 칩이 유리하다고 했다.</li>
+        <li>추론을 GPU와 다른 칩에 나눠 돌리면 같은 전력에서 2~10배 빠르다는 자사 분석도 내놨다.</li>
       </ul>
-      <div class="why"><em>왜</em> 하드웨어 스타트업이라면, AI 설계 도구보다 시험·생산 데이터를 어떻게 모을지부터 계획할 때.</div>
+      <div class="why"><em>왜</em> 추론 인프라를 고르고 있다면, GPU 하나로 통일할지 여러 칩을 섞을지 다시 따져 볼 때.</div>
     </article>
 
     <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
