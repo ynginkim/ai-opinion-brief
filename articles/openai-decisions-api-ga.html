@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI Decisions API 정식 출시, 출력 토큰 요금 없다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · OpenAI Devs · <span class="article-date">2026-10-23 Seoul</span></div>
+    <h1 class="article-title">OpenAI Decisions API 정식 출시, 출력 토큰 요금 없다</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/decisions-api" target="_blank" rel="noopener">OpenAI</a> · <a href="https://x.com/OpenAIDevs/status/2113346642787086538" target="_blank" rel="noopener">X @OpenAIDevs</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 9월 DevDay에서 공개한 Decisions API를 정식 출시했다. 정해진 범위 안에서 답하는 질문에 쓰는 API다. 문장을 길게 만들지 않고 판단 결과만 준다.
+      </p>
+
+      <p>
+        답의 형태는 세 가지다. 참·거짓(predicate), 선택지 고르기(choice), 점수(score)다. 글과 이미지를 분류하거나, 입력을 평가하거나, 다음에 무엇을 할지 정할 때 쓴다.
+      </p>
+      <h2>숫자</h2>
+
+      <ul>
+        <li>모델: GPT-6 Luna 기반</li>
+        <li>속도: Responses API로 GPT-6 Luna를 쓸 때보다 최대 10배</li>
+        <li>요청당 질문: 최대 400개</li>
+        <li>가격: 입력 100만 토큰당 0.10달러, 캐시 0.01달러, 출력 토큰 무료</li>
+        <li>정식 출시로 추가: GPT-Live 연동, 미국·EU 데이터 보관</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트는 일하는 중간에 작은 판단을 많이 한다. 이 요청이 위험한지, 어느 팀으로 보낼지, 답이 기준을 넘는지 같은 것이다. 이런 판단에 매번 긴 답을 생성하면 느리고 비싸다.
+      </p>
+
+      <p>
+        고객사 숫자가 이 차이를 보여 준다. Datadog은 p95 지연이 40배 빨라졌다. Sierra는 280ms 아래로 내려가 약 3배 빠르고 90% 싸졌다. Speak는 1.4초에서 0.13초로 줄었다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        큰 모델에게 생각을 맡기고, 반복되는 작은 판단은 Decisions API에 넘기는 구조가 쉬워진다. Ramp는 4배 빠르고 30% 싸졌다고 했고, Box도 약 5배 빨라졌다고 했다.
+      </p>
+
+      <p>
+        EU 데이터 보관이 붙으면서 유럽 고객을 둔 회사도 쓸 수 있게 됐다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
