@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.23</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.23 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      OpenAI가 METR·Redwood 연구자에게 내부 에이전트 감시 시스템을 3주간 깊이 들여다보게 했고, 감시를 피할 수 있는 구멍 여러 개가 공개됐습니다. Anthropic은 Agent Skills 표준을 MCP가 있는 Agentic AI Foundation에 기증했고, 다음 주부터 Claude 앱 대부분에서 auto mode를 기본으로 켭니다. Microsoft AI는 진단 시스템 MAI-DxO가 응급실 사례에서 의사보다 1.7배 정확했다는 논문을 Science에 실었고, OpenAI는 Decisions API를 정식 출시했습니다. Dwarkesh는 Intel 공장을 돌며 AI 수요를 칩 생산이 따라갈 수 있는지 물었습니다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/23</span>
+      <a href="2026-10-22.html">10/22</a>
+      <a href="2026-10-21.html">10/21</a>
+      <a href="2026-10-20.html">10/20</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">OpenAI · METR · Redwood Research</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/openai-metr-monitoring-redteam.html">OpenAI 내부 에이전트 감시, 외부 연구자가 구멍을 찾았다</a>
+        <span class="domain">(metr.org)</span>
+        <a class="ext-link" href="https://metr.org/blog/2026-10-22-red-teaming-openai-agent-monitoring/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 METR와 Redwood Research 연구자 두 명에게 내부 에이전트 감시 시스템을 3주 동안 들여다보게 했다. 코드와 감시 프롬프트까지 볼 수 있었다.</li>
+        <li>GPT-5.5급 이상 모델의 내부 에이전트 트래픽 중 감시 대상은 75~94%로 추정됐다. 강화학습 훈련은 처음에 감시 밖이었다.</li>
+        <li>에이전트가 감시를 끄거나 피할 수 있는 방법도 여럿 나왔다. OpenAI는 다 고쳤다고 했지만, METR는 아직 확인하지 않았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트를 사내에서 돌린다면, METR가 정리한 감시 설계 원칙 다섯 가지로 우리 쪽 빈틈부터 점검할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic · Boris Cherny</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/anthropic-agent-skills-aaif.html">Anthropic, Agent Skills 표준을 MCP 옆으로 기증</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 에이전트용 스킬 표준 Agent Skills를 Linux Foundation 산하 Agentic AI Foundation에 기증했다. MCP가 이미 있는 재단이다.</li>
+        <li>2025년 12월 공개 뒤 ChatGPT, Cursor, GitHub Copilot, VS Code 등 70곳 넘게 붙었다. 공개된 스킬은 약 100만 개, 설치는 약 2억 8,000만 번이다.</li>
+        <li>Boris Cherny는 Claude Code의 실험에서 시작했지만 업계가 다 쓰게 돼 기증하는 게 맞다고 썼다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 사내 업무 방식을 스킬로 묶어 두고 있다면, 특정 회사 형식이 아니라 공용 표준으로 보고 투자해도 될 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic · Claude</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/claude-auto-mode-default-apps.html">Claude 앱, 다음 주부터 auto mode가 기본</a>
+        <span class="domain">(claude.com)</span>
+        <a class="ext-link" href="https://claude.com/resources/articles/auto-mode-default-in-claude-code" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>다음 주부터 Claude 웹·데스크톱·모바일 앱의 새 세션이 auto mode로 시작한다. Pro, Max, Team 요금제가 대상이다.</li>
+        <li>단계마다 사용자 승인을 받는 대신 자동 검사가 위험한 행동을 막는다. 막히면 Claude가 다른 방법을 찾고, 수동으로 되돌릴 수도 있다.</li>
+        <li>Claude Code 실험에서 사람은 위험한 명령의 13.6%를 잡았고 auto mode는 89%를 잡았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 팀이 Claude 앱으로 외부 도구를 다룬다면, 다음 주 전에 수동 승인으로 남길 작업이 있는지 정해 둘 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Satya Nadella · Mustafa Suleyman · Microsoft AI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/microsoft-mai-dxo-science.html">Microsoft AI 진단 시스템, 응급실 사례서 의사보다 1.7배 정확</a>
+        <span class="domain">(microsoft.ai)</span>
+        <a class="ext-link" href="https://microsoft.ai/news/building-medical-superintelligence/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Microsoft AI가 진단 시스템 MAI-DxO 논문을 Science에 실었다. 여러 AI가 의사처럼 질문하고 검사를 고르며 진단을 좁힌다.</li>
+        <li>응급실 사례에서 정확도 80%로 의사 47%의 약 1.7배였다. 어려운 NEJM 사례에서는 83%였고, 검사는 더 적게 했다.</li>
+        <li>글로 된 사례로 본 통제 실험이다. 다음은 Beth Israel 병원과 실제 환자 대상 연구다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 의료 AI를 검토 중이라면, 공개된 SDBench로 우리 모델을 같은 조건에서 재 보고 실제 환자 연구 결과를 기다릴 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI · OpenAI Devs</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/openai-decisions-api-ga.html">OpenAI Decisions API 정식 출시, 출력 토큰 요금 없다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/decisions-api" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 Decisions API를 정식 출시했다. 긴 답을 쓰지 않고 예·아니오, 선택지, 점수만 돌려주는 API다.</li>
+        <li>GPT-6 Luna 기반이고, Responses API로 같은 모델을 부를 때보다 최대 10배 빠르다. 한 번에 질문을 400개까지 넣을 수 있다.</li>
+        <li>입력 100만 토큰당 0.10달러이고 출력 토큰은 돈을 받지 않는다. Datadog은 응답이 40배 빨라졌다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트 안에서 분류·라우팅·검수에 일반 모델 호출을 쓰고 있다면, 그 단계만 Decisions API로 바꿔 비용과 지연을 비교해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/openai-consistent-standards.html">OpenAI, 어디서 쓰든 같은 안전 규칙 적용한다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/broad-access-through-consistent-standards" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 자사 모델이 어떤 경로로 쓰이든 같은 안전 기준을 적용하겠다고 밝혔다. 클라우드, 파트너, 재판매사가 모두 포함된다.</li>
+        <li>새 이용 정책은 11월 20일부터 적용된다. OpenAI 모델을 그대로 넘겨주는 라우터나 AI 게이트웨이는 OpenAI 심사를 받아야 한다.</li>
+        <li>SafetyID로 사용자 신원은 몰라도 조사 때 사용자끼리 구분할 수 있게 한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 게이트웨이나 모델 라우터로 OpenAI 모델을 쓰거나 되판다면, 11월 20일 전에 심사 대상인지 확인할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao 블로그 · Caroline Turnage-Butterbaugh</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/tao-zeta-zeros-guest.html">Tao 블로그, Claude가 푼 제타 영점 증명을 사람 말로 다시 풀었다</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/22/simple-and-critical-zeros-of-the-riemann-zeta-function/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Terence Tao 블로그에 Caroline Turnage-Butterbaugh의 초청 글이 올라왔다. 리만 제타 함수 영점 중 단순하고 임계선 위에 있는 비율을 다룬다.</li>
+        <li>8월 Anthropic 미공개 Claude 연구 모델이 두 접근을 이어 이 결과를 증명했다. Anthropic의 수학자 두 명이 검증했다.</li>
+        <li>글은 9월에 나온 Lamzouri의 더 간단한 증명을 중심으로 설명한다. 이 글 자체도 AI로 블로그 형식을 바꿨다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 낸 수학 결과를 따라가고 싶다면, 원래 증명보다 이렇게 사람이 다시 풀어 쓴 해설부터 읽을 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">François Chollet</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/chollet-millenarian.html">Chollet “몇 달 뒤 종말을 믿으면 종말론 집단이다”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/fchollet/status/2113195600829182199" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>François Chollet가 종말론 집단의 흔한 신호를 X에 적었다. 몇 달 안에 종말이 온다고 확신하고, 이미 시작됐다는 신호를 늘 찾는다.</li>
+        <li>두려워하면서도 들떠 있고, 생각이 똑같은 친구들과 그 얘기만 한다는 것이다. AI를 직접 말하진 않았지만 AGI 임박론을 겨냥한 글로 읽힌다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AGI 시점 예측을 볼 때, 주장보다 그 주장을 둘러싼 사람들이 얼마나 비슷한 생각만 하는지도 같이 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Dwarkesh Podcast · Dwarkesh Patel</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/dwarkesh-intel-tour.html">Dwarkesh, Intel 공장에서 “칩 생산이 AI를 따라가나” 묻다</a>
+        <span class="domain">(dwarkesh.com)</span>
+        <a class="ext-link" href="https://www.dwarkesh.com/p/intel-tour" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Dwarkesh Patel이 Intel 최신 공장을 이틀 동안 돌고 기술 임원들을 인터뷰했다. 차세대 트랜지스터와 칩 연결 기술을 애니메이션으로 풀었다.</li>
+        <li>AI 컴퓨트는 10년 동안 해마다 3배씩 늘었다. Intel CTO는 지금 세상에 있는 장비로는 최첨단 웨이퍼 생산을 2배로 늘리는 게 한계라고 했다.</li>
+        <li>High-NA EUV가 Intel에는 남고 TSMC에는 안 남는 이유도 다룬다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 인프라 투자를 따진다면, 칩 공급의 진짜 한계가 장비라는 점을 이 1시간짜리 영상으로 잡아 둘 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">a16z · Marc Andreessen · Ben Horowitz · Chris Dixon</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/a16z-frontier-andreessen.html">Andreessen “AI 스타트업과 기존 기업 격차, 이렇게 큰 건 처음”</a>
+        <span class="domain">(a16z.simplecast.com)</span>
+        <a class="ext-link" href="https://x.com/a16z/status/2113314156334260243" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z가 크립토 펀드를 a16z Frontier로 바꾸고, 크립토 밖 미래 기술까지 투자 범위를 넓혔다.</li>
+        <li>Marc Andreessen은 AI로 할 수 있는 일을 보는 눈이 스타트업과 기존 기업 사이에서 지금처럼 크게 갈린 적이 없다고 했다. 회사보다 직원이 AI를 먼저 쓴다고도 했다.</li>
+        <li>오픈소스 AI 옹호, 에이전트끼리 스테이블코인으로 돈을 주고받는 미래도 다뤘다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 회사가 AI 도입을 미루고 있다면, 직원들이 이미 쓰는 방식부터 조사해 공식 업무로 끌어올릴 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space · Erik Bernhardsson (Modal)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-23/latent-modal-erik.html">Modal CEO “AI 컴퓨트는 네모로 팔리지만 수요는 출렁인다”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://www.latent.space/p/modal-d" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 Modal CEO Erik Bernhardsson을 인터뷰했다. GPU 계약은 정해진 양을 정해진 기간 사는 네모 모양인데, 실제 수요는 오르내린다는 얘기다.</li>
+        <li>Modal은 연 매출 규모 10억 달러를 넘겼고, 기업가치 160억 달러에 7억 5,000만 달러를 투자받았다. 샌드박스는 약 30억 개를 띄웠다.</li>
+        <li>접을 뻔했던 샌드박스가 코딩 에이전트 덕분에 매출의 약 3분의 1이 됐다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트가 코드를 돌릴 환경을 고민 중이라면, 직접 GPU를 묶어 사기 전에 탄력형 샌드박스 비용부터 비교할 때.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

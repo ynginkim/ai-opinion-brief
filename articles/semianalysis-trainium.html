@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemiAnalysis “Trainium, 이제 훈련용으로도 쓸 만하다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · Kimbo Chen · Dylan Patel · <span class="article-date">2026-10-24 Seoul</span></div>
+    <h1 class="article-title">SemiAnalysis “Trainium, 이제 훈련용으로도 쓸 만하다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://newsletter.semianalysis.com/p/amazons-trainium-takes-a-strike-at" target="_blank" rel="noopener">SemiAnalysis</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Amazon Trainium은 그동안 추론용 칩으로 여겨졌다. 훈련에 쓰려면 전용 도구를 따로 익혀야 했기 때문이다. SemiAnalysis는 이 그림이 바뀌고 있다고 봤다.
+      </p>
+
+      <p>
+        바뀐 건 소프트웨어다. 새 백엔드 TorchNeuron이 PyTorch의 기본 실행 방식과 torch.compile을 그대로 지원한다. 연구자가 쓰던 코드를 크게 고치지 않아도 된다.
+      </p>
+      <ul>
+        <li>Qwen3-32B, Trainium2 16개: 기본 모드 초당 1만 1,099토큰 (MFU 23.89%)</li>
+        <li>같은 조건 컴파일 모드: 초당 1만 4,156토큰 (MFU 30.47%)</li>
+        <li>첫 스텝: 184.6초, gpt-oss 컴파일은 27분 17초</li>
+        <li>FlexAttention 테스트: 96개 중 89개 통과</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        훈련 시장은 NVIDIA가 사실상 독점한다. 다른 칩이 끼어들려면 연구자가 매일 쓰는 도구에서 막히지 않아야 한다. Trainium이 그 문턱을 넘기 시작했다는 게 SemiAnalysis의 판단이다.
+      </p>
+
+      <p>
+        디버깅 도구도 눈에 띈다. Neuron Explorer 프로파일러는 NVIDIA·AMD 것보다 낫다고 평가했다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        아직 남은 숙제도 있다. 첫 스텝 컴파일이 길어 실험을 자주 바꾸는 연구에선 불편하다. 그래도 Amazon이 훈련 쪽까지 노린다는 신호는 분명해졌다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

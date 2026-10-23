@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude, 오픈소스 123개가 충돌하지 않는다는 걸 증명했다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic Frontier Red Team · Theorem · <span class="article-date">2026-10-24 Seoul</span></div>
+    <h1 class="article-title">Claude, 오픈소스 123개가 충돌하지 않는다는 걸 증명했다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/formal-verification" target="_blank" rel="noopener">Anthropic 연구</a> · <a href="https://x.com/theoremlabs/status/2113396868814360821" target="_blank" rel="noopener">X @theoremlabs</a> · <a href="https://x.com/vkhosla/status/2113581224627450136" target="_blank" rel="noopener">X @vkhosla</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        형식 검증은 코드에 특정 버그가 없다는 걸 수학으로 증명하는 방법이다. 지금까지는 너무 비쌌다. seL4 운영체제 커널은 만드는 데 2인년, 검증하는 데 20인년이 들었다.
+      </p>
+
+      <p>
+        Anthropic Frontier Red Team은 이 비용을 Claude로 크게 낮췄다고 밝혔다. 스타트업 Theorem과 함께 몇 주 만에 OSS-Fuzz 라이브러리 123개를 증명했다.
+      </p>
+      <ul>
+        <li>대상: OSS-Fuzz 라이브러리 123개, 진입점 239개</li>
+        <li>증명한 성질: 64MB 미만 모든 입력에서 충돌 없음 (RISC-V 바이너리 기준)</li>
+        <li>증명 분량: Rocq 약 1억 8,000만 줄, 하나에 보통 약 60만 줄</li>
+        <li>Opus 5.5: Opus 5보다 토큰 약 40% 적게 사용</li>
+        <li>증명을 서로 공유하면: 토큰 17% 절약</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        AI가 버그를 찾아 공격하는 속도가 빨라졌다. Anthropic은 테스트로 버그를 찾는 것만으론 모자라고, 버그가 없다는 걸 보여야 한다고 본다.
+      </p>
+
+      <p>
+        증명을 하다 보면 버그도 나온다. 약 20MB짜리 특정 입력에서만 터지는 압축 해제기 버그가 나왔고, libexpat의 알려진 취약점도 다시 찾았다.
+      </p>
+
+      <p>
+        Vinod Khosla는 X에 Theorem의 팬이라며, 확률적인 LLM에 형식 검증을 더하는 건 넓게 중요한 개념이라고 썼다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        한계도 분명하다. 증명은 명세에 적힌 성질만 보장한다. 그래서 형식 검증됐다는 말이 곧 버그가 없다는 뜻은 아니라고 Anthropic도 적었다.
+      </p>
+
+      <p>
+        Theorem은 OSS Verify를 시작했다. 오픈소스 프로젝트라면 무료로 충돌이 없다는 증명이나 필요한 패치를 받는다. Theorem은 같은 작업을 하는 Claude 스킬도 공개한다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

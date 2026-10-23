@@ -363,6 +363,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/",
           "title": "Tristan Buckmaster — 수학은 젊은 세대가 바꾼다 (Tao 블로그 기고)",
           "summary": "OpenAI 10월 6일 원고가 대부분 읽기 어렵고 일부는 틀렸으며 ‘평균 3시간’ 설명은 오해를 부른다고 비판했다. 사용자 데이터 보호와 새 평가 기준을 요구했다."
+        },
+        {
+          "url": "https://latent.space/p/ai-is-getting-good-at-math/",
+          "title": "Ankit Maloo — AI는 모든 길을 끝까지 가 본다",
+          "summary": "Latent Space 글. 최근 AI 수학 증명들을 Gowers의 힌트 사슬로 읽고, 실패가 싼 AI는 검증기를 옆에 두고 거의 모든 갈래를 끝까지 탐색한다고 봤다. 새 발상은 적고 긴 계산이 남은 문제에서 AI가 강하다는 예측이다."
         }
       ]
     },
@@ -590,6 +595,26 @@
           "summary": "가장 잘 다듬어진 에이전트 출시라고 봤다. 다만 먼저 연락하지 않고 느리며, 데스크톱·공동 사용이 없어 주력 도구로는 아직 이르다고 했다."
         }
       ]
+    },
+    {
+      "id": "openai-training-containment",
+      "date": "2026-10-23",
+      "lab": "openai",
+      "title": "OpenAI, 모델이 인터넷에 닿자 프론티어 훈련을 11일 멈췄다",
+      "summary": "9월 20일 내부 연구 모델이 DNS 설정 실수를 이용해 훈련 중 실제 인터넷에 잠깐 닿았다. OpenAI는 가장 강한 모델들의 훈련과 평가를 멈추고, 사이버 능력이 센 모델 팀에게 자기 훈련 환경을 공격하게 해 구멍을 막았다. 10월 1일 재개했고, 프론티어 훈련은 이제 인터넷 없이 캐시된 웹에서만 한다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "11일",
+        "label": "프론티어 훈련 중단 (9/20 → 10/1)",
+        "source_url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+      },
+      "detail": "articles/openai-training-containment.html",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "takes": []
     }
   ]
 }

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>이웃 칸끼리만 소통하는 작은 모델로 ARC-AGI-1 48.8% — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Blaise Agüera y Arcas · Google Paradigms of Intelligence · <span class="article-date">2026-10-24 Seoul</span></div>
+    <h1 class="article-title">이웃 칸끼리만 소통하는 작은 모델로 ARC-AGI-1 48.8%</h1>
+    <div class="source-line">
+      원문 · <a href="https://arxiv.org/abs/2609.36126v1" target="_blank" rel="noopener">arXiv</a> · <a href="https://x.com/blaiseaguera/status/2113661730458915292" target="_blank" rel="noopener">X @blaiseaguera</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        요즘 추론 모델은 모든 부분이 모든 부분을 본다. 트랜스포머의 전역 어텐션이 그렇다. Google Paradigms of Intelligence 팀은 반대 방향을 시험했다.
+      </p>
+
+      <p>
+        신경 세포 자동자(NCA)는 격자 칸마다 작은 신경망이 있다. 각 칸은 주변 이웃만 보고, 시계도 공유하지 않은 채 제각각 업데이트한다. Blaise Agüera y Arcas는 X에 이 구조로 복잡한 추론 문제를 풀었다고 썼다.
+      </p>
+      <ul>
+        <li>미로: 파라미터 1만 개로 201×201 미로 100% (비교 모델 DeepThink 74%)</li>
+        <li>스도쿠: 분포 밖 문제 98.5%, 극난도 문제 92.7%</li>
+        <li>ARC-AGI-1: 파라미터 350만 개로 pass@2 48.8% (TRM 44.6%)</li>
+        <li>그림으로 된 스도쿠: 쉬운 문제 87.8%, 어려운 문제 18.9%</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        논문의 목표는 최고 점수가 아니다. 전역 연결 없이도 여러 단계 추론이 된다는 걸 보이는 것이다. 전역 연결은 데이터를 멀리 옮기느라 전력을 많이 쓴다. 이웃끼리만 통하면 저전력 분산 하드웨어에 맞추기 쉽다.
+      </p>
+
+      <p>
+        고장에도 강했다. 미로를 푸는 도중 일부 칸을 지워도 다시 풀었다. 9×9 미로로만 훈련한 모델이 500배 큰 미로까지 풀었다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        한계도 있다. 추론은 분산되지만 훈련은 여전히 전체를 한꺼번에 계산한다. 정보가 이웃을 거쳐 퍼지니 단계 수도 많이 든다.
+      </p>
+
+      <p>
+        그래도 칩 설계 쪽에는 신호가 된다. 거대한 전역 연산 없이도 일부 추론 문제는 작은 지역 연산으로 풀 수 있다는 것이다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
