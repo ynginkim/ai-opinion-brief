@@ -236,6 +236,11 @@
           "url": "https://www.platformer.news/openai-dots-agents-devday-2026/",
           "title": "Casey Newton — dots 실사용",
           "summary": "DevDay 직후 써 봤다. Muse보다 업무에 맞고 채팅 스레드 UX도 낫다고 평했다."
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-killer-tasks.html",
+          "title": "NYT Brian X. Chen — 에이전트 킬러 작업 5가지",
+          "summary": "Muse와 dots에 구직 지원서, 식당 예약 같은 일을 맡겨 봤다. 이렇게 쓰면 예전으로 돌아가기 어렵다고 했다."
         }
       ]
     },
