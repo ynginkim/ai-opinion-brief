@@ -378,6 +378,11 @@
           "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
           "title": "Nellore·Schmitt·Villar·Ward — OpenAI 원고를 함께 고쳐 쓰는 허브",
           "summary": "Tao 블로그 객원 글. OpenAI 수학 원고가 읽기 어렵고 인용이 빠졌다며, 원고 719편을 분야별로 묶어 수정·참고문헌을 모으는 공개 허브 oai-math-revised를 소개하고 검토자를 모집했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/",
+          "title": "AGMAI — AI 수학 결과, 특정 수학자에게 먼저 주지 마라",
+          "summary": "Tao 블로그 객원 글. 수학·AI 자문단이 AI 회사가 수학자를 골라 결과를 먼저 넘기는 관행을 멈추라고 권했다. 독립 저장소에 프롬프트·시도 횟수·비용까지 함께 공개하자고 했다."
         }
       ]
     },
@@ -625,6 +630,32 @@
       "detail": "archive/articles-2026-10-24/openai-training-containment.html",
       "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
       "takes": []
+    },
+    {
+      "id": "gpt-61-terra",
+      "date": "2026-10-26",
+      "lab": "openai",
+      "title": "GPT-6.1 Terra, 컴퓨터 사용을 반값에",
+      "summary": "화면을 보고 앱을 직접 다루는 일에 힘을 준 빠르고 싼 모델이다. API 가격은 GPT-5.6 Terra의 절반이다. 터미널 코딩 시험 점수는 21.5%에서 50.3%로 두 배가 넘었다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "50.3%",
+        "label": "Terminal-Bench 4.0 최대 추론 (GPT-5.6 Terra 21.5%)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
+      },
+      "detail": "articles/openai-gpt61-terra.html",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "takes": [
+        {
+          "url": "https://a16z.simplecast.com/episodes/openai-when-ai-agents-use-computers-faster-than-you-QLF23qpt",
+          "title": "a16z — OpenAI 컴퓨터 사용팀 “에이전트가 곧 사람보다 빨라진다”",
+          "summary": "OpenAI 아리 와인스타인·제임스 선이 API 없는 낡은 업무 프로그램도 에이전트가 화면으로 다룬다고 했다. 모델만큼 하네스와 정해진 규칙(가드레일)이 중요하다고 봤다."
+        }
+      ]
     }
   ]
 }
