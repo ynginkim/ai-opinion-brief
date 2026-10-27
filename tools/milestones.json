@@ -647,13 +647,44 @@
         "label": "Terminal-Bench 4.0 최대 추론 (GPT-5.6 Terra 21.5%)",
         "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
       },
-      "detail": "articles/openai-gpt61-terra.html",
+      "detail": "archive/articles-2026-10-27/openai-gpt61-terra.html",
       "url": "https://openai.com/index/introducing-gpt-6-1-terra",
       "takes": [
         {
           "url": "https://a16z.simplecast.com/episodes/openai-when-ai-agents-use-computers-faster-than-you-QLF23qpt",
           "title": "a16z — OpenAI 컴퓨터 사용팀 “에이전트가 곧 사람보다 빨라진다”",
           "summary": "OpenAI 아리 와인스타인·제임스 선이 API 없는 낡은 업무 프로그램도 에이전트가 화면으로 다룬다고 했다. 모델만큼 하네스와 정해진 규칙(가드레일)이 중요하다고 봤다."
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+          "title": "Simon Willison — “폭탄급 출시는 아니다”",
+          "summary": "직접 써 보고, OpenAI 테드 샌더스의 해커뉴스 평을 옮겼다. 기술 설명은 낫고 컴퓨터 사용은 비슷하지만 훨씬 빠르다. 최대 추론 펠리컨 그림 한 장에 약 11센트, 4분 11초."
+        }
+      ]
+    },
+    {
+      "id": "openai-eth-yang-mills",
+      "date": "2026-10-26",
+      "lab": "openai",
+      "title": "OpenAI 모델, ‘지수 시간 가설’ 반증과 양-밀스 존재 증명",
+      "summary": "OpenAI가 내부 모델이 수학·컴퓨터과학·물리학에서 큰 결과 세 개를 냈다고 밝혔다. 지수 시간 가설(ETH) 반증과 모든 차원의 카케야 추측 증명은 Lean 검증까지 마쳐 공개했다. 밀레니엄 난제 일부인 양-밀스 이론의 존재 증명은 데이비드 그로스가 이끄는 그룹이 검토 중이다.",
+      "axes": [
+        "science",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "3",
+        "label": "수학·컴퓨터과학·물리학 새 결과 (분야별 학자 그룹이 검토)",
+        "source_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+      },
+      "detail": "articles/openai-eth-yang-mills.html",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "takes": [
+        {
+          "url": "https://lexfridman.com/math-ai-crisis/",
+          "title": "Lex Fridman #503 — 수학자 셋이 말하는 ‘AI 수학의 위기’",
+          "summary": "모이트라·브런턴·콘토로비치와 나비에-스토크스, 리만 가설, 복잡도 이론의 AI 결과를 짚었다. 렉스는 지금이 위기이자 승리, 혹은 둘 다라며 이날 OpenAI 발표도 언급했다."
         }
       ]
     }
