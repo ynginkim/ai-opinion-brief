@@ -687,6 +687,41 @@
           "summary": "모이트라·브런턴·콘토로비치와 나비에-스토크스, 리만 가설, 복잡도 이론의 AI 결과를 짚었다. 렉스는 지금이 위기이자 승리, 혹은 둘 다라며 이날 OpenAI 발표도 언급했다."
         }
       ]
+    },
+    {
+      "id": "deepmind-genie-4",
+      "date": "2026-10-28",
+      "lab": "googledeepmind",
+      "title": "Genie 4, 말로 실시간 조종하는 세계 모델",
+      "summary": "Google DeepMind가 세계 모델 Genie 4를 공개했다. 말로 날씨나 인물을 바꾸면 장면이 실시간으로 따라 바뀌고, 소리와 대화도 함께 만든다. DeepMind는 로봇과 에이전트를 가상 세계에서 훈련하는 데 쓰겠다고 했고, 지금은 일부 테스터에게만 연 연구 프리뷰다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "articles/deepmind-genie-4.html",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "takes": []
+    },
+    {
+      "id": "anthropic-drug-development",
+      "date": "2026-10-28",
+      "lab": "anthropic",
+      "title": "Claude로 신약 개발, 제약사 6곳의 초기 성적표",
+      "summary": "Anthropic이 제약·바이오 6곳과 Claude로 신약을 개발한 초기 결과를 공개했다. Divergence Labs는 항체 설계 약 3만5천 개를 한 달 만에 만들었고, Enveda는 규제 문서 검토 시간을 89% 줄였다. 아직 대부분 사람 대상 임상 전 단계다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "89%",
+        "label": "Enveda 제조 문서 사람 검토 시간 감소 (25시간+ → 3시간 미만)",
+        "source_url": "https://www.anthropic.com/research/early-progress-drug-development"
+      },
+      "detail": "articles/anthropic-drug-development.html",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "takes": []
     }
   ]
 }
