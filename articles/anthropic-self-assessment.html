@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Claude가 답한 직후 스스로 안전 점검을 한다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic (Safeguards) · <span class="article-date">2026-10-30 Seoul</span></div>
+    <h1 class="article-title">Claude가 답한 직후 스스로 안전 점검을 한다</h1>
+    <div class="source-line">
+      원문 · <a href="https://safeguards.anthropic.com/2026/self-assessment/" target="_blank" rel="noopener">Anthropic Safeguards 블로그</a> · <a href="https://x.com/AnthropicAI/status/2115871889549865429" target="_blank" rel="noopener">Anthropic (X)</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 새 Safeguards 블로그를 열고 &#x27;자기 평가&#x27; 기법을 소개했다. Claude가 답을 마친 직후, 방금 대화가 위험했는지 짧게 스스로 판정하는 방식이다.
+      </p>
+
+      <p>
+        6월부터 실제 서비스에서 쓰고 있다.
+      </p>
+      <h2>숫자로 보면</h2>
+
+      <p>
+        Claude Fable 5에서 오탐률 1% 기준으로, 더 강한 분류기가 위험하다고 본 대화의 78%를 잡았다. 우선순위가 높은 대화는 94%를 잡았다.
+      </p>
+
+      <p>
+        비용은 작다. 답 하나에 토큰 10개 정도가 붙고, 추론 연산은 2% 안쪽만 늘어난다.
+      </p>
+
+      <p>
+        모델이 클수록 잘 잡았다. 가장 작은 모델은 약 16%, 가장 큰 모델은 약 96%였다.
+      </p>
+      <h2>실제로 잡은 것</h2>
+
+      <p>
+        운영하면서 다른 장치가 놓친 오용을 찾았다. 8월에는 한 API 고객에게서 아동 성착취 관련 경보가 10만 건 넘게 나와 신고로 이어졌다.
+      </p>
+
+      <p>
+        9월에는 연애 사기 조직을 찾아 계정을 막았다. 경보의 3분의 1쯤은 기존 위험 분류에 없던 유형이었다.
+      </p>
+      <h2>한계</h2>
+
+      <p>
+        Anthropic은 이 기법을 실시간 차단기로 쓰면 약하다고 밝혔다. 실험에서 공격 성공률은 79%에서 54%로만 내려갔다.
+      </p>
+
+      <p>
+        자기 평가를 직접 노리는 공격자에게는 버티지 못할 수 있다. 그래서 다른 보호장치와 함께 쓰는 한 겹으로 둔다고 했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
