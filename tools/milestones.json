@@ -678,7 +678,7 @@
         "label": "수학·컴퓨터과학·물리학 새 결과 (분야별 학자 그룹이 검토)",
         "source_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
       },
-      "detail": "articles/openai-eth-yang-mills.html",
+      "detail": "archive/articles-2026-10-28/openai-eth-yang-mills.html",
       "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
       "takes": [
         {
@@ -700,7 +700,7 @@
       ],
       "impact": "small",
       "key": null,
-      "detail": "articles/deepmind-genie-4.html",
+      "detail": "archive/articles-2026-10-28/deepmind-genie-4.html",
       "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
       "takes": []
     },
@@ -719,9 +719,35 @@
         "label": "Enveda 제조 문서 사람 검토 시간 감소 (25시간+ → 3시간 미만)",
         "source_url": "https://www.anthropic.com/research/early-progress-drug-development"
       },
-      "detail": "articles/anthropic-drug-development.html",
+      "detail": "archive/articles-2026-10-28/anthropic-drug-development.html",
       "url": "https://www.anthropic.com/research/early-progress-drug-development",
       "takes": []
+    },
+    {
+      "id": "gemini-4-carbon",
+      "date": "2026-10-29",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 Carbon, 독립 평가 지수 1위",
+      "summary": "Google DeepMind가 Argon 2주 만에 새 최상위 모델 Gemini 4 Carbon을 공개했다. Artificial Analysis 지수 v5에서 59점으로 1위에 올랐고, 취약점 찾기 SEC-bench Pro에서 88.2%를 냈다. 공격에도 쓸 수 있는 능력이라 먼저 Fairwind 프로그램의 보안 방어 팀에만 제공한다.",
+      "axes": [
+        "agent",
+        "safety"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "59",
+        "label": "Artificial Analysis 지수 v5 점수 (1위)",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+      },
+      "detail": "articles/gemini-4-carbon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "takes": [
+        {
+          "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+          "title": "AINews — Carbon 독립 평가 모음",
+          "summary": "Artificial Analysis 종합 1위지만 코딩 에이전트 지수는 59점으로 Claude Code+Opus 5.5(62점)보다 낮다. 과제당 비용은 7.76달러로 Opus 5.5보다 싸고, 환각 비율은 Argon의 4%에서 11%로 올랐다."
+        }
+      ]
     }
   ]
 }
