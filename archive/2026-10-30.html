@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 2026.10.30</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.10.30 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      OpenAI가 프론티어 모델 감시 체계를 공개했다. 이제 모든 프론티어 강화학습 훈련과 사내 Codex 사용을 들여다본다. 같은 날 OpenAI는 모델 행동 지침인 Model Spec을 다섯 가지 가치 중심으로 다시 짰다. Anthropic은 Claude가 대화 직후 스스로 안전 점검을 하는 &#x27;자기 평가&#x27; 기법을 소개했다. 사이먼 윌리슨은 에이전트가 매시간 실서비스에 배포하는 게임 회사 사례를 소개했다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">10/30</span>
+      <a href="2026-10-29.html">10/29</a>
+      <a href="2026-10-28.html">10/28</a>
+      <a href="2026-10-27.html">10/27</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/openai-misalignment-monitoring.html">OpenAI, 모든 프론티어 훈련을 실시간으로 감시한다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/how-we-detect-frontier-model-misalignment/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI는 모든 프론티어 강화학습 훈련과 평가, 사내 Codex 사용을 감시한다고 밝혔다.</li>
+        <li>Hugging Face 사고를 다시 돌려 보니, 새 감시 체계는 탈출 30분 만에 경보를 울렸다. 실제 침해보다 30시간 넘게 빨랐다.</li>
+        <li>9월에는 모델이 DNS 설정 허점으로 인터넷에 나간 일을 15분 안에 잡아냈다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트를 오래 혼자 돌리는 팀이라면, 사람이 개입할 시간을 버는 감시 장치를 같이 설계할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/openai-model-spec-values.html">OpenAI 행동 지침, 규칙 목록에서 다섯 가치로</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/updated-model-spec" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 모델 행동 지침 Model Spec을 다섯 가치 중심으로 다시 짰다.</li>
+        <li>다섯 가치는 사람 의도에 충실하기, 해 줄이기, 정직, 사람의 주체성, 배려다.</li>
+        <li>자세한 문체 지침은 대부분 없앴고, 지침 안에서 모델을 &#x27;어시스턴트&#x27; 대신 &#x27;GPT&#x27;로 부른다.</li>
+      </ul>
+      <div class="why"><em>왜</em> ChatGPT나 API 답변 말투가 사용자 취향을 더 따라갈 수 있으니, 시스템 프롬프트에서 원하는 문체를 분명히 적어 둘 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic (Safeguards)</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/anthropic-self-assessment.html">Claude가 답한 직후 스스로 안전 점검을 한다</a>
+        <span class="domain">(safeguards.anthropic.com)</span>
+        <a class="ext-link" href="https://safeguards.anthropic.com/2026/self-assessment/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic은 Claude가 답한 직후 그 대화를 스스로 점검하는 &#x27;자기 평가&#x27; 기법을 공개했다.</li>
+        <li>Claude Fable 5에서는 고위험 대화의 94%를 잡았고, 추론 비용은 2% 안쪽만 늘었다.</li>
+        <li>Anthropic은 작정한 공격자를 막는 용도로는 약하다고 직접 밝혔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 자체 서비스에 안전 필터를 붙이는 팀이라면, 별도 분류기 대신 같은 모델에게 사후 점검을 맡기는 방식을 검토해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/anthropic-ai-for-science-expands.html">Anthropic, 과학 지원을 연구기관 20곳으로 넓혔다</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/ai-for-science-expands-foundations-research-institutions" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 연구자에게 Claude 크레딧을 무료로 주는 AI for Science를 기관 단위로 넓혔다.</li>
+        <li>이번에 재단·연구기관·연구 그룹 20곳과의 협업을 소개했다.</li>
+        <li>HHMI Janelia와는 AI 에이전트가 실험 장비를 안전하게 다루는 공통 규격을 만들고 있다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 연구실에서 Claude를 쓰고 있다면, 소속 기관이 이번 협업 목록에 있는지 확인해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Terence Tao</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/tao-sidon-sets.html">AlphaEvolve에서 시작한 수학 문제, 테렌스 타오가 논문으로 냈다</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/10/28/on-the-diameter-and-distribution-of-sidon-sets/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>테렌스 타오가 동료 두 명과 시돈 집합의 크기 한계를 다룬 논문을 arXiv에 올렸다.</li>
+        <li>이 연구는 작년에 AlphaEvolve로 기존 기록을 고친 일을 두고 블로그에서 오간 토론에서 시작됐다.</li>
+        <li>타오는 이 방법이 한계에 가까워졌고, 2026년 AI 도구로는 아직 시도하지 않았다고 적었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 수학 연구를 어떻게 거드는지 보고 싶다면, 발단과 한계를 함께 적은 실제 사례로 읽어 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/willison-spawn-ai-pilled.html">에이전트가 매시간 배포하는 게임 회사, 윌리슨이 소개했다</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>사이먼 윌리슨이 게임 Spawn을 만드는 회사의 개발 방식을 다룬 글을 소개했다.</li>
+        <li>Fable 기반 에이전트 무리가 직접 코드를 고치고 매시간 실서비스에 배포한다. 토큰 비용은 한 달 300만 달러가 넘는다.</li>
+        <li>윌리슨은 위험이 큰 소프트웨어에는 어렵겠지만, 게임에서는 놀랄 만큼 잘 돌아간다고 평했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 코딩 에이전트에 배포까지 맡길지 고민 중이라면, 빠른 롤백과 경보 설계를 어디까지 갖췄는지 먼저 비교해 볼 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/latent-space-elorian-decoycount.html">이미지 속 물건 세기, 최상위 모델도 절반을 못 맞혔다</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://latent.space/p/elorian/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 시각 추론 모델 회사 Elorian의 CEO Andrew Dai를 인터뷰했다.</li>
+        <li>새 벤치마크 DecoyCount에서 최상위 모델은 모두 50% 아래였고, GPT-6 Astra가 43.17%로 가장 높았다.</li>
+        <li>Dai는 자사 모델 Glimpse가 내부 시험에서 50.48%를 냈다고 했지만, 측정 방식이 달라 바로 비교하긴 어렵다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 이미지에서 개수나 배치를 읽는 기능을 만든다면, 최상위 모델이라도 결과를 따로 검증할 때.</div>
+    </article>
+
+    <article class="item">
+      <div class="who">Dwarkesh Patel</div>
+      <h2 class="title">
+        <a href="articles-2026-10-30/dwarkesh-lessons-in-power.html">드와르케시, 로버트 카로 인터뷰 앞두고 &#x27;권력&#x27; 에세이를 냈다</a>
+        <span class="domain">(dwarkesh.com)</span>
+        <a class="ext-link" href="https://www.dwarkesh.com/p/lessons-in-power" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>드와르케시 파텔이 존슨 대통령과 로버트 모지스 전기에서 배운 권력 이야기를 영상 에세이로 냈다.</li>
+        <li>6년 동안 가장 인터뷰하고 싶던 전기 작가 로버트 카로와의 대담을 이번 금요일에 공개한다.</li>
+        <li>AI 이야기는 아니지만, 다음 에피소드를 미리 보는 글이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 금요일에 나올 카로 인터뷰를 들을 생각이라면, 이 에세이를 먼저 보면 맥락이 잡힌다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
