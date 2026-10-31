@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>카파시, Opus로 두 시간 만에 ‘HN 추천 유튜브’를 만들었다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Andrej Karpathy · <span class="article-date">2026-11-01 Seoul</span></div>
+    <h1 class="article-title">카파시, Opus로 두 시간 만에 ‘HN 추천 유튜브’를 만들었다</h1>
+    <div class="source-line">
+      원문 · <a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank" rel="noopener">Karpathy 블로그</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        안드레이 카파시가 금요일 밤 유튜브를 열었다가 질렸다. 과장된 썸네일과 뻔한 추천만 가득했다고 썼다.
+      </p>
+
+      <p>
+        다음 날 아침 Opus 5.5에게 해커뉴스(HN)에서 추천된 영상만 모은 유튜브를 만들자고 했다. 결과물이 hackertube.org다.
+      </p>
+      <h2>어떻게 만들었나</h2>
+
+      <p>
+        Opus가 HN 댓글 전체를 내려받았다. 그다음 Sonnet을 돌려 스팸과 질 낮은 글을 걸렀다.
+      </p>
+
+      <p>
+        영상을 추천하는 댓글 4만 개가 남았다. 여기서 2007~2026년 영상 6,454개가 나왔고 주제는 150개다.
+      </p>
+
+      <p>
+        Opus는 유튜브 같은 화면을 씌우고, 도메인을 잡고, 서버에 올리고, 보안과 최적화까지 했다. 카파시는 두 시간쯤 걸렸다고 했다.
+      </p>
+      <h2>무엇이 다른가</h2>
+
+      <p>
+        썸네일은 올린 사람이 고른 이미지 대신 영상 중간 장면을 쓴다.
+      </p>
+
+      <p>
+        계정 없이도 추천이 된다. 취향 정보는 내 브라우저에만 남는다.
+      </p>
+
+      <p>
+        키보드 단축키가 있고, 사이트 데이터를 내려받을 수 있다. 내 에이전트에게 주고 나만의 버전을 만들라는 뜻이다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        큰 플랫폼의 추천이 싫으면 떠나는 것 말고 방법이 없었다. 이제는 오후 한나절에 대안을 만들 수 있다.
+      </p>
+
+      <p>
+        에이전트가 데이터 수집부터 배포까지 맡는 개인 앱의 좋은 예다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

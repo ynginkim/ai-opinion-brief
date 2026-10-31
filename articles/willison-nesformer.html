@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>언어 모델 가중치 안에서 슈퍼마리오가 돈다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-11-01 Seoul</span></div>
+    <h1 class="article-title">언어 모델 가중치 안에서 슈퍼마리오가 돈다</h1>
+    <div class="source-line">
+      원문 · <a href="https://simonwillison.net/2026/Oct/30/nesformer/" target="_blank" rel="noopener">Simon Willison</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        사이먼 윌리슨이 드루 브루닉의 nesformer를 소개했다. 닌텐도 게임기 NES의 6502 CPU 에뮬레이터를 Qwen3.5-4B 모델의 가중치 안에 넣은 프로젝트다.
+      </p>
+
+      <p>
+        그래서 슈퍼마리오 같은 NES 게임이 모델 안에서 돈다. 아주 느리다.
+      </p>
+      <h2>어떻게 만들었나</h2>
+
+      <p>
+        디비얀시 아그라왈의 qwenputer에서 아이디어를 얻었다.
+      </p>
+
+      <p>
+        브루닉은 Opus 5.5에게 두 번 말했다. 처음에는 이 기법으로 NES 칩을 흉내 낼 수 있는지 알아보라고 했다. 다음에는 재미로 만들어 보자고 했다.
+      </p>
+
+      <p>
+        Opus는 15년 전에 나온 NES CPU 적합성 시험 모음을 찾아 썼다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        실용성보다 실험이다. 그래도 프로그램을 모델 가중치로 옮기는 아이디어가 실제 게임까지 돌린다는 점이 눈에 띈다.
+      </p>
+
+      <p>
+        에이전트에게 몇 줄 부탁해 이런 결과가 나온다는 것도 요즘 분위기를 보여 준다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
