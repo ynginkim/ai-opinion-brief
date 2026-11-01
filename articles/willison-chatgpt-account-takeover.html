@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>공유 링크 하나로 ChatGPT 계정을 가로챌 수 있었다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-11-02 Seoul</span></div>
+    <h1 class="article-title">공유 링크 하나로 ChatGPT 계정을 가로챌 수 있었다</h1>
+    <div class="source-line">
+      원문 · <a href="https://simonwillison.net/2026/Oct/31/how-we-took-over-chatgpt-accounts/" target="_blank" rel="noopener">Simon Willison</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Parameter Labs가 ChatGPT 계정을 가로챌 수 있는 공격 경로를 찾았다. 사이먼 윌리슨이 이를 소개했다.
+      </p>
+
+      <p>
+        대상은 ChatGPT의 HTML 미리보기다. 직접 만든 HTML 앱을 격리된 iframe 안에 띄우는 기능이다.
+      </p>
+      <h2>어떻게 뚫었나</h2>
+
+      <p>
+        ChatGPT는 그래프 기능에 MathLive라는 수식 라이브러리를 쓴다. 이 라이브러리의 가상 키보드는 격리된 iframe에서 postMessage로 불러낼 수 있었다.
+      </p>
+
+      <p>
+        메시지를 받는 코드가 innerHTML을 썼다. 그래서 격리 제한이 없는 새 iframe을 부모 페이지에 끼워 넣을 수 있었다.
+      </p>
+
+      <p>
+        보안 정책은 인라인 스크립트를 막고 일부 도메인만 허용했다. 그중 하나가 YouTube였고, YouTube 임베드 주소로 자바스크립트를 되돌려 실행시킬 수 있었다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        결과는 공유 URL 하나였다. 로그인한 다른 사용자가 열면 개인 데이터를 빼내거나 그 사람 대신 행동할 수 있었다.
+      </p>
+
+      <p>
+        OpenAI는 구멍을 막고 버그 바운티 5,000달러를 지급했다. 윌리슨은 이 정도로 심각한 취약점에 비해 싸다고 봤다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
