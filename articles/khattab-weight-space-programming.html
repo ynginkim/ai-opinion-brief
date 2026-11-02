@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>카탑 팀, “GPT-6 Astra가 신경망 가중치를 직접 읽고 고친다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Omar Khattab · MIT CSAIL · <span class="article-date">2026-11-03 Seoul</span></div>
+    <h1 class="article-title">카탑 팀, “GPT-6 Astra가 신경망 가중치를 직접 읽고 고친다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://rikiyat.github.io/blog/weight-space-programming/" target="_blank" rel="noopener">연구 블로그</a> · <a href="https://x.com/lateinteraction/status/2117316068226028025" target="_blank" rel="noopener">Omar Khattab X</a> · <a href="https://x.com/badlogicgames/status/2117355349967544808" target="_blank" rel="noopener">Mario Zechner X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        MIT CSAIL의 오마르 카탑 팀이 GPT-6 Astra로 신경망 가중치를 직접 읽고 쓰는 실험을 공개했다. 이름은 ‘가중치 공간 프로그래밍’이다.
+      </p>
+
+      <p>
+        보통 가중치는 Adam 같은 최적화 알고리즘이 학습으로 정한다. 이번에는 LLM이 가중치가 무엇을 계산하는지 추론한 뒤 직접 숫자를 바꿨다.
+      </p>
+      <h2>무엇을 해냈나</h2>
+
+      <p>
+        가중치 1만 7,253개를 도구 없이 읽고, 그 신경망이 Breakout 게임을 학습했다고 99% 확신으로 맞혔다.
+      </p>
+
+      <p>
+        차가 언덕을 못 넘던 정책 신경망은 가중치 3.5%를 한 번에 고쳐 성공률을 0%에서 100%로 바꿨다.
+      </p>
+
+      <p>
+        Qwen3.5-0.8B에서는 추론이 같은 말을 맴도는 문제를 가중치에서 찾아냈다. 0.016%만 고쳐 MATH-500을 7.9%에서 48.1%로, IFEval을 약 3배로 올렸다.
+      </p>
+
+      <p>
+        입출력 층을 뗀 작은 언어 모델에서도 Python·로마자 일본어·영어 중 무엇을 학습했는지 모두 맞혔다. 앞 내용을 베끼는 어텐션 헤드도 실제 측정값과 똑같이 짚었다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        지금까지 LLM은 프롬프트나 코드처럼 글로 된 것을 고치는 데 주로 쓰였다. 신경망 가중치는 사람이 손으로 못 고치니 알고리즘의 몫이었다.
+      </p>
+
+      <p>
+        연구진은 이 경계가 무너지고 있다고 본다. 카탑은 전체 비용이 1,000달러 안팎이었다고 했다. 마리오 츠흐너도 추천 글로 공유했다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        연구진은 머지않아 LLM이 가중치를 직접 추론하며 최적화하게 될 것이라고 전망했다. 해석 가능성 연구에도 쓸 수 있다고 봤다.
+      </p>
+
+      <p>
+        아직은 작은 모델과 제한된 과제에서 나온 초기 결과다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

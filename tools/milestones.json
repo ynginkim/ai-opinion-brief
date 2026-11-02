@@ -388,6 +388,11 @@
           "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
           "title": "Calegari — 모든 논문을 AI가 도왔다고 보고 평가하자",
           "summary": "정수론 학자 칼레가리가 OpenAI 논문 700여 편 공개를 분기점이라 부르면서도 글과 출처 표기를 비판했다. 채용은 대면 면접 위주로, 학술지에는 더 많은 것을 요구하자고 제안했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+          "title": "Egoless Mathematics in the AI Era (Tao 블로그 객원 글)",
+          "summary": "카르틱 C.S.·사하이·쉬에는 AI에 밀릴까 하는 불안이 성과로 자기 가치를 재 온 데서 나온다고 봤다. 누가 발견했는지보다 진리 자체를 보자는 ‘자아 없는 수학’을 제안했다."
         }
       ]
     },
@@ -751,6 +756,11 @@
           "url": "https://latent.space/p/ainews-gemini-4-carbon/",
           "title": "AINews — Carbon 독립 평가 모음",
           "summary": "Artificial Analysis 종합 1위지만 코딩 에이전트 지수는 59점으로 Claude Code+Opus 5.5(62점)보다 낮다. 과제당 비용은 7.76달러로 Opus 5.5보다 싸고, 환각 비율은 Argon의 4%에서 11%로 올랐다."
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+          "title": "SemiAnalysis GDPx",
+          "summary": "11개 분야 에이전트 벤치마크에서 Carbon은 Opus 5.5·GPT-6 Astra와 같은 체급으로 평가받은 유일한 모델이었다. 바이오 1등, 소프트웨어 개발도 근소하게 앞섰다."
         }
       ]
     }
