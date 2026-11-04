@@ -768,6 +768,25 @@
           "summary": "11개 분야 에이전트 벤치마크에서 Carbon은 Opus 5.5·GPT-6 Astra와 같은 체급으로 평가받은 유일한 모델이었다. 바이오 1등, 소프트웨어 개발도 근소하게 앞섰다."
         }
       ]
+    },
+    {
+      "id": "anthropic-vault-particles",
+      "date": "2026-11-05",
+      "lab": "anthropic",
+      "title": "Claude가 연구 전 과정을 거든 첫 원핵세포 볼트 구조",
+      "summary": "Anthropic 생물학 연구팀이 Claude와 함께 박테리아 쪽 볼트 입자의 첫 3D 구조를 풀었다. Claude가 단백질 검색, DNA 설계, 정제 방법, 현미경 데이터 처리를 맡았다. 첫 구조 모델은 34시간 만에 나왔고, 보통이면 몇 주 걸릴 일이라고 했다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "34시간",
+        "label": "정제 후 첫 구조 모델까지 걸린 시간 (보통 몇 주)",
+        "source_url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+      },
+      "detail": "articles/anthropic-vault-particles.html",
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "takes": []
     }
   ]
 }
