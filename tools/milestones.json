@@ -784,8 +784,48 @@
         "label": "정제 후 첫 구조 모델까지 걸린 시간 (보통 몇 주)",
         "source_url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
       },
-      "detail": "articles/anthropic-vault-particles.html",
+      "detail": "archive/articles-2026-11-05/anthropic-vault-particles.html",
       "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "takes": []
+    },
+    {
+      "id": "openai-gpt6-cyber",
+      "date": "2026-11-05",
+      "lab": "openai",
+      "title": "GPT-6 Cyber, 사이버 위험 ‘Critical’ 등급 첫 모델",
+      "summary": "OpenAI가 취약점을 찾고 공격 코드까지 검증하는 보안 전용 모델 GPT-6 Cyber를 냈다. 리눅스 커널에서 작동하는 공격 코드 948개를 만들고 파이어폭스 고위험 버그 81개를 찾았다. OpenAI는 이 모델을 사이버 분야 최고 위험 등급인 Critical로 분류하고 심사받은 보안팀에만 열었다.",
+      "axes": [
+        "agent",
+        "safety"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "948개",
+        "label": "리눅스 커널 취약점에서 만든 작동 공격 코드 (GPT-5.6 Sol은 166개)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-cyber"
+      },
+      "detail": "articles/openai-gpt6-cyber.html",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "takes": []
+    },
+    {
+      "id": "metr-anthropic-acceleration",
+      "date": "2026-11-05",
+      "lab": "anthropic",
+      "title": "METR “Anthropic, AI 덕에 발전 속도 약 두 배”",
+      "summary": "외부 평가 기관 METR가 Anthropic 내부 자료를 보고, 잘 정의된 과제에서 모델 능력이 예전보다 약 두 배 빠르게 오르고 있다고 결론 내렸다. 가속 대부분은 연구에 AI를 쓰기 때문이고, 컴퓨트 증가 때문은 아니라고 봤다. 앞으로 12개월 안에 큰 병목도 보이지 않는다고 했다.",
+      "axes": [
+        "safety",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "1.9배",
+        "label": "2025년 10월 이후 Anthropic 벤치마크 지수 상승 속도 (이전 대비)",
+        "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+      },
+      "detail": "articles/metr-anthropic-acceleration.html",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
       "takes": []
     }
   ]

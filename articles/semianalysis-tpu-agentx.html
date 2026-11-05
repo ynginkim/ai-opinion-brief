@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemiAnalysis “구글 TPU, 에이전트 추론에서 NVIDIA와 맞붙었다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Dylan Patel / SemiAnalysis · <span class="article-date">2026-11-06 Seoul</span></div>
+    <h1 class="article-title">SemiAnalysis “구글 TPU, 에이전트 추론에서 NVIDIA와 맞붙었다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://newsletter.semianalysis.com/p/tpu-strikes-the-king" target="_blank" rel="noopener">SemiAnalysis</a> · <a href="https://x.com/SemiAnalysis_/status/2118419869091713083" target="_blank" rel="noopener">SemiAnalysis X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 구글 TPUv7(Ironwood)의 에이전트 추론 성능을 공개했다. 오픈 벤치마크 InferenceX의 AgentX 시험이다.
+      </p>
+
+      <p>
+        AgentX는 수십 번 오가는 긴 대화, 긴 문맥, 잠깐 떴다 사라지는 하위 에이전트를 흉내 낸다. 실제 에이전트 사용과 비슷하다는 평을 받는다.
+      </p>
+      <h2>숫자로 보면</h2>
+
+      <p>
+        GLM-5.2(FP8): TPUv7이 가장 싼 FP8 선택지였다. B200, B300, AMD MI355X보다 1달러당 토큰이 1.2~2.7배 많았다.
+      </p>
+
+      <p>
+        Qwen3.5 397B: 오픈소스 llm-d로 돌리면 모든 속도 구간에서 GB300 FP8을 이겼다.
+      </p>
+
+      <p>
+        Meta Muse Spark Open, Kimi K3: GPU에 맞춰 설계된 모델인데도 가성비가 비슷한 수준이었다.
+      </p>
+      <h2>NVIDIA는</h2>
+
+      <p>
+        더 낮은 정밀도인 FP4를 쓰면 NVIDIA GPU가 여전히 1달러당 토큰을 더 뽑는다. TPUv7은 FP4를 지원하지 않는다.
+      </p>
+
+      <p>
+        SemiAnalysis는 NVIDIA가 TPU 결과를 보고 밤낮없이 반격 제출을 했지만, 첫 제출도 대부분 구간에서 1.64배 뒤졌다고 썼다.
+      </p>
+
+      <p>
+        드라이버 기능 하나가 법무 검토에 석 달 묶이는 등 관료주의가 NVIDIA의 가장 큰 위험이라고 지적했다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Oracle, OpenAI, Anthropic, Meta가 이미 TPU 고객이 됐다고 SemiAnalysis는 썼다.
+      </p>
+
+      <p>
+        하드웨어뿐 아니라 PyTorch, vLLM, SGLang 같은 소프트웨어 생태계에서도 TPU 지원이 빠르게 늘고 있다. NVIDIA의 진짜 해자는 소프트웨어였기에 더 눈에 띈다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
