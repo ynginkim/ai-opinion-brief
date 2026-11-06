@@ -806,7 +806,13 @@
       },
       "detail": "articles/openai-gpt6-cyber.html",
       "url": "https://openai.com/index/introducing-gpt-6-cyber",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
+          "title": "FMF, 사이버 Jailbreak 등급 프레임워크",
+          "summary": "Frontier Model Forum이 사이버 우회의 심각도를 공통으로 매기는 1.0 기준을 냈고, OpenAI가 이를 소개하며 지지했다."
+        }
+      ]
     },
     {
       "id": "metr-anthropic-acceleration",
@@ -826,7 +832,13 @@
       },
       "detail": "articles/metr-anthropic-acceleration.html",
       "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://www.platformer.news/thursday-newsletter-7/",
+          "title": "Casey Newton, AI 반발에 계획이 필요하다고 씀",
+          "summary": "Platformer 칼럼에서 METR가 Anthropic 발전 속도가 약 두 배라고 본 점을 인용하며, 선거 이후 규제 목표를 구체화해야 한다고 주장했다."
+        }
+      ]
     }
   ]
 }

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind “AI 에이전트가 구형 RSA-1024 약점 둘을 찾았다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · <span class="article-date">2026-11-07 Seoul</span></div>
+    <h1 class="article-title">DeepMind “AI 에이전트가 구형 RSA-1024 약점 둘을 찾았다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/GoogleDeepMind/status/2118755418675765656" target="_blank" rel="noopener">Google DeepMind X</a> · <a href="https://x.com/i/article/2118746079923437568" target="_blank" rel="noopener">Pushmeet X article</a> · <a href="https://storage.googleapis.com/deepmind-media/papers/Faster_Affine_Root_and_a_1024bit%20Computation.pdf" target="_blank" rel="noopener">Paper (signatures)</a> · <a href="https://storage.googleapis.com/deepmind-media/papers/Fan_Factories_Multiple_Number_Fields_in_Factorization_Factories_and_Batch_NFS.pdf" target="_blank" rel="noopener">Paper (batch NFS)</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+      <p>
+        Google DeepMind가 AI 에이전트로 암호 분석(cryptanalysis) 속도를 끌어올렸다고 발표했다.
+      </p>
+      <p>
+        대상은 이미 쓰지 말라고 권고된 1024비트 RSA다. 사람이 방향을 잡고, 모델이 후보 알고리즘을 탐색하는 방식이다.
+      </p>
+      <h2>무엇이 새로웠나</h2>
+      <p>
+        디지털 서명에서 패딩이 얼마나 버티는지 봤다. 공격자가 서명 블록의 대략 절반 이상을 통제하면, 패딩이 있어도 없는 것과 같아진다고 했다.
+      </p>
+      <p>
+        이미 풀린 1024비트 벤치마크 키로 샌드박스 재현을 했고, 키를 직접 부수는 데 필요한 연산의 1000분의 1 미만으로 결과를 재현했다고 했다.
+      </p>
+      <p>
+        같은 비트 길이 키를 여러 개 부술 때는, 앞단 큰 계산을 나눠 쓰는 새 알고리즘이 이전 배치 방식보다 키당 평균 비용을 약 30배 낮춘다고 했다.
+      </p>
+      <h2>왜 중요한가</h2>
+      <p>
+        DeepMind는 현대 표준(대개 2048비트 이상)은 여전히 안전하다고 분명히 했다.
+      </p>
+      <p>
+        다만 암호 가정이 예전처럼 수년·수십 년 단위로만 흔들리던 시대는 지났다고 본다. 방어 쪽도 AI로 먼저 눌러 보는 습관이 필요해진다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+      <p>
+        보안팀은 퇴역 표준을 연습장 삼아, 에이전트 기반 암호 스트레스 테스트를 일상 점검에 넣을지 검토할 수 있다.
+      </p>
+      <p>
+        표준 기구와 업계는 ‘얼마나 단단한가’를 더 자주 재측정해야 한다는 신호가 됐다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
