@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 오늘의 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.11.07 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      OpenAI는 실험실 일상 분석을 재는 BioBasicsBench를 냈고, DeepMind는 AI 에이전트로 구형 RSA-1024 약점 둘을 공개했다. Anthropic은 과학 모델을 AI가 짤 때 ‘대안 분포’가 필요하다고 썼고, FMF는 사이버 Jailbreak 등급 기준을 내놨다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">11/07</span>
+      <a href="2026-11-06.html">11/06</a>
+      <a href="2026-11-05.html">11/05</a>
+      <a href="2026-11-04.html">11/04</a>
+      <a href="2026-11-03.html">11/03</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/openai-biobasicsbench.html">OpenAI, 실험실 일상 업무 벤치마크 BioBasicsBench 공개</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/measuring-how-ai-agents-handle-wet-lab-science/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 바이오 회사 Ligo와 함께, 실험실에서 매일 하는 분석 100개로 만든 BioBasicsBench를 냈다.</li>
+        <li>젤·콜로니 접시·현미경·장비 데이터 같은 날것 자료를 보고, 오류를 찾고, 근거가 부족하면 그렇게 말하는지를 본다.</li>
+        <li>추론을 많이 쓰게 한 설정에서 GPT-6 Astra는 평균 66.7%를 받았다. GPT-5.6 Sol은 43.8%였다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 연구 가속은 화려한 발견보다, 실험실 일상 판단을 덜 틀리게 하는 데서 시작한다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Google DeepMind</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/deepmind-rsa-cryptanalysis.html">DeepMind “AI 에이전트가 구형 RSA-1024 약점 둘을 찾았다”</a>
+        <span class="domain">(x.com / deepmind)</span>
+        <a class="ext-link" href="https://x.com/GoogleDeepMind/status/2118755418675765656" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind가 사람 지도 아래 AI 에이전트로, 이미 퇴역한 1024비트 RSA에서 큰 약점 두 가지를 찾았다고 밝혔다.</li>
+        <li>서명 블록의 절반 이상을 공격자가 통제하면 패딩이 사실상 보호를 못 한다고 했다. 여러 키를 한꺼번에 부술 때의 평균 비용도 이전 방식보다 약 30배 싸졌다고 했다.</li>
+        <li>지금 쓰는 2048비트 이상 RSA는 그대로 안전하다고 못 박았다. 결과는 논문으로도 공개했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 암호 ‘단단함’을 고정값으로 두면 안 된다. AI가 가정 검증을 훨씬 빨리 돌리기 시작했다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/anthropic-scientific-models.html">Anthropic “AI가 과학 모델을 짜기 시작했다… 답 하나면 부족하다”</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/research/teaching-ai-to-build-scientific-models" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic 사이언스 블로그에, AI가 과학 모델을 만들고·맞추고·해석하는 과정을 돕는 글이 올랐다.</li>
+        <li>튜빙겐 연구진이 쓴 게스트 글로, 호지킨–헉슬리 신경 세포 모델을 예로 든다.</li>
+        <li>데이터에 맞는 식 하나만 내놓으면 부족하다고 했다. 버려진 대안까지 보여줘야 이해가 생긴다고 썼다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 과학용 AI를 ‘정답 생성기’로 쓰면 통찰이 빠진다. 어떤 설명이 살아남는지가 핵심이다.</div>
+    </article>
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/openai-hacktron.html">OpenAI, 보안 스타트업 Hacktron과 자체 시스템 점검 파트너십</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/partnering-with-hacktron/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 보안 회사 Hacktron과 손잡고, 자사 시스템의 취약점을 함께 찾겠다고 발표했다.</li>
+        <li>특히 OpenAI 서비스가 외부 서비스와 맞닿는 지점을 우선 본다고 했다.</li>
+        <li>Hacktron에는 Daybreak Red를 통해 최전선 모델 접근을 더 열어 줬다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 남을 지키는 보안 모델을 키우는 만큼, 자기 집 문도 AI 보안팀과 같이 두드려 보겠다는 뜻이다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Frontier Model Forum · OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/fmf-jailbreak-framework.html">FMF, 사이버 Jailbreak 위험 등급 프레임워크 1.0 공개</a>
+        <span class="domain">(frontiermodelforum.org)</span>
+        <a class="ext-link" href="https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Frontier Model Forum이 사이버 관련 Jailbreak(보호장치 우회)의 위험도를 매기는 프레임워크 1.0을 냈다.</li>
+        <li>능력 이득·범위·배포 쉬움·발견 쉬움 네 축으로 나눠, 같은 우회라도 위험 등급을 통일하자고 했다.</li>
+        <li>OpenAI·Anthropic·Google DeepMind·Microsoft·Amazon이 지지를 밝혔고, 12월 21일까지 공개 의견을 받는다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 우회가 전부 같은 사건이 아니다. 어디에 먼저 패치를 넣을지 공통 언어가 생겼다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Casey Newton · Platformer</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/platformer-ai-backlash-plan.html">Casey Newton “AI 반발은 표만으론 안 된다… 계획이 필요하다”</a>
+        <span class="domain">(platformer.news)</span>
+        <a class="ext-link" href="https://www.platformer.news/thursday-newsletter-7/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Casey Newton이 중간선거 뒤 민주당이 데이터센터·AI 가속에 대한 반감을 등에 업었다고 썼다.</li>
+        <li>그래도 소셜미디어 때처럼 목표·플랜B·연대 없이 화만 내면 규제가 공전할 수 있다고 경고했다.</li>
+        <li>같은 글에서 METR가 Anthropic 발전 속도가 약 두 배라고 본 점도 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 표는 났는데 법이 안 나오면, 다음엔 법원과 주 단위로만 흘러간다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Hard Fork · NYT</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/hardfork-midterms-tech-right.html">Hard Fork “테크 라이트, 이번 중간선거에서 크게 졌다”</a>
+        <span class="domain">(nytimes.com)</span>
+        <a class="ext-link" href="https://www.nytimes.com/2026/11/06/podcasts/hardfork-midterms-tech-right.html" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>NYT Hard Fork가 11월 6일 에피소드에서 테크 억만장자 정치 자금이 중간선거에서 먹히지 않은 이유를 다뤘다.</li>
+        <li>반 AI·반 데이터센터 정서와 실리콘밸리 ‘테크 라이트’ 균열을 주제로 올렸다.</li>
+        <li>게스트로 정치·테크 쪽 목소리를 불러, 앞으로 AI 규제가 어떻게 흐를지 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 인프라 반감이 이제 팟캐스트 메인 이슈다. 여론이 제품 로드맵보다 허가·입지를 먼저 흔든다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-11-07/latent-space-controlling-biology.html">Latent Space, Fabian Theis와 ‘생물학을 제어한다’</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://latent.space/p/controlling-biology-fabian-theis-helmholtz-munich/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space가 Helmholtz Munich의 Fabian Theis를 불러, 가상 세포가 지도 그리기를 넘어 예측·제어로 가는 이야기를 들었다.</li>
+        <li>지금 섭동(perturbation) 예측 벤치가 너무 쉬운 문제라서, 복잡한 모델이 설 자리가 없다고 Theis는 본다.</li>
+        <li>Biohub 규모 데이터와 다중 스케일 측정이 열린 지금이, 알고리즘을 키울 타이밍이라고 말했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 바이오 AI 관심이 분자 설계에 쏠려 있을 때, 시스템 생물학 쪽 숙제를 다시 중앙에 올려 둔다.</div>
+    </article>
+  </div>
+</body>
+</html>

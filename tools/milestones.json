@@ -804,7 +804,7 @@
         "label": "리눅스 커널 취약점에서 만든 작동 공격 코드 (GPT-5.6 Sol은 166개)",
         "source_url": "https://openai.com/index/introducing-gpt-6-cyber"
       },
-      "detail": "articles/openai-gpt6-cyber.html",
+      "detail": "archive/articles-2026-11-06/openai-gpt6-cyber.html",
       "url": "https://openai.com/index/introducing-gpt-6-cyber",
       "takes": [
         {
@@ -830,7 +830,7 @@
         "label": "2025년 10월 이후 Anthropic 벤치마크 지수 상승 속도 (이전 대비)",
         "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
       },
-      "detail": "articles/metr-anthropic-acceleration.html",
+      "detail": "archive/articles-2026-11-06/metr-anthropic-acceleration.html",
       "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
       "takes": [
         {

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mitchell Hashimoto, 터미널 엔진 libghostty 1.0 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Mitchell Hashimoto · <span class="article-date">2026-11-08 Seoul</span></div>
+    <h1 class="article-title">Mitchell Hashimoto, 터미널 엔진 libghostty 1.0 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://mitchellh.com/writing/libghostty-1-0" target="_blank" rel="noopener">Mitchell Hashimoto 블로그</a> · <a href="https://x.com/mitchellh/status/2118848233762078971" target="_blank" rel="noopener">mitchellh X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Mitchell Hashimoto가 libghostty-vt 1.0을 공개했다. 터미널 앱 Ghostty의 핵심을 떼어 낸 C 라이브러리다.
+      </p>
+
+      <p>
+        1.0은 기능보다 약속에 가깝다. 시맨틱 버저닝을 따르고, C ABI 호환을 CI에서 강제로 검사한다. 리눅스 배포판이 패키지로 넣어도 된다는 신호다.
+      </p>
+      <h2>누가 쓰나</h2>
+
+      <p>
+        JetBrains IDE 터미널이 이미 libghostty로 돈다. JetBrains 보고 기준으로 활성 사용자가 1,250만 명이 넘는다.
+      </p>
+
+      <p>
+        Neovim은 libvterm을 libghostty-vt로 바꾸는 PR을 승인해 두고 정식 릴리스를 기다리고 있었다. KDE 개발자들은 Konsole 대체품을 실험 중이고, Vercel Turborepo와 OrbStack도 쓴다.
+      </p>
+
+      <p>
+        herdr, cmux 같은 ‘에이전트’ 코딩 도구도 이 위에 만들어졌다. Hashimoto는 이제 Ghostty 앱보다 libghostty 기반 터미널을 쓰는 사람이 훨씬 많다고 썼다.
+      </p>
+      <h2>숫자로 보면</h2>
+
+      <p>
+        MIT 라이선스이고, 실행할 때 libc 말고는 필요한 게 없다.
+      </p>
+
+      <p>
+        코어 4개, 메모리 8GB 리눅스 서버에서 셸이 살아 있는 터미널 1만 개를 돌렸다고 했다.
+      </p>
+
+      <p>
+        C 코드 약 1,500줄이면 2025년의 거의 모든 터미널보다 기능과 성능이 나은 터미널을 만들 수 있다고 했다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        코딩 에이전트가 늘면서 터미널을 화면에 그리고 조작하는 도구도 많아졌다. 각자 에뮬레이터를 새로 짜면 버그도 각자 따로 생긴다.
+      </p>
+
+      <p>
+        공용 엔진이 생기면 한 곳에서 고친 버그가 모든 도구에 퍼진다. Hashimoto도 이 점을 1.0의 의미로 꼽았다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Rust, Go, Python, Swift 등 언어 바인딩이 이미 있다. 웹용 WASM 빌드(ghostty-web)는 Xterm.js와 호환되는 API를 준다.
+      </p>
+
+      <p>
+        참고로 Hashimoto는 이 글을 AI 도움 없이 손으로 썼다고 각주에 밝혔다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

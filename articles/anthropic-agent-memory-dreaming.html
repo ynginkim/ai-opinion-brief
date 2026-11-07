@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic, Claude가 ‘꿈’으로 기억을 고치는 법 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic · <span class="article-date">2026-11-08 Seoul</span></div>
+    <h1 class="article-title">Anthropic, Claude가 ‘꿈’으로 기억을 고치는 법 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/components-of-agent-memory" target="_blank" rel="noopener">Anthropic Engineering</a> · <a href="https://x.com/AnthropicAI/status/2118814753154064501" target="_blank" rel="noopener">Anthropic X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 에이전트 메모리를 어떻게 설계하는지 정리한 글을 냈다. 여기서 메모리는 Claude가 일하면서 배운 것을 파일로 남기고, 다음 세션에서 다시 읽는 지식을 말한다.
+      </p>
+
+      <p>
+        핵심은 ‘드리밍’이다. 일이 끝난 뒤 Claude가 지난 대화 기록을 다시 읽으며 메모를 고치고, 새 노트를 만들고, 다음 세션에 미리 불러올 내용을 고른다. 사람이 잠자는 동안 기억을 정리하는 방식에서 따온 이름이다.
+      </p>
+      <h2>숫자로 보면</h2>
+
+      <p>
+        포켓몬 레드 1만 스텝 시점에 Sonnet 3.7은 폴더 225개에 메모 파일 413개를 쓰고 배지 1개를 땄다. Fable 5는 파일 9개와 global.md 하나로 배지 4개를 땄다.
+      </p>
+
+      <p>
+        Stainless 내부 문서 약 35만 개(약 4억 2천만 토큰)로 위키를 만들게 하자, 정리 세션을 2번에서 128번으로 늘릴 때 25개 질문 점수가 13%에서 48%로 올랐다.
+      </p>
+
+      <p>
+        검색과 위키를 같이 쓰면 61%였다. 검색만 쓰면 53%였고, 질문당 토큰도 약 2만 개 아꼈다.
+      </p>
+
+      <p>
+        계약 조건을 다루는 법률 과제에서는 위키에 남은 핵심 사실이 57개 중 41개(72%)였다. 지침을 고친 뒤에는 57개가 모두 남았다.
+      </p>
+      <h2>왜 중요한가</h2>
+
+      <p>
+        메모가 처음부터 틀리면 다음 세션의 Claude는 그 메모를 그대로 믿는다. 포켓몬 실험에서 Claude는 건물 위치를 잘못 적었고, 같은 낭떠러지로 세 번 떨어졌다. 드리밍으로 기록과 대조해 메모를 고치자 동굴로 돌아가 다음 도시에 닿았다.
+      </p>
+
+      <p>
+        규칙을 정해 주는 방식도 시험했다. ‘실패만 기록하라’고 시키자 Opus 5와 Opus 4.7은 메모리로 얻던 이득을 상당 부분 잃었다. 강한 모델일수록 무엇이 중요한지 스스로 고르게 두는 편이 나았다.
+      </p>
+
+      <p>
+        반대로 Sonnet 4.6 같은 이전 모델은 메모를 읽고 가설을 검증하라고 짚어 주자 점수가 거의 두 배가 됐다.
+      </p>
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Claude Code의 자동 메모리는 MEMORY.md의 앞 200줄 또는 25KB만 매 세션에 불러온다. 맨 위 층을 작게 유지하고, 나머지는 필요할 때 찾게 하는 구조다.
+      </p>
+
+      <p>
+        Anthropic은 드리밍에도 컴퓨트가 든다고 했다. 언제 메모를 쓰고 얼마나 자주 다시 검증할지는 아직 열린 문제로 남겼다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
