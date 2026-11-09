@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google, 8세대 TPU에 8tx·8i Max 추가 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Sundar Pichai / Google · <span class="article-date">2026-11-10 Seoul</span></div>
+    <h1 class="article-title">Google, 8세대 TPU에 8tx·8i Max 추가</h1>
+    <div class="source-line">
+      원문 · <a href="https://blog.google/innovation-and-ai/infrastructure-and-cloud/global-network/tpu-8i-max-and-8tx/" target="_blank" rel="noopener">Google 블로그</a> · <a href="https://x.com/sundarpichai/status/2119857335871164769" target="_blank" rel="noopener">Sundar Pichai X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google이 11월 9일 8세대 TPU 라인업에 TPU 8tx와 TPU 8i Max를 더했다. 4월에 낸 8t(학습용), 8i(빠른 추론용)에 이어 네 번째다.
+      </p>
+
+      <p>
+        새 칩을 처음부터 만든 게 아니다. 기존 8세대 칩을 두고 패키징, 메모리, 네트워크, 보안을 바꿔 새 시스템을 만들었다.
+      </p>
+
+      <p>
+        Sundar Pichai는 X에서 “한 세대, 한 해에 TPU 시스템 네 종”이라며, 하드웨어 팀이 DeepMind와 함께 설계해서 가능했다고 적었다.
+      </p>
+
+      <h2>TPU 8tx</h2>
+
+      <p>
+        보통 데이터는 저장하거나 보낼 때만 암호화된다. 계산하는 순간에는 메모리에서 풀린다. 8tx는 계산 중에도 데이터와 모델 가중치를 하드웨어 단에서 격리한다.
+      </p>
+
+      <p>
+        8t와 같은 칩에 AMD 5세대 EPYC CPU를 붙였다. Google은 8t보다 지연이 최대 2배 낮고 성능 손해는 거의 없다고 말한다.
+      </p>
+
+      <p>
+        한 시스템에서 민감한 데이터로 모델을 미세조정하고, 작은 모델로 증류하고, 강화학습까지 할 수 있게 했다.
+      </p>
+
+      <h2>TPU 8i Max</h2>
+
+      <p>
+        에이전트 수십 개가 코드베이스 전체나 몇 시간짜리 영상을 함께 다루면 메모리 대역폭이 병목이 된다. 이를 ‘메모리 벽’이라 부른다.
+      </p>
+
+      <p>
+        8i Max는 8i 칩 두 개를 한 패키지에 넣어 연산, SRAM, HBM 대역폭을 모두 두 배로 했다.
+      </p>
+
+      <p>
+        같은 랙 공간에 실리콘을 두 배로 넣어 면적당, 전력당 연산량도 늘렸다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        AI 칩 경쟁이 ‘더 큰 칩 하나’에서 ‘쓰임새별 시스템 여러 개’로 옮겨 가고 있다.
+      </p>
+
+      <p>
+        가격, 지역, 정식 출시일은 아직 나오지 않았다. 실제 성능 숫자도 공개되지 않았다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
