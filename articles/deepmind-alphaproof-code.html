@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind, AI 에이전트로 Signal 암호 코드를 수학으로 검증 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · Sundar Pichai · <span class="article-date">2026-11-11 Seoul</span></div>
+    <h1 class="article-title">DeepMind, AI 에이전트로 Signal 암호 코드를 수학으로 검증</h1>
+    <div class="source-line">
+      원문 · <a href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener">DeepMind 블로그</a> · <a href="https://x.com/sundarpichai/status/2120207062655549933" target="_blank" rel="noopener">Sundar Pichai X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google DeepMind가 11월 10일 AlphaProof Code를 공개했다. AI 에이전트 여러 개가 소프트웨어의 정확성을 수학으로 증명하게 하는 도구다.
+      </p>
+
+      <p>
+        첫 대상은 Signal 프로토콜이다. Signal 앱과 Google 메시지에서 수십억 건의 대화를 지키는 암호 기술이다.
+      </p>
+
+      <p>
+        DeepMind는 널리 쓰이는 프로토콜의 실제 구현을 이 깊이로 검증한 건 AI를 쓰든 안 쓰든 처음이라고 밝혔다.
+      </p>
+
+      <h2>어떻게 했나</h2>
+
+      <p>
+        먼저 연구자들이 여러 모델과 함께 Signal의 보안 목표를 수학 명세로 옮겼다. 명세는 사람 전문가가 하나하나 검토했다.
+      </p>
+
+      <p>
+        그다음 Gemini 4 Carbon 에이전트들이 증명을 맡았다. Lean으로 600만 줄이 넘는 증명을 만들었다. Lean은 증명이 맞는지 컴퓨터가 자동으로 검사하는 언어다.
+      </p>
+
+      <p>
+        에이전트가 스스로 증명을 점검해 사람이 다시 봐야 할 곳을 골랐다. 그 범위는 코드의 약 1%였다.
+      </p>
+
+      <p>
+        전체 작업은 4주 걸렸다. DeepMind는 예전 방식이면 전문가 팀이 몇 년 걸릴 일이라고 설명했다.
+      </p>
+
+      <h2>진짜 버그도 잡나</h2>
+
+      <p>
+        DeepMind는 예전에 고친 실제 버그 두 개를 따로 떼어 낸 코드에 다시 넣어 봤다.
+      </p>
+
+      <p>
+        두 경우 모두 시스템이 그 코드가 안전하지 않다는 증명을 만들어 냈다. 맞는 코드와 틀린 코드를 구분할 수 있다는 뜻이다.
+      </p>
+
+      <p>
+        Signal CTO Ehren Kret은 실제 코드를 Lean 정리로 자동 번역한 것이 큰 진전이라고 평했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        대부분의 프로토콜 검증은 설계 단계에서 멈춘다. 그런데 실제 취약점은 설계와 구현 사이 틈에 숨어 있는 경우가 많다.
+      </p>
+
+      <p>
+        이번 작업은 기기에서 도는 컴파일된 코드까지 증명했다. 그래서 훨씬 어렵고, 그만큼 보증도 강하다.
+      </p>
+
+      <p>
+        AI 에이전트 공격이 빨라지는 시점에 방어 쪽도 같은 속도로 증명을 늘릴 수 있다는 신호다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        DeepMind는 다음 대상으로 의료기기 펌웨어와 전력망 소프트웨어 같은 핵심 시스템을 들었다.
+      </p>
+
+      <p>
+        검증 결과물은 오픈소스로 공개해 보안 커뮤니티가 쓸 수 있게 한다.
+      </p>
+
+      <p>
+        Sundar Pichai는 이 방식이 방어자에게 유리한 쪽으로 판을 옮기는 기초가 될 거라고 썼다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

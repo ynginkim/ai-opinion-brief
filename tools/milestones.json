@@ -856,15 +856,45 @@
     "label": "Fable 5.2 에이전트 약 1,000개가 페르마의 마지막 정리를 Lean으로 완전 형식화한 시간",
     "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
    },
-   "detail": "articles/anthropic-fable-mythos-5-2.html",
+   "detail": "archive/articles-2026-11-10/anthropic-fable-mythos-5-2.html",
    "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
    "takes": [
     {
      "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
      "title": "How I AI, Fable 5.2 이틀 써 본 첫 리뷰",
      "summary": "Claire Vo가 영상 제작, 가구 조립 설명, 실제 파이프라인 재설계를 맡겨 보고, 웹 디자인은 아직 혼자 맡기지 않겠다고 평했다."
+    },
+    {
+     "url": "https://x.com/SemiAnalysis_/status/2119961447199289640",
+     "title": "SemiAnalysis, GDPx 1위지만 토큰을 많이 쓴다",
+     "summary": "SemiAnalysis는 Fable 5.2가 GDPx 16.4%로 1위라고 했다. 다만 재료과학 과제에서는 GPT-6 Astra와 비슷한 점수에 비용은 89% 더 들었다고 짚었다."
+    },
+    {
+     "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
+     "title": "Latent Space AINews, 1위 탈환과 비용",
+     "summary": "swyx는 Fable 5.2가 Carbon에게서 1위를 되찾았지만, 토큰당 값이 20% 내려도 GDPx 과제당 비용은 67달러에서 88달러로 올랐다고 정리했다."
     }
    ]
+  },
+  {
+   "id": "deepmind-alphaproof-code",
+   "date": "2026-11-10",
+   "lab": "googledeepmind",
+   "title": "AlphaProof Code, Signal 암호 프로토콜의 실제 코드를 수학으로 증명",
+   "summary": "Google DeepMind가 Gemini 4 Carbon 에이전트로 Signal 프로토콜의 실제 구현 코드를 형식 검증했다. Lean 증명 600만 줄 이상을 만들었고, 사람이 다시 본 부분은 약 1%였다. 널리 쓰이는 프로토콜 구현을 이 깊이로 검증한 건 어떤 방법으로든 처음이라고 밝혔다.",
+   "axes": [
+    "safety",
+    "reason"
+   ],
+   "impact": "small",
+   "key": {
+    "value": "4주",
+    "label": "Signal 핵심 암호 코드 형식 검증에 걸린 시간 (DeepMind: 전문가 팀이면 수년)",
+    "source_url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+   },
+   "detail": "articles/deepmind-alphaproof-code.html",
+   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+   "takes": []
   }
  ]
 }
