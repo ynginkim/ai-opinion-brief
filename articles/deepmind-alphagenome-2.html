@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind AlphaGenome 2, 세포 종류별로 DNA 변이를 읽는다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · Demis Hassabis · Sundar Pichai · <span class="article-date">2026-11-12 Seoul</span></div>
+    <h1 class="article-title">DeepMind AlphaGenome 2, 세포 종류별로 DNA 변이를 읽는다</h1>
+    <div class="source-line">
+      원문 · <a href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">DeepMind 블로그</a> · <a href="https://x.com/demishassabis/status/2120565316619284734" target="_blank" rel="noopener">Demis Hassabis X</a> · <a href="https://x.com/GoogleDeepMind/status/2120532824465805749" target="_blank" rel="noopener">Google DeepMind X 스레드</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google DeepMind가 11월 11일(미국 시간) AlphaGenome 2를 발표했다. 작년에 낸 AlphaGenome의 다음 버전이다.
+      </p>
+
+      <p>
+        우리 몸의 세포는 모두 같은 DNA를 갖고 있다. 그런데 심장 근육 세포와 면역 세포는 서로 다른 유전자를 켜고 끈다.
+      </p>
+
+      <p>
+        그래서 같은 변이도 어떤 세포에서는 병을 일으키고, 다른 세포에서는 아무 일도 없을 수 있다. AlphaGenome 2는 이 차이를 세포 종류별로 예측한다.
+      </p>
+
+      <h2>무엇이 달라졌나</h2>
+
+      <p>
+        첫 모델은 여러 조직의 평균값을 한꺼번에 예측했다. 흐린 사진을 보는 것과 비슷해서, 세포 하나하나의 차이를 놓쳤다.
+      </p>
+
+      <p>
+        새 모델은 한 번에 한 가지 조건만 본다. 조건은 조직, 세포 종류, 세포 상태 중 하나다. 이 조건을 모델의 모든 단계에 함께 넣는다.
+      </p>
+
+      <p>
+        덕분에 같은 DNA 구간을 세포마다 다르게 읽는 방식을 배운다.
+      </p>
+
+      <p>
+        연구자가 세포 수십 개 분량의 자기 실험 데이터를 올리면, 다시 학습시키지 않아도 그 상태에 맞춰 예측한다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <p>
+        학습 데이터: 68개 조직, 1억 700만 개가 넘는 개별 세포 프로필
+      </p>
+
+      <p>
+        면역 세포 28종 데이터(TenK10K)에서 원인 변이를 찾은 비율: 30% (이전 모델 16%)
+      </p>
+
+      <p>
+        유전자 효과의 방향까지 맞힌 비율: 43% (이전 모델 23%)
+      </p>
+
+      <p>
+        학습에 쓴 세포 종류: 사람 637종, 쥐 311종 (Nature 보도 기준)
+      </p>
+
+      <h2>실제 사례</h2>
+
+      <p>
+        최근 한 연구는 장 면역 세포에서 ETS2 유전자를 과하게 켜는 변이가 염증성 장질환의 원인이라는 걸 밝혔다. 이 변이는 유전자에서 멀리 떨어진 조절 스위치에 있어서 찾기 어려웠다.
+      </p>
+
+      <p>
+        AlphaGenome 2는 이 결과를 계산만으로 다시 찾아냈다. 원인 변이를 골라냈고, 그 변이가 장 대식세포에서만 ETS2를 키운다는 것도 보여 줬다.
+      </p>
+
+      <p>
+        Nature는 이를 두고 “피펫 한 번 들지 않고” 재현했다고 썼다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        병과 관련된 변이 대부분은 단백질을 만들지 않는 DNA 구간에 있다. 사람 유전체의 98%가 이런 구간이고, 가장 해석하기 어렵다.
+      </p>
+
+      <p>
+        어떤 세포에서 문제가 생기는지 알면 다음에 할 실험을 훨씬 좁힐 수 있다. 신약 표적을 찾는 시간도 줄어든다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        비상업 연구자는 오늘부터 API와 Colab 튜토리얼로 쓸 수 있다. 상업 연구는 비공개 프리뷰로 먼저 연다.
+      </p>
+
+      <p>
+        DeepMind는 질병 관련 변이에 대한 예측값을 수백 개 세포·조직 조건에서 미리 계산해 두었다. 연구자가 큰 계산을 직접 돌리지 않아도 된다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

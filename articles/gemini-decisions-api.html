@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Google, 답을 쓰지 않고 고르기만 하는 Gemini Decisions API — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Sundar Pichai · Google DeepMind · <span class="article-date">2026-11-12 Seoul</span></div>
+    <h1 class="article-title">Google, 답을 쓰지 않고 고르기만 하는 Gemini Decisions API</h1>
+    <div class="source-line">
+      원문 · <a href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener">Google 블로그</a> · <a href="https://x.com/sundarpichai/status/2120581155078729728" target="_blank" rel="noopener">Sundar Pichai X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google이 11월 11일 Gemini Decisions API를 공개했다. 새 모델 Gemini Decision 1이 돌린다.
+      </p>
+
+      <p>
+        보통 언어 모델은 답을 한 토큰씩 생성한다. 이 모델은 보기마다 확률을 매기고, 그 결과만 돌려준다.
+      </p>
+
+      <p>
+        도구 고르기, 정책 위반 검사, 모델 라우팅(질문을 어느 모델에 보낼지 정하는 일), 답변 채점 같은 일을 겨냥했다.
+      </p>
+
+      <h2>무엇을 할 수 있나</h2>
+
+      <p>
+        세 가지 형식이 있다. 예·아니오 판단, 최대 255개 보기 중 고르기, 순서가 있는 기준표로 점수 매기기다.
+      </p>
+
+      <p>
+        답마다 0에서 1 사이의 확신도가 붙는다. 확신이 낮으면 사람이나 다른 모델에게 넘기도록 코드를 짤 수 있다.
+      </p>
+
+      <p>
+        글, 이미지, 오디오, 영상, PDF를 한 입력에 섞어 넣을 수 있다. 예를 들어 통화 녹음과 고객 정보를 함께 보고 판단한다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <p>
+        한 요청에 질문 최대 1,000개, 입력 최대 256K 토큰
+      </p>
+
+      <p>
+        응답 시간: 끝에서 끝까지 150~250ms
+      </p>
+
+      <p>
+        가격: 입력 100만 토큰당 0.10달러, 출력 토큰 요금 0원
+      </p>
+
+      <p>
+        Google 공용 벤치마크 기준 Gemini 3.5 Flash-Lite보다 약 5배 저렴
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트 비용의 상당 부분은 긴 답이 아니라 짧은 판단에서 나온다. 그 판단을 일반 생성 모델로 돌리면 느리고 비싸다.
+      </p>
+
+      <p>
+        Google은 여러 평가에서 이 모델이 가장 낮은 보정 오차를 냈다고 밝혔다. 보정 오차가 낮다는 건 “80% 확신”이라고 할 때 실제로 80%쯤 맞는다는 뜻이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Google AI Studio의 Gemini API에서 바로 쓸 수 있다.
+      </p>
+
+      <p>
+        Sundar Pichai는 Google 내부 팀이 이미 이 API로 제품을 만들고 있다며, Stitch가 화면 흐름을 몇 초 만에 설계하는 영상을 함께 올렸다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

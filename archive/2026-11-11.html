@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 오늘의 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.11.11 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Google DeepMind가 AI 에이전트로 Signal 암호 프로토콜의 실제 코드를 수학으로 검증했다. 최상위 모델 Gemini 4 Carbon도 모두에게 열었다. Anthropic은 상장 투자설명회를 시작했고, SemiAnalysis는 Fable 5.2가 1등이지만 토큰을 많이 쓴다고 짚었다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">11/11</span>
+      <a href="2026-11-10.html">11/10</a>
+      <a href="2026-11-09.html">11/09</a>
+      <a href="2026-11-08.html">11/08</a>
+      <a href="2026-11-07.html">11/07</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Google DeepMind · Sundar Pichai</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/deepmind-alphaproof-code.html">DeepMind, AI 에이전트로 Signal 암호 코드를 수학으로 검증</a>
+        <span class="domain">(deepmind.google)</span>
+        <a class="ext-link" href="https://deepmind.google/blog/introducing-alphaproof-code/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind가 AlphaProof Code라는 에이전트 도구로 Signal 프로토콜의 실제 코드를 수학적으로 검증했다. Signal 프로토콜은 Signal 앱과 Google 메시지의 대화를 지키는 암호 기술이다.</li>
+        <li>Gemini 4 Carbon 에이전트가 Lean 증명을 600만 줄 넘게 썼다. 사람이 다시 본 부분은 코드의 약 1%뿐이었다.</li>
+        <li>전문가 팀이면 몇 년 걸릴 일을 4주 만에 끝냈다고 한다. 검증 결과물은 오픈소스로 공개한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 설계도가 아니라 기기에서 실제로 도는 코드까지 증명했다. AI가 보안 공격만 키우는 게 아니라 방어 쪽 증명도 크게 늘릴 수 있다는 사례다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Google DeepMind · Demis Hassabis · Varun Mohan</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/gemini-4-carbon-ga.html">Gemini 4 Carbon, 보안 방어팀에서 모두에게로</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>2주 전 보안 방어 팀에만 줬던 Gemini 4 Carbon을 이제 개발자·기업·일반 사용자 모두에게 연다.</li>
+        <li>값은 입력 100만 토큰당 2달러, 출력 10달러다. Simon Willison은 12월 1일부터 두 배로 오른다고 짚었다.</li>
+        <li>Google Antigravity에는 프롬프트 하나로 에이전트 팀을 꾸리는 /swarm 기능이 미리보기로 들어왔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 최상위 모델을 보안 쪽에 먼저 풀고 2주 뒤 넓혔다. 여러 에이전트를 한꺼번에 돌리는 기능도 같이 나왔다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Google DeepMind</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/gemini-robotics-2-5.html">Gemini Robotics 2.5, 벤츠 공장에서 부품 정리 96% 성공</a>
+        <span class="domain">(deepmind.google)</span>
+        <a class="ext-link" href="https://deepmind.google/blog/gemini-robotics-2-5-accelerates-real-world-physical-intelligence/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind가 로봇 제어 모델 Gemini Robotics 2.5를 냈다. 200개가 넘는 작업으로 시험했다.</li>
+        <li>이전보다 작업 성공률은 30~100% 높고, 속도는 20~30% 빨라졌다고 한다.</li>
+        <li>Apptronik의 휴머노이드 Apollo 2가 벤츠 생산 라인에서 부품 분류 작업을 96% 성공률로 해냈다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 실험실 데모를 넘어 실제 자동차 공장에서 시험한 결과가 나왔다. 로봇 모델이 현장 일로 넘어가는 속도를 보여 준다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/anthropic-ipo-roadshow.html">Anthropic, 상장 투자설명회 시작…주당 70~78달러</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/news/roadshow-launch" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 기업공개(IPO) 투자설명회, 이른바 로드쇼를 시작했다.</li>
+        <li>공모 주식은 8억 2,500만 주이고, 희망 가격은 주당 70~78달러다. 나스닥에 ANT라는 종목명으로 상장을 신청했다.</li>
+        <li>뉴욕타임스는 Anthropic이 최대 1조 4,000억 달러 가치를 노린다고 보도했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 프론티어 AI 랩이 처음으로 대형 상장에 나선다. 이제 모델 경쟁이 공개 시장의 실적 평가도 함께 받게 된다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Dylan Patel / SemiAnalysis</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/semianalysis-fable-gdpx.html">SemiAnalysis, Fable 5.2는 1등이지만 토큰을 많이 쓴다</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2119961447199289640" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis의 실무 과제 평가 GDPx에서 Claude Fable 5.2가 16.4%로 1위에 올랐다.</li>
+        <li>Dylan Patel은 칩 설계·소프트웨어·생물학·재료과학은 크게 좋아졌지만 금융·법률은 아니라고 짚었다.</li>
+        <li>재료과학 과제에서는 GPT-6 Astra와 점수가 비슷한데 비용은 89% 더 들고 출력 토큰은 4.3배 썼다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 벤치마크 1등과 실제 비용 효율은 다를 수 있다. 어떤 일에 어떤 모델을 쓸지 고를 때 참고할 숫자다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Mitchell Hashimoto</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/mitchellh-superlogical-trust.html">Mitchell Hashimoto, 모두가 main에 바로 푸시하는 팀</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/mitchellh/status/2120221244478083249" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Mitchell Hashimoto가 새 회사 Superlogical의 일하는 방식을 공개했다.</li>
+        <li>모두 main 브랜치에 바로 푸시하고, 코드 리뷰는 푸시 전후에 AI 도움을 받아 한다. PR은 거의 쓰지 않는다.</li>
+        <li>누구나 릴리스를 시작할 수 있고, 15분 카운트다운 동안 누구든 멈출 수 있다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 코드 리뷰를 거드는 시대에 작은 팀의 개발 절차가 어떻게 바뀌는지 보여 준다. 그는 이 모든 게 서로 믿을 때만 된다고 강조했다.</div>
+    </article>
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/openai-freelance-upwork.html">OpenAI·Upwork, AI가 프리랜서 일을 다시 묶고 있다</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/ai-effect-on-freelance-work" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI 경제연구팀이 Upwork와 함께 AI가 프리랜서 시장에 주는 영향을 분석했다.</li>
+        <li>ChatGPT에서 많이 하는 일일수록 Upwork 의뢰 비중이 줄어드는 경향이 63개 분야 중 43개에서 보였다.</li>
+        <li>AI 관련 의뢰는 여러 작업을 새롭게 묶고, 예산도 더 크고 작업 시간도 더 길었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 일자리를 단순히 대체한다는 이야기와 다른 그림이다. 일이 사라지기보다 다시 묶이고 있다는 초기 데이터다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Hard Fork · Casey Newton · NVIDIA</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/hardfork-jensen-huang-affair.html">Hard Fork, Jensen Huang 사건과 NVIDIA 이사회 조사</a>
+        <span class="domain">(nytimes.com)</span>
+        <a class="ext-link" href="https://www.nytimes.com/2026/11/10/podcasts/hardfork-jensen-huang-spy-affair.html" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Hard Fork가 Jensen Huang 관련 보도를 다룬 에피소드를 냈다. 중국 기업 스파이로 의심받는 인물과의 관계가 핵심이다.</li>
+        <li>NVIDIA 독립 이사들은 전 뉴욕 남부지검 검사장 대행 Joon H. Kim과 로펌 Wachtell에 독립 조사를 맡겼다.</li>
+        <li>Casey Newton은 이사회가 &#x27;기밀이 새지 않았다고 볼 이유가 없다&#x27;고 먼저 말해 결론을 정해 놓고 시작한다고 비판했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 세계 AI 칩 공급을 쥔 회사의 CEO 문제다. 조사 결과가 수출 규제와 국가 안보 논의로 번질 수 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Lenny&#x27;s Newsletter</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/lenny-job-market-late-2026.html">Lenny, 2026년 말 테크 채용 시장: PM은 웃고 개발자는 멈췄다</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Lenny Rachitsky가 다섯 번째 테크 채용 시장 보고서를 냈다.</li>
+        <li>PM 채용 공고는 4년 만에 가장 많고, 엔지니어 공고 증가율은 2.5%로 사실상 멈췄다.</li>
+        <li>디자이너 공고는 역대 최저이고, FDE(현장 배치 엔지니어) 공고는 1년 새 4.6배로 늘었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI가 직군별 수요를 어떻게 바꾸는지 실제 공고 숫자로 보여 준다. &#x27;AI가 PM을 대체한다&#x27;는 예상과 반대 결과다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Latent Space (AINews)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/latent-space-ainews-fable-ipo.html">Latent Space, Fable 5.2가 1위를 되찾았지만 비싸게 생각한다</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Latent Space AINews가 Fable 5.2 반응과 Anthropic 상장 로드쇼를 함께 정리했다.</li>
+        <li>토큰당 값은 20% 내렸지만, GDPx 과제당 비용은 67.16달러에서 88.15달러로 올랐다.</li>
+        <li>이전 모델은 테스트를 20개쯤 썼는데, 5.2는 수백~수천 개를 쓰고 하위 에이전트로 검증까지 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 모델이 더 꼼꼼해질수록 결과는 좋아지지만 비용도 늘어난다. 어떤 노력 수준으로 쓸지가 실무 선택이 된다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-11-11/simonw-muse-ember.html">Simon Willison, Meta의 가장 작은 모델 Muse Ember 값 비교</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Nov/10/muse-ember/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Meta가 가장 작고 효율적인 모델 Muse Ember를 냈다. 도구 호출, 코딩 보조, 긴 문서 처리처럼 에이전트가 반복하는 일을 노린다.</li>
+        <li>짧은 프롬프트 기준 값은 GPT-6 Luna, Claude Haiku 5.5와 같은 입력 0.10달러, 출력 0.50달러다.</li>
+        <li>Willison은 토큰 단가보다 과제당 비용을 보라며, Ember가 Artificial Analysis의 효율 경계선 위에 있다고 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 작고 싼 모델 경쟁이 세 회사 동일 가격까지 왔다. 이제는 과제를 끝내는 데 드는 총비용으로 갈린다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>

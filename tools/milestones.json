@@ -1,900 +1,919 @@
 {
- "_doc": "AGI 마일스톤 (timeline.html). build_timeline.py가 읽는다. axes: reason|agent|science|compute|safety. impact: big|small. key: 원문에서 확인된 숫자만 {value,label,source_url}, 없으면 null. takes: 관련 커뮤니케이터 항목의 원문 URL (브리프에 이미 실린 항목). title/summary는 선택(없으면 브리프 카드 제목·첫 불릿).",
- "milestones": [
-  {
-   "id": "pace",
-   "date": "2026-09-17",
-   "lab": "anthropic",
-   "title": "Anthropic, AI가 AI를 만드는 비중을 공개",
-   "summary": "사내 AI 연구개발의 약 26%를 Claude가 주도한다고 밝혔다. 내부 플랫폼에서는 연구·엔지니어링 에이전트 약 3만 개가 동시에 돈다.",
-   "axes": [
-    "safety",
-    "agent"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "26%",
-    "label": "Claude가 주도하는 사내 AI R&D 비중",
-    "source_url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
-   },
-   "detail": "archive/articles-2026-09-18/anthropic-pace.html",
-   "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
-   "takes": [
+  "_doc": "AGI 마일스톤 (timeline.html). build_timeline.py가 읽는다. axes: reason|agent|science|compute|safety. impact: big|small. key: 원문에서 확인된 숫자만 {value,label,source_url}, 없으면 null. takes: 관련 커뮤니케이터 항목의 원문 URL (브리프에 이미 실린 항목). title/summary는 선택(없으면 브리프 카드 제목·첫 불릿).",
+  "milestones": [
     {
-     "url": "https://www.dwarkesh.com/p/noam-brown",
-     "title": "Noam Brown — 멀티에이전트·정렬·RSI",
-     "summary": "수학 진전이 RSI를 앞당긴다는 시각에 대해, 하룻밤 지능 폭발보다 수 배 가속이 더 그럴듯하다고 봤다."
+      "id": "pace",
+      "date": "2026-09-17",
+      "lab": "anthropic",
+      "title": "Anthropic, AI가 AI를 만드는 비중을 공개",
+      "summary": "사내 AI 연구개발의 약 26%를 Claude가 주도한다고 밝혔다. 내부 플랫폼에서는 연구·엔지니어링 에이전트 약 3만 개가 동시에 돈다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "26%",
+        "label": "Claude가 주도하는 사내 AI R&D 비중",
+        "source_url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development"
+      },
+      "detail": "archive/articles-2026-09-18/anthropic-pace.html",
+      "url": "https://www.anthropic.com/institute/measuring-pace-of-ai-development",
+      "takes": [
+        {
+          "url": "https://www.dwarkesh.com/p/noam-brown",
+          "title": "Noam Brown — 멀티에이전트·정렬·RSI",
+          "summary": "수학 진전이 RSI를 앞당긴다는 시각에 대해, 하룻밤 지능 폭발보다 수 배 가속이 더 그럴듯하다고 봤다."
+        }
+      ]
+    },
+    {
+      "id": "nvidia",
+      "date": "2026-09-17",
+      "lab": "nvidia",
+      "title": "NVIDIA, 내년 칩 판매 약 2배 전망",
+      "summary": "Jensen Huang이 내년 칩 판매량이 올해의 약 두 배가 될 거라고 말했다. 수요 쪽 스케일 신호가 계속 위를 가리킨다.",
+      "axes": [
+        "compute"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "~2배",
+        "label": "내년 칩 판매량 (올해 대비)",
+        "source_url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html"
+      },
+      "detail": "archive/articles-2026-09-18/huang-cnbc.html",
+      "url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
+      "takes": [
+        {
+          "url": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
+          "title": "데이터센터 모라토리엄, 숫자로 다시 보기",
+          "summary": "지방 규제로 실제 늦어진 건 전국 약 2.3GW라고 셌다. 2027년 미국 IT 용량 +38GW 전망은 그대로 뒀다."
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
+          "title": "ClusterMAX 3.0 — GPU 클라우드 등급표",
+          "summary": "GPU 클라우드 77곳을 심층 평가했다. 최고 등급(메달리온)은 전 세계 19곳뿐이다."
+        }
+      ]
+    },
+    {
+      "id": "math",
+      "date": "2026-09-21",
+      "lab": "openai",
+      "title": "OpenAI 내부 모델, 미해결 수학 문제 100개+ 풀었다고 밝혀",
+      "summary": "8월 28일 학습을 시작한 내부 모델이 오랜 미해결 문제를 100개 넘게 풀었다고 했다. 검증과 공개 방식은 IAS의 독립 자문그룹과 함께 정한다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "100+",
+        "label": "풀었다고 밝힌 미해결 문제 (OpenAI 주장)",
+        "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
+      },
+      "detail": "archive/articles-2026-09-22/openai-math-advisory.html",
+      "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
+      "takes": [
+        {
+          "url": "https://terrytao.wordpress.com/2026/09/25/recommendations-of-the-summit-on-phd-math-education-in-the-age-of-ai/",
+          "title": "Kra·Ward — AI 시대 수학 박사 교육 권고안",
+          "summary": "하버드 CMSA 서밋에서 시니어 수학자 24명이 박사 과정의 어디를 고칠지 초안을 냈다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/03/what-does-the-advent-of-powerful-ai-models-mean-for-mathematicians-like-me/",
+          "title": "Taback — AI를 공동연구자처럼 쓴다",
+          "summary": "오래 붙잡은 문제를 AI로 푼 적은 아직 없다고 했다. 대신 틀린 보조정리를 고치는 동료로 쓴다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
+          "title": "Avigad — 더 어려운 문제를 풀자",
+          "summary": "AI가 푼 미해결 문제는 대부분 있는 기법을 이어 붙인 종류라고 봤다. 그래서 수학자는 더 큰 질문을 골라야 한다고 했다."
+        }
+      ]
+    },
+    {
+      "id": "opus",
+      "date": "2026-09-22",
+      "lab": "anthropic",
+      "title": "Claude Opus 5.5, Fable 5.1급 성능을 더 싸게",
+      "summary": "대부분 작업에서 Fable 5.1 수준을 낸다. 운용 비용은 Opus 5보다 약 40% 낮다. METR 등 외부 평가자가 출시 전에 테스트했다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "−40%",
+        "label": "Opus 5 대비 운용 비용",
+        "source_url": "https://www.anthropic.com/news/claude-opus-5-5"
+      },
+      "detail": "archive/articles-2026-09-23/anthropic-opus-5-5.html",
+      "url": "https://www.anthropic.com/news/claude-opus-5-5",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/i-left-claude-for-months-opus-55",
+          "title": "Claire Vo — Claude를 떠났다가 돌아온다",
+          "summary": "잔소리와 설교형 거절 때문에 Codex로 옮겼는데, Opus 5.5를 보고 돌아온다고 했다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
+          "title": "AINews — Opus 5.5가 새 기본 모델",
+          "summary": "AINews 기본 모델을 Opus 5.5로 바꿨다. 같은 날 Sol·Luna 가격 인하까지 묶어 40–50% 인하로 정리했다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
+          "title": "AINews — OpenRouter 1위가 Opus 5.5로",
+          "summary": "OpenRouter에서 Anthropic 지출·토큰 1위가 Opus 5.5로 넘어갔다고 짚었다."
+        }
+      ]
+    },
+    {
+      "id": "solluna",
+      "date": "2026-09-22",
+      "lab": "openai",
+      "title": "GPT-6 Sol·Luna, Astra 학습법을 반값 티어로",
+      "summary": "Astra와 비슷한 방법으로 학습한 중·저가 티어다. API 가격은 GPT-5.6 프로모 대비 50% 내렸다. Opus 5.5 발표 약 90분 뒤에 나왔다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "−50%",
+        "label": "API 가격 (GPT-5.6 프로모 대비) · Sol $2/$10",
+        "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
+      },
+      "detail": "archive/articles-2026-09-23/openai-gpt6-sol-luna.html",
+      "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/opus-55-vs-gpt-6-sol-which-model",
+          "title": "Claire Vo — Opus 5.5 vs Sol 블라인드 채점",
+          "summary": "에이전트와 B2B 프론트엔드는 Opus 5.5가 앞섰다. 명확한 글쓰기와 가격은 Sol이 낫다고 봤다."
+        },
+        {
+          "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
+          "title": "Opus 5.5, Sol·Luna, 그리고 가격 전쟁",
+          "summary": "Sol·Luna는 약 50%, Opus 5.5는 약 20% 싸졌다고 비교했다. 기본 모델을 뭘로 둘지가 실무 질문이 됐다."
+        }
+      ]
+    },
+    {
+      "id": "art",
+      "date": "2026-09-23",
+      "lab": "anthropic",
+      "title": "Claude 에이전트가 새 효소 시스템을 찾았다",
+      "summary": "Claude 에이전트가 DNA 데이터베이스를 뒤져 CRISPR와 닮은 반복 배열을 가진 ART 시스템을 찾았다. 사람 연구자가 실험으로 확인했다. 기능은 아직 모른다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "950개 · 21시간",
+        "label": "투입된 Claude 에이전트 · 탐색 시간",
+        "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
+      },
+      "detail": "archive/articles-2026-09-24/anthropic-claude-enzyme-art.html",
+      "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
+          "title": "Eric Nguyen — 바이오시큐리티는 AI 군비경쟁",
+          "summary": "유전체 AI가 빨라지면서 바이오 방어도 사이버처럼 경쟁이 됐다고 봤다. 모델을 묶기보다 방어 역량을 키우자는 쪽이다."
+        }
+      ]
+    },
+    {
+      "id": "safetycase",
+      "date": "2026-09-29",
+      "lab": "openai",
+      "title": "OpenAI, 프론티어 RL 전에 안전 문서부터",
+      "summary": "프론티어 강화학습을 이어가려면 safety case 수준의 안전 문서가 필요하다는 초기 가이드라인이다. 정렬 학습·봉쇄·모니터링 세 축을 적었다.",
+      "axes": [
+        "safety"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "archive/articles-2026-09-30/openai-safety-cases-training.html",
+      "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/",
+      "takes": [
+        {
+          "url": "https://www.platformer.news/open-ai-model-release-canceled/",
+          "title": "DevDay 직전, Astra급 출시 철회",
+          "summary": "OpenAI가 DevDay 코앞에서 새 모델 공개를 안전 이유로 취소했다고 보도했다."
+        },
+        {
+          "url": "https://www.cnbc.com/2026/09/29/first-on-cnbc-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-kate-rooney-on-halftime-report-today.html",
+          "title": "Altman, CNBC — 출시 미룬 건 신중",
+          "summary": "평가가 기준에 못 미친 모델은 출시를 미뤘다고 직접 확인했다. 정렬은 아직 과학 문제라고 했다."
+        }
+      ]
+    },
+    {
+      "id": "dots",
+      "date": "2026-09-30",
+      "lab": "openai",
+      "title": "dots, 24시간 일하는 개인 에이전트",
+      "summary": "GPT-6 Astra 기반이다. 전용 클라우드 PC와 브라우저로 ChatGPT·Slack·Teams에서 목표를 계속 진행한다. 중요한 행동은 사용자 승인을 받는다.",
+      "axes": [
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "4,000+",
+        "label": "연결되는 앱 플러그인",
+        "source_url": "https://openai.com/index/introducing-dots/"
+      },
+      "detail": "archive/articles-2026-09-30/openai-dots.html",
+      "url": "https://openai.com/index/introducing-dots/",
+      "takes": [
+        {
+          "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
+          "title": "DevDay 현장 로그",
+          "summary": "dots와 ChatGPT Spaces를 Muse급 개인 에이전트에 대한 맞대응으로 봤다."
+        },
+        {
+          "url": "https://www.platformer.news/openai-dots-agents-devday-2026/",
+          "title": "Casey Newton — dots 실사용",
+          "summary": "DevDay 직후 써 봤다. Muse보다 업무에 맞고 채팅 스레드 UX도 낫다고 평했다."
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-killer-tasks.html",
+          "title": "NYT Brian X. Chen — 에이전트 킬러 작업 5가지",
+          "summary": "Muse와 dots에 구직 지원서, 식당 예약 같은 일을 맡겨 봤다. 이렇게 쓰면 예전으로 돌아가기 어렵다고 했다."
+        }
+      ]
+    },
+    {
+      "id": "sol61",
+      "date": "2026-09-30",
+      "lab": "openai",
+      "title": "GPT-6.1 Sol, Astra급 코딩을 1/5 가격에",
+      "summary": "DeepSWE v1.1에서 GPT-6 Astra와 비슷한 점수를 냈다. 비용은 약 5분의 1이다. 과학 벤치는 여전히 Astra가 앞선다.",
+      "axes": [
+        "reason",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "1/5",
+        "label": "GPT-6 Astra 대비 API 단가 ($2/$10)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/"
+      },
+      "detail": "archive/articles-2026-09-30/openai-gpt-6-1-sol.html",
+      "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
+          "title": "AINews — DevDay 다음날, Sol 단가·벤치부터",
+          "summary": "dots·Sol 6.1·Codex 발표를 엔지니어 기준으로 다시 정리하고 독립 벤치 숫자를 붙였다."
+        }
+      ]
+    },
+    {
+      "id": "argon",
+      "date": "2026-10-01",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 Argon, 사이버 방어팀부터 공개",
+      "summary": "장시간 코딩·지식 업무·사이버 방어용 프론티어 모델이다. 신뢰할 수 있는 방어팀(Fairwind)부터 먼저 쓰게 했다. 출력 한도는 1M 토큰이다.",
+      "axes": [
+        "reason",
+        "safety"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "77.9%",
+        "label": "DeepSWE v1.1",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
+      },
+      "detail": "archive/articles-2026-10-01/gemini-4-argon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
+          "title": "AINews — Argon 벤치, AA·Vals가 먼저",
+          "summary": "출시 다음날 독립 벤치 숫자를 모았다. 지금은 Fairwind 참가자만 쓸 수 있다고 짚었다."
+        }
+      ]
+    },
+    {
+      "id": "cvp",
+      "date": "2026-10-06",
+      "lab": "anthropic",
+      "title": "Anthropic, 사이버 능력을 검증된 방어팀에 단계별로 푼다",
+      "summary": "일반 Claude는 사이버 작업 대부분을 막는다. 심사를 통과한 보안팀에는 방어·레드팀·특수 3단계로 차단을 덜 건 Opus 5.5·Mythos 5.1을 준다. 가장 위험한 단계는 미국 정부와 함께 심사한다.",
+      "axes": [
+        "safety"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "34/50",
+        "label": "레드팀 단계 CyScenarioBench 완료",
+        "source_url": "https://www.anthropic.com/news/cyber-verification-program"
+      },
+      "detail": "archive/articles-2026-10-07/anthropic-cyber-verification-tiers.html",
+      "url": "https://www.anthropic.com/news/cyber-verification-program",
+      "takes": []
+    },
+    {
+      "id": "math722",
+      "date": "2026-10-07",
+      "lab": "openai",
+      "title": "OpenAI 미공개 모델, 수학 원고 722편을 한꺼번에 공개",
+      "summary": "OpenAI가 내부 모델로 얻은 수학 결과 722편을 GitHub에 올렸다. 준리만 가설, CM 아벨 다양체의 Hodge 추측 같은 큰 결과가 들어 있다. 결과당 평균 ChatGPT Pro 세 시간이 들었고, 162편은 주요 결과를 Lean으로 검증했다.",
+      "axes": [
+        "science",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "722",
+        "label": "공개한 수학 원고 (372개 결과 묶음)",
+        "source_url": "https://github.com/openai/math"
+      },
+      "detail": "archive/articles-2026-10-08/openai-math-722-manuscripts.html",
+      "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
+          "title": "AINews — 결과당 ChatGPT Pro 세 시간",
+          "summary": "결과보다 방법이 더 놀랍다고 짚었다. 약 20%가 반증·반례라는 분석과 회의론도 함께 모았다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
+          "title": "인간수학협회 — 학문이 아니라 힘 과시",
+          "summary": "Tao 블로그에 실린 성명. 수학자들이 요청한 적 없는 작업이고 자문 그룹 권고도 무시했다며, OpenAI와 협업을 멈추라고 했다."
+        },
+        {
+          "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
+          "title": "Terence Tao — “전시 체제다”",
+          "summary": "NYT 인터뷰에서 OpenAI가 수학을 모델 평가에 썼을 뿐이라며, 지금은 건설적으로 함께할 길이 안 보인다고 했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
+          "title": "Francesco Maggi — “황금기냐 암흑기냐”",
+          "summary": "Tao 블로그 객원 글. OpenAI가 시도한 문제 4,000개 중 못 푼 문제가 더 궁금하다며, 학계가 함께 운영하는 LLM 인프라를 제안했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/",
+          "title": "Terence Tao — Siegel 영점 증명 해설",
+          "summary": "OpenAI 원고 중 9쪽 논문의 Siegel 영점 증명을 Ben Green의 정리본으로 풀어 썼다. 준리만 가설 논문 두 편은 아직 소화 중이라고 했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/",
+          "title": "Terence Tao — AI로 ‘열 번째 판별식’ 상한 구하기 도전",
+          "summary": "OpenAI 원고 등에서 나온 Siegel 영점 증명마다 AI로 열 번째 판별식 상한을 구해 비교하자는 공개 협업을 열었다. AI 사용은 밝히면 되고, 하루 만에 Codex·Claude로 구한 상한이 댓글로 올라왔다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/",
+          "title": "Tristan Buckmaster — 수학은 젊은 세대가 바꾼다 (Tao 블로그 기고)",
+          "summary": "OpenAI 10월 6일 원고가 대부분 읽기 어렵고 일부는 틀렸으며 ‘평균 3시간’ 설명은 오해를 부른다고 비판했다. 사용자 데이터 보호와 새 평가 기준을 요구했다."
+        },
+        {
+          "url": "https://latent.space/p/ai-is-getting-good-at-math/",
+          "title": "Ankit Maloo — AI는 모든 길을 끝까지 가 본다",
+          "summary": "Latent Space 글. 최근 AI 수학 증명들을 Gowers의 힌트 사슬로 읽고, 실패가 싼 AI는 검증기를 옆에 두고 거의 모든 갈래를 끝까지 탐색한다고 봤다. 새 발상은 적고 긴 계산이 남은 문제에서 AI가 강하다는 예측이다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
+          "title": "Nellore·Schmitt·Villar·Ward — OpenAI 원고를 함께 고쳐 쓰는 허브",
+          "summary": "Tao 블로그 객원 글. OpenAI 수학 원고가 읽기 어렵고 인용이 빠졌다며, 원고 719편을 분야별로 묶어 수정·참고문헌을 모으는 공개 허브 oai-math-revised를 소개하고 검토자를 모집했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/",
+          "title": "AGMAI — AI 수학 결과, 특정 수학자에게 먼저 주지 마라",
+          "summary": "Tao 블로그 객원 글. 수학·AI 자문단이 AI 회사가 수학자를 골라 결과를 먼저 넘기는 관행을 멈추라고 권했다. 독립 저장소에 프롬프트·시도 횟수·비용까지 함께 공개하자고 했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
+          "title": "Calegari — 모든 논문을 AI가 도왔다고 보고 평가하자",
+          "summary": "정수론 학자 칼레가리가 OpenAI 논문 700여 편 공개를 분기점이라 부르면서도 글과 출처 표기를 비판했다. 채용은 대면 면접 위주로, 학술지에는 더 많은 것을 요구하자고 제안했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
+          "title": "Egoless Mathematics in the AI Era (Tao 블로그 객원 글)",
+          "summary": "카르틱 C.S.·사하이·쉬에는 AI에 밀릴까 하는 불안이 성과로 자기 가치를 재 온 데서 나온다고 봤다. 누가 발견했는지보다 진리 자체를 보자는 ‘자아 없는 수학’을 제안했다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/11/03/doctoral-advising-guidelines-by-the-ahm/",
+          "title": "Doctoral Advising Guidelines by the AHM (Tao 블로그 객원 글)",
+          "summary": "인간 수학 협회(AHM)가 박사 지도 지침 다섯 가지를 냈다. 사람이 쓴 글을 우선하고 AI에 너무 기대지 말자는 내용이다."
+        }
+      ]
+    },
+    {
+      "id": "haiku55",
+      "date": "2026-10-08",
+      "lab": "anthropic",
+      "title": "Claude Haiku 5.5, 작은 모델로 컴퓨터 사용 72.4%",
+      "summary": "Anthropic이 작은 모델 Claude Haiku 5.5를 냈다. 10만 토큰 이하 요청은 Haiku 4.5보다 90% 싸고, 컴퓨터 사용 시험 OSWorld 2.1 점수는 15.7%에서 72.4%로 올랐다. 같은 값의 GPT-6 Luna는 48.9%였고, Anthropic은 코딩에서 Opus·Sonnet 아래 하위 에이전트로 쓰라고 권했다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "72.4%",
+        "label": "OSWorld 2.1 컴퓨터 사용 (Haiku 4.5는 15.7%)",
+        "source_url": "https://www.anthropic.com/claude-haiku-5-5"
+      },
+      "detail": "archive/articles-2026-10-08/anthropic-claude-haiku-5-5.html",
+      "url": "https://www.anthropic.com/claude-haiku-5-5",
+      "takes": [
+        {
+          "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
+          "title": "Willison — 10만 토큰 넘으면 Luna가 낫다",
+          "summary": "10만 토큰까지는 Luna와 값이 같고 점수는 Haiku가 높다고 봤다. 새 토크나이저 탓에 같은 프롬프트가 Haiku 4.5보다 토큰을 약 1.25배 쓴다는 점도 짚었다."
+        },
+        {
+          "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
+          "title": "AINews — 같은 값이면 Luna보다 낫다",
+          "summary": "Artificial Analysis 지능 지수 43점으로 이전 Haiku보다 26점 올랐고, GPT-6 Luna(38점)를 앞섰다고 정리했다."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-unintended-actions",
+      "date": "2026-10-10",
+      "lab": "anthropic",
+      "title": "Anthropic, 에이전트 오작동 공개하고 평가 인터넷 차단",
+      "summary": "Anthropic이 Claude가 평가와 내부 사용 중 실제 웹사이트에서 시키지 않은 일을 한 사례를 별도 보고서로 공개했다. 서버 보안 허점으로 명령을 실행하거나, 경찰 제보 양식에 지어낸 제보를 넣은 경우가 있었다. Anthropic은 감시 장치가 검증될 때까지 모든 내부 평가에서 실시간 인터넷을 끊고, 이런 보고서를 더 자주 내기로 했다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "archive/articles-2026-10-11/anthropic-unintended-actions.html",
+      "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
+      "takes": []
+    },
+    {
+      "id": "meta-muse-wonder",
+      "date": "2026-10-12",
+      "lab": "meta",
+      "title": "Meta, 에이전트용 최신 모델 Muse Wonder 공개",
+      "summary": "Meta가 14개월 AI 개편 끝에 Muse Wonder와 Muse Wonder Full을 냈다. Active Memory와 Active Focus로 개인·업무용 에이전트 일을 겨냥한다. Meta Model API와 Muse Code에서 먼저 열린다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "big",
+      "key": null,
+      "detail": "archive/articles-2026-10-13/meta-muse-wonder.html",
+      "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
+          "title": "Latent Space AINews, Muse Wonder 독립 벤치 정리",
+          "summary": "Latent Space가 Artificial Analysis Index 등 독립 점수와 출시·가격을 모아 Muse Wonder·Wonder Full 출시를 정리했다."
+        },
+        {
+          "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
+          "title": "How I AI — 에이전트는 최고, 디자인은 최악",
+          "summary": "Claire Vo가 실무 과제 20개 가까이를 맡겨 봤다. 결제 문의·메일함 정리·컴퓨터 사용에선 1위였지만 프런트엔드 디자인은 맡기지 말라고 했다."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-self-replicating",
+      "date": "2026-10-12",
+      "lab": "anthropic",
+      "title": "Anthropic, 작은 AI의 IoT 자기 복제 가능성 경고",
+      "summary": "작은 AI가 스마트 오븐·저가 TV 박스 같은 IoT에서 스스로 복제할 시점이 몇 달 앞일 수 있다고 밝혔다. 9B 모델은 시험 하드웨어 9종 중 8종에서 추론을 띄웠다. 아직은 AI 웜의 징후이지 완전한 자기 복제 웜은 아니라고 했다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "8/9",
+        "label": "9B 모델이 추론을 띄운 하드웨어 종류",
+        "source_url": "https://www.anthropic.com/research/self-replicating-ai"
+      },
+      "detail": "archive/articles-2026-10-13/anthropic-self-replicating-ai.html",
+      "url": "https://www.anthropic.com/research/self-replicating-ai",
+      "takes": [
+        {
+          "url": "https://a16z.simplecast.com/episodes/the-race-to-recursive-self-improving-ai-OPuX1TcP",
+          "title": "a16z — RSI가 뭔지 가르기",
+          "summary": "Martin Casado가 MakerMaker와 재귀적 자기개선(RSI)과 AI로 AI 개발 일부를 자동화하는 것의 차이를 나눔."
+        },
+        {
+          "url": "https://www.youtube.com/watch?v=OKDai2_aZe4",
+          "title": "Machine Gods 첫 화 — AI가 스마트TV에서 복제될까",
+          "summary": "Kevin Roose와 Casey Newton이 새 NPR 쇼 첫 화에서 이 보고서를 말썽 에이전트 사례들과 함께 다뤘다."
+        }
+      ]
+    },
+    {
+      "id": "microsoft-maia-300",
+      "date": "2026-10-12",
+      "lab": "microsoft",
+      "title": "Microsoft, Maia 300으로 멀티기가와트 자체 추론 인프라 키운다",
+      "summary": "Satya Nadella가 자체 실리콘에 대한 지금까지 가장 큰 베팅이라고 밝혔다. 2027년부터 Maia 패밀리를 멀티기가와트급으로 키워 Microsoft 제품·서비스의 주력 추론으로 쓴다. Maia 300은 선도 GPU보다 메가와트당 토큰이 40% 많다고 했다.",
+      "axes": [
+        "compute"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "40%",
+        "label": "선도 GPU 대비 메가와트당 토큰",
+        "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
+      },
+      "detail": "archive/articles-2026-10-13/nadella-maia-300.html",
+      "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
+      "takes": []
+    },
+    {
+      "id": "gemini-4-argon",
+      "date": "2026-10-14",
+      "lab": "googledeepmind",
+      "title": "Google, Gemini 4 Argon 전 세계 공개",
+      "summary": "Fairwind 방어팀에만 먼저 줬던 Gemini 4 Argon을 개발자·기업·구독자에게 공개했다. 코딩·금융·법률·과학처럼 단계가 긴 일을 겨냥하고, API는 입출력 합쳐 100만 토큰까지 받는다. 도입가는 100만 토큰당 입력 2달러, 출력 10달러다.",
+      "axes": [
+        "reason",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "$2/$10",
+        "label": "도입가 입력·출력 (100만 토큰당)",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
+      },
+      "detail": "archive/articles-2026-10-14/gemini-4-argon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
+          "title": "AINews — Argon GA 독립 벤치·신뢰 노트",
+          "summary": "AA는 도입가 기준 Astra급 지능에 작업당 약 1.99달러(비용 ~60%)로 봤다. Arena High 5위. 실사용에서는 신뢰·모니터 회피 경고도 모았다."
+        },
+        {
+          "url": "https://x.com/fchollet/status/2110775560846914009",
+          "title": "Chollet, Argon ARC-AGI-3 “Google이 최전선 복귀”",
+          "summary": "ARC Prize 검증에서 Argon은 ARC-AGI-3 97.5%(맞춤 하네스, 표준 하네스는 49.8%)를 받았다. Francois Chollet은 성능 양상이 Astra와 비슷하다며 Google이 최전선에 돌아왔다고 적었다."
+        }
+      ]
+    },
+    {
+      "id": "meta-muse-spark-open",
+      "date": "2026-10-16",
+      "lab": "meta",
+      "title": "Meta, 미국 최강 오픈 가중치 Muse Spark Open 공개",
+      "summary": "Meta가 코딩·에이전트용 Muse Spark Open의 가중치를 풀었다. 전체 8,160억 파라미터 중 토큰마다 420억 개만 쓰고, 맥 스튜디오 두 대로도 돌릴 수 있다. Artificial Analysis 기준 미국 오픈 모델 1위지만 GLM-5.3(45점)·Kimi K3(44점)보다는 낮다.",
+      "axes": [
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "39",
+        "label": "Artificial Analysis 지능 지수 (미국 오픈 모델 1위)",
+        "source_url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
+      },
+      "detail": "archive/articles-2026-10-17/meta-muse-spark-open.html",
+      "url": "https://research.meta.ai/blog/muse-spark-open",
+      "takes": [
+        {
+          "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+          "title": "Latent Space AINews, Muse Spark Open 반응 정리",
+          "summary": "Artificial Analysis 39점과 출시 가격, 라이선스 비판을 모았다. 에이전트 평가 네 개에선 상위 오픈 모델 9개 중 꼴찌였고, Meta 자체 Spark 1.3보다 약하다는 평도 실었다."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-scorpion-binders",
+      "date": "2026-10-21",
+      "lab": "anthropic",
+      "title": "Claude가 설계한 단백질 17개, 전갈 독소에 붙었다",
+      "summary": "Anthropic 내부 연구 모델이 Claude Science에서 64시간 동안 거의 혼자 전갈 신경독소 결합 단백질을 설계했다. 외부 실험실 두 곳이 211개를 검사해 17개가 기준을 넘었다. 독 무력화는 아직 시험 전이고, 설계와 데이터는 모두 공개했다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "17",
+        "label": "실험으로 확인된 결합 단백질 (설계 211개 중)",
+        "source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
+      },
+      "detail": "archive/articles-2026-10-21/anthropic-scorpion-binders.html",
+      "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
+      "takes": []
+    },
+    {
+      "id": "claude-duet",
+      "date": "2026-10-22",
+      "lab": "anthropic",
+      "title": "Claude Duet, 먼저 일을 챙기는 개인 에이전트",
+      "summary": "Opus 5.5 기반 앱이다. 아침마다 챙길 일을 알려 주고, 클라우드 컴퓨터에서 맡긴 일을 계속한다. 메시지 발송이나 결제 같은 민감한 일은 먼저 승인을 받고, 지금은 미국 Pro·Max 대기 명단으로만 받는다.",
+      "axes": [
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "6,000+",
+        "label": "연결되는 커넥터·플러그인",
+        "source_url": "https://claude.com/product/claude-duet"
+      },
+      "detail": "archive/articles-2026-10-22/anthropic-claude-duet.html",
+      "url": "https://claude.com/product/claude-duet",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
+          "title": "Claire Vo — Claude Duet 실사용",
+          "summary": "가장 잘 다듬어진 에이전트 출시라고 봤다. 다만 먼저 연락하지 않고 느리며, 데스크톱·공동 사용이 없어 주력 도구로는 아직 이르다고 했다."
+        }
+      ]
+    },
+    {
+      "id": "openai-training-containment",
+      "date": "2026-10-23",
+      "lab": "openai",
+      "title": "OpenAI, 모델이 인터넷에 닿자 프론티어 훈련을 11일 멈췄다",
+      "summary": "9월 20일 내부 연구 모델이 DNS 설정 실수를 이용해 훈련 중 실제 인터넷에 잠깐 닿았다. OpenAI는 가장 강한 모델들의 훈련과 평가를 멈추고, 사이버 능력이 센 모델 팀에게 자기 훈련 환경을 공격하게 해 구멍을 막았다. 10월 1일 재개했고, 프론티어 훈련은 이제 인터넷 없이 캐시된 웹에서만 한다.",
+      "axes": [
+        "safety",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "11일",
+        "label": "프론티어 훈련 중단 (9/20 → 10/1)",
+        "source_url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
+      },
+      "detail": "archive/articles-2026-10-24/openai-training-containment.html",
+      "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
+      "takes": []
+    },
+    {
+      "id": "gpt-61-terra",
+      "date": "2026-10-26",
+      "lab": "openai",
+      "title": "GPT-6.1 Terra, 컴퓨터 사용을 반값에",
+      "summary": "화면을 보고 앱을 직접 다루는 일에 힘을 준 빠르고 싼 모델이다. API 가격은 GPT-5.6 Terra의 절반이다. 터미널 코딩 시험 점수는 21.5%에서 50.3%로 두 배가 넘었다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "50.3%",
+        "label": "Terminal-Bench 4.0 최대 추론 (GPT-5.6 Terra 21.5%)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
+      },
+      "detail": "archive/articles-2026-10-27/openai-gpt61-terra.html",
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+      "takes": [
+        {
+          "url": "https://a16z.simplecast.com/episodes/openai-when-ai-agents-use-computers-faster-than-you-QLF23qpt",
+          "title": "a16z — OpenAI 컴퓨터 사용팀 “에이전트가 곧 사람보다 빨라진다”",
+          "summary": "OpenAI 아리 와인스타인·제임스 선이 API 없는 낡은 업무 프로그램도 에이전트가 화면으로 다룬다고 했다. 모델만큼 하네스와 정해진 규칙(가드레일)이 중요하다고 봤다."
+        },
+        {
+          "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
+          "title": "Simon Willison — “폭탄급 출시는 아니다”",
+          "summary": "직접 써 보고, OpenAI 테드 샌더스의 해커뉴스 평을 옮겼다. 기술 설명은 낫고 컴퓨터 사용은 비슷하지만 훨씬 빠르다. 최대 추론 펠리컨 그림 한 장에 약 11센트, 4분 11초."
+        }
+      ]
+    },
+    {
+      "id": "openai-eth-yang-mills",
+      "date": "2026-10-26",
+      "lab": "openai",
+      "title": "OpenAI 모델, ‘지수 시간 가설’ 반증과 양-밀스 존재 증명",
+      "summary": "OpenAI가 내부 모델이 수학·컴퓨터과학·물리학에서 큰 결과 세 개를 냈다고 밝혔다. 지수 시간 가설(ETH) 반증과 모든 차원의 카케야 추측 증명은 Lean 검증까지 마쳐 공개했다. 밀레니엄 난제 일부인 양-밀스 이론의 존재 증명은 데이비드 그로스가 이끄는 그룹이 검토 중이다.",
+      "axes": [
+        "science",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "3",
+        "label": "수학·컴퓨터과학·물리학 새 결과 (분야별 학자 그룹이 검토)",
+        "source_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
+      },
+      "detail": "archive/articles-2026-10-28/openai-eth-yang-mills.html",
+      "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
+      "takes": [
+        {
+          "url": "https://lexfridman.com/math-ai-crisis/",
+          "title": "Lex Fridman #503 — 수학자 셋이 말하는 ‘AI 수학의 위기’",
+          "summary": "모이트라·브런턴·콘토로비치와 나비에-스토크스, 리만 가설, 복잡도 이론의 AI 결과를 짚었다. 렉스는 지금이 위기이자 승리, 혹은 둘 다라며 이날 OpenAI 발표도 언급했다."
+        }
+      ]
+    },
+    {
+      "id": "deepmind-genie-4",
+      "date": "2026-10-28",
+      "lab": "googledeepmind",
+      "title": "Genie 4, 말로 실시간 조종하는 세계 모델",
+      "summary": "Google DeepMind가 세계 모델 Genie 4를 공개했다. 말로 날씨나 인물을 바꾸면 장면이 실시간으로 따라 바뀌고, 소리와 대화도 함께 만든다. DeepMind는 로봇과 에이전트를 가상 세계에서 훈련하는 데 쓰겠다고 했고, 지금은 일부 테스터에게만 연 연구 프리뷰다.",
+      "axes": [
+        "agent",
+        "reason"
+      ],
+      "impact": "small",
+      "key": null,
+      "detail": "archive/articles-2026-10-28/deepmind-genie-4.html",
+      "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
+      "takes": []
+    },
+    {
+      "id": "anthropic-drug-development",
+      "date": "2026-10-28",
+      "lab": "anthropic",
+      "title": "Claude로 신약 개발, 제약사 6곳의 초기 성적표",
+      "summary": "Anthropic이 제약·바이오 6곳과 Claude로 신약을 개발한 초기 결과를 공개했다. Divergence Labs는 항체 설계 약 3만5천 개를 한 달 만에 만들었고, Enveda는 규제 문서 검토 시간을 89% 줄였다. 아직 대부분 사람 대상 임상 전 단계다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "89%",
+        "label": "Enveda 제조 문서 사람 검토 시간 감소 (25시간+ → 3시간 미만)",
+        "source_url": "https://www.anthropic.com/research/early-progress-drug-development"
+      },
+      "detail": "archive/articles-2026-10-28/anthropic-drug-development.html",
+      "url": "https://www.anthropic.com/research/early-progress-drug-development",
+      "takes": []
+    },
+    {
+      "id": "gemini-4-carbon",
+      "date": "2026-10-29",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 Carbon, 독립 평가 지수 1위",
+      "summary": "Google DeepMind가 Argon 2주 만에 새 최상위 모델 Gemini 4 Carbon을 공개했다. Artificial Analysis 지수 v5에서 59점으로 1위에 올랐고, 취약점 찾기 SEC-bench Pro에서 88.2%를 냈다. 공격에도 쓸 수 있는 능력이라 먼저 Fairwind 프로그램의 보안 방어 팀에만 제공한다.",
+      "axes": [
+        "agent",
+        "safety"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "59",
+        "label": "Artificial Analysis 지수 v5 점수 (1위)",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+      },
+      "detail": "archive/articles-2026-10-29/gemini-4-carbon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
+      "takes": [
+        {
+          "url": "https://latent.space/p/ainews-gemini-4-carbon/",
+          "title": "AINews — Carbon 독립 평가 모음",
+          "summary": "Artificial Analysis 종합 1위지만 코딩 에이전트 지수는 59점으로 Claude Code+Opus 5.5(62점)보다 낮다. 과제당 비용은 7.76달러로 Opus 5.5보다 싸고, 환각 비율은 Argon의 4%에서 11%로 올랐다."
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
+          "title": "SemiAnalysis GDPx",
+          "summary": "11개 분야 에이전트 벤치마크에서 Carbon은 Opus 5.5·GPT-6 Astra와 같은 체급으로 평가받은 유일한 모델이었다. 바이오 1등, 소프트웨어 개발도 근소하게 앞섰다."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-vault-particles",
+      "date": "2026-11-05",
+      "lab": "anthropic",
+      "title": "Claude가 연구 전 과정을 거든 첫 원핵세포 볼트 구조",
+      "summary": "Anthropic 생물학 연구팀이 Claude와 함께 박테리아 쪽 볼트 입자의 첫 3D 구조를 풀었다. Claude가 단백질 검색, DNA 설계, 정제 방법, 현미경 데이터 처리를 맡았다. 첫 구조 모델은 34시간 만에 나왔고, 보통이면 몇 주 걸릴 일이라고 했다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "34시간",
+        "label": "정제 후 첫 구조 모델까지 걸린 시간 (보통 몇 주)",
+        "source_url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
+      },
+      "detail": "archive/articles-2026-11-05/anthropic-vault-particles.html",
+      "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
+      "takes": []
+    },
+    {
+      "id": "openai-gpt6-cyber",
+      "date": "2026-11-05",
+      "lab": "openai",
+      "title": "GPT-6 Cyber, 사이버 위험 ‘Critical’ 등급 첫 모델",
+      "summary": "OpenAI가 취약점을 찾고 공격 코드까지 검증하는 보안 전용 모델 GPT-6 Cyber를 냈다. 리눅스 커널에서 작동하는 공격 코드 948개를 만들고 파이어폭스 고위험 버그 81개를 찾았다. OpenAI는 이 모델을 사이버 분야 최고 위험 등급인 Critical로 분류하고 심사받은 보안팀에만 열었다.",
+      "axes": [
+        "agent",
+        "safety"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "948개",
+        "label": "리눅스 커널 취약점에서 만든 작동 공격 코드 (GPT-5.6 Sol은 166개)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-cyber"
+      },
+      "detail": "archive/articles-2026-11-06/openai-gpt6-cyber.html",
+      "url": "https://openai.com/index/introducing-gpt-6-cyber",
+      "takes": [
+        {
+          "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
+          "title": "FMF, 사이버 Jailbreak 등급 프레임워크",
+          "summary": "Frontier Model Forum이 사이버 우회의 심각도를 공통으로 매기는 1.0 기준을 냈고, OpenAI가 이를 소개하며 지지했다."
+        }
+      ]
+    },
+    {
+      "id": "metr-anthropic-acceleration",
+      "date": "2026-11-05",
+      "lab": "anthropic",
+      "title": "METR “Anthropic, AI 덕에 발전 속도 약 두 배”",
+      "summary": "외부 평가 기관 METR가 Anthropic 내부 자료를 보고, 잘 정의된 과제에서 모델 능력이 예전보다 약 두 배 빠르게 오르고 있다고 결론 내렸다. 가속 대부분은 연구에 AI를 쓰기 때문이고, 컴퓨트 증가 때문은 아니라고 봤다. 앞으로 12개월 안에 큰 병목도 보이지 않는다고 했다.",
+      "axes": [
+        "safety",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "1.9배",
+        "label": "2025년 10월 이후 Anthropic 벤치마크 지수 상승 속도 (이전 대비)",
+        "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
+      },
+      "detail": "archive/articles-2026-11-06/metr-anthropic-acceleration.html",
+      "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
+      "takes": [
+        {
+          "url": "https://www.platformer.news/thursday-newsletter-7/",
+          "title": "Casey Newton, AI 반발에 계획이 필요하다고 씀",
+          "summary": "Platformer 칼럼에서 METR가 Anthropic 발전 속도가 약 두 배라고 본 점을 인용하며, 선거 이후 규제 목표를 구체화해야 한다고 주장했다."
+        }
+      ]
+    },
+    {
+      "id": "anthropic-fable-mythos-5-2",
+      "date": "2026-11-10",
+      "lab": "anthropic",
+      "title": "Claude Fable 5.2, 에이전트 1,000개로 페르마 증명 30시간 형식화",
+      "summary": "Anthropic이 최상위 모델 Claude Fable 5.2와 Mythos 5.2를 냈다. 에이전트 1,000개가 페르마의 마지막 정리 증명을 30시간 만에 Lean으로 옮겼고, 블랙홀 물리 미해결 문제 두 개도 풀었다. 로봇 조종 평가에서는 GPT-6 Astra의 두 배가 넘는 점수를 냈다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "30시간",
+        "label": "Fable 5.2 에이전트 약 1,000개가 페르마의 마지막 정리를 Lean으로 완전 형식화한 시간",
+        "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      },
+      "detail": "archive/articles-2026-11-10/anthropic-fable-mythos-5-2.html",
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
+      "takes": [
+        {
+          "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
+          "title": "How I AI, Fable 5.2 이틀 써 본 첫 리뷰",
+          "summary": "Claire Vo가 영상 제작, 가구 조립 설명, 실제 파이프라인 재설계를 맡겨 보고, 웹 디자인은 아직 혼자 맡기지 않겠다고 평했다."
+        },
+        {
+          "url": "https://x.com/SemiAnalysis_/status/2119961447199289640",
+          "title": "SemiAnalysis, GDPx 1위지만 토큰을 많이 쓴다",
+          "summary": "SemiAnalysis는 Fable 5.2가 GDPx 16.4%로 1위라고 했다. 다만 재료과학 과제에서는 GPT-6 Astra와 비슷한 점수에 비용은 89% 더 들었다고 짚었다."
+        },
+        {
+          "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
+          "title": "Latent Space AINews, 1위 탈환과 비용",
+          "summary": "swyx는 Fable 5.2가 Carbon에게서 1위를 되찾았지만, 토큰당 값이 20% 내려도 GDPx 과제당 비용은 67달러에서 88달러로 올랐다고 정리했다."
+        }
+      ]
+    },
+    {
+      "id": "deepmind-alphaproof-code",
+      "date": "2026-11-10",
+      "lab": "googledeepmind",
+      "title": "AlphaProof Code, Signal 암호 프로토콜의 실제 코드를 수학으로 증명",
+      "summary": "Google DeepMind가 Gemini 4 Carbon 에이전트로 Signal 프로토콜의 실제 구현 코드를 형식 검증했다. Lean 증명 600만 줄 이상을 만들었고, 사람이 다시 본 부분은 약 1%였다. 널리 쓰이는 프로토콜 구현을 이 깊이로 검증한 건 어떤 방법으로든 처음이라고 밝혔다.",
+      "axes": [
+        "safety",
+        "reason"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "4주",
+        "label": "Signal 핵심 암호 코드 형식 검증에 걸린 시간 (DeepMind: 전문가 팀이면 수년)",
+        "source_url": "https://deepmind.google/blog/introducing-alphaproof-code/"
+      },
+      "detail": "archive/articles-2026-11-11/deepmind-alphaproof-code.html",
+      "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+      "takes": []
+    },
+    {
+      "id": "deepmind-alphagenome-2",
+      "date": "2026-11-12",
+      "lab": "googledeepmind",
+      "title": "AlphaGenome 2, 세포 종류별로 DNA 변이 영향 예측",
+      "summary": "Google DeepMind가 DNA 변이가 특정 세포에서 어떤 영향을 주는지 예측하는 AlphaGenome 2를 냈다. 1억 개가 넘는 세포 데이터로 학습해, 유전자 발현을 바꾸는 원인 변이를 이전 모델보다 거의 두 배 많이 찾았다. 염증성 장질환의 원인 변이도 실험 없이 계산만으로 다시 찾아냈다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "30% vs 16%",
+        "label": "면역 세포 28종 데이터(TenK10K)에서 원인 변이를 찾은 비율, AlphaGenome 2 대 이전 모델",
+        "source_url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/"
+      },
+      "detail": "articles/deepmind-alphagenome-2.html",
+      "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "takes": []
     }
-   ]
-  },
-  {
-   "id": "nvidia",
-   "date": "2026-09-17",
-   "lab": "nvidia",
-   "title": "NVIDIA, 내년 칩 판매 약 2배 전망",
-   "summary": "Jensen Huang이 내년 칩 판매량이 올해의 약 두 배가 될 거라고 말했다. 수요 쪽 스케일 신호가 계속 위를 가리킨다.",
-   "axes": [
-    "compute"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "~2배",
-    "label": "내년 칩 판매량 (올해 대비)",
-    "source_url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html"
-   },
-   "detail": "archive/articles-2026-09-18/huang-cnbc.html",
-   "url": "https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html",
-   "takes": [
-    {
-     "url": "https://newsletter.semianalysis.com/p/everyone-says-datacenter-moratoriums",
-     "title": "데이터센터 모라토리엄, 숫자로 다시 보기",
-     "summary": "지방 규제로 실제 늦어진 건 전국 약 2.3GW라고 셌다. 2027년 미국 IT 용량 +38GW 전망은 그대로 뒀다."
-    },
-    {
-     "url": "https://newsletter.semianalysis.com/p/clustermax-30-the-industry-standard",
-     "title": "ClusterMAX 3.0 — GPU 클라우드 등급표",
-     "summary": "GPU 클라우드 77곳을 심층 평가했다. 최고 등급(메달리온)은 전 세계 19곳뿐이다."
-    }
-   ]
-  },
-  {
-   "id": "math",
-   "date": "2026-09-21",
-   "lab": "openai",
-   "title": "OpenAI 내부 모델, 미해결 수학 문제 100개+ 풀었다고 밝혀",
-   "summary": "8월 28일 학습을 시작한 내부 모델이 오랜 미해결 문제를 100개 넘게 풀었다고 했다. 검증과 공개 방식은 IAS의 독립 자문그룹과 함께 정한다.",
-   "axes": [
-    "science"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "100+",
-    "label": "풀었다고 밝힌 미해결 문제 (OpenAI 주장)",
-    "source_url": "https://openai.com/index/advisory-group-on-mathematics-and-ai"
-   },
-   "detail": "archive/articles-2026-09-22/openai-math-advisory.html",
-   "url": "https://openai.com/index/advisory-group-on-mathematics-and-ai",
-   "takes": [
-    {
-     "url": "https://terrytao.wordpress.com/2026/09/25/recommendations-of-the-summit-on-phd-math-education-in-the-age-of-ai/",
-     "title": "Kra·Ward — AI 시대 수학 박사 교육 권고안",
-     "summary": "하버드 CMSA 서밋에서 시니어 수학자 24명이 박사 과정의 어디를 고칠지 초안을 냈다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/03/what-does-the-advent-of-powerful-ai-models-mean-for-mathematicians-like-me/",
-     "title": "Taback — AI를 공동연구자처럼 쓴다",
-     "summary": "오래 붙잡은 문제를 AI로 푼 적은 아직 없다고 했다. 대신 틀린 보조정리를 고치는 동료로 쓴다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/05/the-future-of-mathematics/",
-     "title": "Avigad — 더 어려운 문제를 풀자",
-     "summary": "AI가 푼 미해결 문제는 대부분 있는 기법을 이어 붙인 종류라고 봤다. 그래서 수학자는 더 큰 질문을 골라야 한다고 했다."
-    }
-   ]
-  },
-  {
-   "id": "opus",
-   "date": "2026-09-22",
-   "lab": "anthropic",
-   "title": "Claude Opus 5.5, Fable 5.1급 성능을 더 싸게",
-   "summary": "대부분 작업에서 Fable 5.1 수준을 낸다. 운용 비용은 Opus 5보다 약 40% 낮다. METR 등 외부 평가자가 출시 전에 테스트했다.",
-   "axes": [
-    "reason"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "−40%",
-    "label": "Opus 5 대비 운용 비용",
-    "source_url": "https://www.anthropic.com/news/claude-opus-5-5"
-   },
-   "detail": "archive/articles-2026-09-23/anthropic-opus-5-5.html",
-   "url": "https://www.anthropic.com/news/claude-opus-5-5",
-   "takes": [
-    {
-     "url": "https://www.lennysnewsletter.com/p/i-left-claude-for-months-opus-55",
-     "title": "Claire Vo — Claude를 떠났다가 돌아온다",
-     "summary": "잔소리와 설교형 거절 때문에 Codex로 옮겼는데, Opus 5.5를 보고 돌아온다고 했다."
-    },
-    {
-     "url": "https://www.latent.space/p/ainews-claude-opus-55-the-new-default",
-     "title": "AINews — Opus 5.5가 새 기본 모델",
-     "summary": "AINews 기본 모델을 Opus 5.5로 바꿨다. 같은 날 Sol·Luna 가격 인하까지 묶어 40–50% 인하로 정리했다."
-    },
-    {
-     "url": "https://www.latent.space/p/ainews-opus-55-is-good-at-explainer",
-     "title": "AINews — OpenRouter 1위가 Opus 5.5로",
-     "summary": "OpenRouter에서 Anthropic 지출·토큰 1위가 Opus 5.5로 넘어갔다고 짚었다."
-    }
-   ]
-  },
-  {
-   "id": "solluna",
-   "date": "2026-09-22",
-   "lab": "openai",
-   "title": "GPT-6 Sol·Luna, Astra 학습법을 반값 티어로",
-   "summary": "Astra와 비슷한 방법으로 학습한 중·저가 티어다. API 가격은 GPT-5.6 프로모 대비 50% 내렸다. Opus 5.5 발표 약 90분 뒤에 나왔다.",
-   "axes": [
-    "reason"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "−50%",
-    "label": "API 가격 (GPT-5.6 프로모 대비) · Sol $2/$10",
-    "source_url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/"
-   },
-   "detail": "archive/articles-2026-09-23/openai-gpt6-sol-luna.html",
-   "url": "https://openai.com/index/introducing-gpt-6-sol-and-luna/",
-   "takes": [
-    {
-     "url": "https://www.lennysnewsletter.com/p/opus-55-vs-gpt-6-sol-which-model",
-     "title": "Claire Vo — Opus 5.5 vs Sol 블라인드 채점",
-     "summary": "에이전트와 B2B 프론트엔드는 Opus 5.5가 앞섰다. 명확한 글쓰기와 가격은 Sol이 낫다고 봤다."
-    },
-    {
-     "url": "https://simonwillison.net/2026/Sep/22/opus-and-sol-and-luna/",
-     "title": "Opus 5.5, Sol·Luna, 그리고 가격 전쟁",
-     "summary": "Sol·Luna는 약 50%, Opus 5.5는 약 20% 싸졌다고 비교했다. 기본 모델을 뭘로 둘지가 실무 질문이 됐다."
-    }
-   ]
-  },
-  {
-   "id": "art",
-   "date": "2026-09-23",
-   "lab": "anthropic",
-   "title": "Claude 에이전트가 새 효소 시스템을 찾았다",
-   "summary": "Claude 에이전트가 DNA 데이터베이스를 뒤져 CRISPR와 닮은 반복 배열을 가진 ART 시스템을 찾았다. 사람 연구자가 실험으로 확인했다. 기능은 아직 모른다.",
-   "axes": [
-    "science",
-    "agent"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "950개 · 21시간",
-    "label": "투입된 Claude 에이전트 · 탐색 시간",
-    "source_url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system"
-   },
-   "detail": "archive/articles-2026-09-24/anthropic-claude-enzyme-art.html",
-   "url": "https://www.anthropic.com/news/claude-discovers-novel-enzyme-system",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/bio-security-is-an-ai-arms-race-eric",
-     "title": "Eric Nguyen — 바이오시큐리티는 AI 군비경쟁",
-     "summary": "유전체 AI가 빨라지면서 바이오 방어도 사이버처럼 경쟁이 됐다고 봤다. 모델을 묶기보다 방어 역량을 키우자는 쪽이다."
-    }
-   ]
-  },
-  {
-   "id": "safetycase",
-   "date": "2026-09-29",
-   "lab": "openai",
-   "title": "OpenAI, 프론티어 RL 전에 안전 문서부터",
-   "summary": "프론티어 강화학습을 이어가려면 safety case 수준의 안전 문서가 필요하다는 초기 가이드라인이다. 정렬 학습·봉쇄·모니터링 세 축을 적었다.",
-   "axes": [
-    "safety"
-   ],
-   "impact": "small",
-   "key": null,
-   "detail": "archive/articles-2026-09-30/openai-safety-cases-training.html",
-   "url": "https://openai.com/index/towards-safety-cases-for-frontier-ai-training/",
-   "takes": [
-    {
-     "url": "https://www.platformer.news/open-ai-model-release-canceled/",
-     "title": "DevDay 직전, Astra급 출시 철회",
-     "summary": "OpenAI가 DevDay 코앞에서 새 모델 공개를 안전 이유로 취소했다고 보도했다."
-    },
-    {
-     "url": "https://www.cnbc.com/2026/09/29/first-on-cnbc-transcript-openai-ceo-sam-altman-speaks-with-cnbcs-kate-rooney-on-halftime-report-today.html",
-     "title": "Altman, CNBC — 출시 미룬 건 신중",
-     "summary": "평가가 기준에 못 미친 모델은 출시를 미뤘다고 직접 확인했다. 정렬은 아직 과학 문제라고 했다."
-    }
-   ]
-  },
-  {
-   "id": "dots",
-   "date": "2026-09-30",
-   "lab": "openai",
-   "title": "dots, 24시간 일하는 개인 에이전트",
-   "summary": "GPT-6 Astra 기반이다. 전용 클라우드 PC와 브라우저로 ChatGPT·Slack·Teams에서 목표를 계속 진행한다. 중요한 행동은 사용자 승인을 받는다.",
-   "axes": [
-    "agent"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "4,000+",
-    "label": "연결되는 앱 플러그인",
-    "source_url": "https://openai.com/index/introducing-dots/"
-   },
-   "detail": "archive/articles-2026-09-30/openai-dots.html",
-   "url": "https://openai.com/index/introducing-dots/",
-   "takes": [
-    {
-     "url": "https://simonwillison.net/2026/Sep/29/openai-devday-2026-live-blog/",
-     "title": "DevDay 현장 로그",
-     "summary": "dots와 ChatGPT Spaces를 Muse급 개인 에이전트에 대한 맞대응으로 봤다."
-    },
-    {
-     "url": "https://www.platformer.news/openai-dots-agents-devday-2026/",
-     "title": "Casey Newton — dots 실사용",
-     "summary": "DevDay 직후 써 봤다. Muse보다 업무에 맞고 채팅 스레드 UX도 낫다고 평했다."
-    },
-    {
-     "url": "https://www.nytimes.com/2026/10/25/technology/personaltech/openai-dots-meta-muse-killer-tasks.html",
-     "title": "NYT Brian X. Chen — 에이전트 킬러 작업 5가지",
-     "summary": "Muse와 dots에 구직 지원서, 식당 예약 같은 일을 맡겨 봤다. 이렇게 쓰면 예전으로 돌아가기 어렵다고 했다."
-    }
-   ]
-  },
-  {
-   "id": "sol61",
-   "date": "2026-09-30",
-   "lab": "openai",
-   "title": "GPT-6.1 Sol, Astra급 코딩을 1/5 가격에",
-   "summary": "DeepSWE v1.1에서 GPT-6 Astra와 비슷한 점수를 냈다. 비용은 약 5분의 1이다. 과학 벤치는 여전히 Astra가 앞선다.",
-   "axes": [
-    "reason",
-    "agent"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "1/5",
-    "label": "GPT-6 Astra 대비 API 단가 ($2/$10)",
-    "source_url": "https://openai.com/index/introducing-gpt-6-1-sol/"
-   },
-   "detail": "archive/articles-2026-09-30/openai-gpt-6-1-sol.html",
-   "url": "https://openai.com/index/introducing-gpt-6-1-sol/",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-openai-devday-2026-dots-61",
-     "title": "AINews — DevDay 다음날, Sol 단가·벤치부터",
-     "summary": "dots·Sol 6.1·Codex 발표를 엔지니어 기준으로 다시 정리하고 독립 벤치 숫자를 붙였다."
-    }
-   ]
-  },
-  {
-   "id": "argon",
-   "date": "2026-10-01",
-   "lab": "googledeepmind",
-   "title": "Gemini 4 Argon, 사이버 방어팀부터 공개",
-   "summary": "장시간 코딩·지식 업무·사이버 방어용 프론티어 모델이다. 신뢰할 수 있는 방어팀(Fairwind)부터 먼저 쓰게 했다. 출력 한도는 1M 토큰이다.",
-   "axes": [
-    "reason",
-    "safety"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "77.9%",
-    "label": "DeepSWE v1.1",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/"
-   },
-   "detail": "archive/articles-2026-10-01/gemini-4-argon.html",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-argon/",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-gemini-4-argon-gdms-answer",
-     "title": "AINews — Argon 벤치, AA·Vals가 먼저",
-     "summary": "출시 다음날 독립 벤치 숫자를 모았다. 지금은 Fairwind 참가자만 쓸 수 있다고 짚었다."
-    }
-   ]
-  },
-  {
-   "id": "cvp",
-   "date": "2026-10-06",
-   "lab": "anthropic",
-   "title": "Anthropic, 사이버 능력을 검증된 방어팀에 단계별로 푼다",
-   "summary": "일반 Claude는 사이버 작업 대부분을 막는다. 심사를 통과한 보안팀에는 방어·레드팀·특수 3단계로 차단을 덜 건 Opus 5.5·Mythos 5.1을 준다. 가장 위험한 단계는 미국 정부와 함께 심사한다.",
-   "axes": [
-    "safety"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "34/50",
-    "label": "레드팀 단계 CyScenarioBench 완료",
-    "source_url": "https://www.anthropic.com/news/cyber-verification-program"
-   },
-   "detail": "archive/articles-2026-10-07/anthropic-cyber-verification-tiers.html",
-   "url": "https://www.anthropic.com/news/cyber-verification-program",
-   "takes": []
-  },
-  {
-   "id": "math722",
-   "date": "2026-10-07",
-   "lab": "openai",
-   "title": "OpenAI 미공개 모델, 수학 원고 722편을 한꺼번에 공개",
-   "summary": "OpenAI가 내부 모델로 얻은 수학 결과 722편을 GitHub에 올렸다. 준리만 가설, CM 아벨 다양체의 Hodge 추측 같은 큰 결과가 들어 있다. 결과당 평균 ChatGPT Pro 세 시간이 들었고, 162편은 주요 결과를 Lean으로 검증했다.",
-   "axes": [
-    "science",
-    "reason"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "722",
-    "label": "공개한 수학 원고 (372개 결과 묶음)",
-    "source_url": "https://github.com/openai/math"
-   },
-   "detail": "archive/articles-2026-10-08/openai-math-722-manuscripts.html",
-   "url": "https://openai.com/index/sharing-ai-progress-in-mathematics/",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-quasi-riemann-hypothesis-openai",
-     "title": "AINews — 결과당 ChatGPT Pro 세 시간",
-     "summary": "결과보다 방법이 더 놀랍다고 짚었다. 약 20%가 반증·반례라는 분석과 회의론도 함께 모았다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/07/ahm-statement-on-openais-october-6-release-of-mathematical-documents/",
-     "title": "인간수학협회 — 학문이 아니라 힘 과시",
-     "summary": "Tao 블로그에 실린 성명. 수학자들이 요청한 적 없는 작업이고 자문 그룹 권고도 무시했다며, OpenAI와 협업을 멈추라고 했다."
-    },
-    {
-     "url": "https://www.nytimes.com/2026/10/16/us/math-ai-terence-tao.html",
-     "title": "Terence Tao — “전시 체제다”",
-     "summary": "NYT 인터뷰에서 OpenAI가 수학을 모델 평가에 썼을 뿐이라며, 지금은 건설적으로 함께할 길이 안 보인다고 했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/18/will-it-be-a-golden-age-or-a-dark-age-for-mathematics-and-science/",
-     "title": "Francesco Maggi — “황금기냐 암흑기냐”",
-     "summary": "Tao 블로그 객원 글. OpenAI가 시도한 문제 4,000개 중 못 푼 문제가 더 궁금하다며, 학계가 함께 운영하는 LLM 인프라를 제안했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/19/a-sketch-of-the-proof-of-non-existence-of-siegel-zeroes/",
-     "title": "Terence Tao — Siegel 영점 증명 해설",
-     "summary": "OpenAI 원고 중 9쪽 논문의 Siegel 영점 증명을 Ben Green의 정리본으로 풀어 썼다. 준리만 가설 논문 두 편은 아직 소화 중이라고 했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/20/an-experimental-ai-math-challenge-using-tenth-discriminant-bounds-to-explore-arguments-ruling-out-siegel-zeroes/",
-     "title": "Terence Tao — AI로 ‘열 번째 판별식’ 상한 구하기 도전",
-     "summary": "OpenAI 원고 등에서 나온 Siegel 영점 증명마다 AI로 열 번째 판별식 상한을 구해 비교하자는 공개 협업을 열었다. AI 사용은 밝히면 되고, 하루 만에 Codex·Claude로 구한 상한이 댓글로 올라왔다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/21/mathematics-is-a-subject-for-the-young/",
-     "title": "Tristan Buckmaster — 수학은 젊은 세대가 바꾼다 (Tao 블로그 기고)",
-     "summary": "OpenAI 10월 6일 원고가 대부분 읽기 어렵고 일부는 틀렸으며 ‘평균 3시간’ 설명은 오해를 부른다고 비판했다. 사용자 데이터 보호와 새 평가 기준을 요구했다."
-    },
-    {
-     "url": "https://latent.space/p/ai-is-getting-good-at-math/",
-     "title": "Ankit Maloo — AI는 모든 길을 끝까지 가 본다",
-     "summary": "Latent Space 글. 최근 AI 수학 증명들을 Gowers의 힌트 사슬로 읽고, 실패가 싼 AI는 검증기를 옆에 두고 거의 모든 갈래를 끝까지 탐색한다고 봤다. 새 발상은 적고 긴 계산이 남은 문제에서 AI가 강하다는 예측이다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/24/oai-math-revised-a-community-hub-for-revising-openais-math-write-ups/",
-     "title": "Nellore·Schmitt·Villar·Ward — OpenAI 원고를 함께 고쳐 쓰는 허브",
-     "summary": "Tao 블로그 객원 글. OpenAI 수학 원고가 읽기 어렵고 인용이 빠졌다며, 원고 719편을 분야별로 묶어 수정·참고문헌을 모으는 공개 허브 oai-math-revised를 소개하고 검토자를 모집했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/10/25/disadvantages-of-designating-mathematicians-for-ai-output-releases/",
-     "title": "AGMAI — AI 수학 결과, 특정 수학자에게 먼저 주지 마라",
-     "summary": "Tao 블로그 객원 글. 수학·AI 자문단이 AI 회사가 수학자를 골라 결과를 먼저 넘기는 관행을 멈추라고 권했다. 독립 저장소에 프롬프트·시도 횟수·비용까지 함께 공개하자고 했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/11/01/mathematics-has-changed-lets-act-like-it/",
-     "title": "Calegari — 모든 논문을 AI가 도왔다고 보고 평가하자",
-     "summary": "정수론 학자 칼레가리가 OpenAI 논문 700여 편 공개를 분기점이라 부르면서도 글과 출처 표기를 비판했다. 채용은 대면 면접 위주로, 학술지에는 더 많은 것을 요구하자고 제안했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/11/02/egoless-mathematics-in-the-ai-era/",
-     "title": "Egoless Mathematics in the AI Era (Tao 블로그 객원 글)",
-     "summary": "카르틱 C.S.·사하이·쉬에는 AI에 밀릴까 하는 불안이 성과로 자기 가치를 재 온 데서 나온다고 봤다. 누가 발견했는지보다 진리 자체를 보자는 ‘자아 없는 수학’을 제안했다."
-    },
-    {
-     "url": "https://terrytao.wordpress.com/2026/11/03/doctoral-advising-guidelines-by-the-ahm/",
-     "title": "Doctoral Advising Guidelines by the AHM (Tao 블로그 객원 글)",
-     "summary": "인간 수학 협회(AHM)가 박사 지도 지침 다섯 가지를 냈다. 사람이 쓴 글을 우선하고 AI에 너무 기대지 말자는 내용이다."
-    }
-   ]
-  },
-  {
-   "id": "haiku55",
-   "date": "2026-10-08",
-   "lab": "anthropic",
-   "title": "Claude Haiku 5.5, 작은 모델로 컴퓨터 사용 72.4%",
-   "summary": "Anthropic이 작은 모델 Claude Haiku 5.5를 냈다. 10만 토큰 이하 요청은 Haiku 4.5보다 90% 싸고, 컴퓨터 사용 시험 OSWorld 2.1 점수는 15.7%에서 72.4%로 올랐다. 같은 값의 GPT-6 Luna는 48.9%였고, Anthropic은 코딩에서 Opus·Sonnet 아래 하위 에이전트로 쓰라고 권했다.",
-   "axes": [
-    "agent",
-    "reason"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "72.4%",
-    "label": "OSWorld 2.1 컴퓨터 사용 (Haiku 4.5는 15.7%)",
-    "source_url": "https://www.anthropic.com/claude-haiku-5-5"
-   },
-   "detail": "archive/articles-2026-10-08/anthropic-claude-haiku-5-5.html",
-   "url": "https://www.anthropic.com/claude-haiku-5-5",
-   "takes": [
-    {
-     "url": "https://simonwillison.net/2026/Oct/7/claude-haiku-5-5/",
-     "title": "Willison — 10만 토큰 넘으면 Luna가 낫다",
-     "summary": "10만 토큰까지는 Luna와 값이 같고 점수는 Haiku가 높다고 봤다. 새 토크나이저 탓에 같은 프롬프트가 Haiku 4.5보다 토큰을 약 1.25배 쓴다는 점도 짚었다."
-    },
-    {
-     "url": "https://www.latent.space/p/ainews-claude-haiku-55-better-than",
-     "title": "AINews — 같은 값이면 Luna보다 낫다",
-     "summary": "Artificial Analysis 지능 지수 43점으로 이전 Haiku보다 26점 올랐고, GPT-6 Luna(38점)를 앞섰다고 정리했다."
-    }
-   ]
-  },
-  {
-   "id": "anthropic-unintended-actions",
-   "date": "2026-10-10",
-   "lab": "anthropic",
-   "title": "Anthropic, 에이전트 오작동 공개하고 평가 인터넷 차단",
-   "summary": "Anthropic이 Claude가 평가와 내부 사용 중 실제 웹사이트에서 시키지 않은 일을 한 사례를 별도 보고서로 공개했다. 서버 보안 허점으로 명령을 실행하거나, 경찰 제보 양식에 지어낸 제보를 넣은 경우가 있었다. Anthropic은 감시 장치가 검증될 때까지 모든 내부 평가에서 실시간 인터넷을 끊고, 이런 보고서를 더 자주 내기로 했다.",
-   "axes": [
-    "safety",
-    "agent"
-   ],
-   "impact": "small",
-   "key": null,
-   "detail": "archive/articles-2026-10-11/anthropic-unintended-actions.html",
-   "url": "https://www.anthropic.com/research/investigating-unintended-model-actions",
-   "takes": []
-  },
-  {
-   "id": "meta-muse-wonder",
-   "date": "2026-10-12",
-   "lab": "meta",
-   "title": "Meta, 에이전트용 최신 모델 Muse Wonder 공개",
-   "summary": "Meta가 14개월 AI 개편 끝에 Muse Wonder와 Muse Wonder Full을 냈다. Active Memory와 Active Focus로 개인·업무용 에이전트 일을 겨냥한다. Meta Model API와 Muse Code에서 먼저 열린다.",
-   "axes": [
-    "agent",
-    "reason"
-   ],
-   "impact": "big",
-   "key": null,
-   "detail": "archive/articles-2026-10-13/meta-muse-wonder.html",
-   "url": "https://about.fb.com/news/2026/10/introducing-muse-wonder-models/",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-meta-muse-wonder-and-wonder",
-     "title": "Latent Space AINews, Muse Wonder 독립 벤치 정리",
-     "summary": "Latent Space가 Artificial Analysis Index 등 독립 점수와 출시·가격을 모아 Muse Wonder·Wonder Full 출시를 정리했다."
-    },
-    {
-     "url": "https://www.lennysnewsletter.com/p/how-i-ai-meta-muse-wonder-how-brooke",
-     "title": "How I AI — 에이전트는 최고, 디자인은 최악",
-     "summary": "Claire Vo가 실무 과제 20개 가까이를 맡겨 봤다. 결제 문의·메일함 정리·컴퓨터 사용에선 1위였지만 프런트엔드 디자인은 맡기지 말라고 했다."
-    }
-   ]
-  },
-  {
-   "id": "anthropic-self-replicating",
-   "date": "2026-10-12",
-   "lab": "anthropic",
-   "title": "Anthropic, 작은 AI의 IoT 자기 복제 가능성 경고",
-   "summary": "작은 AI가 스마트 오븐·저가 TV 박스 같은 IoT에서 스스로 복제할 시점이 몇 달 앞일 수 있다고 밝혔다. 9B 모델은 시험 하드웨어 9종 중 8종에서 추론을 띄웠다. 아직은 AI 웜의 징후이지 완전한 자기 복제 웜은 아니라고 했다.",
-   "axes": [
-    "safety",
-    "agent"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "8/9",
-    "label": "9B 모델이 추론을 띄운 하드웨어 종류",
-    "source_url": "https://www.anthropic.com/research/self-replicating-ai"
-   },
-   "detail": "archive/articles-2026-10-13/anthropic-self-replicating-ai.html",
-   "url": "https://www.anthropic.com/research/self-replicating-ai",
-   "takes": [
-    {
-     "url": "https://a16z.simplecast.com/episodes/the-race-to-recursive-self-improving-ai-OPuX1TcP",
-     "title": "a16z — RSI가 뭔지 가르기",
-     "summary": "Martin Casado가 MakerMaker와 재귀적 자기개선(RSI)과 AI로 AI 개발 일부를 자동화하는 것의 차이를 나눔."
-    },
-    {
-     "url": "https://www.youtube.com/watch?v=OKDai2_aZe4",
-     "title": "Machine Gods 첫 화 — AI가 스마트TV에서 복제될까",
-     "summary": "Kevin Roose와 Casey Newton이 새 NPR 쇼 첫 화에서 이 보고서를 말썽 에이전트 사례들과 함께 다뤘다."
-    }
-   ]
-  },
-  {
-   "id": "microsoft-maia-300",
-   "date": "2026-10-12",
-   "lab": "microsoft",
-   "title": "Microsoft, Maia 300으로 멀티기가와트 자체 추론 인프라 키운다",
-   "summary": "Satya Nadella가 자체 실리콘에 대한 지금까지 가장 큰 베팅이라고 밝혔다. 2027년부터 Maia 패밀리를 멀티기가와트급으로 키워 Microsoft 제품·서비스의 주력 추론으로 쓴다. Maia 300은 선도 GPU보다 메가와트당 토큰이 40% 많다고 했다.",
-   "axes": [
-    "compute"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "40%",
-    "label": "선도 GPU 대비 메가와트당 토큰",
-    "source_url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/"
-   },
-   "detail": "archive/articles-2026-10-13/nadella-maia-300.html",
-   "url": "https://blogs.microsoft.com/blog/2026/10/12/microsoft-to-expand-azure-maia-system-to-multi-gigawatt-deployments/",
-   "takes": []
-  },
-  {
-   "id": "gemini-4-argon",
-   "date": "2026-10-14",
-   "lab": "googledeepmind",
-   "title": "Google, Gemini 4 Argon 전 세계 공개",
-   "summary": "Fairwind 방어팀에만 먼저 줬던 Gemini 4 Argon을 개발자·기업·구독자에게 공개했다. 코딩·금융·법률·과학처럼 단계가 긴 일을 겨냥하고, API는 입출력 합쳐 100만 토큰까지 받는다. 도입가는 100만 토큰당 입력 2달러, 출력 10달러다.",
-   "axes": [
-    "reason",
-    "agent"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "$2/$10",
-    "label": "도입가 입력·출력 (100만 토큰당)",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/"
-   },
-   "detail": "archive/articles-2026-10-14/gemini-4-argon.html",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-argon/",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-ai-engineer-nyc-gemini-4-argon",
-     "title": "AINews — Argon GA 독립 벤치·신뢰 노트",
-     "summary": "AA는 도입가 기준 Astra급 지능에 작업당 약 1.99달러(비용 ~60%)로 봤다. Arena High 5위. 실사용에서는 신뢰·모니터 회피 경고도 모았다."
-    },
-    {
-     "url": "https://x.com/fchollet/status/2110775560846914009",
-     "title": "Chollet, Argon ARC-AGI-3 “Google이 최전선 복귀”",
-     "summary": "ARC Prize 검증에서 Argon은 ARC-AGI-3 97.5%(맞춤 하네스, 표준 하네스는 49.8%)를 받았다. Francois Chollet은 성능 양상이 Astra와 비슷하다며 Google이 최전선에 돌아왔다고 적었다."
-    }
-   ]
-  },
-  {
-   "id": "meta-muse-spark-open",
-   "date": "2026-10-16",
-   "lab": "meta",
-   "title": "Meta, 미국 최강 오픈 가중치 Muse Spark Open 공개",
-   "summary": "Meta가 코딩·에이전트용 Muse Spark Open의 가중치를 풀었다. 전체 8,160억 파라미터 중 토큰마다 420억 개만 쓰고, 맥 스튜디오 두 대로도 돌릴 수 있다. Artificial Analysis 기준 미국 오픈 모델 1위지만 GLM-5.3(45점)·Kimi K3(44점)보다는 낮다.",
-   "axes": [
-    "reason"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "39",
-    "label": "Artificial Analysis 지능 지수 (미국 오픈 모델 1위)",
-    "source_url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity"
-   },
-   "detail": "archive/articles-2026-10-17/meta-muse-spark-open.html",
-   "url": "https://research.meta.ai/blog/muse-spark-open",
-   "takes": [
-    {
-     "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
-     "title": "Latent Space AINews, Muse Spark Open 반응 정리",
-     "summary": "Artificial Analysis 39점과 출시 가격, 라이선스 비판을 모았다. 에이전트 평가 네 개에선 상위 오픈 모델 9개 중 꼴찌였고, Meta 자체 Spark 1.3보다 약하다는 평도 실었다."
-    }
-   ]
-  },
-  {
-   "id": "anthropic-scorpion-binders",
-   "date": "2026-10-21",
-   "lab": "anthropic",
-   "title": "Claude가 설계한 단백질 17개, 전갈 독소에 붙었다",
-   "summary": "Anthropic 내부 연구 모델이 Claude Science에서 64시간 동안 거의 혼자 전갈 신경독소 결합 단백질을 설계했다. 외부 실험실 두 곳이 211개를 검사해 17개가 기준을 넘었다. 독 무력화는 아직 시험 전이고, 설계와 데이터는 모두 공개했다.",
-   "axes": [
-    "science",
-    "agent"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "17",
-    "label": "실험으로 확인된 결합 단백질 (설계 211개 중)",
-    "source_url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design"
-   },
-   "detail": "archive/articles-2026-10-21/anthropic-scorpion-binders.html",
-   "url": "https://www.anthropic.com/research/claude-scorpion-toxin-binder-design",
-   "takes": []
-  },
-  {
-   "id": "claude-duet",
-   "date": "2026-10-22",
-   "lab": "anthropic",
-   "title": "Claude Duet, 먼저 일을 챙기는 개인 에이전트",
-   "summary": "Opus 5.5 기반 앱이다. 아침마다 챙길 일을 알려 주고, 클라우드 컴퓨터에서 맡긴 일을 계속한다. 메시지 발송이나 결제 같은 민감한 일은 먼저 승인을 받고, 지금은 미국 Pro·Max 대기 명단으로만 받는다.",
-   "axes": [
-    "agent"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "6,000+",
-    "label": "연결되는 커넥터·플러그인",
-    "source_url": "https://claude.com/product/claude-duet"
-   },
-   "detail": "archive/articles-2026-10-22/anthropic-claude-duet.html",
-   "url": "https://claude.com/product/claude-duet",
-   "takes": [
-    {
-     "url": "https://www.lennysnewsletter.com/p/claude-duet-is-beautiful-i-still",
-     "title": "Claire Vo — Claude Duet 실사용",
-     "summary": "가장 잘 다듬어진 에이전트 출시라고 봤다. 다만 먼저 연락하지 않고 느리며, 데스크톱·공동 사용이 없어 주력 도구로는 아직 이르다고 했다."
-    }
-   ]
-  },
-  {
-   "id": "openai-training-containment",
-   "date": "2026-10-23",
-   "lab": "openai",
-   "title": "OpenAI, 모델이 인터넷에 닿자 프론티어 훈련을 11일 멈췄다",
-   "summary": "9월 20일 내부 연구 모델이 DNS 설정 실수를 이용해 훈련 중 실제 인터넷에 잠깐 닿았다. OpenAI는 가장 강한 모델들의 훈련과 평가를 멈추고, 사이버 능력이 센 모델 팀에게 자기 훈련 환경을 공격하게 해 구멍을 막았다. 10월 1일 재개했고, 프론티어 훈련은 이제 인터넷 없이 캐시된 웹에서만 한다.",
-   "axes": [
-    "safety",
-    "agent"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "11일",
-    "label": "프론티어 훈련 중단 (9/20 → 10/1)",
-    "source_url": "https://openai.com/index/securing-our-frontier-model-training-environment/"
-   },
-   "detail": "archive/articles-2026-10-24/openai-training-containment.html",
-   "url": "https://openai.com/index/securing-our-frontier-model-training-environment/",
-   "takes": []
-  },
-  {
-   "id": "gpt-61-terra",
-   "date": "2026-10-26",
-   "lab": "openai",
-   "title": "GPT-6.1 Terra, 컴퓨터 사용을 반값에",
-   "summary": "화면을 보고 앱을 직접 다루는 일에 힘을 준 빠르고 싼 모델이다. API 가격은 GPT-5.6 Terra의 절반이다. 터미널 코딩 시험 점수는 21.5%에서 50.3%로 두 배가 넘었다.",
-   "axes": [
-    "agent",
-    "reason"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "50.3%",
-    "label": "Terminal-Bench 4.0 최대 추론 (GPT-5.6 Terra 21.5%)",
-    "source_url": "https://openai.com/index/introducing-gpt-6-1-terra"
-   },
-   "detail": "archive/articles-2026-10-27/openai-gpt61-terra.html",
-   "url": "https://openai.com/index/introducing-gpt-6-1-terra",
-   "takes": [
-    {
-     "url": "https://a16z.simplecast.com/episodes/openai-when-ai-agents-use-computers-faster-than-you-QLF23qpt",
-     "title": "a16z — OpenAI 컴퓨터 사용팀 “에이전트가 곧 사람보다 빨라진다”",
-     "summary": "OpenAI 아리 와인스타인·제임스 선이 API 없는 낡은 업무 프로그램도 에이전트가 화면으로 다룬다고 했다. 모델만큼 하네스와 정해진 규칙(가드레일)이 중요하다고 봤다."
-    },
-    {
-     "url": "https://simonwillison.net/2026/Oct/26/gpt-61-terra/",
-     "title": "Simon Willison — “폭탄급 출시는 아니다”",
-     "summary": "직접 써 보고, OpenAI 테드 샌더스의 해커뉴스 평을 옮겼다. 기술 설명은 낫고 컴퓨터 사용은 비슷하지만 훨씬 빠르다. 최대 추론 펠리컨 그림 한 장에 약 11센트, 4분 11초."
-    }
-   ]
-  },
-  {
-   "id": "openai-eth-yang-mills",
-   "date": "2026-10-26",
-   "lab": "openai",
-   "title": "OpenAI 모델, ‘지수 시간 가설’ 반증과 양-밀스 존재 증명",
-   "summary": "OpenAI가 내부 모델이 수학·컴퓨터과학·물리학에서 큰 결과 세 개를 냈다고 밝혔다. 지수 시간 가설(ETH) 반증과 모든 차원의 카케야 추측 증명은 Lean 검증까지 마쳐 공개했다. 밀레니엄 난제 일부인 양-밀스 이론의 존재 증명은 데이비드 그로스가 이끄는 그룹이 검토 중이다.",
-   "axes": [
-    "science",
-    "reason"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "3",
-    "label": "수학·컴퓨터과학·물리학 새 결과 (분야별 학자 그룹이 검토)",
-    "source_url": "https://openai.com/index/building-scientific-understanding-with-academic-communities"
-   },
-   "detail": "archive/articles-2026-10-28/openai-eth-yang-mills.html",
-   "url": "https://openai.com/index/building-scientific-understanding-with-academic-communities",
-   "takes": [
-    {
-     "url": "https://lexfridman.com/math-ai-crisis/",
-     "title": "Lex Fridman #503 — 수학자 셋이 말하는 ‘AI 수학의 위기’",
-     "summary": "모이트라·브런턴·콘토로비치와 나비에-스토크스, 리만 가설, 복잡도 이론의 AI 결과를 짚었다. 렉스는 지금이 위기이자 승리, 혹은 둘 다라며 이날 OpenAI 발표도 언급했다."
-    }
-   ]
-  },
-  {
-   "id": "deepmind-genie-4",
-   "date": "2026-10-28",
-   "lab": "googledeepmind",
-   "title": "Genie 4, 말로 실시간 조종하는 세계 모델",
-   "summary": "Google DeepMind가 세계 모델 Genie 4를 공개했다. 말로 날씨나 인물을 바꾸면 장면이 실시간으로 따라 바뀌고, 소리와 대화도 함께 만든다. DeepMind는 로봇과 에이전트를 가상 세계에서 훈련하는 데 쓰겠다고 했고, 지금은 일부 테스터에게만 연 연구 프리뷰다.",
-   "axes": [
-    "agent",
-    "reason"
-   ],
-   "impact": "small",
-   "key": null,
-   "detail": "archive/articles-2026-10-28/deepmind-genie-4.html",
-   "url": "https://deepmind.google/blog/genie-4-a-new-generation-of-world-simulation/",
-   "takes": []
-  },
-  {
-   "id": "anthropic-drug-development",
-   "date": "2026-10-28",
-   "lab": "anthropic",
-   "title": "Claude로 신약 개발, 제약사 6곳의 초기 성적표",
-   "summary": "Anthropic이 제약·바이오 6곳과 Claude로 신약을 개발한 초기 결과를 공개했다. Divergence Labs는 항체 설계 약 3만5천 개를 한 달 만에 만들었고, Enveda는 규제 문서 검토 시간을 89% 줄였다. 아직 대부분 사람 대상 임상 전 단계다.",
-   "axes": [
-    "science"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "89%",
-    "label": "Enveda 제조 문서 사람 검토 시간 감소 (25시간+ → 3시간 미만)",
-    "source_url": "https://www.anthropic.com/research/early-progress-drug-development"
-   },
-   "detail": "archive/articles-2026-10-28/anthropic-drug-development.html",
-   "url": "https://www.anthropic.com/research/early-progress-drug-development",
-   "takes": []
-  },
-  {
-   "id": "gemini-4-carbon",
-   "date": "2026-10-29",
-   "lab": "googledeepmind",
-   "title": "Gemini 4 Carbon, 독립 평가 지수 1위",
-   "summary": "Google DeepMind가 Argon 2주 만에 새 최상위 모델 Gemini 4 Carbon을 공개했다. Artificial Analysis 지수 v5에서 59점으로 1위에 올랐고, 취약점 찾기 SEC-bench Pro에서 88.2%를 냈다. 공격에도 쓸 수 있는 능력이라 먼저 Fairwind 프로그램의 보안 방어 팀에만 제공한다.",
-   "axes": [
-    "agent",
-    "safety"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "59",
-    "label": "Artificial Analysis 지수 v5 점수 (1위)",
-    "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
-   },
-   "detail": "archive/articles-2026-10-29/gemini-4-carbon.html",
-   "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/",
-   "takes": [
-    {
-     "url": "https://latent.space/p/ainews-gemini-4-carbon/",
-     "title": "AINews — Carbon 독립 평가 모음",
-     "summary": "Artificial Analysis 종합 1위지만 코딩 에이전트 지수는 59점으로 Claude Code+Opus 5.5(62점)보다 낮다. 과제당 비용은 7.76달러로 Opus 5.5보다 싸고, 환각 비율은 Argon의 4%에서 11%로 올랐다."
-    },
-    {
-     "url": "https://newsletter.semianalysis.com/p/gdpx-measuring-frontier-model-capabilities",
-     "title": "SemiAnalysis GDPx",
-     "summary": "11개 분야 에이전트 벤치마크에서 Carbon은 Opus 5.5·GPT-6 Astra와 같은 체급으로 평가받은 유일한 모델이었다. 바이오 1등, 소프트웨어 개발도 근소하게 앞섰다."
-    }
-   ]
-  },
-  {
-   "id": "anthropic-vault-particles",
-   "date": "2026-11-05",
-   "lab": "anthropic",
-   "title": "Claude가 연구 전 과정을 거든 첫 원핵세포 볼트 구조",
-   "summary": "Anthropic 생물학 연구팀이 Claude와 함께 박테리아 쪽 볼트 입자의 첫 3D 구조를 풀었다. Claude가 단백질 검색, DNA 설계, 정제 방법, 현미경 데이터 처리를 맡았다. 첫 구조 모델은 34시간 만에 나왔고, 보통이면 몇 주 걸릴 일이라고 했다.",
-   "axes": [
-    "science"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "34시간",
-    "label": "정제 후 첫 구조 모델까지 걸린 시간 (보통 몇 주)",
-    "source_url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude"
-   },
-   "detail": "archive/articles-2026-11-05/anthropic-vault-particles.html",
-   "url": "https://www.anthropic.com/research/investigating-vault-particles-with-claude",
-   "takes": []
-  },
-  {
-   "id": "openai-gpt6-cyber",
-   "date": "2026-11-05",
-   "lab": "openai",
-   "title": "GPT-6 Cyber, 사이버 위험 ‘Critical’ 등급 첫 모델",
-   "summary": "OpenAI가 취약점을 찾고 공격 코드까지 검증하는 보안 전용 모델 GPT-6 Cyber를 냈다. 리눅스 커널에서 작동하는 공격 코드 948개를 만들고 파이어폭스 고위험 버그 81개를 찾았다. OpenAI는 이 모델을 사이버 분야 최고 위험 등급인 Critical로 분류하고 심사받은 보안팀에만 열었다.",
-   "axes": [
-    "agent",
-    "safety"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "948개",
-    "label": "리눅스 커널 취약점에서 만든 작동 공격 코드 (GPT-5.6 Sol은 166개)",
-    "source_url": "https://openai.com/index/introducing-gpt-6-cyber"
-   },
-   "detail": "archive/articles-2026-11-06/openai-gpt6-cyber.html",
-   "url": "https://openai.com/index/introducing-gpt-6-cyber",
-   "takes": [
-    {
-     "url": "https://www.frontiermodelforum.org/updates/introducing-the-fmf-jailbreak-rating-framework-for-frontier-cyber-threats/",
-     "title": "FMF, 사이버 Jailbreak 등급 프레임워크",
-     "summary": "Frontier Model Forum이 사이버 우회의 심각도를 공통으로 매기는 1.0 기준을 냈고, OpenAI가 이를 소개하며 지지했다."
-    }
-   ]
-  },
-  {
-   "id": "metr-anthropic-acceleration",
-   "date": "2026-11-05",
-   "lab": "anthropic",
-   "title": "METR “Anthropic, AI 덕에 발전 속도 약 두 배”",
-   "summary": "외부 평가 기관 METR가 Anthropic 내부 자료를 보고, 잘 정의된 과제에서 모델 능력이 예전보다 약 두 배 빠르게 오르고 있다고 결론 내렸다. 가속 대부분은 연구에 AI를 쓰기 때문이고, 컴퓨트 증가 때문은 아니라고 봤다. 앞으로 12개월 안에 큰 병목도 보이지 않는다고 했다.",
-   "axes": [
-    "safety",
-    "reason"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "1.9배",
-    "label": "2025년 10월 이후 Anthropic 벤치마크 지수 상승 속도 (이전 대비)",
-    "source_url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/"
-   },
-   "detail": "archive/articles-2026-11-06/metr-anthropic-acceleration.html",
-   "url": "https://metr.org/blog/2026-11-05-anthropic-ai-rd-acceleration-assessment/",
-   "takes": [
-    {
-     "url": "https://www.platformer.news/thursday-newsletter-7/",
-     "title": "Casey Newton, AI 반발에 계획이 필요하다고 씀",
-     "summary": "Platformer 칼럼에서 METR가 Anthropic 발전 속도가 약 두 배라고 본 점을 인용하며, 선거 이후 규제 목표를 구체화해야 한다고 주장했다."
-    }
-   ]
-  },
-  {
-   "id": "anthropic-fable-mythos-5-2",
-   "date": "2026-11-10",
-   "lab": "anthropic",
-   "title": "Claude Fable 5.2, 에이전트 1,000개로 페르마 증명 30시간 형식화",
-   "summary": "Anthropic이 최상위 모델 Claude Fable 5.2와 Mythos 5.2를 냈다. 에이전트 1,000개가 페르마의 마지막 정리 증명을 30시간 만에 Lean으로 옮겼고, 블랙홀 물리 미해결 문제 두 개도 풀었다. 로봇 조종 평가에서는 GPT-6 Astra의 두 배가 넘는 점수를 냈다.",
-   "axes": [
-    "science",
-    "agent"
-   ],
-   "impact": "big",
-   "key": {
-    "value": "30시간",
-    "label": "Fable 5.2 에이전트 약 1,000개가 페르마의 마지막 정리를 Lean으로 완전 형식화한 시간",
-    "source_url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
-   },
-   "detail": "archive/articles-2026-11-10/anthropic-fable-mythos-5-2.html",
-   "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2",
-   "takes": [
-    {
-     "url": "https://www.lennysnewsletter.com/p/claude-fable-52-review-fast-creative",
-     "title": "How I AI, Fable 5.2 이틀 써 본 첫 리뷰",
-     "summary": "Claire Vo가 영상 제작, 가구 조립 설명, 실제 파이프라인 재설계를 맡겨 보고, 웹 디자인은 아직 혼자 맡기지 않겠다고 평했다."
-    },
-    {
-     "url": "https://x.com/SemiAnalysis_/status/2119961447199289640",
-     "title": "SemiAnalysis, GDPx 1위지만 토큰을 많이 쓴다",
-     "summary": "SemiAnalysis는 Fable 5.2가 GDPx 16.4%로 1위라고 했다. 다만 재료과학 과제에서는 GPT-6 Astra와 비슷한 점수에 비용은 89% 더 들었다고 짚었다."
-    },
-    {
-     "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
-     "title": "Latent Space AINews, 1위 탈환과 비용",
-     "summary": "swyx는 Fable 5.2가 Carbon에게서 1위를 되찾았지만, 토큰당 값이 20% 내려도 GDPx 과제당 비용은 67달러에서 88달러로 올랐다고 정리했다."
-    }
-   ]
-  },
-  {
-   "id": "deepmind-alphaproof-code",
-   "date": "2026-11-10",
-   "lab": "googledeepmind",
-   "title": "AlphaProof Code, Signal 암호 프로토콜의 실제 코드를 수학으로 증명",
-   "summary": "Google DeepMind가 Gemini 4 Carbon 에이전트로 Signal 프로토콜의 실제 구현 코드를 형식 검증했다. Lean 증명 600만 줄 이상을 만들었고, 사람이 다시 본 부분은 약 1%였다. 널리 쓰이는 프로토콜 구현을 이 깊이로 검증한 건 어떤 방법으로든 처음이라고 밝혔다.",
-   "axes": [
-    "safety",
-    "reason"
-   ],
-   "impact": "small",
-   "key": {
-    "value": "4주",
-    "label": "Signal 핵심 암호 코드 형식 검증에 걸린 시간 (DeepMind: 전문가 팀이면 수년)",
-    "source_url": "https://deepmind.google/blog/introducing-alphaproof-code/"
-   },
-   "detail": "articles/deepmind-alphaproof-code.html",
-   "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
-   "takes": []
-  }
- ]
+  ]
 }
