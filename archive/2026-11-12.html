@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 오늘의 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.11.12 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Google DeepMind가 세포 종류별로 DNA 변이의 영향을 읽는 AlphaGenome 2를 냈다. Google은 답을 글로 쓰지 않고 고르기만 하는 Gemini Decisions API도 열었다. Dylan Patel은 AI 지출의 45%가 상시 에이전트로 간다고 했고, Simon Willison은 Anthropic 로드쇼 영상에서 컴퓨트 이야기를 뽑았다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">11/12</span>
+      <a href="2026-11-11.html">11/11</a>
+      <a href="2026-11-10.html">11/10</a>
+      <a href="2026-11-09.html">11/09</a>
+      <a href="2026-11-08.html">11/08</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Google DeepMind · Demis Hassabis · Sundar Pichai</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/deepmind-alphagenome-2.html">DeepMind AlphaGenome 2, 세포 종류별로 DNA 변이를 읽는다</a>
+        <span class="domain">(deepmind.google)</span>
+        <a class="ext-link" href="https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google DeepMind가 DNA 서열 모델 AlphaGenome 2를 공개했다. DNA 변이가 특정 세포 종류에서 어떤 영향을 주는지 예측한다.</li>
+        <li>68개 조직, 1억 개가 넘는 세포 데이터로 학습했다. 유전자 발현을 바꾸는 변이를 이전 모델보다 거의 두 배 많이 찾았다.</li>
+        <li>비상업 연구용으로 API를 오늘 열었다. 상업 연구는 비공개 프리뷰로 먼저 연다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 같은 변이라도 어떤 세포에서 작동하는지 알아야 병의 원인을 좁힐 수 있다. 실험실 없이 계산만으로 그 후보를 추리는 도구가 한 단계 정밀해졌다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Sundar Pichai · Google DeepMind</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/gemini-decisions-api.html">Google, 답을 쓰지 않고 고르기만 하는 Gemini Decisions API</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google이 새 모델 Gemini Decision 1로 돌아가는 Decisions API를 냈다. 글을 한 글자씩 쓰지 않고, 정해진 보기 중에서 고르는 데만 쓴다.</li>
+        <li>질문 1,000개를 한 번에 넣을 수 있다. 예·아니오, 객관식, 점수 매기기 세 가지 형식을 지원한다.</li>
+        <li>입력 100만 토큰당 0.1달러이고 출력 요금은 없다. Google은 Flash-Lite보다 약 5배 싸다고 밝혔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 에이전트는 어떤 도구를 쓸지, 규칙을 어겼는지 같은 작은 판단을 수없이 한다. 그 판단만 따로 싸고 빠르게 처리하는 전용 모델이 나왔다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Dylan Patel (SemiAnalysis)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/dylan-persistent-agents.html">Dylan Patel “우리 AI 지출의 45%는 상시 에이전트”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/dylan522p/status/2120617704101155270" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis 대표 Dylan Patel이 회사 AI 지출의 45%가 상시 에이전트에 쓰인다고 밝혔다. 상시 에이전트는 사람이 부르지 않아도 계속 켜져 일하는 에이전트다.</li>
+        <li>그는 Anthropic의 Claude Tags와 OpenAI의 Slack 에이전트를 혹평했다. 주로 쓰는 건 여러 모델을 섞어 쓰는 Perplexity Computer라고 했다.</li>
+        <li>Perplexity도 실제로는 Anthropic 모델을 주로 쓴다고 짚었다. 차이는 모델보다 제품과 하네스에서 난다는 얘기다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 돈이 어디로 가는지가 쓰임새를 가장 정확히 보여 준다. 채팅이 아니라 늘 켜진 에이전트가 AI 지출의 큰 몫이 되기 시작했다는 현장 신호다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Jim Fan (NVIDIA)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/jimfan-gr00t2-uncut-lab.html">Jim Fan, 편집 없는 1배속 로봇 영상 연재 시작</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/DrJimFan/status/2120540201994846253" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>NVIDIA의 Jim Fan이 GR00T 2가 로봇 손으로 화학 실험을 처음부터 끝까지 하는 영상을 올렸다. 실험이 끝난 뒤 뒷정리까지 스스로 한다.</li>
+        <li>자율 동작이고, 자르지 않았고, 1배속이라고 강조했다.</li>
+        <li>앞으로 이런 실시간 로봇 영상을 연재하겠다고 했다. 흔히 붙는 4배속, 8배속 표시를 빼겠다는 뜻이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 로봇 데모는 빨리 감기와 편집이 흔해서 실력을 가늠하기 어렵다. 실제 속도 그대로 보여 주겠다는 건 평가 기준을 높이자는 제안이다.</div>
+    </article>
+    <article class="item">
+      <div class="who">SemiAnalysis</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/semianalysis-spacex-kessel.html">SemiAnalysis, SpaceX가 만드는 자체 GPU 랙 Kessel</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2120351564720136389" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>SemiAnalysis가 SpaceX의 자체 GPU 랙 Kessel을 분석했다. NVIDIA Vera Rubin NVL72를 바탕으로 내부 구조를 다시 짠 설계다.</li>
+        <li>GPU 72개 구성은 유지하고, 케이블 대신 기판 하나로 칩을 연결한다. 지상과 궤도 양쪽에 둘 수 있게 설계했다고 한다.</li>
+        <li>SpaceX는 NVIDIA에서 칩 패키지만 사고 나머지 부품은 직접 조달할 계획이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 큰 고객이 NVIDIA 완제품 대신 부품 단위로 사기 시작하면 공급망의 이익 배분이 바뀐다. 우주 데이터센터 구상도 실제 하드웨어 설계 단계에 들어섰다는 신호다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Simon Willison</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/simonw-anthropic-roadshow-compute.html">Simon Willison, Anthropic 상장 로드쇼 영상 속 컴퓨트 이야기</a>
+        <span class="domain">(simonwillison.net)</span>
+        <a class="ext-link" href="https://simonwillison.net/2026/Nov/11/anthropic-ipo-roadshow/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Simon Willison이 Anthropic 상장 로드쇼 영상을 직접 받아 적고 요점을 뽑았다.</li>
+        <li>Anthropic은 Claude를 칩 네 종류에서 학습하고 서비스한다. AWS Trainium, Google TPU, NVIDIA GPU, AMD GPU다.</li>
+        <li>Mythos가 사람 손을 거의 안 거치고 3일 만에 Claude를 AMD GPU에서 돌아가게 만들었다고 한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 예전엔 엔지니어 수십 명이 몇 달 걸리던 칩 이식을 모델이 사흘에 끝냈다. 여러 칩을 쓰는 전략의 비용을 AI가 직접 낮추고 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Latent Space</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/latent-space-codex-work.html">Latent Space, OpenAI가 말하는 Codex 새 작업 방식</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://latent.space/p/codex-work/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>AI Engineer Code Summit에서 OpenAI 개발자 경험 팀이 Codex 워크숍을 열었다. Latent Space가 현장을 정리했다.</li>
+        <li>로컬에서 하던 작업을 클라우드 Codex로 넘기는 흐름이 핵심이었다. OpenAI도 아직 헷갈리는 부분이 있다고 인정했다.</li>
+        <li>음성으로 여러 에이전트를 지휘하고, 개인 에이전트 dots에게 일을 맡기는 방식도 소개했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 코딩 에이전트가 노트북 밖으로 나가고 있다. 사람이 하는 일은 코드를 쓰는 것보다 여러 작업을 맡기고 확인하는 쪽으로 옮겨 간다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Machine Gods (Kevin Roose · Casey Newton)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/machine-gods-jensen-casar.html">Machine Gods, Jensen Huang은 버틸까·초지능 금지 법안 의원 인터뷰</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://www.youtube.com/watch?v=YAQ3Oy6itLg" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Kevin Roose와 Casey Newton의 팟캐스트 Machine Gods가 NVIDIA 스캔들 후속편을 냈다. Jensen Huang이 CEO 자리를 지킬 수 있을지 다뤘다.</li>
+        <li>후반부는 Greg Casar 하원의원 인터뷰다. 민주당이 새 다수당이 되면 AI를 어떻게 규제할지 물었다.</li>
+        <li>Casar는 Bernie Sanders 상원의원과 초지능 금지 법안을 함께 썼고, 재귀적 자기개선 금지도 주장한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 미국 의회에서 초지능과 재귀적 자기개선 금지가 실제 법안 주제로 올라왔다. 다수당이 바뀌는 시점이라 규제 방향을 미리 읽을 수 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">How I AI (Claire Vo)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/howiai-obsidian-family-brain.html">How I AI, Claude Code와 Obsidian으로 만든 가족 AI 두뇌</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/claude-code-obsidian-my-familys-ai" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>수학 교사이자 부모인 Scott Farrar가 집안일을 관리하는 AI 시스템을 보여 줬다. Claude Code와 마크다운 파일, Obsidian으로 만들었다.</li>
+        <li>가전, 보증서, 보험 서류, 가족 할 일 목록을 한 폴더에 모았다. 이걸로 자동차 보험을 비교하고 수리 계획을 세운다.</li>
+        <li>아내와 같은 시스템을 함께 쓰고, 벽 화면에 급한 일과 최근 해낸 일을 띄운다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 대화가 흩어지고 잊히는 채팅 대신, 파일로 남는 기억을 쓰면 AI가 생활 비서가 된다. 개발자가 아닌 사람도 따라 할 수 있는 구조다.</div>
+    </article>
+    <article class="item">
+      <div class="who">a16z (Olivia Moore · Justine Moore)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/a16z-b2a-economy.html">a16z “이제 기업은 사람 말고 에이전트를 손님으로 맞아야 한다”</a>
+        <span class="domain">(a16z.news)</span>
+        <a class="ext-link" href="https://www.a16z.news/p/welcome-to-the-b2a-economy" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z가 기업이 AI 에이전트를 상대로 장사하는 “B2A 경제”가 온다는 글을 냈다.</li>
+        <li>Human Security 집계로 에이전트 브라우저 트래픽이 8월에서 10월 사이 8배 늘었다.</li>
+        <li>수십 년간 봇을 막던 기업이 이제 에이전트의 선택을 받으려고 경쟁하게 된다는 주장이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 누가 물건을 고르는지가 바뀌면 마케팅, 결제, 본인 확인이 모두 바뀐다. 코딩 도구 시장에서 이미 그 변화가 숫자로 나왔다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Latent Space (AINews)</div>
+      <h2 class="title">
+        <a href="articles-2026-11-12/latent-space-ainews-mercor.html">Latent Space, Mercor 200억 달러 가치…“추론 비용이 인건비의 3배”</a>
+        <span class="domain">(latent.space)</span>
+        <a class="ext-link" href="https://latent.space/p/ainews-mercor-750m-series-d-at-20b-valuation-3b-run-rate/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>AI 학습 데이터 회사 Mercor가 7억 5천만 달러를 투자받았다. 기업 가치는 200억 달러, 연 환산 매출은 30억 달러다.</li>
+        <li>Mercor는 이미 추론 비용으로 직원 급여의 3배를 쓴다고 밝혔다. 그 돈이 팀 생산성으로 회수된다고 했다.</li>
+        <li>이 비율이 경제 전체로 퍼지면 앞으로 5년 GDP 성장률이 두 자릿수에 가까울 수 있다는 주장도 냈다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 프런티어 랩에 전문가 데이터를 파는 시장이 이만큼 커졌다. 회사가 사람보다 AI에 더 많은 돈을 쓰는 구조도 실제 숫자로 나왔다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
