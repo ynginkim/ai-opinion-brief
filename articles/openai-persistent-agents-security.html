@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI, 사내 상시 에이전트 500여 개를 이렇게 지킨다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · Peter Steinberger · <span class="article-date">2026-11-14 Seoul</span></div>
+    <h1 class="article-title">OpenAI, 사내 상시 에이전트 500여 개를 이렇게 지킨다</h1>
+    <div class="source-line">
+      원문 · <a href="https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai" target="_blank" rel="noopener">OpenAI 개발자 블로그</a> · <a href="https://x.com/steipete/status/2121058770767982997" target="_blank" rel="noopener">Peter Steinberger X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 사내에서 상시 에이전트를 어떻게 지키는지 정리한 글을 개발자 블로그에 올렸다. Peter Steinberger는 X에서 “우리 팀이 썼다”며 이 글을 소개했다.
+      </p>
+
+      <p>
+        상시 에이전트는 사람이 매번 지시하지 않아도 24시간 돌며 알아서 움직인다. OpenAI 안에는 이런 OpenClaw 에이전트가 수백 개 있다. 글 끝에서는 백그라운드에서 실제 일을 하는 에이전트가 500개가 넘는다고 밝힌다.
+      </p>
+
+      <h2>어떻게 막나</h2>
+
+      <p>
+        첫째, 믿는 코드와 믿지 않는 코드를 나눈다. 네트워크, 신원, 샌드박스 같은 핵심 부분은 고정된 코드로 두고, 에이전트와 에이전트가 쓴 코드는 믿지 않는 쪽으로 분류한다.
+      </p>
+
+      <p>
+        둘째, 샌드박스로 경계를 친다. 허용된 주소에만 접속하게 하고, 작업 폴더에만 쓰게 한다. 비밀 키는 중개 서비스를 거쳐서 에이전트 눈에 보이지 않게 한다.
+      </p>
+
+      <p>
+        셋째, 다른 모델이 감시한다. Auto-review라는 기능으로 두 번째 에이전트가 모든 행동을 승인한다. 사람이 매번 승인하면 결국 습관처럼 다 누르게 되기 때문이다.
+      </p>
+
+      <p>
+        넷째, 에이전트에게 사용자와 다른 자기 신원을 준다. 그래야 누가 한 일인지 추적하고, 필요하면 바로 끌 수 있다. 다섯째, 설정 변경과 에이전트 대화를 모두 기록한다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        OpenAI는 개발자 행사에서 발표한 오픈소스 OpenClaw Enterprise에 이 장치들을 기본으로 넣는다고 했다. 아직 시범 단계이고, 연말까지 1.0을 내는 게 목표다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
