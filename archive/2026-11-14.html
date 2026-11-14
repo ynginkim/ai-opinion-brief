@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 오늘의 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.11.14 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Dwarkesh Patel이 “2030년 전에 초지능이 온다”고 입장을 바꾼 긴 에세이를 냈다. Anthropic은 안전 평가를 제대로 만드는 10가지 원칙을, OpenAI는 사내 상시 에이전트 500여 개를 지키는 보안 설계를 공개했다. Jensen Huang 퇴진 후속 분석도 이어졌다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">11/14</span>
+      <a href="2026-11-13.html">11/13</a>
+      <a href="2026-11-12.html">11/12</a>
+      <a href="2026-11-11.html">11/11</a>
+      <a href="2026-11-10.html">11/10</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Anthropic</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/anthropic-safety-evals.html">Anthropic, “안전 평가는 이렇게 만들어야 믿을 수 있다”</a>
+        <span class="domain">(anthropic.com)</span>
+        <a class="ext-link" href="https://www.anthropic.com/research/building-strong-safety-evaluations" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic이 AI 안전 평가를 설계하고 돌리고 보고하는 10가지 원칙을 공개했다.</li>
+        <li>심리학이 재현성 위기를 겪고 도입한 사전 등록, 엄밀한 통계 같은 방법을 가져왔다.</li>
+        <li>딱 세 가지만 한다면 무엇을 잴지 먼저 적고, 채점 모델을 사람 판단과 맞춰 보고, 불확실성을 함께 보고하라고 권한다.</li>
+      </ul>
+      <div class="why"><em>왜</em> “이전 모델보다 안전하다”는 말은 평가 설계만큼만 믿을 수 있다. 모델 출시 판단에 쓰는 기준을 외부와 맞추려는 시도다.</div>
+    </article>
+    <article class="item">
+      <div class="who">OpenAI · Peter Steinberger</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/openai-persistent-agents-security.html">OpenAI, 사내 상시 에이전트 500여 개를 이렇게 지킨다</a>
+        <span class="domain">(developers.openai.com)</span>
+        <a class="ext-link" href="https://developers.openai.com/blog/securing-persistent-agents-like-openclaw-at-openai" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 회사 안에서 24시간 도는 OpenClaw 에이전트를 어떻게 안전하게 운영하는지 공개했다.</li>
+        <li>설정을 맡는 게이트웨이와 에이전트 실행 환경을 다른 클러스터로 떼고, 에이전트 쪽은 믿지 않는 코드로 취급한다.</li>
+        <li>모든 행동을 두 번째 모델이 검토하고, 에이전트마다 사용자와 다른 자기 계정을 준다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 상시 에이전트를 회사에 들이려는 팀이라면 바로 참고할 만한 체크리스트다. 오픈소스 OpenClaw Enterprise에도 같은 장치가 들어간다.</div>
+    </article>
+    <article class="item">
+      <div class="who">SemiAnalysis · Dylan Patel</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/semianalysis-jensen-emergency-pod.html">SemiAnalysis 긴급 팟캐스트: “Jensen 없는 NVIDIA는 끝났나”</a>
+        <span class="domain">(x.com)</span>
+        <a class="ext-link" href="https://x.com/SemiAnalysis_/status/2121226979097690437" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Dylan Patel과 Jordan Schneider가 Jensen Huang 퇴진 직후 긴급 팟캐스트에 나왔다.</li>
+        <li>중국 랩이 NVIDIA 컴퓨트를 빌려 쓸 때 NVIDIA가 메가와트당 700만 달러 이익을 낸다는 이야기를 다뤘다.</li>
+        <li>Dylan은 이런 일에도 NVIDIA 주가가 더 빠지지 않은 게 믿기지 않는다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> Jensen 퇴진이 칩 수출 규제와 중국 시장에 어떤 영향을 줄지 가늠할 때 참고할 만하다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Dwarkesh Podcast · Dwarkesh Patel</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/dwarkesh-rsi-essay.html">Dwarkesh: “수학을 덮친 눈사태가 AI 연구로 온다”</a>
+        <span class="domain">(dwarkesh.com)</span>
+        <a class="ext-link" href="https://www.dwarkesh.com/p/rsi" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Dwarkesh Patel이 초지능이 2030년 전에 온다고 보게 된 이유를 긴 에세이로 썼다.</li>
+        <li>최고 수준 AI 연구자를 자동화하는 시점의 중앙값을 2028년으로 잡았다. 2032년 이후일 확률은 25%로 봤다.</li>
+        <li>근거로 수학에서 AI가 난제를 쏟아내는 흐름과 METR의 Anthropic 연구 2배 가속 평가를 들었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 올해 초만 해도 10년 가까이 걸린다던 사람이 몇 달 만에 생각을 바꿨다. AI가 AI 연구를 얼마나 앞당길지가 일정표의 핵심 변수가 됐다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Platformer · Casey Newton</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/platformer-jensen-founder-cult.html">Casey Newton: Jensen 사태의 진짜 문제는 창업자 숭배</a>
+        <span class="domain">(platformer.news)</span>
+        <a class="ext-link" href="https://www.platformer.news/jensen-huang-resigns-founder-cult-accountability/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Casey Newton은 Jensen Huang 퇴진의 핵심이 사생활이 아니라 실리콘밸리의 창업자 숭배라고 봤다.</li>
+        <li>NYT는 부하 직원과의 두 번째 관계를, Reuters는 세 번째 관계를 보도했다.</li>
+        <li>창업자를 일반 기업 통제 밖에 두는 문화가 이번 일로 한계를 드러냈다는 주장이다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 대기업 창업자에게 이사회가 실제로 책임을 묻기 시작했다는 신호로 읽을 수 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Hard Fork · Kevin Roose · Casey Newton</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/hard-fork-jensen-out.html">Hard Fork 긴급편: Jensen 이후의 NVIDIA</a>
+        <span class="domain">(nytimes.com)</span>
+        <a class="ext-link" href="https://www.nytimes.com/2026/11/12/podcasts/hardfork-jensen-huang-resigns.html" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Hard Fork가 Jensen Huang 퇴진을 다룬 긴급 에피소드를 냈다.</li>
+        <li>이 사건을 취재해 온 NYT 기자 Ana Swanson, Ryan Mac이 나왔다.</li>
+        <li>Jensen 전기 「The Thinking Machine」을 쓴 Stephen Witt도 함께 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 사건 경위와 Jensen 없는 NVIDIA의 앞날을 한 번에 듣고 싶다면 이 에피소드가 빠르다.</div>
+    </article>
+    <article class="item">
+      <div class="who">a16z · Anne Neuberger</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/a16z-si-cyber-defense.html">a16z, 초지능 시대 핵심 기반시설 사이버 방어 계획 제안</a>
+        <span class="domain">(a16z.news)</span>
+        <a class="ext-link" href="https://www.a16z.news/p/super-intelligence-era-critical-infrastructure" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>전 백악관 사이버 담당 부보좌관 Anne Neuberger가 핵심 기반시설 방어 계획을 냈다.</li>
+        <li>전력, 금융·결제, 수도, 통신, 병원 다섯 분야의 수백 개 운영사부터 지키자는 내용이다.</li>
+        <li>AI로 취약점을 찾고, 패치가 안 되는 낡은 장비에는 AI로 우회책을 만들자고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 때문에 취약점이 발견되고 악용되기까지 시간이 크게 줄었다. 사람 속도로 일하는 방어 체계로는 따라가기 어렵다는 문제 제기다.</div>
+    </article>
+    <article class="item">
+      <div class="who">a16z</div>
+      <h2 class="title">
+        <a href="articles-2026-11-14/a16z-big-pharma.html">a16z: “AI가 제약을 소프트웨어만큼 키운다”</a>
+        <span class="domain">(a16z.news)</span>
+        <a class="ext-link" href="https://www.a16z.news/p/big-pharma-can-rival-big-software" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>a16z 바이오 팀이 AI가 신약 성공률을 높이고 개발 기간과 비용을 줄일 수 있다고 썼다.</li>
+        <li>지금은 임상에 들어간 신약 후보 중 승인까지 가는 비율이 10%도 안 된다.</li>
+        <li>Eli Lilly의 3분기 GLP-1 매출은 약 170억 달러로, 같은 분기 Anthropic 매출과 비슷했다고 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> AI 과학 모델이 실제 돈이 되는 첫 큰 시장으로 제약을 보는 시각이다. 투자 흐름이 어디로 갈지 가늠할 수 있다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
