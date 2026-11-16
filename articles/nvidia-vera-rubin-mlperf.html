@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vera Rubin 첫 MLPerf, 에이전트 추론 전력 효율 10배 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">NVIDIA · <span class="article-date">2026-11-17 Seoul</span></div>
+    <h1 class="article-title">Vera Rubin 첫 MLPerf, 에이전트 추론 전력 효율 10배</h1>
+    <div class="source-line">
+      원문 · <a href="https://blogs.nvidia.com/blog/mlperf-training-endpoints-vera-rubin/" target="_blank" rel="noopener">NVIDIA 블로그</a> · <a href="https://blogs.nvidia.com/blog/rubin-hpc/" target="_blank" rel="noopener">Rubin HPC 발표</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        NVIDIA가 슈퍼컴퓨팅 학회 SC26 주간에 Vera Rubin의 MLPerf 첫 성적을 공개했다. MLPerf는 업계 공용 AI 성능 시험이다.
+      </p>
+
+      <p>
+        과학 계산용 Rubin HPC GPU도 같은 날 발표했다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <ul>
+        <li>MLPerf Training v6.1: 전 항목 결과를 낸 유일한 플랫폼</li>
+        <li>Vera Rubin NVL72: GPU당 성능 GB300 NVL72 대비 최대 2배</li>
+        <li>DeepSeek-V3 학습: GPU 256개에서 1,024개로 늘리자 16분이 약 4분으로, 효율 약 97%</li>
+        <li>MLPerf Endpoints(Kimi K3): 같은 응답 속도에서 와트당 처리량 GB300의 10배 이상</li>
+      </ul>
+
+      <p>
+        Endpoints 결과는 잠정치다. MLCommons 검증이 끝나지 않아 바뀔 수 있다고 NVIDIA가 적었다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트는 한 작업에 추론, 도구 호출, 검산을 여러 번 한다. 그만큼 토큰을 많이 쓴다.
+      </p>
+
+      <p>
+        전력이 정해진 데이터센터에선 와트당 토큰 수가 곧 돌릴 수 있는 에이전트 수다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        클라우드 업체들이 Vera Rubin 도입을 서두를 근거가 생겼다. 20개 파트너가 함께 결과를 냈다.
+      </p>
+
+      <p>
+        다만 잠정 수치이니 MLCommons 검증 결과를 다시 볼 필요가 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

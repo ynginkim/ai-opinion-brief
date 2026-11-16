@@ -842,6 +842,11 @@
           "url": "https://www.dwarkesh.com/p/rsi",
           "title": "Dwarkesh: 수학을 덮친 눈사태가 AI 연구로 온다",
           "summary": "Dwarkesh Patel이 METR의 Anthropic 연구 2배 가속 평가를 핵심 근거로 들며, 최고 수준 AI 연구자 자동화 시점의 중앙값을 2028년으로 잡고 2030년 전 초지능을 예상했다."
+        },
+        {
+          "url": "https://www.dwarkesh.com/p/paul-christiano-2",
+          "title": "Paul Christiano “1년 안 초지능 확률 3분의 1”",
+          "summary": "Dwarkesh Podcast에서 METR·Anthropic의 발전 속도 약 두 배 보고를 큰 근거로 들었다. 지금 속도면 1년 안 초지능 확률을 3분의 1로 보고, 보안이 갖춰질 때까지 알고리즘 발전을 멈추자고 했다."
         }
       ]
     },
@@ -918,6 +923,25 @@
       },
       "detail": "archive/articles-2026-11-12/deepmind-alphagenome-2.html",
       "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+      "takes": []
+    },
+    {
+      "id": "openai-embedded-assessments",
+      "date": "2026-11-16",
+      "lab": "openai",
+      "title": "OpenAI, 외부 평가 기관 넷에 내부 모델 공개",
+      "summary": "OpenAI가 Apollo Research, METR, Transluce, Goodfire와 상주 평가 계약을 맺었다. 평가 기관은 OpenAI 사무실에서 학습 중간 모델, 학습 데이터, 감시 기록을 직접 본다. METR는 OpenAI 역대 최대 강화학습 실행을 들여다본다.",
+      "axes": [
+        "safety"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "4곳",
+        "label": "1단계 상주 평가에 참여한 외부 기관 수",
+        "source_url": "https://openai.com/index/our-first-phase-of-embedded-assessments/"
+      },
+      "detail": "articles/openai-embedded-assessments.html",
+      "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
       "takes": []
     }
   ]
