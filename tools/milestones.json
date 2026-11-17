@@ -847,6 +847,11 @@
           "url": "https://www.dwarkesh.com/p/paul-christiano-2",
           "title": "Paul Christiano “1년 안 초지능 확률 3분의 1”",
           "summary": "Dwarkesh Podcast에서 METR·Anthropic의 발전 속도 약 두 배 보고를 큰 근거로 들었다. 지금 속도면 1년 안 초지능 확률을 3분의 1로 보고, 보안이 갖춰질 때까지 알고리즘 발전을 멈추자고 했다."
+        },
+        {
+          "url": "https://a16z.simplecast.com/episodes/can-ai-learn-to-improve-itself-recursive-self-improvement-MhAlOhBQ",
+          "title": "Mark Chen “AI 연구 인턴은 이미 만들었다”",
+          "summary": "a16z Working Theory 첫 편에서 OpenAI Mark Chen과 John Schulman이 AI 자기개선을 다뤘다. 범위가 정해진 실험은 모델이 직접 돌리지만, 무엇을 연구할지 고르는 감각은 아직 사람 몫이라고 봤다. 에피소드 자료에 METR 평가도 들어 있다."
         }
       ]
     },
@@ -940,8 +945,28 @@
         "label": "1단계 상주 평가에 참여한 외부 기관 수",
         "source_url": "https://openai.com/index/our-first-phase-of-embedded-assessments/"
       },
-      "detail": "articles/openai-embedded-assessments.html",
+      "detail": "archive/articles-2026-11-17/openai-embedded-assessments.html",
       "url": "https://openai.com/index/our-first-phase-of-embedded-assessments/",
+      "takes": []
+    },
+    {
+      "id": "openai-gpt-6-2-astra",
+      "date": "2026-11-18",
+      "lab": "openai",
+      "title": "GPT-6.2 Astra, AI 자기개선 ‘High’ 첫 공개 모델",
+      "summary": "OpenAI가 GPT-6.2 Astra와 Sol을 내놨다. Astra는 AI 연구를 앞당기는 능력에서 High 등급을 받은 첫 외부 공개 모델이다. 연구자마다 유능한 엔지니어 조수가 한 명씩 붙는 정도라고 OpenAI는 설명했다.",
+      "axes": [
+        "agent",
+        "safety"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "High",
+        "label": "AI 자기개선 등급 (외부 공개 모델 중 처음)",
+        "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+      },
+      "detail": "articles/openai-gpt-6-2-astra-sol.html",
+      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
       "takes": []
     }
   ]

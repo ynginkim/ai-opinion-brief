@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>코딩 에이전트는 내 Mac에, 실행은 샌드박스에 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Simon Willison · <span class="article-date">2026-11-18 Seoul</span></div>
+    <h1 class="article-title">코딩 에이전트는 내 Mac에, 실행은 샌드박스에</h1>
+    <div class="source-line">
+      원문 · <a href="https://blog.primeradiant.com/external-sandboxes-for-coding-agents/" target="_blank" rel="noopener">Prime Radiant 블로그</a> · <a href="https://x.com/simonw/status/2122500307557265651" target="_blank" rel="noopener">Simon Willison X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Simon Willison이 Prime Radiant 블로그에 글을 올렸다. 코딩 에이전트가 실행하는 모든 명령을 리눅스 샌드박스 안에서 돌리는 도구를 공개했다.
+      </p>
+
+      <p>
+        이름은 ‘외부 샌드박스’ 패턴이다. 에이전트 자체는 Mac에서 평소처럼 돈다. 명령만 바깥 샌드박스로 보낸다.
+      </p>
+
+      <h2>무엇이 되나</h2>
+
+      <ul>
+        <li>샌드박스는 내가 연결한 폴더만 본다. 읽기 전용, 읽기·쓰기를 고를 수 있다.</li>
+        <li>기본은 네트워크 차단이다. 프록시로 허락한 주소만 열 수 있다.</li>
+        <li>API 키는 프록시가 대신 끼워 넣는다. 에이전트는 키를 볼 수 없다.</li>
+        <li>구현은 세 가지다. WebAssembly, Apple Containers, Microsoft Quicksand(QEMU).</li>
+      </ul>
+
+      <p>
+        세 샌드박스가 같은 규약을 쓴다. 그래서 어떤 에이전트든 어떤 샌드박스와도 짝지을 수 있다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        그는 모든 행동을 손으로 승인하는 방식을 “끔찍하다”고 했다. 느리고, 금방 지쳐서 다 승인하게 된다는 것이다.
+      </p>
+
+      <p>
+        많은 사람이 에이전트에 컴퓨터 전체 권한을 주고 운에 맡긴다. 피해 범위를 구조로 막는 쪽이 현실적인 답이라는 주장이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        아직 실험용 시제품이다. 보안 감사를 받지 않았으니 민감한 작업에는 쓰지 말라고 했다.
+      </p>
+
+      <p>
+        읽기·쓰기로 연결한 폴더는 여전히 망가질 수 있다. 버전 관리를 꼭 켜 두라는 조언도 붙였다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
