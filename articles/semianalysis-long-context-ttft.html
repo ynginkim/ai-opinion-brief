@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>컨텍스트 600K여도 캐시되면 첫 응답 1.6초 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · <span class="article-date">2026-11-19 Seoul</span></div>
+    <h1 class="article-title">컨텍스트 600K여도 캐시되면 첫 응답 1.6초</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/SemiAnalysis_/status/2122853999506260021" target="_blank" rel="noopener">SemiAnalysis X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        에이전트를 오래 돌리면 대화 기록, 즉 컨텍스트가 계속 길어진다. 그러면 응답이 느려지지 않을까 걱정하게 된다.
+      </p>
+
+      <p>
+        SemiAnalysis는 사내 Claude Opus 5.5 사용 기록으로 답했다. 느려지긴 하지만, 캐시돼 있다면 크게는 아니다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <ul>
+        <li>5만~10만 토큰: 첫 토큰까지 중앙값 0.9초</li>
+        <li>60만 토큰 이상: 중앙값 1.6초</li>
+      </ul>
+
+      <p>
+        캐시는 이미 읽은 앞부분을 다시 계산하지 않도록 저장해 두는 기능이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        긴 작업을 맡는 에이전트를 설계할 때 캐시를 잘 쓰는 게 속도의 핵심이라는 뜻이다.
+      </p>
+
+      <p>
+        같은 계정은 일본 데이터센터 업체 Datasection의 실적 전망 89% 하향도 분석했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

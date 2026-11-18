@@ -965,8 +965,28 @@
         "label": "AI 자기개선 등급 (외부 공개 모델 중 처음)",
         "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
       },
-      "detail": "articles/openai-gpt-6-2-astra-sol.html",
+      "detail": "archive/articles-2026-11-18/openai-gpt-6-2-astra-sol.html",
       "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+      "takes": []
+    },
+    {
+      "id": "openai-chip-design-amd",
+      "date": "2026-11-19",
+      "lab": "openai",
+      "title": "AI가 고친 GPU 설계, 실제 생산에 들어가다",
+      "summary": "OpenAI 모델이 AMD 플래그십 GPU 설계를 고쳐 PPA를 최대 14% 끌어올렸다. AMD는 일부 변경을 생산에 보낸 설계에 이미 넣었다. AI가 AI를 돌리는 칩을 더 좋게 만드는 고리가 연구실 밖으로 나왔다.",
+      "axes": [
+        "compute",
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "14%",
+        "label": "AMD 플래그십 GPU IP PPA 개선 (최대)",
+        "source_url": "https://openai.com/index/advancing-chip-design-with-our-models/"
+      },
+      "detail": "articles/openai-chip-design-amd.html",
+      "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
       "takes": []
     }
   ]

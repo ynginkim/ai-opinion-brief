@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI 모델이 AMD GPU 설계를 최대 14% 개선 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · <span class="article-date">2026-11-19 Seoul</span></div>
+    <h1 class="article-title">OpenAI 모델이 AMD GPU 설계를 최대 14% 개선</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/advancing-chip-design-with-our-models/" target="_blank" rel="noopener">OpenAI</a> · <a href="https://x.com/OpenAI/status/2123100386638877054" target="_blank" rel="noopener">OpenAI X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 자기 모델로 칩 설계를 개선한 결과를 공개했다. 상대는 AMD의 플래그십 GPU 설계다.
+      </p>
+
+      <p>
+        PPA는 전력·성능·면적을 묶어 부르는 말이다. 칩이 얼마나 잘 만들어졌는지 보는 기본 잣대다.
+      </p>
+
+      <p>
+        AMD 엔지니어들이 몇 년 동안 다듬은 설계 위에서 최대 14%를 더 끌어냈다. 걸린 시간은 다섯 달이 안 된다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <ul>
+        <li>AMD 플래그십 GPU IP: PPA 최대 14% 개선 (OpenAI 발표)</li>
+        <li>OpenAI 설명: 보통 1년 걸릴 진전을 5개월 안에 냈다</li>
+        <li>AMD 차세대 플래그십 CPU 핵심 블록: 한 자릿수 % 개선, AMD가 검증</li>
+        <li>Jalapeño: 벡터 유닛 면적 약 13%, 행렬 유닛 약 10% 감소, 실리콘에서 확인</li>
+        <li>오픈소스 RISC-V 코어 평가: 실행당 약 11만 2천 토큰 예산에서 GPT-6.2 Astra 평균 점수가 가장 높음</li>
+      </ul>
+
+      <h2>어떻게 했나</h2>
+
+      <p>
+        모델은 칩 회로를 글로 적은 코드(SystemVerilog RTL)를 다시 썼다.
+      </p>
+
+      <p>
+        고칠 때마다 Synopsys 도구로 동작이 그대로인지 확인했다. 전력·성능·면적의 득실도 그 도구로 쟀다.
+      </p>
+
+      <p>
+        OpenAI는 모델이 숙련된 칩 설계자 수준으로 회로를 다룬다고 표현했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        AI가 더 좋은 칩을 만들고, 그 칩이 더 좋은 AI를 돌린다. 자기개선 논쟁에서 자주 나오는 고리다.
+      </p>
+
+      <p>
+        이번엔 그 고리가 실제 생산 설계에 들어갔다. 숫자는 OpenAI가 낸 것이지만 AMD도 일부를 검증했다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        OpenAI는 Synopsys와 손잡고 이 능력을 칩 설계 도구에 붙인다. 다른 칩 회사들도 곧 쓰게 된다는 뜻이다.
+      </p>
+
+      <p>
+        칩 하나 설계하는 데 몇 년 걸리던 속도가 빨라지면 AI 컴퓨트가 늘어나는 속도도 따라 빨라질 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
