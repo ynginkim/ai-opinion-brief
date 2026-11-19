@@ -988,6 +988,26 @@
       "detail": "articles/openai-chip-design-amd.html",
       "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
       "takes": []
+    },
+    {
+      "id": "google-gemini-4-neon",
+      "date": "2026-11-19",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 Neon, 프론티어급을 더 싸고 빠르게",
+      "summary": "Google이 Gemini 4 Neon을 공개했다. Carbon과 Hydrogen 사이에 두는 프론티어급 모델이다. 가격은 입력 100만 토큰당 3달러, 출력 15달러고 컨텍스트는 100만 토큰이다. 기본 high 설정에서 Carbon보다 작업당 비용이 32% 낮다고 했다.",
+      "axes": [
+        "reason",
+        "agent"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "$3/$15",
+        "label": "입력·출력 가격 (100만 토큰당, 컨텍스트 100만)",
+        "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
+      },
+      "detail": "articles/gemini-4-neon.html",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
+      "takes": []
     }
   ]
 }
