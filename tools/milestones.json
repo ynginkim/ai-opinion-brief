@@ -985,7 +985,7 @@
         "label": "AMD 플래그십 GPU IP PPA 개선 (최대)",
         "source_url": "https://openai.com/index/advancing-chip-design-with-our-models/"
       },
-      "detail": "articles/openai-chip-design-amd.html",
+      "detail": "archive/articles-2026-11-19/openai-chip-design-amd.html",
       "url": "https://openai.com/index/advancing-chip-design-with-our-models/",
       "takes": []
     },
@@ -1005,7 +1005,7 @@
         "label": "입력·출력 가격 (100만 토큰당, 컨텍스트 100만)",
         "source_url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
       },
-      "detail": "articles/gemini-4-neon.html",
+      "detail": "archive/articles-2026-11-19/gemini-4-neon.html",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
       "takes": []
     }
