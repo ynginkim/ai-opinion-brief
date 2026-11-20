@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI “증류로 추론 과정 빼내기, 성공률 54%에서 0.2%로” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · <span class="article-date">2026-11-21 Seoul</span></div>
+    <h1 class="article-title">OpenAI “증류로 추론 과정 빼내기, 성공률 54%에서 0.2%로”</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/combatting-adversarial-distillation" target="_blank" rel="noopener">OpenAI 발표</a> · <a href="https://x.com/OpenAI/status/2123862344422088794" target="_blank" rel="noopener">OpenAI X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 적대적 증류에 대응하는 방법을 정리해 공개했다. 적대적 증류는 허락 없이 프론티어 모델의 출력으로 다른 모델을 학습시키는 것을 말한다.
+      </p>
+
+      <p>
+        OpenAI는 이를 지식재산 문제를 넘어 안전 문제로 본다. 증류된 모델은 원래 모델의 보호장치 없이 능력만 물려받을 수 있기 때문이다.
+      </p>
+
+      <h2>무엇을 막나</h2>
+
+      <p>
+        예를 들어 사이버 보안 능력을 증류한 모델은 원래 모델이 거절했을 공격을 도울 수 있다. 생물학 분야도 같은 걱정이 있다.
+      </p>
+
+      <p>
+        OpenAI가 가장 신경 쓰는 건 보호된 추론, 곧 모델이 답을 내기 전 거치는 생각의 사슬이다. 최종 답에 없는 정보가 담겨 있어 다른 모델 학습 데이터로 특히 값지다고 했다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <ul>
+        <li>추론 빼내기 공격 평균 성공률: GPT-6 Astra(기존 보호장치) 54.0% → GPT-6.2 Astra(새 보호장치) 0.2%</li>
+        <li>강한 자동 레드팀을 쓴 내부 적응형 평가 결과</li>
+      </ul>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        OpenAI는 업계에 권고도 냈다. 대화 전체에서 추론 유출을 점검하고, 찾아낸 공격은 회귀 테스트로 남기라고 했다. 요청 단위 차단과 조직적 시도 추적을 함께 하라고도 했다.
+      </p>
+
+      <p>
+        관련 내용은 Frontier Model Forum과 정부 정보 공유 채널로도 나눴다고 했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
