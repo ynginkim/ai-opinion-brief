@@ -1019,7 +1019,7 @@
       "date": "2026-11-20",
       "lab": "anthropic",
       "title": "Anthropic 수학자, Claude와 리만 가설 증명 주장",
-      "summary": "Anthropic의 Levent Alpöge가 Claude와 함께 리만 가설과 일반화 리만 가설을 증명했다고 밝혔다. 증명은 사람이 읽는 논문 없이 Lean 코드로만 공개됐다. 코드를 직접 컴파일해 본 수학자도 있지만, 증명 전체 검증과 이해는 이제 시작이다.",
+      "summary": "Anthropic의 Levent Alpöge가 Claude와 함께 리만 가설과 일반화 리만 가설을 증명했다고 밝혔다. 증명은 사람이 읽는 논문 없이 Lean 코드로만 공개됐다. 하루 뒤 Lean·Mathlib 커뮤니티가 공동 성명으로 증명이 맞다고 인증했다.",
       "axes": [
         "science",
         "reason"
@@ -1030,9 +1030,25 @@
         "label": "리만 가설이 처음 나온 해 (167년 된 문제)",
         "source_url": "https://www.scientificamerican.com/article/anthropic-mathematician-claims-to-prove-riemann-hypothesis-most-famous-problem-in-all-of-math/"
       },
-      "detail": "articles/alpoge-claude-riemann.html",
+      "detail": "archive/articles-2026-11-21/alpoge-claude-riemann.html",
       "url": "https://alpo.ge/remark.pdf",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://leanprover-community.github.io/blog/posts/riemann-hypothesis/",
+          "title": "Lean·Mathlib 공동 성명: 증명 검증 완료",
+          "summary": "Lean·Mathlib 커뮤니티가 11월 21일 명제와 증명이 모두 맞다고 인증했다. 여러 독립 검사기가 따로 확인했다."
+        },
+        {
+          "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+          "title": "Latent Space: 하루에 두 번 풀린 리만 가설",
+          "summary": "swyx는 AI 증명은 아마 맞지만 이해하기 어렵고, Masullo의 사람 증명은 이해되지만 틀렸을 수 있다고 대비했다."
+        },
+        {
+          "url": "https://x.com/dwarkesh_sp/status/2123966918688403756",
+          "title": "Dwarkesh: Terence Tao의 3월 예상",
+          "summary": "Tao는 3월 인터뷰에서 리만 가설을 풀려면 새로운 종류의 수학이 필요할 거라고 말했다."
+        }
+      ]
     }
   ]
 }

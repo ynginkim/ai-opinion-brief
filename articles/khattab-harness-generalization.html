@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Khattab 팀 “하네스를 잘 짜면 모델이 더 잘 일반화한다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Omar Khattab · MIT (Alex L. Zhang) · <span class="article-date">2026-11-22 Seoul</span></div>
+    <h1 class="article-title">Khattab 팀 “하네스를 잘 짜면 모델이 더 잘 일반화한다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://x.com/lateinteraction/status/2123800735653503457" target="_blank" rel="noopener">Omar Khattab X</a> · <a href="https://x.com/a1zhang/status/2123774098241147225" target="_blank" rel="noopener">Alex L. Zhang X 스레드</a> · <a href="https://www.alphaxiv.org/abs/2611.harness-cg" target="_blank" rel="noopener">논문 (alphaXiv)</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        MIT의 Alex L. Zhang, Souradip Chakraborty, Omar Khattab이 11월 20일 논문 「Language Model Harnesses Can Be Compositional Generalizers」를 냈다. 하네스는 모델을 감싸서 도구 호출과 맥락 관리를 맡는 실행 틀이다.
+      </p>
+
+      <p>
+        Khattab은 X에서 “하네스는 보통 추론 때 쓰는 포장지로 여겨진다”고 했다. 그러면서 이 논문은 하네스가 훈련 때도 일반화를 돕는 장치가 돼야 한다고 주장한다고 설명했다.
+      </p>
+
+      <h2>무엇을 보였나</h2>
+
+      <p>
+        대부분의 하네스는 지난 기록을 전부 프롬프트에 쌓는다. Zhang은 이 방식이 긴 작업에서 맥락이 망가지는 원인이라고 봤다.
+      </p>
+
+      <p>
+        대안은 일을 쪼개는 하네스다. 맥락을 밖에 두고, 도구를 코드로 부르고, 하위 에이전트를 호출한다. 이 세 가지가 함께 있을 때 짧은 과제로 배운 전략이 긴 과제로 넘어간다고 했다.
+      </p>
+
+      <ul>
+        <li>가짜 도구와 가짜 하위 호출로 만든 합성 환경에서 Qwen3.8-27B를 훈련했다.</li>
+        <li>과제는 Claude Opus 5.5가 만들었다.</li>
+        <li>이 방식으로 상대 성능이 약 26% 올랐다고 밝혔다.</li>
+      </ul>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        며칠씩 걸리는 작업은 직접 강화학습으로 훈련하기 어렵다. 한 번 돌리는 비용이 크고 보상도 드물다. 쪼개는 하네스를 쓰면 짧고 싼 가짜 환경으로 훈련할 길이 생긴다.
+      </p>
+
+      <p>
+        Zhang은 이 아이디어들이 Recursive Language Model(RLM)의 출발점이었다고 썼다. 비슷하거나 더 나은 하네스 설계가 더 있을 거라고도 했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

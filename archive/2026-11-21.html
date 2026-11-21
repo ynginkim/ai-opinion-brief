@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>agi-tracker · 오늘의 브리프</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <div class="brand"><a href="../">agi-<span>tracker</span></a></div>
+      <div class="meta-top">2026.11.21 · 서울 06:00</div>
+    </header>
+
+    <nav class="tabs" aria-label="주요 메뉴">
+      <a class="tab on" href="../">오늘의 브리프</a>
+      <a class="tab" href="../timeline.html">타임라인</a>
+    </nav>
+
+    <div class="tldr">
+      <strong>TODAY TLDR</strong>
+      Anthropic 수학자 Levent Alpöge가 Claude와 함께 리만 가설을 증명했다고 밝혔다. 증명은 사람이 읽는 논문 없이 Lean 코드로만 나왔고, 검증은 이제 시작이다. 같은 날 그는 NYU Tristan Buckmaster와 외력 없는 나비에-스토크스 폭발 증명도 냈다. OpenAI는 약물 화학 추론 벤치마크 MedChemBench와 증류 공격 대응 보고서를 냈다. Google은 Genie 4를 Gemini API로 열었다.
+    </div>
+
+    <div class="nav-dates">
+      <a href="../">오늘</a>
+      <span class="on">11/21</span>
+      <a href="2026-11-20.html">11/20</a>
+      <a href="2026-11-19.html">11/19</a>
+      <a href="2026-11-18.html">11/18</a>
+      <a href="2026-11-17.html">11/17</a>
+      <a class="nav-all" href="../archive.html">전체 브리프 →</a>
+    </div>
+
+    <article class="item">
+      <div class="who">Anthropic · Levent Alpöge</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/alpoge-claude-riemann.html">Anthropic 수학자 “Claude와 리만 가설을 증명했다”</a>
+        <span class="domain">(alpo.ge)</span>
+        <a class="ext-link" href="https://alpo.ge/remark.pdf" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Anthropic 소속 수학자 Levent Alpöge가 Claude와 함께 리만 가설을 증명했다고 자기 사이트에 4쪽짜리 글로 밝혔다.</li>
+        <li>증명은 사람이 읽는 논문 없이 Lean 코드로만 공개됐고, 일반화 리만 가설(GRH)까지 푼다고 주장한다.</li>
+        <li>MIT Andrew Sutherland는 코드를 직접 컴파일해 봤다고 했지만, 증명 전체 검증과 수학자들의 이해는 아직 남았다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 맞다면 AI가 수학 최고 난제를 푼 첫 사례다. 지금은 확정이 아니라 검증이 시작된 단계로 보면 된다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Levent Alpöge · Tristan Buckmaster</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/navier-stokes-unforced.html">외력 없는 나비에-스토크스 폭발, AI 도움으로 증명 주장</a>
+        <span class="domain">(scientificamerican.com)</span>
+        <a class="ext-link" href="https://www.scientificamerican.com/article/ai-just-solved-the-real-navier-stokes-problem/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>NYU Tristan Buckmaster와 Levent Alpöge가 바깥 힘 없이도 나비에-스토크스 방정식 해가 유한 시간에 폭발한다는 증명을 냈다.</li>
+        <li>9월 OpenAI 증명은 일부러 맞춘 외력을 넣어 허점 논란이 있었는데, 이번엔 그 허점을 메웠다고 주장한다.</li>
+        <li>Terence Tao는 같은 팀의 외력 없는 오일러 방정식 폭발 증명이 더 정리된 상태라고 평가했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 밀레니엄 문제를 두고 Anthropic 쪽 연구자와 OpenAI가 다시 맞붙었다. 수학 성과가 랩 경쟁의 무대가 됐다.</div>
+    </article>
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/openai-medchembench.html">OpenAI, 신약 후보 고르는 AI 실력을 재는 시험 공개</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/introducing-medchembench" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 약물 화학 추론을 재는 벤치마크 MedChemBench를 공개했다. 논문과 특허 117건에서 뽑은 99문제로 이뤄졌다.</li>
+        <li>GPT-6.2 Astra가 84.5%로 가장 높았고, GPT-5.6 Sol은 58.2%였다.</li>
+        <li>분자 구조 복원은 95.4%로 잘했지만, 화합물 고르기와 수치 예측은 절반 정도만 맞혔다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 신약 연구에 모델을 쓰는 팀이라면 어디까지 믿어도 되는지 가늠할 기준이 생겼다. 실제 신약 발견 능력을 증명한 건 아니다.</div>
+    </article>
+    <article class="item">
+      <div class="who">OpenAI</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/openai-adversarial-distillation.html">OpenAI “증류로 추론 과정 빼내기, 성공률 54%에서 0.2%로”</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/combatting-adversarial-distillation" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>OpenAI가 다른 회사가 자기 모델 출력을 몰래 학습하는 적대적 증류를 어떻게 막는지 공개했다.</li>
+        <li>특히 모델 내부 추론 과정이 새 나가지 않게 막는 데 힘을 줬다고 했다.</li>
+        <li>자체 레드팀 평가에서 추론 빼내기 성공률이 GPT-6 Astra 54.0%에서 GPT-6.2 Astra 0.2%로 떨어졌다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 증류된 모델은 원래 모델의 보호장치 없이 능력만 가져갈 수 있다. API로 모델을 서비스하는 쪽이라면 참고할 점검 목록이다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Google DeepMind</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/genie-4-gemini-api.html">Genie 4, Gemini API로 개발자에게 열렸다</a>
+        <span class="domain">(blog.google)</span>
+        <a class="ext-link" href="https://blog.google/innovation-and-ai/technology/developers-tools/genie-4-in-gemini-api/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Google이 월드 모델 Genie 4를 Gemini API와 Google AI Studio에서 쓸 수 있게 했다.</li>
+        <li>텍스트나 참조 이미지로 720p, 24fps의 이어지는 세계를 만들고 소리도 함께 만든다.</li>
+        <li>키보드로 돌아다니며 날씨, 조명, 사건을 실시간으로 바꿀 수 있다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 게임 시제품이나 로봇·에이전트 훈련 환경을 만드는 개발자라면 지금 AI Studio에서 바로 시험해 볼 수 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Demis Hassabis · Isomorphic Labs</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/isomorphic-merck.html">Isomorphic Labs, Merck와 항암 신약 설계 손잡았다</a>
+        <span class="domain">(isomorphiclabs.com)</span>
+        <a class="ext-link" href="https://www.isomorphiclabs.com/articles/isomorphic-labs-enters-into-a-research-collaboration-with-msd" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Isomorphic Labs가 Merck(MSD)와 항암 표적 하나에 대한 저분자 신약 후보를 함께 찾기로 했다.</li>
+        <li>Isomorphic이 자체 설계 엔진 IsoDDE로 분자를 설계하고, Merck가 임상과 상업화를 맡는다.</li>
+        <li>Demis Hassabis는 X에서 이번 협력이 신약 개발을 다시 짜는 진전의 또 다른 증거라고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 50억 달러 투자 유치 이틀 만에 대형 제약사 파트너가 또 늘었다. AI 신약 설계가 실제 계약으로 이어지는 흐름이다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Platformer · Casey Newton</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/platformer-anthropic-public.html">Platformer “상장 날 본사 앞엔 100명 넘는 시위대”</a>
+        <span class="domain">(platformer.news)</span>
+        <a class="ext-link" href="https://www.platformer.news/anthropic-goes-public/" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Platformer가 Anthropic 상장 날을 축하보다 긴장의 장면으로 그렸다.</li>
+        <li>샌프란시스코 본사 앞에 100명 넘게 모여 “AI 경쟁을 멈추라”고 외쳤고 4명이 체포됐다.</li>
+        <li>METR가 본 2배 가속이 Anthropic 자체 위험 기준을 넘는 수준인데, 그 약속은 구속력이 없다고 짚었다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 상장 뒤 Anthropic의 안전 약속이 어떻게 시험받을지 미리 보여 준다. 숫자보다 쟁점을 보고 싶다면 읽을 만하다.</div>
+    </article>
+    <article class="item">
+      <div class="who">a16z · DHH</div>
+      <h2 class="title">
+        <a href="articles-2026-11-21/a16z-dhh-omarchy.html">DHH “에이전트 시대엔 새 운영체제가 통한다”</a>
+        <span class="domain">(a16z.simplecast.com)</span>
+        <a class="ext-link" href="https://a16z.simplecast.com/episodes/why-the-agent-era-needs-a-new-operating-system-dhh-aj7iuAnL" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Ruby on Rails를 만든 DHH가 a16z 팟캐스트에서 에이전트 중심 리눅스 배포판 Omarchy를 왜 만드는지 설명했다.</li>
+        <li>명령줄, 설정 파일, 자세한 오류 메시지가 사람에겐 어렵지만 에이전트에겐 오히려 잘 맞는다고 봤다.</li>
+        <li>앱이 없으면 누군가 금방 바이브 코딩으로 만들 수 있으니, 앱 생태계 잠금이 깨질 수 있다고 했다.</li>
+      </ul>
+      <div class="why"><em>왜</em> 코드가 싸지면 무엇이 남는지 묻는 대화다. DHH는 취향과 마지막 2%를 다듬는 고집을 답으로 들었다.</div>
+    </article>
+
+    <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
+  </div>
+</body>
+</html>
