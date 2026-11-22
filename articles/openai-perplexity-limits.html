@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>OpenAI “사전학습 성적표 공개, 랩끼리 넘지 않을 선 정하자” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI Jakub Pachocki · Sam Altman · Noam Brown · <span class="article-date">2026-11-23 Seoul</span></div>
+    <h1 class="article-title">OpenAI “사전학습 성적표 공개, 랩끼리 넘지 않을 선 정하자”</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/perplexity-and-intelligence" target="_blank" rel="noopener">OpenAI 블로그 (Jakub Pachocki)</a> · <a href="https://x.com/sama/status/2124551594691932405" target="_blank" rel="noopener">Sam Altman X</a> · <a href="https://x.com/polynoamial/status/2124555186043818245" target="_blank" rel="noopener">Noam Brown X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI 수석 과학자 Jakub Pachocki가 11월 22일 「Perplexity and Intelligence」라는 글을 냈다. 핵심은 두 가지다. OpenAI 내부 모델의 사전학습 성적을 처음 공개했다. 그리고 이 성적을 기준으로 랩들이 함께 지킬 한도를 만들자고 했다.
+      </p>
+
+      <p>
+        Perplexity는 모델이 다음 토큰을 평균적으로 얼마나 잘 맞히는지 보여 주는 값이다. 낮을수록 예측을 잘한다. OpenAI는 내부 코드베이스에서 뽑은 평가 데이터로 이 값을 계속 재 왔다고 밝혔다.
+      </p>
+
+      <h2>공개한 숫자</h2>
+
+      <p>
+        글에 나온 log-perplexity 값은 이렇다.
+      </p>
+
+      <ul>
+        <li>GPT-3.5는 약 0.99였고, 원래 ChatGPT의 바탕이 됐다.</li>
+        <li>GPT-4는 약 0.91이었고, 생각의 사슬(chain-of-thought) 추론을 잘 쓰기 시작했다.</li>
+        <li>0.8 아래로 내려오자 사이버보안과 수학에서 큰 능력이 나타났다.</li>
+        <li>약 0.76 모델로 바꾼 뒤부터 수학 미해결 문제에서 획기적인 결과가 나오기 시작했다.</li>
+      </ul>
+
+      <p>
+        Pachocki는 다음 구간을 약 0.68–0.7로 봤다. 거기서 또 새로운 능력이 나올 거라고 예상했지만, 그게 무엇일지는 모른다고 적었다.
+      </p>
+
+      <h2>무엇을 제안했나</h2>
+
+      <p>
+        그는 perplexity와 다른 측정값을 바탕으로 “공동 한도”를 정하자고 했다. AI 행동을 이해하고 감시하는 기술이 구체적인 단계에 오를 때까지 그 선을 넘지 않겠다고 랩들이 약속하는 방식이다. 예로 든 단계는 생각의 사슬 모니터를 잇는 다음 감시 도구다.
+      </p>
+
+      <p>
+        이유도 밝혔다. AI가 사전학습 알고리즘 연구에 직접 참여하면 발전 속도가 갑자기 뛸 수 있다고 봤다. 수학에서 겪은 급변을 근거로, 이르면 2027년에 사전학습 연구에서도 비슷한 일이 생길 수 있다고 적었다. 반면 정렬과 감시 기술은 그만큼 빨리 따라오기 어렵다고 했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        그동안 프론티어 랩은 내부 모델의 사전학습 수준을 거의 공개하지 않았다. Pachocki도 경쟁사에 위치를 알려 주는 부담이 있었지만, 업계 공동 안전 기준이 더 급하다고 판단했다고 썼다.
+      </p>
+
+      <p>
+        Sam Altman은 X에서 “최근 OpenAI가 낸 것 중 가장 중요한 글”이라고 했다. Noam Brown은 “내부 모델을 포함해 모두가 발전의 궤적을 알 권리가 있다”고 덧붙였다.
+      </p>
+
+      <p>
+        한계도 글에 적혀 있다. 랩마다 평가 데이터가 달라 바로 비교하기 어렵다. 추론 단계의 발전은 perplexity에 잡히지 않는다. 그래서 실제로 공통 지표가 되려면 다른 랩의 참여가 먼저 필요하다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

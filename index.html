@@ -10,7 +10,7 @@
   <div class="wrap">
     <header>
       <div class="brand"><a href="index.html">agi-<span>tracker</span></a></div>
-      <div class="meta-top">2026.11.22 · 서울 06:00</div>
+      <div class="meta-top">2026.11.23 · 서울 06:00</div>
     </header>
 
     <nav class="tabs" aria-label="주요 메뉴">
@@ -20,143 +20,129 @@
 
     <div class="tldr">
       <strong>TODAY TLDR</strong>
-      Claude와 함께 쓴 리만 가설 증명이 하루 만에 검증을 통과했다. Lean·Mathlib 커뮤니티가 공동 성명에서 “증명이 맞다고 확신한다”고 밝혔다. Omar Khattab 팀은 하네스(모델을 감싸는 실행 틀) 설계가 일반화를 키운다는 논문을 냈다. Varun Mohan은 Antigravity의 Gemini 할당량을 다시 초기화했다. François Chollet은 AI는 크게 늘었는데 엔비디아 주가는 2년 반 전보다 낮다고 짚었다.
+      OpenAI 수석 과학자 Jakub Pachocki가 내부 사전학습 성적표를 처음 공개했다. 그리고 랩들이 함께 넘지 않을 “공동 한도”를 정하자고 제안했다. Sam Altman은 “최근 OpenAI가 낸 것 중 가장 중요한 글”이라고 했다. Varun Mohan은 Gemini 4 Neon과 Antigravity CLI 조합이 AA 코딩 에이전트 지수 1위라고 밝혔다. 3Blue1Brown과 Terence Tao는 AI가 푼 리만 가설을 수학계가 어떻게 받아들이는지 모았다.
     </div>
 
     <div class="nav-dates">
-      <span class="on">오늘 11/22</span>
+      <span class="on">오늘 11/23</span>
+      <a href="archive/2026-11-22.html">11/22</a>
       <a href="archive/2026-11-21.html">11/21</a>
       <a href="archive/2026-11-20.html">11/20</a>
       <a href="archive/2026-11-19.html">11/19</a>
-      <a href="archive/2026-11-18.html">11/18</a>
       <a class="nav-all" href="archive.html">전체 브리프 →</a>
     </div>
 
     <article class="item">
-      <div class="who">Lean·Mathlib 커뮤니티 · Anthropic Levent Alpöge</div>
+      <div class="who">OpenAI Jakub Pachocki · Sam Altman · Noam Brown</div>
       <h2 class="title">
-        <a href="articles/riemann-lean-verified.html">Claude와 쓴 리만 가설 증명, 하루 만에 검증 통과</a>
-        <span class="domain">(leanprover-community.github.io)</span>
-        <a class="ext-link" href="https://leanprover-community.github.io/blog/posts/riemann-hypothesis/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/openai-perplexity-limits.html">OpenAI “사전학습 성적표 공개, 랩끼리 넘지 않을 선 정하자”</a>
+        <span class="domain">(openai.com)</span>
+        <a class="ext-link" href="https://openai.com/index/perplexity-and-intelligence" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Lean·Mathlib 커뮤니티가 공동 성명에서 Alpöge의 리만 가설 증명이 맞다고 확신한다고 밝혔다.</li>
-        <li>증명은 Lean 코드 1,700만 줄 규모이고, 여러 독립 검사기가 따로 확인했다.</li>
-        <li>Guardian은 Alpöge가 Claude와 약 6주 만에 증명을 만들었다고 전했다.</li>
+        <li>OpenAI 수석 과학자 Jakub Pachocki가 GPT-3.5 이후 내부 모델의 perplexity(다음 글자를 얼마나 잘 맞히는지) 추이를 처음 공개했다.</li>
+        <li>그는 이 값을 랩끼리 비교하는 공통 지표로 삼고, 모니터링 기술이 따라올 때까지 넘지 않을 공동 한도를 정하자고 제안했다.</li>
+        <li>Sam Altman은 “최근 OpenAI가 낸 것 중 가장 중요한 글”이라며 다른 랩도 한도에 동의하길 바란다고 했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 어제는 “주장”이었고, 오늘은 형식 검증까지 끝난 결과가 됐다. 사람이 다 읽지 못한 증명을 어떻게 이해할지는 이제부터 숙제다.</div>
-    </article>
-    <article class="item">
-      <div class="who">Omar Khattab · MIT (Alex L. Zhang)</div>
-      <h2 class="title">
-        <a href="articles/khattab-harness-generalization.html">Khattab 팀 “하네스를 잘 짜면 모델이 더 잘 일반화한다”</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/lateinteraction/status/2123800735653503457" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>Alex L. Zhang, Souradip Chakraborty, Omar Khattab이 하네스와 일반화에 관한 논문을 냈다.</li>
-        <li>긴 일을 작은 조각으로 나누는 하네스가 더 긴 일과 다른 분야의 일에도 통한다는 주장이다.</li>
-        <li>가짜 도구와 합성 데이터로 Qwen3.8-27B를 훈련해 상대 성능을 약 26% 올렸다고 밝혔다.</li>
-      </ul>
-      <div class="why"><em>왜</em> 에이전트를 만든다면 모델만큼 하네스 구조가 중요하다는 근거다. 맥락을 밖으로 빼고 하위 에이전트를 부르는 설계를 다시 볼 만하다.</div>
-    </article>
-    <article class="item">
-      <div class="who">François Chollet</div>
-      <h2 class="title">
-        <a href="articles/chollet-nvda-flashback.html">Chollet “AI는 2년 반 새 크게 늘었는데, 엔비디아 주가는 그대로”</a>
-        <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/fchollet/status/2123898321647571442" target="_blank" rel="noopener">원문</a>
-      </h2>
-      <ul class="summary">
-        <li>Chollet은 2024년 6월엔 최고 모델도 ARC 1에서 5% 안팎이었다고 돌아봤다.</li>
-        <li>지금은 ARC 2와 ARC 3까지 포화됐고, AI가 밀레니엄 난제를 풀고 있다고 썼다.</li>
-        <li>그런데도 그때 엔비디아를 샀다면 지금 5% 손해라며, 따로 지금의 학습 방식은 효율 상위 50%에도 못 든다고 했다.</li>
-      </ul>
-      <div class="why"><em>왜</em> 능력 발전과 투자 수익은 따로 움직일 수 있다는 지적이다. ARC를 만든 사람이 지금 기술 스택의 한계도 함께 짚었다.</div>
+      <div class="why"><em>왜</em> 랩마다 다른 벤치마크 대신 하나의 숫자로 속도를 맞추자는 첫 구체안이다. Anthropic·Google이 같은 숫자를 공개할지가 다음 관전 포인트다.</div>
     </article>
     <article class="item">
       <div class="who">Varun Mohan · Google Antigravity</div>
       <h2 class="title">
-        <a href="articles/antigravity-quota-reset-cache.html">Antigravity, Gemini 할당량 또 초기화…캐싱 개선으로 22% 더 쓴다</a>
+        <a href="articles/antigravity-neon-aa-index.html">Varun Mohan “Neon + Antigravity CLI, AA 코딩 에이전트 지수 1위”</a>
         <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/_mohansolo/status/2124070033534161407" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://x.com/_mohansolo/status/2124286882188284171" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Varun Mohan이 Antigravity 사용자 전원의 Gemini 할당량을 초기화했다고 밝혔다.</li>
-        <li>캐싱을 개선해서 같은 할당량으로 할 수 있는 일이 22% 늘었다고 했다.</li>
-        <li>그는 주말 동안 Gemini 4 Neon으로 마음껏 만들어 보라고 덧붙였다.</li>
+        <li>Varun Mohan은 Gemini 4 Neon을 Antigravity CLI로 돌린 조합이 Artificial Analysis 코딩 에이전트 지수 1위에 올랐다고 밝혔다.</li>
+        <li>큰 코드베이스에서 버그를 찾아 고치는 평가 SWE-sweep에서도 mini-swe 하네스보다 크게 앞섰다고 했다.</li>
+        <li>그는 Antigravity를 Gemini로 복잡한 일을 하기 가장 좋은 하네스로 만드는 데 공을 들였다고 썼다.</li>
       </ul>
-      <div class="why"><em>왜</em> Antigravity를 쓰다 할당량이 일찍 바닥났다면 이번 주말에 다시 써 볼 만하다.</div>
+      <div class="why"><em>왜</em> 같은 모델도 하네스에 따라 점수가 달라진다는 사례다. Gemini 4 Neon으로 코딩 에이전트를 돌린다면 Antigravity CLI를 먼저 비교해 볼 만하다.</div>
     </article>
     <article class="item">
-      <div class="who">Elon Musk</div>
+      <div class="who">Elon Musk · Tesla</div>
       <h2 class="title">
-        <a href="articles/musk-sft-system-prompt.html">Musk “SFT는 전기톱 이발, 시스템 프롬프트는 우습다”</a>
+        <a href="articles/musk-fsd-v15.html">머스크 “FSD V15는 새 구조, 사람보다 운전 잘한다”</a>
         <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/elonmusk/status/2124042864891982292" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://x.com/elonmusk/status/2124294755316310346" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Musk는 지도 미세조정(SFT)이 “미세”가 아니라 전기톱으로 머리를 자르는 것에 가깝다고 했다.</li>
-        <li>시스템 프롬프트도 필요 없어야 하고, 기본 동작이 처음부터 합리적이어야 한다고 주장했다.</li>
-        <li>그는 Tesla AI가 이미 그렇게 만들어졌고, FSD V15가 다음 달 넓게 배포된다고 밝혔다.</li>
+        <li>Elon Musk가 Tesla FSD V15를 “완전히 새로운 구조”라고 소개했다.</li>
+        <li>그는 이 버전이 사람보다 운전을 잘해서 “초지능”이라 부를 만하다고 주장했다.</li>
+        <li>화면에 회전 방향 표시를 띄우고, 지도에서 점을 누르면 차가 그곳으로 가는 기능도 보여 줬다.</li>
       </ul>
-      <div class="why"><em>왜</em> 모델 행동을 사후 조정이 아니라 본 훈련에서 잡자는 입장이다. 다만 Tesla AI 관련 주장은 본인 발언이라 외부 확인이 필요하다.</div>
+      <div class="why"><em>왜</em> “초지능”은 머스크의 표현이고 독립 검증은 아직 없다. 실제 주행 데이터와 외부 평가가 나올 때까지는 주장으로 보는 게 맞다.</div>
     </article>
     <article class="item">
-      <div class="who">Latent Space · AINews (swyx)</div>
+      <div class="who">3Blue1Brown (Grant Sanderson) · Dwarkesh Patel</div>
       <h2 class="title">
-        <a href="articles/latent-ainews-riemann-twice.html">Latent Space “리만 가설, 하루에 두 번 풀렸다”</a>
-        <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/3b1b-riemann-reactions.html">3Blue1Brown “AI가 리만 가설을 풀면?” 1년 치 답을 모았다</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://www.youtube.com/watch?v=zqzk43bSdDI" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Alpöge의 Claude 증명 몇 시간 뒤, Alessandro Masullo도 사람이 쓴 940쪽 증명 초안을 공개했다.</li>
-        <li>Masullo는 이 증명을 12년 동안 써 왔다고 Latent Space는 전했다.</li>
-        <li>swyx는 AI 증명은 아마 맞지만 이해하기 어렵고, 사람 증명은 이해되지만 틀렸을 수 있다고 대비했다.</li>
+        <li>3Blue1Brown이 지난 1년 동안 수학자들에게 “AI가 리만 가설을 풀면 어떨까”라고 물은 답을 모아 영상으로 냈다.</li>
+        <li>“사람이 참여한 아름다운 증명을 원한다”는 답부터 “아무도 못 읽는 증명은 증명이 아니다”라는 답까지 반응이 갈렸다.</li>
+        <li>Dwarkesh Patel도 6월에 Grant Sanderson에게 같은 질문을 한 장면을 다시 올렸다.</li>
       </ul>
-      <div class="why"><em>왜</em> 같은 문제를 AI와 사람이 다르게 풀었다. 앞으로 수학에서 “검증”과 “이해”가 어떻게 갈릴지 보여 주는 장면이다.</div>
+      <div class="why"><em>왜</em> 이제 가정이 아니라 실제 상황이 됐다. AI 증명을 받아들일 기준이 수학자마다 얼마나 다른지 한 번에 볼 수 있다.</div>
     </article>
     <article class="item">
-      <div class="who">Latent Space (Richard MacManus)</div>
+      <div class="who">Terence Tao</div>
       <h2 class="title">
-        <a href="articles/latent-formal-verification.html">Latent Space “AI 슬롭을 막을 무기는 형식 검증”</a>
-        <span class="domain">(latent.space)</span>
-        <a class="ext-link" href="https://latent.space/p/formal-verification/" target="_blank" rel="noopener">원문</a>
+        <a href="articles/tao-ai-math-roundup.html">Terence Tao, AI와 수학 논쟁 글을 또 한 번 모았다</a>
+        <span class="domain">(terrytao.wordpress.com)</span>
+        <a class="ext-link" href="https://terrytao.wordpress.com/2026/11/21/even-more-posts-opinion-pieces-interviews-and-position-statements/" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Latent Space가 수학으로 코드가 맞는지 증명하는 형식 검증 스타트업들을 다뤘다.</li>
-        <li>Harmonic, Theorem, Axiom Math, 새로 나온 &amp;Truth가 소개됐다.</li>
-        <li>&amp;Truth 공동 창업자인 Stanford의 Clark Barrett 인터뷰가 중심이다.</li>
+        <li>Terence Tao가 블로그에 AI와 수학을 다룬 성명·칼럼·인터뷰 링크를 새로 모았다.</li>
+        <li>발표된 리만 가설 증명에 대한 AHM 성명과 독일수학회(DMV) 이사회의 AI 입장문이 들어 있다.</li>
+        <li>댓글에서는 “이제 증명보다 이해와 설명에 가치를 둬야 한다”는 주장과 반론이 오갔다.</li>
       </ul>
-      <div class="why"><em>왜</em> AI가 쓰는 코드가 늘수록 “맞는지 확인”이 병목이 된다. 리만 가설 검증에 쓰인 Lean 같은 도구가 코드 쪽으로 넘어오는 흐름이다.</div>
+      <div class="why"><em>왜</em> 수학 단체들이 공식 입장을 내기 시작했다. AI 증명을 어떻게 평가하고 가르칠지 고민한다면 이 목록부터 읽으면 된다.</div>
     </article>
     <article class="item">
-      <div class="who">Dwarkesh Patel · Terence Tao</div>
+      <div class="who">Simon Willison</div>
       <h2 class="title">
-        <a href="articles/dwarkesh-tao-riemann.html">Dwarkesh, 3월 Terence Tao 인터뷰 “리만 가설엔 새 수학이 필요”</a>
+        <a href="articles/willison-gemini-xhigh.html">Simon Willison “Gemini 4 Hydrogen, high와 xhigh 차이 크다”</a>
         <span class="domain">(x.com)</span>
-        <a class="ext-link" href="https://x.com/dwarkesh_sp/status/2123966918688403756" target="_blank" rel="noopener">원문</a>
+        <a class="ext-link" href="https://x.com/simonw/status/2124217876777464269" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>Dwarkesh Patel이 올해 3월 Terence Tao 인터뷰에서 리만 가설을 물었던 장면을 다시 올렸다.</li>
-        <li>Tao는 리만 가설을 풀려면 새로운 종류의 수학이 필요할 거라고 답했었다.</li>
-        <li>Tao는 경우를 하나씩 다 따져서 풀릴 문제로는 느껴지지 않는다고도 말했다.</li>
+        <li>Simon Willison이 Gemini 4 Hydrogen의 생각 강도를 high와 xhigh로 바꿔 펠리컨 그림을 비교했다.</li>
+        <li>high는 출력 토큰 5,311개에 3.99센트, xhigh는 31,477개에 23.61센트가 들었다.</li>
+        <li>그는 두 설정의 결과 차이가 “매우 크다”고 했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 8개월 전 최고 수학자의 예상과 이번 AI 증명을 나란히 볼 수 있다. 증명 속에 정말 새 수학이 있는지가 다음 관심사다.</div>
+      <div class="why"><em>왜</em> 비용이 약 6배 차이 난다. 품질이 중요한 작업만 xhigh로 돌리고, 나머지는 high로 두는 식으로 나눠 쓰면 된다.</div>
     </article>
     <article class="item">
-      <div class="who">a16z Show</div>
+      <div class="who">Kevin Roose · The New Yorker Radio Hour</div>
       <h2 class="title">
-        <a href="articles/a16z-cosign-agents.html">a16z “에이전트도 쓰는 평판 기반 인맥 네트워크”</a>
-        <span class="domain">(a16z.simplecast.com)</span>
-        <a class="ext-link" href="https://a16z.simplecast.com/episodes/the-professional-network-built-for-you-and-your-ai-agent-Gt_BkCoL" target="_blank" rel="noopener">원문</a>
+        <a href="articles/roose-newyorker-optimism.html">Kevin Roose, New Yorker 편집장에게 “AI 낙관론”을 설명하다</a>
+        <span class="domain">(youtube.com)</span>
+        <a class="ext-link" href="https://www.youtube.com/watch?v=SrTF_bg9t60" target="_blank" rel="noopener">원문</a>
       </h2>
       <ul class="summary">
-        <li>a16z가 평판과 추천으로 사람을 잇는 네트워크 Cosign을 다룬 17분짜리 에피소드를 냈다.</li>
-        <li>사람들이 자기 AI 에이전트를 Cosign에 연결해 만날 사람과 기회를 계속 찾게 하는 흐름을 소개했다.</li>
-        <li>a16z의 David Booth와 Cosign의 Bella Nazzari가 출연했다.</li>
+        <li>NYT의 Kevin Roose가 New Yorker Radio Hour에서 편집장 David Remnick과 AI 낙관론을 놓고 대화했다.</li>
+        <li>Remnick은 Anthropic이 2026년 상반기 매출 163억 달러, 순손실 807억 달러를 냈다며 계산이 맞느냐고 물었다.</li>
+        <li>Roose는 투자자들이 지금 같은 빠른 성장이 이어진다는 데 걸고 있다고 답했다.</li>
       </ul>
-      <div class="why"><em>왜</em> 사람만이 아니라 에이전트가 인맥 서비스를 쓰는 장면이 나오고 있다. 에이전트용 연결 지점을 둘지 고민하는 서비스라면 참고할 만하다.</div>
+      <div class="why"><em>왜</em> AI에 회의적인 언론 독자에게 낙관론이 어떻게 들리는지 볼 수 있다. Anthropic 상장 이후 숫자를 둘러싼 질문도 잘 정리돼 있다.</div>
+    </article>
+    <article class="item">
+      <div class="who">Lenny&#x27;s Podcast · Sherif Mansour (Atlassian)</div>
+      <h2 class="title">
+        <a href="articles/lenny-sherif-mansour.html">Atlassian AI 총괄 “AI 시대에 PM 자리는 오히려 늘어난다”</a>
+        <span class="domain">(lennysnewsletter.com)</span>
+        <a class="ext-link" href="https://www.lennysnewsletter.com/p/first-principles-what-it-takes-to" target="_blank" rel="noopener">원문</a>
+      </h2>
+      <ul class="summary">
+        <li>Lenny&#x27;s Podcast에 Atlassian의 AI·프로덕트 크래프트 총괄 Sherif Mansour가 나왔다.</li>
+        <li>그는 AI 시대에 PM 역할이 가장 빠르게 늘고 있다고 말했다.</li>
+        <li>Atlassian이 어느 때보다 주니어를 많이 뽑는 이유도 다뤘다.</li>
+      </ul>
+      <div class="why"><em>왜</em> “AI가 PM을 대체한다”는 말과 반대되는 현장 이야기다. 팀에 PM이나 주니어 채용을 고민 중이라면 들어볼 만하다.</div>
     </article>
 
     <footer>agi-tracker · GeekNews 스타일 · 점수/댓글 없음</footer>
