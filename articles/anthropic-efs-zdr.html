@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic, 데이터를 안 남기고도 악용을 잡는 EFS 공개 베타 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic (Claude) · <span class="article-date">2026-11-24 Seoul</span></div>
+    <h1 class="article-title">Anthropic, 데이터를 안 남기고도 악용을 잡는 EFS 공개 베타</h1>
+    <div class="source-line">
+      원문 · <a href="https://claude.com/resources/articles/zero-data-retention-with-enterprise-frontier-safeguards" target="_blank" rel="noopener">Claude 블로그</a> · <a href="https://x.com/claudeai/status/2124929944530587712" target="_blank" rel="noopener">Claude X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 Enterprise Frontier Safeguards(EFS)를 공개 베타로 열었다. 9월에 처음 발표한 기업용 보호장치다.
+      </p>
+
+      <p>
+        목표는 두 가지를 함께 잡는 것이다. 고객 데이터는 Anthropic도 클라우드 회사도 보관하지 않는다. 그러면서도 정교한 악용은 잡아낸다.
+      </p>
+
+      <h2>어떻게 작동하나</h2>
+
+      <p>
+        기존 ZDR 고객은 요청 하나하나를 보는 분류기로만 보호받았다. 그런데 정교한 공격은 여러 요청에 나뉘어 들어온다. 하나만 보면 멀쩡해 보인다.
+      </p>
+
+      <p>
+        Anthropic은 9월 위협 보고서의 사례를 들었다. 한 에이전트가 공격 작업을 여러 에이전트에 나눠 약 50개 조직을 노렸다.
+      </p>
+
+      <p>
+        EFS는 입력과 출력을 고객이 가진 저장소(S3, Google Cloud Storage)에 둔다. 자동 모니터링은 그 안에서만 패턴을 찾는다. 위험을 찾으면 입력·출력 원문 없이 “Safety Case”를 만들어 고객에게 넘긴다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Bridgewater, Salesforce, Stripe 같은 회사가 비공개 베타에서 써 봤다. 로그는 자기 환경에 자기 키로 두고, 탐지는 Anthropic이 맡는 구조다.
+      </p>
+
+      <p>
+        모델이 강해질수록 랩은 사용 기록을 봐야 악용을 막을 수 있다. 규제 산업은 기록을 내줄 수 없다. EFS는 그 충돌을 푸는 한 가지 방법이다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        Claude Platform, AWS의 Claude Platform, Amazon Bedrock, Google Cloud에서 쓸 수 있다. Microsoft Foundry 지원은 곧 나온다. 대상 고객에게는 따로 안내가 간다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

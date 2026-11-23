@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind, 에이전트 팀이 양자 알고리즘 비용을 11.8배 줄였다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · Google Quantum AI · François Chollet · <span class="article-date">2026-11-24 Seoul</span></div>
+    <h1 class="article-title">DeepMind, 에이전트 팀이 양자 알고리즘 비용을 11.8배 줄였다</h1>
+    <div class="source-line">
+      원문 · <a href="https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/" target="_blank" rel="noopener">Google DeepMind 블로그</a> · <a href="https://x.com/GoogleDeepMind/status/2124911073266413634" target="_blank" rel="noopener">Google DeepMind X</a> · <a href="https://x.com/fchollet/status/2124926345948148042" target="_blank" rel="noopener">François Chollet X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google DeepMind와 Google Quantum AI가 양자 알고리즘을 더 싸게 만드는 연구를 냈다. 일을 한 건 Gemini 4 에이전트 팀들이다.
+      </p>
+
+      <p>
+        양자 컴퓨터는 언젠가 핵융합이나 신약 설계 시뮬레이션에 쓰일 거라는 기대를 받는다. 문제는 초기 하드웨어가 감당하기엔 필요한 자원이 너무 많다는 점이다. 이번 연구는 그 비용을 줄이는 회로를 찾았다.
+      </p>
+
+      <h2>어떻게 찾았나</h2>
+
+      <p>
+        문제마다 서로 독립된 에이전트 팀을 붙였다. 팀이 낸 아이디어는 Lean으로 검증한 뒤에야 공용 노트에 올라갔다. 4시간마다 팀들이 가상 학회에 모여 아이디어를 나누고 비교했다.
+      </p>
+
+      <p>
+        검증을 증명으로 한 데는 이유가 있다. 이런 회로는 지금 컴퓨터로 돌려 볼 수 없다. 그래서 수학적으로 맞다는 걸 보여야 한다.
+      </p>
+
+      <h2>숫자</h2>
+
+      <ul>
+        <li>레이저 핵융합 계산: 비용 11.8배 감소, 오류 정정 큐비트 5,650개 → 4,338개.</li>
+        <li>빛에 반응하는 흔한 분자 시뮬레이션: 8배 저렴.</li>
+        <li>약물 대사 효소 Cytochrome P450: 2.5배 개선, 큐비트 481개 → 333개.</li>
+        <li>Grover 알고리즘의 특정 구현 2.57배, arcsin 연산 290배 빨라짐.</li>
+      </ul>
+
+      <p>
+        DeepMind는 이렇게 줄여도 첫 오류 정정 양자 컴퓨터가 감당하기엔 여전히 크다고 적었다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        에이전트가 연구하고 증명기가 검사하는 조합이 이번엔 양자 알고리즘에서 결과를 냈다. 사람은 문제를 고르고 진행을 감독했다.
+      </p>
+
+      <p>
+        François Chollet은 “시뮬레이션 비용 10배 감소는 소프트웨어로 이룬 하드웨어 도약”이라며 “에이전트 연구는 소프트웨어가 닿는 모든 분야를 빠르게 할 것”이라고 했다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        DeepMind는 Lean 라이브러리, 문제 정의, 검증된 답을 GitHub에 공개했다. 다른 연구실도 같은 방식으로 자기 문제에 에이전트 팀을 붙여 볼 수 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

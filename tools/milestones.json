@@ -1075,8 +1075,34 @@
         "label": "수학에서 획기적 결과가 나오기 시작한 모델의 log-perplexity (낮을수록 예측을 잘함)",
         "source_url": "https://openai.com/index/perplexity-and-intelligence"
       },
-      "detail": "articles/openai-perplexity-limits.html",
+      "detail": "archive/articles-2026-11-23/openai-perplexity-limits.html",
       "url": "https://openai.com/index/perplexity-and-intelligence",
+      "takes": [
+        {
+          "url": "https://x.com/boazbaraktcs/status/2124884201283485934",
+          "title": "Boaz Barak: AI 발전 속도에 상한을",
+          "summary": "OpenAI 연구원 Boaz Barak은 정렬된 AI라도 통제권을 넘기면 안 된다며, AI 지능이 아니라 발전 속도에 상한을 둬야 할 수 있다고 썼다. Sam Altman이 이 글을 공유했다."
+        }
+      ]
+    },
+    {
+      "id": "deepmind-quantum-agents",
+      "date": "2026-11-24",
+      "lab": "googledeepmind",
+      "title": "Gemini 4 에이전트 팀, 양자 알고리즘 비용 11.8배 줄였다",
+      "summary": "Google DeepMind가 Gemini 4 에이전트 여러 팀을 붙여 양자 회로를 개선했다. 레이저 핵융합 계산 하나의 비용을 11.8배 줄였고, 결과는 모두 Lean으로 증명했다. 에이전트 연구에 증명 검사를 묶는 방식이 수학 밖 과학으로 넓어졌다.",
+      "axes": [
+        "science",
+        "agent"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "11.8×",
+        "label": "레이저 핵융합 계산용 양자 회로의 비용 감소 폭",
+        "source_url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/"
+      },
+      "detail": "articles/deepmind-quantum-agents.html",
+      "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
       "takes": []
     }
   ]

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic Claude Ship, PR 리뷰·수정·승인까지 맡긴다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic · Boris Cherny · <span class="article-date">2026-11-24 Seoul</span></div>
+    <h1 class="article-title">Anthropic Claude Ship, PR 리뷰·수정·승인까지 맡긴다</h1>
+    <div class="source-line">
+      원문 · <a href="https://claude.com/resources/articles/introducing-claude-ship" target="_blank" rel="noopener">Claude 블로그</a> · <a href="https://code.claude.com/docs/en/claude-ship" target="_blank" rel="noopener">Claude Code 문서</a> · <a href="https://x.com/bcherny/status/2124961485801836573" target="_blank" rel="noopener">Boris Cherny X</a> · <a href="https://www.theverge.com/ai-artificial-intelligence/1040134/anthropic-claude-ship-ai-pull-requests" target="_blank" rel="noopener">The Verge</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 Claude Ship을 베타로 냈다. PR(풀 리퀘스트)을 연 뒤의 일을 Claude가 맡는 제품이다. 리뷰하고, 고치고, 팀 정책이 허락하는 변경은 승인까지 한다.
+      </p>
+
+      <p>
+        Anthropic은 개발자들이 에이전트로 코드를 쓰면서 PR 이후 단계가 병목이 됐다고 설명했다. Claude Code 팀에서도 코드 대부분을 Claude가 쓴다고 한다.
+      </p>
+
+      <h2>무엇으로 이뤄졌나</h2>
+
+      <ul>
+        <li>Code Review: 이미 정식 출시된 기능이다. 변경을 코드베이스 전체와 함께 읽고 문제를 찾아 PR에 단다.</li>
+        <li>PR Steward(베타): 실패한 CI, 머지 충돌, 리뷰 의견을 고쳐 커밋을 올린다. 승인이나 머지는 하지 않게 설계됐다.</li>
+        <li>Claude Approvals(베타): 팀이 저장소에 쓴 정책 파일대로 승인 여부를 정한다. 똑똑한 CODEOWNERS 파일에 가깝다.</li>
+      </ul>
+
+      <p>
+        Claude Code 팀에서는 6월부터 9월 사이 머지된 PR이 두 배 넘게 늘었고, 되돌린 비율은 40% 넘게 줄었다고 밝혔다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        개발자는 Claude Code에서 /ship 명령으로 자기 PR에 바로 써 볼 수 있다. 관리자는 저장소 단위로 켠다. Anthropic은 처음엔 관찰 모드로 돌려 보고 나서 브랜치 보호 규칙에 묶으라고 권한다.
+      </p>
+
+      <p>
+        제약도 있다. Team·Enterprise 플랜과 GitHub에서만 된다. 데이터 미보관(ZDR)이나 HIPAA 설정을 켠 조직은 아직 쓸 수 없다.
+      </p>
+
+      <p>
+        Boris Cherny는 1년 전 Opus 4.5가 자기 코드를 100% 쓰기 시작했는데, PR 배포 속도는 그걸 못 따라왔다고 했다. Claude Ship은 그 빈틈을 메우려는 제품이다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
