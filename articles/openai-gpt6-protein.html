@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>GPT-6, 전용 모델 없이 단백질을 설계했다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">OpenAI · Greg Brockman · <span class="article-date">2026-11-26 Seoul</span></div>
+    <h1 class="article-title">GPT-6, 전용 모델 없이 단백질을 설계했다</h1>
+    <div class="source-line">
+      원문 · <a href="https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/" target="_blank" rel="noopener">OpenAI 블로그</a> · <a href="https://x.com/OpenAI/status/2125334383490105601" target="_blank" rel="noopener">OpenAI X</a> · <a href="https://x.com/gdb/status/2125341356503748716" target="_blank" rel="noopener">Greg Brockman X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        OpenAI가 GPT-6 모델이 단백질을 직접 설계할 수 있다는 프리프린트를 냈다. 핵심은 전용 생물학 모델을 부르지 않는다는 점이다. 모델은 추론하고, 코드를 짜서 돌리며 단백질 모양과 아미노산 서열을 만든다.
+      </p>
+
+      <p>
+        연구 파트너 Onava와 함께 실험실에서 실제로 만들어 시험도 했다.
+      </p>
+
+      <h2>실험 결과</h2>
+
+      <p>
+        첫 실험에서는 GPT-6.2에게 표적 단백질 5개의 구조를 주고 붙을 자리를 표시했다. 모델은 미니바인더라는 작은 단백질의 3D 설계를 냈다. 표적 5개 모두에서 적어도 하나가 실험실에서 결합 신호를 보였다. 서열을 채우고 후보를 고르는 데는 전용 모델이 도왔다.
+      </p>
+
+      <p>
+        두 번째 실험에서는 이미 있는 미니바인더에 새 서열을 설계하게 했다. 107개 중 14개가 결합했다.
+      </p>
+
+      <p>
+        항체 재설계도 했다. 항체가 표적을 잡는 고리 부분을 새로 짜게 하자 소형 항체 설계 182개 중 128개, 70%가 결합 신호를 보였다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        지금 단백질 설계는 구조 생성, 서열 설계, 평가에 각각 다른 전용 모델을 쓴다. 다루려면 전문 지식이 많이 든다.
+      </p>
+
+      <p>
+        범용 모델 하나가 이 일을 하면 말로 조건을 바꾸기만 하면 된다. OpenAI는 프롬프트만 바꿔서 결합 위치 예측과 설계를 오갔다고 했다. 내부 모델은 14가지 단백질 과제 상당수에서 전용 모델과 비슷하거나 더 나았다고 한다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        한계도 분명하다. 단백질 전체 구조를 예측하는 일은 여전히 약했다. 실험에서도 후보 선별에는 전용 모델이 쓰였다.
+      </p>
+
+      <p>
+        Greg Brockman은 “생물 전용 모델 없이도 된다”며 추론과 코드의 범용성을 강조했다. 10월 Anthropic의 전갈 독소 결합 단백질에 이어, 범용 모델의 신약·바이오 진입이 빨라지고 있다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

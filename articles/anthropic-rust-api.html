@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Anthropic, Claude 에이전트로 API를 Rust로 갈아탔다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Anthropic · <span class="article-date">2026-11-26 Seoul</span></div>
+    <h1 class="article-title">Anthropic, Claude 에이전트로 API를 Rust로 갈아탔다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.anthropic.com/research/migrating-api-to-rust" target="_blank" rel="noopener">Anthropic 엔지니어링 블로그</a> · <a href="https://x.com/AnthropicAI/status/2125627317263466739" target="_blank" rel="noopener">Anthropic X</a> · <a href="https://x.com/latentspacepod/status/2125629574755270872" target="_blank" rel="noopener">Latent Space X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Anthropic이 Claude에 접속하는 기본 통로인 Messages API를 Python에서 Rust로 옮겼다. Claude Code와 Cowork도 이 API를 쓴다.
+      </p>
+
+      <p>
+        2024년 초부터 2026년 가을까지 API 트래픽이 약 1,800배 늘었다. Python이 요청마다 붙이는 부담이 병목이 됐다.
+      </p>
+
+      <h2>어떻게 검증했나</h2>
+
+      <p>
+        코드 작성은 빨랐다. Claude가 핵심 요청 경로의 첫 버전을 약 일주일 만에 썼다. 어려운 건 기존 API와 똑같이 동작하는지 확인하는 일이었다.
+      </p>
+
+      <p>
+        Python API는 그 사이에도 계속 바뀌었다. Claude는 같은 요청에도 답이 다를 수 있다. 고객 요청 내용은 볼 수 없었다.
+      </p>
+
+      <p>
+        그래서 실제 운영 API 자체를 검증 도구로 썼다. 운영 트래픽을 Rust 버전에도 흘려 보내 결과를 비교했다. Latent Space에 따르면 조정 역할의 Claude 에이전트가 새 유형의 불일치를 작업 에이전트들에게 나눠 맡겼다. 일치율은 4월 약 4분의 1에서 8월 99.6%까지 올랐다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Anthropic은 정답 확인이 쉬운 일, 예를 들어 수학 증명 형식화나 테스트가 잘 갖춰진 코드 이전은 Claude가 잘한다고 했다. 반면 운영 중인 시스템은 테스트 밖의 엣지 케이스가 많아서 검증이 더 어렵다.
+      </p>
+
+      <p>
+        이번 사례는 그 검증 문제를 운영 트래픽으로 푼 예다. 결과는 요청당 CPU 약 70% 감소, 첫 토큰 시간 중앙값 약 20% 단축이다. 서비스 중단이나 기능 개발 동결도 없었다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

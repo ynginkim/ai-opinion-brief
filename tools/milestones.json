@@ -857,6 +857,11 @@
           "url": "https://www.platformer.news/anthropic-goes-public/",
           "title": "Platformer “상장 날 본사 앞엔 100명 넘는 시위대”",
           "summary": "Anthropic 상장 날을 다루며 METR가 본 약 두 배 가속이 회사 자체 「자동화된 R&D」 위험 기준을 넘는 수준이라고 짚었다. 그런데 책임 있는 확장 정책은 구속력이 없다고 지적했다."
+        },
+        {
+          "url": "https://www.dwarkesh.com/p/rsiobjections",
+          "title": "Dwarkesh: RSI 반론에 답하다",
+          "summary": "Dwarkesh Patel이 RSI 에세이 반론에 답했다. 최고 AI 연구자 자동화 중앙값은 2028년, 초지능은 2029년쯤이라고 다시 정리했다."
         }
       ]
     },
@@ -893,6 +898,11 @@
           "url": "https://latent.space/p/ainews-fable-5-2-retakes-world-1-llm-spot-as-ant-ipo-roadshow-begins/",
           "title": "Latent Space AINews, 1위 탈환과 비용",
           "summary": "swyx는 Fable 5.2가 Carbon에게서 1위를 되찾았지만, 토큰당 값이 20% 내려도 GDPx 과제당 비용은 67달러에서 88달러로 올랐다고 정리했다."
+        },
+        {
+          "url": "https://simonwillison.net/2026/Nov/24/llm-inflection-points/",
+          "title": "Simon Willison: 12개월, 세 번의 변곡점",
+          "summary": "Willison은 Opus 4.5, Fable급 모델, 3D·게임 개발을 지난 1년의 변곡점으로 꼽았다. Fable 5.2가 네 번째인지는 아직 판단 중이라고 했다."
         }
       ]
     },
@@ -1018,7 +1028,18 @@
       },
       "detail": "archive/articles-2026-11-19/gemini-4-neon.html",
       "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://latent.space/p/ainews-gemini-4-neon-marks-gdm-s-full-return-as-a-frontier-lab/",
+          "title": "Latent Space: Neon으로 DeepMind가 프론티어에 복귀",
+          "summary": "opencode는 Neon이 팀 기본 모델이 됐다고 했다. Latent Space는 Neon 채택 흐름을 근거로 Google DeepMind가 프론티어 랩으로 돌아왔다고 평가했다."
+        },
+        {
+          "url": "https://www.lennysnewsletter.com/p/gemini-4-neon-beat-gpt-62-and-claude",
+          "title": "How I AI: 25개 과제 벤치 1위는 Neon",
+          "summary": "Claire Vo가 최신 모델 여섯 개를 25개 과제로 블라인드 채점했다. Gemini 4 Neon이 How I AI Index 81점으로 1위였다."
+        }
+      ]
     },
     {
       "id": "anthropic-claude-riemann",
@@ -1068,6 +1089,11 @@
           "url": "https://www.platformer.news/jensen-huang-returns-nvidia/",
           "title": "Platformer: Riemann 가설, AI에 무너지다",
           "summary": "Casey Newton은 Lean FRO와 Mathlib이 Alpöge의 증명이 맞다고 공동 성명을 냈다고 전했다. 그는 AI가 평생 못 넘을 거라던 기준이 무너졌다며 놀라움을 적었다."
+        },
+        {
+          "url": "https://terrytao.wordpress.com/2026/11/24/g-r-h-polymath/",
+          "title": "Tao 블로그: GRH Polymath 시작",
+          "summary": "Sahay·Sawin·Silberman이 Alpöge의 Lean 증명을 사람이 읽을 수 있는 증명으로 바꾸는 공개 공동 연구를 제안했다. 토론은 공개 Zulip 포럼에서 한다."
         }
       ]
     },
@@ -1119,6 +1145,45 @@
       },
       "detail": "archive/articles-2026-11-24/deepmind-quantum-agents.html",
       "url": "https://deepmind.google/blog/finding-faster-quantum-algorithms-with-agents-and-formal-verification/",
+      "takes": []
+    },
+    {
+      "id": "openai-matmul-nine-fourths",
+      "date": "2026-11-25",
+      "lab": "openai",
+      "title": "OpenAI 모델, 행렬 곱셈 지수가 정확히 9/4임을 증명했다",
+      "summary": "OpenAI 내부 모델이 행렬 곱셈 지수 ω가 모든 체에서 정확히 9/4라는 원고를 공개했다. 10월의 위쪽 한계에 맞는 아래쪽 한계를 처음 증명했다는 주장이다. 나눗셈 없는 경우는 Lean으로 확인됐고, 사람의 검토는 아직이다.",
+      "axes": [
+        "science",
+        "reason"
+      ],
+      "impact": "big",
+      "key": {
+        "value": "9/4",
+        "label": "행렬 곱셈 지수 ω (모든 체)",
+        "source_url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
+      },
+      "detail": "articles/openai-matmul-nine-fourths.html",
+      "url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
+      "takes": []
+    },
+    {
+      "id": "openai-gpt6-protein",
+      "date": "2026-11-25",
+      "lab": "openai",
+      "title": "GPT-6, 전용 모델 없이 설계한 단백질이 실험실에서 붙었다",
+      "summary": "OpenAI가 GPT-6 계열이 추론과 코드만으로 단백질 모양과 서열을 설계한다는 프리프린트를 냈다. GPT-6.2 설계 기반 단백질은 표적 5개 모두에서 결합 신호를 보였다. 후보 선별에는 전용 모델이 도왔다.",
+      "axes": [
+        "science"
+      ],
+      "impact": "small",
+      "key": {
+        "value": "128/182",
+        "label": "재설계 소형 항체 중 결합 신호",
+        "source_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
+      },
+      "detail": "articles/openai-gpt6-protein.html",
+      "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
       "takes": []
     }
   ]
