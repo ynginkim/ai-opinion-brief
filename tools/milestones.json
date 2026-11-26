@@ -987,6 +987,11 @@
           "url": "https://generativehistory.substack.com/p/gpt-62-astra-solves-a-historical",
           "title": "Mark Humphries: Astra가 22분 만에 푼 역사 수수께끼",
           "summary": "역사학자 Mark Humphries가 GPT-6.2 Astra로 1808년 작자 미상 스케치북의 작가를 찾았다. Astra가 짚은 일기 사료를 받아 보니 필체와 일정이 맞았다. Simon Willison이 소개했다."
+        },
+        {
+          "url": "https://newsletter.semianalysis.com/p/evaluating-recent-model-releases",
+          "title": "SemiAnalysis: GDPx 1위는 Astra, 코딩은 약점",
+          "summary": "GPT-6.2 Astra가 GDPx에서 19.3%로 1위를 했다. 칩 설계·재료과학·RSI에 강했지만 소프트웨어 엔지니어링은 Fable 5.2의 절반이었다."
         }
       ]
     },
@@ -1094,6 +1099,11 @@
           "url": "https://terrytao.wordpress.com/2026/11/24/g-r-h-polymath/",
           "title": "Tao 블로그: GRH Polymath 시작",
           "summary": "Sahay·Sawin·Silberman이 Alpöge의 Lean 증명을 사람이 읽을 수 있는 증명으로 바꾸는 공개 공동 연구를 제안했다. 토론은 공개 Zulip 포럼에서 한다."
+        },
+        {
+          "url": "https://machinegods.fm/transcripts/11/",
+          "title": "Machine Gods 11화: AI가 푼 리만 가설",
+          "summary": "Kevin Roose와 Casey Newton이 Alpöge가 Claude와 함께 리만 가설을 증명했다는 소식을 젠슨 황의 NVIDIA 복귀와 함께 다뤘다."
         }
       ]
     },
@@ -1163,9 +1173,15 @@
         "label": "행렬 곱셈 지수 ω (모든 체)",
         "source_url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026"
       },
-      "detail": "articles/openai-matmul-nine-fourths.html",
+      "detail": "archive/articles-2026-11-26/openai-matmul-nine-fourths.html",
       "url": "https://github.com/openai/math/tree/main/preprints/The-matrix-multiplication-exponent-is-nine-fourths-November-24-2026",
-      "takes": []
+      "takes": [
+        {
+          "url": "https://latent.space/p/ainews-math-proofs-are-landing-faster-than-we-can-read-them/",
+          "title": "Latent Space AINews: 증명이 읽는 속도보다 빨리 나온다",
+          "summary": "AINews는 9/4 결과로 위아래 한계가 만나 ω가 하나로 정해졌다며 대부분에게 충격적인 결과라고 했다. 올해 AI가 도운 연구 성과 64건 중 20건이 11월에 나왔다고 집계했다."
+        }
+      ]
     },
     {
       "id": "openai-gpt6-protein",
@@ -1182,7 +1198,7 @@
         "label": "재설계 소형 항체 중 결합 신호",
         "source_url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/"
       },
-      "detail": "articles/openai-gpt6-protein.html",
+      "detail": "archive/articles-2026-11-26/openai-gpt6-protein.html",
       "url": "https://openai.com/index/gpt-6-models-demonstrate-intrinsic-protein-design-capabilities/",
       "takes": []
     }

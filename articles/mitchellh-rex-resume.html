@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>미첼 하시모토, 터미널 프로그램을 재시작 뒤 되살리는 규약 공개 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Mitchell Hashimoto · <span class="article-date">2026-11-27 Seoul</span></div>
+    <h1 class="article-title">미첼 하시모토, 터미널 프로그램을 재시작 뒤 되살리는 규약 공개</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.superlogical.com/rex/docs/build/program-resume" target="_blank" rel="noopener">Rex 문서: Program Resume Protocol</a> · <a href="https://x.com/mitchellh/status/2125713695233970521" target="_blank" rel="noopener">Mitchell Hashimoto X</a> · <a href="https://x.com/mitchellh/status/2126047712596631876" target="_blank" rel="noopener">Rex iOS 앱 소식</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Ghostty를 만든 Mitchell Hashimoto가 11월 26일 새 터미널 도구 Rex 소식을 두 번 올렸다.
+      </p>
+
+      <p>
+        첫째는 재시작 기능이다. Rex 서버가 다시 켜져도 돌던 프로그램을 이어서 실행할 수 있다. 이를 위해 OSC 7577이라는 새 터미널 규약을 공개했다.
+      </p>
+
+      <h2>어떻게 동작하나</h2>
+
+      <p>
+        프로그램이 터미널에 “나를 이렇게 다시 띄워 달라”는 이스케이프 시퀀스를 보낸다. 터미널은 이를 참고해 재시작 뒤 프로그램을 되살린다. 보장이 아니라 힌트라서 터미널이 무시할 수도 있다.
+      </p>
+
+      <p>
+        규약은 herdr 팀과 함께 만들었고 여러 터미널 개발자가 검토했다. 특정 터미널이나 별도 통신 채널에 묶이지 않는다.
+      </p>
+
+      <h2>안전장치</h2>
+
+      <p>
+        하시모토는 프로그램 재시작이 근본적으로 위험하다고 적었다. 그래서 최종 보안 책임을 터미널에 뒀다.
+      </p>
+
+      <p>
+        Rex에서는 Lua 설정으로 프로그램별로 허용할 수 있다. 프로그램 이름, 경로, 작업 폴더, 명령줄 옵션으로 거를 수 있고 한 줄로 전부 끌 수도 있다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        Rex는 Claude Code를 먼저 지원한다. 세션 시작 훅에서 OSC 7577을 보내는 방식이다. 에이전트 세션이 서버 재시작으로 끊기는 불편을 줄여 준다.
+      </p>
+
+      <p>
+        같은 날 Rex iOS 앱도 App Store에 올라왔다. 다른 기기에서 돌아가는 Rex 서버가 필요하다. 하시모토는 정식 공개가 가깝다는 힌트일 수 있다고 했다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>

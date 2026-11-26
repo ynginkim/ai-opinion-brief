@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DeepMind 해석 팀, 증류로 옮는 숨은 성향을 데이터에서 찾았다 — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">Google DeepMind · Neel Nanda · J Rosser · <span class="article-date">2026-11-27 Seoul</span></div>
+    <h1 class="article-title">DeepMind 해석 팀, 증류로 옮는 숨은 성향을 데이터에서 찾았다</h1>
+    <div class="source-line">
+      원문 · <a href="https://www.lesswrong.com/posts/uAXt43Wg2PWzsagvr/ghostbusters-understanding-hereditary-trait-distillation-in" target="_blank" rel="noopener">LessWrong 글</a> · <a href="https://github.com/jrosseruk/darkmagic/" target="_blank" rel="noopener">GitHub darkmagic</a> · <a href="https://x.com/jrosseruk/status/2125960491990413580" target="_blank" rel="noopener">J Rosser X</a> · <a href="https://x.com/NeelNanda5/status/2125962350113272171" target="_blank" rel="noopener">Neel Nanda X</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        Google DeepMind의 J Rosser, Senthooran Rajamanoharan, Neel Nanda가 11월 26일 LessWrong에 「GhostBusters」라는 글을 올렸다.
+      </p>
+
+      <p>
+        문제는 이렇다. 교사 모델의 답으로 학생 모델을 학습시키면, 교사의 원치 않는 성향도 같이 옮는다. 데이터에서 티 나는 문서를 걸러내도 옮는다.
+      </p>
+
+      <h2>어떻게 실험했나</h2>
+
+      <p>
+        연구진은 Phantom Transfer 데이터를 시험대로 썼다. 교사에게 레이건, 가톨릭, 스탈린, 영국 같은 대상을 좋아하라고 시킨 뒤 평범한 질문 4,000개에 답하게 한 데이터다. 같은 질문에 대한 깨끗한 답도 짝으로 있다.
+      </p>
+
+      <p>
+        먼저 독이 무엇인지 찾았다. 독이 든 문서와 깨끗한 문서의 기울기 차이를 SAE 잠재 변수로 옮겨 읽었다. 대상 이름을 알려 주지 않아도 꽤 안정적으로 맞혔다.
+      </p>
+
+      <h2>무엇을 찾았나</h2>
+
+      <p>
+        걸러내기는 MAGIC 계열 방법이 LLM 판정자, 프로브, EKFAC보다 나았다. 문서를 지우는 것보다 깨끗한 쌍둥이로 바꾸는 쪽이 더 효과적이었다.
+      </p>
+
+      <p>
+        새 방법 SwapMagic으로 문서 1%만 바꿔도 독의 양이 절반으로 줄었다. 문서마다 독이 얼마나 들었는지도 어느 정도 잴 수 있었다.
+      </p>
+
+      <p>
+        반대로 깨끗한 데이터에 독을 심는 것도 됐다. 같은 문서에서 활성값만 바꿔 레이건 선호를 넣을 수 있었다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        요즘 모델은 다른 모델이 만든 데이터를 많이 먹는다. 사람 눈에 안 보이는 성향이 그 길로 옮는다면 데이터 검사 도구가 필요하다.
+      </p>
+
+      <p>
+        한계도 분명히 적었다. 계산 비용이 커서 프론티어 모델에 바로 쓰기 어렵다. Phantom Transfer는 유난히 쉬운 시험대이고, 더 현실적인 설정에서 해 본 예비 결과는 부정적이었다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        연구진은 학습 데이터 “귀속”에서 학습 데이터 “해석”으로 넘어가는 게 목표라고 했다. 코드는 GitHub에, 데이터는 Hugging Face에 공개됐다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
