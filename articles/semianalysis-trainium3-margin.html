@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SemiAnalysis “에이전트 추론 이익률, Trainium3가 GB300 앞섰다” — agi-tracker</title>
+  <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <a class="back" href="../">← 피드로</a>
+
+    <div class="article-who">SemiAnalysis · Dylan Patel · <span class="article-date">2026-11-28 Seoul</span></div>
+    <h1 class="article-title">SemiAnalysis “에이전트 추론 이익률, Trainium3가 GB300 앞섰다”</h1>
+    <div class="source-line">
+      원문 · <a href="https://newsletter.semianalysis.com/p/trainium3-inferencex" target="_blank" rel="noopener">SemiAnalysis 뉴스레터</a> · <a href="https://x.com/SemiAnalysis_/status/2126354612152090876" target="_blank" rel="noopener">SemiAnalysis X</a> · <a href="https://x.com/SemiAnalysis_/status/2126235662009389501" target="_blank" rel="noopener">SemiAnalysis X (Vera Rubin)</a>
+    </div>
+
+    <div class="article-body">
+      <h2>한눈에</h2>
+
+      <p>
+        SemiAnalysis가 11월 27일 AWS Trainium3를 다룬 분석 「AWS Challenger: Trainium3 Inference and Microarchitecture Deep Dive」를 냈다. 지난 26일 X로 알린 “달러당 성능 GB300의 2.28배” 결과를 자세히 푼 글이다.
+      </p>
+
+      <p>
+        결론은 이렇다. 실제 코딩 에이전트 세션을 다시 돌린 AgentX 벤치에서, Trainium3와 vLLM 조합은 Vera Rubin을 뺀 모든 가속기보다 비용 대비 성능이 좋았다.
+      </p>
+
+      <h2>숫자로 보면</h2>
+
+      <p>
+        사용자당 초당 135토큰은 OpenRouter에서 흔히 보는 속도다. 이 속도에서 Trainium3 서버의 이익률은 73.5%로 계산됐다. 2위는 GB300과 SGLang 조합으로 53%였다.
+      </p>
+
+      <p>
+        이 계산은 3년 임대 가격, Z.ai 정가 토큰 요금, 하드웨어 가동률 60%를 가정했다.
+      </p>
+
+      <p>
+        칩 하나만 보면 Trainium3가 약하다. FP4 이론 연산량은 GB300의 17%다. 메모리 대역폭은 61%다. 대신 총소유비용(TCO)이 약 30% 수준이라 토큰당 비용에서 앞선다.
+      </p>
+
+      <h2>약점과 강점</h2>
+
+      <p>
+        약점은 첫 토큰까지 걸리는 시간이다. 프롬프트를 처리하는 프리필은 연산량 싸움이라, 연산이 적은 Trainium3가 일부 구간에서 밀린다.
+      </p>
+
+      <p>
+        강점으로는 구조를 꼽았다. NVIDIA GPU는 원래 그래픽용으로 만든 칩에 AI용 장치를 하나씩 덧붙여 왔다. Trainium은 처음부터 머신러닝용으로 설계했다는 설명이다.
+      </p>
+
+      <p>
+        프로파일러도 칭찬했다. SemiAnalysis는 Trainium 프로파일러가 업계 최고라고 썼고, Anthropic 성능 엔지니어들이 아낀다고 전했다.
+      </p>
+
+      <h2>왜 중요한가</h2>
+
+      <p>
+        추론 비용은 에이전트 시대의 마진을 정한다. NVIDIA가 아닌 칩이 실제 에이전트 작업에서 이익률 1위를 찍었다는 점이 크다.
+      </p>
+
+      <p>
+        다만 같은 날 SemiAnalysis는 Vera Rubin NVL72가 GB300 NVL72보다 달러당 토큰을 2~6.5배 더 낸다고도 올렸다. NVIDIA의 다음 세대는 여전히 앞서 있다.
+      </p>
+
+      <h2>어떻게 바뀌나</h2>
+
+      <p>
+        AWS에서 Claude 같은 모델을 돌리는 쪽은 Trainium 비중을 늘릴 이유가 생겼다. NVIDIA는 Rubin으로 격차를 다시 벌려야 한다.
+      </p>
+    </div>
+  </div>
+</body>
+</html>
